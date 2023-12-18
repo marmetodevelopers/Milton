@@ -1,0 +1,87 @@
+{
+  "sections": {
+    "1c299980-2c4f-440f-b83b-11b70d6fb888": {
+      "type": "slideshow-image",
+      "blocks": {
+        "template--15936832602212__1c299980-2c4f-440f-b83b-11b70d6fb888-image-1": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify:\/\/shop_images\/contact-banner_final-desktop.jpg"
+          }
+        },
+        "template--15936832602212__1c299980-2c4f-440f-b83b-11b70d6fb888-image-2": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15936832602212__1c299980-2c4f-440f-b83b-11b70d6fb888-image-1",
+        "template--15936832602212__1c299980-2c4f-440f-b83b-11b70d6fb888-image-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Get in touch",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "title": "Contact us",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "text": "",
+        "show_phone": false,
+        "narrow_column": true,
+        "color_scheme": "1"
+      }
+    }
+  },
+  "order": [
+    "1c299980-2c4f-440f-b83b-11b70d6fb888",
+    "main",
+    "rich-text",
+    "form"
+  ]
+}

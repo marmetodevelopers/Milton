@@ -1,0 +1,117 @@
+{
+  "sections": {
+    "main": {
+      "type": "blog-template",
+      "settings": {
+        "blog_show_rss": true,
+        "blog_show_tags": true,
+        "blog_show_date": true,
+        "blog_show_comments": true,
+        "blog_show_author": false,
+        "blog_image_size": "wide"
+      }
+    },
+    "sidebar": {
+      "type": "blog-sidebar",
+      "blocks": {
+        "tags": {
+          "type": "tags",
+          "settings": {
+          }
+        },
+        "9876c744-3022-47e0-8602-629a8c227936": {
+          "type": "article",
+          "settings": {
+            "title": "Popular posts",
+            "article": "news\/new-blog-post",
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "blog_image_size": "wide"
+          }
+        },
+        "83f460ea-d3af-4009-84be-e52f5a8a29f6": {
+          "type": "product",
+          "settings": {
+            "featured_product": "ace-mop-cleaning-kit-set"
+          }
+        }
+      },
+      "block_order": [
+        "tags",
+        "9876c744-3022-47e0-8602-629a8c227936",
+        "83f460ea-d3af-4009-84be-e52f5a8a29f6"
+      ],
+      "settings": {
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection1": {
+          "type": "collection",
+          "settings": {
+            "collection": "bakeware-serveware",
+            "title": ""
+          }
+        },
+        "collection2": {
+          "type": "collection",
+          "settings": {
+            "collection": "buckets-dustbins",
+            "title": ""
+          }
+        },
+        "collection3": {
+          "type": "collection",
+          "settings": {
+            "collection": "casseroles",
+            "title": ""
+          }
+        },
+        "collection4": {
+          "type": "collection",
+          "settings": {
+            "collection": "cleaning-products",
+            "title": ""
+          }
+        },
+        "collection5": {
+          "type": "collection",
+          "settings": {
+            "collection": "cookware",
+            "title": ""
+          }
+        },
+        "collection6": {
+          "type": "collection",
+          "settings": {
+            "collection": "diyas",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection1",
+        "collection2",
+        "collection3",
+        "collection4",
+        "collection5",
+        "collection6"
+      ],
+      "settings": {
+        "title": "You may also like",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sidebar",
+    "featured-collections"
+  ],
+  "wrapper": "div.page-width.page-content.blog-layout"
+}

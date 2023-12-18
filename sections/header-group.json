@@ -1,0 +1,74 @@
+{
+  "type": "header",
+  "name": "t:sections.header-group.name",
+  "sections": {
+    "toolbar": {
+      "type": "toolbar",
+      "blocks": {
+        "toolbar-0": {
+          "type": "announcement",
+          "settings": {
+            "richtext": "<p>Exclusive Deal: Shop above Rs. 1,499\/- and Avail a 5% Discount!<\/p>",
+            "richtext_mobile": "<p>Shop above Rs. 1,499 & Get 5% Discount!<\/p>"
+          }
+        },
+        "toolbar-1": {
+          "type": "announcement",
+          "settings": {
+            "richtext": "<p>Gifting Deal: Shop above Rs. 9,999\/- and Avail a 10%<\/p>",
+            "richtext_mobile": "<p>Shop above Rs. 9,999 & Get 10% Discount!<\/p>"
+          }
+        },
+        "daa28145-6d67-427e-bc21-c7bec43fdd0d": {
+          "type": "announcement",
+          "settings": {
+            "richtext": "<p>Enjoy Free Shipping on Orders Above Rs. 499\/- & Nationwide Delivery Available<\/p>",
+            "richtext_mobile": "<p>Free Shipping Above Rs. 499 & Nationwide Delivery Available<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "toolbar-0",
+        "toolbar-1",
+        "daa28145-6d67-427e-bc21-c7bec43fdd0d"
+      ],
+      "settings": {
+        "announcement_center": true,
+        "toolbar_social": false,
+        "show_locale_selector": true,
+        "show_currency_selector": true,
+        "show_currency_flags": true
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "3c3eaf91-0c23-448a-8ca3-1242a3658042": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/1_aeac75fc-4aac-4cfe-b399-d0d7c749fd1b__1_-removebg-preview_1.png",
+            "desktop_logo_width": 140,
+            "mobile_logo_width": 140
+          }
+        }
+      },
+      "block_order": [
+        "3c3eaf91-0c23-448a-8ca3-1242a3658042"
+      ],
+      "settings": {
+        "main_menu_link_list": "mega-menu",
+        "hover_menu": true,
+        "main_menu_alignment": "below",
+        "mega_products": true,
+        "header_sticky": true,
+        "header_footer_menu": true,
+        "sticky_index": false,
+        "sticky_collection": false
+      }
+    }
+  },
+  "order": [
+    "toolbar",
+    "header"
+  ]
+}

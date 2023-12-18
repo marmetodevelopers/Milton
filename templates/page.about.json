@@ -1,0 +1,418 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 70,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/Bottles.jpg",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Transforming lives, one innovation at a time!",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Milton, a name recalled with warm nostalgia, down memory lane where every household enjoyed the convenience of freshness stored in a classic casserole, a shiny steel tiffin and a sturdy water bottle. Today, in these ever-changing times, Milton has evolved and expanded this convenience through a range of homeware products focused on catering to the needs of modern consumers. Milton ceaselessly draws inspiration from people's journeys and strives continuously to make life easier with state-of-the-art products. Thus enabling and revolutionising a progressive lifestyle, one innovation at a time.<br\/><\/p><p>Founded in 1972, today Milton stands proudly with a legacy spanning over 50 years, along with an established network of 55,000 retailers and a host of strategically placed manufacturing units across the country. This fuels Milton to continually move forward, evolve and bring the winds of change to every household with its product range.<\/p><p><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "color_scheme": "3",
+        "divider": false
+      }
+    },
+    "8d84d195-b54a-44ec-a90e-36e6548b1569": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15936832569444__8d84d195-b54a-44ec-a90e-36e6548b1569-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Mission",
+            "heading_size": "h1"
+          }
+        },
+        "template--15936832569444__8d84d195-b54a-44ec-a90e-36e6548b1569-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Being one of the most celebrated homeware brands, Milton aims to provide high-quality products that solve consumer problems by continuously innovating, setting new standards and doing outstanding work.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15936832569444__8d84d195-b54a-44ec-a90e-36e6548b1569-heading-1",
+        "template--15936832569444__8d84d195-b54a-44ec-a90e-36e6548b1569-text-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "color_scheme": "3",
+        "divider": false
+      }
+    },
+    "bac5623c-3785-448b-b03a-ea0ec5e42793": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15936832569444__bac5623c-3785-448b-b03a-ea0ec5e42793-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Vision",
+            "heading_size": "h1"
+          }
+        },
+        "template--15936832569444__bac5623c-3785-448b-b03a-ea0ec5e42793-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>To be the unassailable leader in homewares by providing ‘Best-in-Class’ products & solutions that redefine value, convenience and style.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15936832569444__bac5623c-3785-448b-b03a-ea0ec5e42793-heading-1",
+        "template--15936832569444__bac5623c-3785-448b-b03a-ea0ec5e42793-text-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "color_scheme": "3",
+        "divider": false
+      }
+    },
+    "f6ddf5be-5584-457f-bef1-21b69c5095d7": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15936832569444__f6ddf5be-5584-457f-bef1-21b69c5095d7-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Kuch Naya Sochte Hain",
+            "heading_size": "h2"
+          }
+        },
+        "4bcadaa2-6a78-4171-9053-6d3c625b0cfa": {
+          "type": "heading",
+          "settings": {
+            "title": "Evolution is the Hallmark of Progress",
+            "heading_size": "h3"
+          }
+        },
+        "template--15936832569444__f6ddf5be-5584-457f-bef1-21b69c5095d7-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Change is constant, but to turn it into an opportunity for innovations, is what defines Milton's motto - 'Kuch Naya Sochte Hai'.<\/p><p>At Milton, every day is an introspection over thoughts and ideas to create something better than yesterday, perhaps a better tomorrow where lifestyle is continuously changing and our innovations serving as the catalyst of this constant evolution.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15936832569444__f6ddf5be-5584-457f-bef1-21b69c5095d7-heading-1",
+        "4bcadaa2-6a78-4171-9053-6d3c625b0cfa",
+        "template--15936832569444__f6ddf5be-5584-457f-bef1-21b69c5095d7-text-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "color_scheme": "3",
+        "divider": false
+      }
+    },
+    "3e3a90cb-e382-4b22-ac18-69c91e4cbbd4": {
+      "type": "countdown",
+      "blocks": {
+        "template--15936832569444__3e3a90cb-e382-4b22-ac18-69c91e4cbbd4-content-1": {
+          "type": "content",
+          "settings": {
+            "heading": "Countdown",
+            "heading_size": "h2",
+            "text": "<p>Use this timer to create urgency and boost sales.<\/p>",
+            "content_alignment": "left"
+          }
+        },
+        "template--15936832569444__3e3a90cb-e382-4b22-ac18-69c91e4cbbd4-timer-1": {
+          "type": "timer",
+          "settings": {
+            "year": "2025",
+            "month": "01",
+            "day": "1",
+            "hour": "03",
+            "minute": "00",
+            "hide_timer": false,
+            "text": ""
+          }
+        },
+        "template--15936832569444__3e3a90cb-e382-4b22-ac18-69c91e4cbbd4-button-1": {
+          "type": "button",
+          "settings": {
+            "button_link": "",
+            "button": "Shop Collection",
+            "button_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "template--15936832569444__3e3a90cb-e382-4b22-ac18-69c91e4cbbd4-content-1",
+        "template--15936832569444__3e3a90cb-e382-4b22-ac18-69c91e4cbbd4-timer-1",
+        "template--15936832569444__3e3a90cb-e382-4b22-ac18-69c91e4cbbd4-button-1"
+      ],
+      "settings": {
+        "layout": "banner",
+        "full_width": false,
+        "color_scheme": "2",
+        "background_image": "shopify:\/\/shop_images\/hard-anodised_1080x849_e6fa23a6-1739-408d-9642-e35c55bfd0a3.jpg",
+        "blur_image": false,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "lazyload_images": true
+      }
+    },
+    "text-columns": {
+      "type": "text-columns",
+      "blocks": {
+        "column1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/2_b1173d50-1cd8-4bc7-bb01-5b2f97755e35.png",
+            "image_mask": "none",
+            "image_width": 60,
+            "title": "Easy 07 Days Returns",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/4_37a0f78e-a3df-4c58-8e24-a711e63c185f.png",
+            "image_mask": "none",
+            "image_width": 60,
+            "title": "BPA-Free & FDA- Approved Products",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/1_6d0c7c02-4dc1-4533-ba8d-23206a277139.png",
+            "image_mask": "none",
+            "image_width": 60,
+            "title": "Free Shipping On All Orders",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "map": {
+      "type": "map",
+      "disabled": true,
+      "settings": {
+        "map_title": "Our retail store",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "address": "<p>301 Front St W<br>Toronto, Canada<\/p><p>Mon - Fri, 8:30am - 10:30pm<br>Saturday, 8:30am - 10:30pm<br>Sunday, 8:30am - 10:30pm<\/p>",
+        "map_address": "301 Front St W, Toronto, ON M5V 2T6",
+        "api_key": "",
+        "show_button": true,
+        "lazyload_images": true
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "home_featured_products": "",
+        "count": 6,
+        "products_per_row": 3,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "disabled": true,
+      "settings": {
+        "title": "Contact us",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "text": "",
+        "show_phone": false,
+        "narrow_column": true,
+        "color_scheme": "none"
+      }
+    },
+    "8e16050f-359b-483a-890f-3f334947a0db": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15936832569444__8e16050f-359b-483a-890f-3f334947a0db-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Awards & Accolades",
+            "heading_size": "h1"
+          }
+        },
+        "b14ec83c-9013-4037-a7ba-ba0a1144d64d": {
+          "type": "heading",
+          "settings": {
+            "title": "Excellence that creates a difference",
+            "heading_size": "h3"
+          }
+        },
+        "template--15936832569444__8e16050f-359b-483a-890f-3f334947a0db-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Innovation has always been symbolic to Milton, and with our motto of ‘Kuch Naya Sochte Hai’, we have consistently pushed beyond our limits to set a new standard for homeware innovation in the industry.  Our awards are a testament to the faith our customers continue to have on us.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15936832569444__8e16050f-359b-483a-890f-3f334947a0db-heading-1",
+        "b14ec83c-9013-4037-a7ba-ba0a1144d64d",
+        "template--15936832569444__8e16050f-359b-483a-890f-3f334947a0db-text-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "color_scheme": "3",
+        "divider": false
+      }
+    },
+    "3bd94ea2-48c5-4d31-9272-66bed2eb5a01": {
+      "type": "slideshow-split",
+      "blocks": {
+        "template--15936832569444__3bd94ea2-48c5-4d31-9272-66bed2eb5a01-slide-1": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "Kensington Palace, London, 2019",
+            "title": "World Branding Awards",
+            "title_size": 60,
+            "subheading": "The World Branding Awards is the premier awards of the World Branding Forum. Milton being named ‘Brand of the Year’ is an illustrious and reputable achievement.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify:\/\/shop_images\/section6.1.png",
+            "indent_image": false,
+            "color_scheme": "2"
+          }
+        },
+        "template--15936832569444__3bd94ea2-48c5-4d31-9272-66bed2eb5a01-slide-2": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "Good Design Awards",
+            "title": "For Microwow Casserole, 2017",
+            "title_size": 60,
+            "subheading": "Good Design Award has been a sole comprehensive design evaluation and commendation system in Japan since 1957. Companies and designers from both inside and outside of Japan participate in the activity to enhance the industry or the quality of life through the design. “G Mark”, the symbol of the award has been recognized widely as a mark representing good design.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/good-design_445x350_42afcf4a-a391-4123-a9a7-359d7a8f1f99.png",
+            "indent_image": true,
+            "color_scheme": "1"
+          }
+        }
+      },
+      "block_order": [
+        "template--15936832569444__3bd94ea2-48c5-4d31-9272-66bed2eb5a01-slide-1",
+        "template--15936832569444__3bd94ea2-48c5-4d31-9272-66bed2eb5a01-slide-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "height": 650,
+        "height_mobile": 450,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow",
+    "rich-text",
+    "8d84d195-b54a-44ec-a90e-36e6548b1569",
+    "bac5623c-3785-448b-b03a-ea0ec5e42793",
+    "f6ddf5be-5584-457f-bef1-21b69c5095d7",
+    "3e3a90cb-e382-4b22-ac18-69c91e4cbbd4",
+    "text-columns",
+    "map",
+    "featured-collection",
+    "form",
+    "8e16050f-359b-483a-890f-3f334947a0db",
+    "3bd94ea2-48c5-4d31-9272-66bed2eb5a01"
+  ]
+}

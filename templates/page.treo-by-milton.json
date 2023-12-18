@@ -1,0 +1,772 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 70,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/Home_Page_Banner_Desktop_1f35f1b1-5f04-4932-9ab9-a555edf7cb89.png",
+            "image_mobile": "shopify:\/\/shop_images\/Home_Page_Banner_Mobile_390_x_238_px_a83e9d57-a21b-4ec4-9fe5-cefe4ba222e1.png",
+            "overlay_opacity": 0
+          }
+        },
+        "slide-2": {
+          "type": "hero",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>Make an Impact<\/p>",
+            "title_size": 70,
+            "subheading": "Supports multiple text alignments and mobile-specific images.",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "slide-1",
+        "slide-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Best Sellers",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "home_featured_products": "treo-bestsellers-1",
+        "count": 5,
+        "products_per_row": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "7c49b649-d468-4c3e-a429-5d491db6fcf6": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--15972672962660__7c49b649-d468-4c3e-a429-5d491db6fcf6-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "title": "Cherish Every Sip",
+            "text": "<p>Unwind with TREO's stylish serveware, perfect for rainy latte moments or family dinners. Crafted for elegance, each piece promises a memory in every sip.<\/p>"
+          }
+        },
+        "template--15972672962660__7c49b649-d468-4c3e-a429-5d491db6fcf6-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "title": "Gifts That Speak Love",
+            "text": "<p>Find the ideal gift in TREO's collection, adding magic to special occasions. Our curated range ensures the joy of gifting matches the love you intend to share.<\/p>"
+          }
+        },
+        "template--15972672962660__7c49b649-d468-4c3e-a429-5d491db6fcf6-text_block-3": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "title": "Bake, Bond, Celebrate",
+            "text": "<p>Bake up a storm for your kid's birthday with TREO's cookware. Exceptional quality and style combine, promising a future filled with cherished family memories.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15972672962660__7c49b649-d468-4c3e-a429-5d491db6fcf6-text_block-1",
+        "template--15972672962660__7c49b649-d468-4c3e-a429-5d491db6fcf6-text_block-2",
+        "template--15972672962660__7c49b649-d468-4c3e-a429-5d491db6fcf6-text_block-3"
+      ],
+      "settings": {
+        "t:common.text_with_icons.settings.title.label": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "divider": false
+      }
+    },
+    "1ca9e6b3-1e17-41e2-9f50-b93de25bae5d": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New Arrivals",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "home_featured_products": "treo-new-arriavls",
+        "count": 5,
+        "products_per_row": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "featured-collections-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "lunchbox",
+            "title": ""
+          }
+        },
+        "featured-collections-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "jars-containers",
+            "title": ""
+          }
+        },
+        "featured-collections-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "casseroles",
+            "title": ""
+          }
+        },
+        "featured-collections-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        },
+        "featured-collections-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        },
+        "featured-collections-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured-collections-0",
+        "featured-collections-1",
+        "featured-collections-2",
+        "featured-collections-3",
+        "featured-collections-4",
+        "featured-collections-5"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Categories",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "divider": false
+      }
+    },
+    "bd27c1ab-8f27-41c1-a13a-12c17468caf0": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15844654547044__bd27c1ab-8f27-41c1-a13a-12c17468caf0-hero-1": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 70,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/Smart_Range.png",
+            "image_mobile": "shopify:\/\/shop_images\/Smart_Range_350_x_203_px.png",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--15844654547044__bd27c1ab-8f27-41c1-a13a-12c17468caf0-hero-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "3a7cace3-6d7c-417e-8e04-8849bdcbab6f": {
+      "type": "slideshow-split",
+      "blocks": {
+        "template--15972672962660__3a7cace3-6d7c-417e-8e04-8849bdcbab6f-slide-1": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "",
+            "title": " Glass Cookware And Bakeware Products",
+            "title_size": 26,
+            "subheading": "Discover exquisite glassware at Treo, crafted from premium materials globally. Our collection includes glass bowls, baking dishes, and borosilicate cookware. Elevate your kitchen with elegance, style, and quality from Treo – where luxury meets functionality. Perfect for daily use or thoughtful gifts, our products redefine home aesthetics. Experience the allure of Treo today.",
+            "link": "",
+            "link_text": "View Product Range",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify:\/\/shop_images\/Side_By_Side_1.png",
+            "indent_image": false,
+            "color_scheme": "2"
+          }
+        },
+        "template--15972672962660__3a7cace3-6d7c-417e-8e04-8849bdcbab6f-slide-2": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "Glass & Ceramic Serveware Products And Sets",
+            "title_size": 26,
+            "subheading": "Elevate your dining experience with Treo's extensive collection of glass bowls, tumblers, jugs, and unique glass\/ceramic cups and mugs. Impress guests and savor the good life with our exquisite range of serveware.",
+            "link": "\/",
+            "link_text": " View Product Range",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/Side_By_Side_2.jpg",
+            "indent_image": true,
+            "color_scheme": "2"
+          }
+        },
+        "9c25a7fc-bf62-4a31-b758-9d9184358b76": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "Glass Storage",
+            "title_size": 25,
+            "subheading": "Discover Treo's extensive range for all your storage needs. From chic glass bottles to a diverse selection of containers, jars, and canisters, we promise freshness for your treats and ingredients. Store, serve, and savor with Treo!",
+            "link": "\/",
+            "link_text": " View Product Range",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify:\/\/shop_images\/Side_By_Side_3.jpg",
+            "indent_image": false,
+            "color_scheme": "2"
+          }
+        },
+        "b138556d-2e7d-4f49-b774-588c2d419525": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "Glass Drinkware",
+            "title_size": 27,
+            "subheading": "Experience the versatility of Treo's tumbler glasses and barware, perfect for daily hydration or entertaining guests. Explore our stylish and durable collection, ensuring both functionality and elegance in every sip.",
+            "link": "\/",
+            "link_text": "View Product Range",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/Side_By_Side_4_1.jpg",
+            "indent_image": false,
+            "color_scheme": "2"
+          }
+        },
+        "6547dd10-3b02-402c-a7dc-2f0f1afeb7e7": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "Gifting",
+            "title_size": 26,
+            "subheading": "Discover our premium glassware collection, featuring the Diya collection, barware, glass tiffins, heat-resistant bowls, and snack sets. Treo's stylish and functional items make cooking and serving a pleasure. Find ideal gifts for Diwali, Christmas, and New Year's celebrations, suitable for family, friends, and coworkers.",
+            "link": "\/",
+            "link_text": "View Product Range",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify:\/\/shop_images\/Side_By_Side_5.jpg",
+            "indent_image": false,
+            "color_scheme": "2"
+          }
+        }
+      },
+      "block_order": [
+        "template--15972672962660__3a7cace3-6d7c-417e-8e04-8849bdcbab6f-slide-1",
+        "template--15972672962660__3a7cace3-6d7c-417e-8e04-8849bdcbab6f-slide-2",
+        "9c25a7fc-bf62-4a31-b758-9d9184358b76",
+        "b138556d-2e7d-4f49-b774-588c2d419525",
+        "6547dd10-3b02-402c-a7dc-2f0f1afeb7e7"
+      ],
+      "settings": {
+        "full_width": true,
+        "height": 650,
+        "height_mobile": 450,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "106425be-9037-4416-9354-a611e7e6d56c": {
+      "type": "slideshow-split",
+      "blocks": {
+        "template--15972672962660__106425be-9037-4416-9354-a611e7e6d56c-slide-1": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "",
+            "title": "Glass & Ceramic Serveware Products And Sets",
+            "title_size": 60,
+            "subheading": "Tailored for longer text and smaller images. Explain more about your promotion.",
+            "link": "",
+            "link_text": " View Product Range",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/Side_By_Side_2_1.jpg",
+            "indent_image": false,
+            "color_scheme": "2"
+          }
+        }
+      },
+      "block_order": [
+        "template--15972672962660__106425be-9037-4416-9354-a611e7e6d56c-slide-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "height": 650,
+        "height_mobile": 450,
+        "style": "arrows",
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "0ac6f5ae-9003-44a2-a864-28dfc65516ee": {
+      "type": "slideshow-split",
+      "blocks": {
+        "template--15972672962660__0ac6f5ae-9003-44a2-a864-28dfc65516ee-slide-1": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "",
+            "title": "Glass Storage",
+            "title_size": 60,
+            "subheading": "Discover Treo's extensive range for all your storage needs. From chic glass bottles to a diverse selection of containers, jars, and canisters, we promise freshness for your treats and ingredients. Store, serve, and savor with Treo!",
+            "link": "\/",
+            "link_text": " View Product Range",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify:\/\/shop_images\/Side_By_Side_3_1.jpg",
+            "indent_image": false,
+            "color_scheme": "2"
+          }
+        }
+      },
+      "block_order": [
+        "template--15972672962660__0ac6f5ae-9003-44a2-a864-28dfc65516ee-slide-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "height": 650,
+        "height_mobile": 450,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "6352d325-47f4-4b02-b6ae-3155d38997d2": {
+      "type": "slideshow-split",
+      "blocks": {
+        "template--15972672962660__6352d325-47f4-4b02-b6ae-3155d38997d2-slide-1": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "",
+            "title": "Glass Drinkware",
+            "title_size": 60,
+            "subheading": "Experience the versatility of Treo's tumbler glasses and barware, perfect for daily hydration or entertaining guests. Explore our stylish and durable collection, ensuring both functionality and elegance in every sip.",
+            "link": "\/",
+            "link_text": " View Product Range",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/Side_By_Side_4_2.jpg",
+            "indent_image": false,
+            "color_scheme": "2"
+          }
+        }
+      },
+      "block_order": [
+        "template--15972672962660__6352d325-47f4-4b02-b6ae-3155d38997d2-slide-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "height": 650,
+        "height_mobile": 450,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "slideshow-split2": {
+      "type": "slideshow-split",
+      "blocks": {
+        "slideshow-split2-0": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "",
+            "title": "Gifting",
+            "title_size": 45,
+            "subheading": "Discover our premium glassware collection, featuring the Diya collection, barware, glass tiffins, heat-resistant bowls, and snack sets. Treo's stylish and functional items make cooking and serving a pleasure. Find ideal gifts for Diwali, Christmas, and New Year's celebrations, suitable for family, friends, and coworkers.",
+            "link": "\/",
+            "link_text": " View Product Range",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/Side_By_Side_5_1.jpg",
+            "indent_image": true,
+            "color_scheme": "2"
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-split2-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "height": 550,
+        "height_mobile": 450,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "da518212-2604-410b-abff-325effdac263": {
+      "type": "promo-grid",
+      "blocks": {
+        "template--15844654547044__da518212-2604-410b-abff-325effdac263-advanced-1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/Offer_1.png",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "color_accent": "#ffffff"
+          }
+        },
+        "template--15844654547044__da518212-2604-410b-abff-325effdac263-advanced-2": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/Offer_2.png",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "color_accent": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "template--15844654547044__da518212-2604-410b-abff-325effdac263-advanced-1",
+        "template--15844654547044__da518212-2604-410b-abff-325effdac263-advanced-2"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".promo-grid__bg img.image-fit {object-fit: contain;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true,
+        "lazyload_images": true
+      }
+    },
+    "logo-list": {
+      "type": "logo-list",
+      "blocks": {
+        "block-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1.png",
+            "link": "shopify:\/\/pages\/milton"
+          }
+        },
+        "block-2": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2.png",
+            "link": "shopify:\/\/pages\/treo"
+          }
+        },
+        "block-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3.png",
+            "link": "shopify:\/\/pages\/spotzero"
+          }
+        },
+        "1ba0502d-21fb-4296-9247-f2a46485b251": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4.png",
+            "link": "shopify:\/\/pages\/procook"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "1ba0502d-21fb-4296-9247-f2a46485b251"
+      ],
+      "settings": {
+        "bg_color": "#6a6a6c",
+        "text_color": "#f9f9fb",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30,
+        "title": "Shop by brand",
+        "heading_size": "h2",
+        "heading_position": "center",
+        "divider": false
+      }
+    },
+    "hotspots": {
+      "type": "hotspots",
+      "blocks": {
+        "block-1": {
+          "type": "product",
+          "settings": {
+            "featured_product": "atlantis-thermosteel-water-bottle",
+            "vertical": 70,
+            "horizontal": 33
+          }
+        },
+        "block-2": {
+          "type": "product",
+          "settings": {
+            "featured_product": "",
+            "vertical": 14,
+            "horizontal": 81
+          }
+        },
+        "block-3": {
+          "type": "product",
+          "settings": {
+            "featured_product": "",
+            "vertical": 46,
+            "horizontal": 79
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Shop the look",
+        "heading_size": "h1",
+        "heading_position": "left",
+        "indent_image": true,
+        "image_position": "right",
+        "hotspot_style": "bag",
+        "hotspot_color": "#ffffff",
+        "lazyload_images": true
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title": "Save 10% on your first purchase",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sign up today and we'll send you a 10% discount code towards<br\/>your first purchase.<\/p>"
+          }
+        },
+        "form": {
+          "type": "form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "text",
+        "form"
+      ],
+      "settings": {
+        "color_scheme": "2",
+        "align_text": "center",
+        "image_width": "33",
+        "image_mask": "none",
+        "image_position": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true
+      }
+    },
+    "text-columns": {
+      "type": "text-columns",
+      "blocks": {
+        "block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "block-3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "From the journal",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "blog": "treo-1",
+        "blog_show_tags": true,
+        "blog_show_date": false,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "blog_image_size": "square",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "featured-collection",
+    "7c49b649-d468-4c3e-a429-5d491db6fcf6",
+    "1ca9e6b3-1e17-41e2-9f50-b93de25bae5d",
+    "featured-collections",
+    "bd27c1ab-8f27-41c1-a13a-12c17468caf0",
+    "3a7cace3-6d7c-417e-8e04-8849bdcbab6f",
+    "106425be-9037-4416-9354-a611e7e6d56c",
+    "0ac6f5ae-9003-44a2-a864-28dfc65516ee",
+    "6352d325-47f4-4b02-b6ae-3155d38997d2",
+    "slideshow-split2",
+    "da518212-2604-410b-abff-325effdac263",
+    "logo-list",
+    "hotspots",
+    "newsletter",
+    "text-columns",
+    "rich-text",
+    "blog-posts"
+  ]
+}

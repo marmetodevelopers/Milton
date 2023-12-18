@@ -1,0 +1,126 @@
+{
+  "type": "footer",
+  "name": "t:sections.footer-group.name",
+  "sections": {
+    "footer-promotions": {
+      "type": "footer-promotions",
+      "blocks": {
+        "footer-promotions-0": {
+          "type": "promotion",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Shop_The_Look_Mobile_0ee38a29-eb70-40a4-84b6-ae28295e4e71.png",
+            "image_mask": "none",
+            "title": "Site-wide promotion",
+            "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+            "button_label": "Optional button",
+            "button_link": "\/",
+            "color_scheme": "3"
+          }
+        },
+        "footer-promotions-1": {
+          "type": "promotion",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Store_IT_6Pc_Pink_1.jpg",
+            "image_mask": "none",
+            "title": "Site-wide promotion",
+            "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+            "button_label": "Optional button",
+            "button_link": "\/",
+            "color_scheme": "3"
+          }
+        },
+        "footer-promotions-2": {
+          "type": "promotion",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/kool_crony_1100_Purple_1.jpg",
+            "image_mask": "none",
+            "title": "Site-wide promotion",
+            "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+            "button_label": "Optional button",
+            "button_link": "\/",
+            "color_scheme": "3"
+          }
+        }
+      },
+      "block_order": [
+        "footer-promotions-0",
+        "footer-promotions-1",
+        "footer-promotions-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "hide_homepage": false,
+        "image_size": "square"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "5dc2b7ed-3acc-484e-809b-f3fdf5302cd8": {
+          "type": "menu",
+          "settings": {
+            "title": "",
+            "menu": "brands",
+            "enable_account_link": false
+          }
+        },
+        "3dfce0e6-3a81-44d1-8850-0a456f665a16": {
+          "type": "menu",
+          "settings": {
+            "title": "Quick Links",
+            "menu": "footer-menu-two",
+            "enable_account_link": false
+          }
+        },
+        "footer-0": {
+          "type": "menu",
+          "settings": {
+            "title": "",
+            "menu": "footer",
+            "enable_account_link": false
+          }
+        },
+        "footer-1": {
+          "type": "contact",
+          "settings": {
+            "phone": "+1 800 123 1234",
+            "contact": "",
+            "chat": "",
+            "enable_social": true
+          }
+        },
+        "footer-2": {
+          "type": "payment",
+          "settings": {
+            "show_payment_icons": true,
+            "show_locale_selector": true,
+            "show_currency_selector": true,
+            "show_currency_flags": true
+          }
+        }
+      },
+      "block_order": [
+        "5dc2b7ed-3acc-484e-809b-f3fdf5302cd8",
+        "3dfce0e6-3a81-44d1-8850-0a456f665a16",
+        "footer-0",
+        "footer-1",
+        "footer-2"
+      ],
+      "settings": {
+        "show_newsletter": true,
+        "newsletter_richtext": "<p>Subscribe today to hear first about our sales<\/p>",
+        "footer_main_menu": true,
+        "show_copyright": false,
+        "copyright_text": "",
+        "policies_menu": ""
+      }
+    }
+  },
+  "order": [
+    "footer-promotions",
+    "footer"
+  ]
+}

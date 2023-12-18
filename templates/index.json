@@ -1,0 +1,572 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 70,
+            "subheading": "",
+            "link": "shopify:\/\/collections",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Home_Page_Banner_Desktop_a4615bbd-eddd-4923-8910-e5f0a8f87f24.png",
+            "image_mobile": "shopify:\/\/shop_images\/Home_Page_Banner_Mobile_390_x_238_px_90237249-a9d4-4731-ae7d-da3846eed49a.png",
+            "overlay_opacity": 0
+          }
+        },
+        "slide-2": {
+          "type": "hero",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 70,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Carousal_Banner_2_Desktop_e5a98fe0-34d8-4dbb-a6ec-e965a54df0eb.png",
+            "image_mobile": "shopify:\/\/shop_images\/Carousal_Banner_2_Mobile_96666005-2132-47ff-91c2-d58400ea56a1.png",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "slide-1",
+        "slide-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "featured-collections-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "flasks-bottles",
+            "title": ""
+          }
+        },
+        "featured-collections-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "storage-containers-jars",
+            "title": ""
+          }
+        },
+        "featured-collections-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "casseroles",
+            "title": ""
+          }
+        },
+        "featured-collections-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "bakeware-serveware",
+            "title": ""
+          }
+        },
+        "featured-collections-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "cleaning-products",
+            "title": ""
+          }
+        },
+        "featured-collections-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "lunchboxes",
+            "title": ""
+          }
+        },
+        "3bc3581f-538d-4875-bc7f-830040d227ea": {
+          "type": "collection",
+          "settings": {
+            "collection": "bakeware-serveware",
+            "title": ""
+          }
+        },
+        "880bd874-809f-4710-a689-35d06f3e9f7d": {
+          "type": "collection",
+          "settings": {
+            "collection": "cookware",
+            "title": ""
+          }
+        },
+        "5fb43c1b-73d2-4e10-8800-98463f0ee31d": {
+          "type": "collection",
+          "settings": {
+            "collection": "appam-appachetty",
+            "title": "Appam & Appachetty"
+          }
+        },
+        "9b8b7f22-9ec5-4877-8f48-dab6421e55fb": {
+          "type": "collection",
+          "settings": {
+            "collection": "ice-packs-pails",
+            "title": ""
+          }
+        },
+        "05c269fd-5ec5-4ba0-b625-ff718f2ddd08": {
+          "type": "collection",
+          "settings": {
+            "collection": "copper-bottles",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured-collections-0",
+        "featured-collections-1",
+        "featured-collections-2",
+        "featured-collections-3",
+        "featured-collections-4",
+        "featured-collections-5",
+        "3bc3581f-538d-4875-bc7f-830040d227ea",
+        "880bd874-809f-4710-a689-35d06f3e9f7d",
+        "5fb43c1b-73d2-4e10-8800-98463f0ee31d",
+        "9b8b7f22-9ec5-4877-8f48-dab6421e55fb",
+        "05c269fd-5ec5-4ba0-b625-ff718f2ddd08"
+      ],
+      "settings": {
+        "title": "Categories",
+        "heading_size": "h2",
+        "heading_position": "center",
+        "divider": false
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Best Sellers",
+        "heading_size": "h2",
+        "heading_position": "center",
+        "home_featured_products": "milton",
+        "count": 5,
+        "products_per_row": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "logo-list": {
+      "type": "logo-list",
+      "blocks": {
+        "block-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1.png",
+            "link": "shopify:\/\/pages\/milton"
+          }
+        },
+        "block-2": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2.png",
+            "link": "shopify:\/\/pages\/treo"
+          }
+        },
+        "block-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3.png",
+            "link": "shopify:\/\/pages\/spotzero"
+          }
+        },
+        "1ba0502d-21fb-4296-9247-f2a46485b251": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4.png",
+            "link": "shopify:\/\/pages\/procook"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "1ba0502d-21fb-4296-9247-f2a46485b251"
+      ],
+      "settings": {
+        "bg_color": "#e7e7e7",
+        "text_color": "#000000",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30,
+        "title": "Shop By Brand",
+        "heading_size": "h2",
+        "heading_position": "center",
+        "divider": false
+      }
+    },
+    "1ca9e6b3-1e17-41e2-9f50-b93de25bae5d": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New Arrivals",
+        "heading_size": "h2",
+        "heading_position": "center",
+        "home_featured_products": "milton",
+        "count": 5,
+        "products_per_row": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "f55f9581-6e66-4d15-a146-1df42822e8a6": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15936832503908__f55f9581-6e66-4d15-a146-1df42822e8a6-hero-1": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>ProCook by Milton<\/p>",
+            "title_size": 40,
+            "subheading": "",
+            "link": "shopify:\/\/pages\/procook",
+            "link_text": "Explore Now",
+            "link_2": "shopify:\/\/pages\/procook",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/Carousel_Desktop.png",
+            "image_mobile": "shopify:\/\/shop_images\/Carousal_Banner_1_Mobile_f2e52161-9d48-43d8-b155-b3473fa88bfc.png",
+            "overlay_opacity": 16
+          }
+        },
+        "9b04e57f-8a68-4791-83ef-1fd7606c18cd": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>Treo By Milton<\/p>",
+            "title_size": 40,
+            "subheading": "",
+            "link": "shopify:\/\/pages\/treo",
+            "link_text": "Explore Now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/Carousel_Desktop_1.png",
+            "image_mobile": "shopify:\/\/shop_images\/Carousal_Banner_2_Mobile_ee4f7cba-9cdf-4858-b192-d760dee2e3a2.png",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "template--15936832503908__f55f9581-6e66-4d15-a146-1df42822e8a6-hero-1",
+        "9b04e57f-8a68-4791-83ef-1fd7606c18cd"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "da518212-2604-410b-abff-325effdac263": {
+      "type": "promo-grid",
+      "blocks": {
+        "template--15844654547044__da518212-2604-410b-abff-325effdac263-advanced-1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "shopify:\/\/collections\/flasks-bottles",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/Offer_banner_1.png",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "color_accent": "#ffffff"
+          }
+        },
+        "template--15844654547044__da518212-2604-410b-abff-325effdac263-advanced-2": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "shopify:\/\/collections\/home-essentials",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/Offer_banner_2.png",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "color_accent": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "template--15844654547044__da518212-2604-410b-abff-325effdac263-advanced-1",
+        "template--15844654547044__da518212-2604-410b-abff-325effdac263-advanced-2"
+      ],
+      "custom_css": [
+        ".promo-grid__bg img.image-fit {}"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": false,
+        "lazyload_images": true
+      }
+    },
+    "hotspots": {
+      "type": "hotspots",
+      "blocks": {
+        "block-1": {
+          "type": "product",
+          "settings": {
+            "featured_product": "granito-induction-kadhai-with-glass-lid",
+            "vertical": 43,
+            "horizontal": 50
+          }
+        },
+        "block-2": {
+          "type": "product",
+          "settings": {
+            "featured_product": "hard-anodized-fry-pan-with-stainless-steel-lid",
+            "vertical": 70,
+            "horizontal": 25
+          }
+        },
+        "block-3": {
+          "type": "product",
+          "settings": {
+            "featured_product": "tawa-hard-anodized",
+            "vertical": 85,
+            "horizontal": 70
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "settings": {
+        "title": "Shop the look",
+        "heading_size": "h2",
+        "heading_position": "center",
+        "image": "shopify:\/\/shop_images\/hard-anodised_1080x849_e6fa23a6-1739-408d-9642-e35c55bfd0a3.jpg",
+        "indent_image": true,
+        "image_position": "right",
+        "hotspot_style": "bag",
+        "hotspot_color": "#ffffff",
+        "lazyload_images": true
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title": "Subscribe today to hear first about our sales",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Sign up today and we'll send you a 10% discount code towards<br\/>your first purchase.<\/p>"
+          }
+        },
+        "form": {
+          "type": "form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "text",
+        "form"
+      ],
+      "settings": {
+        "color_scheme": "2",
+        "align_text": "center",
+        "image_width": "33",
+        "image_mask": "none",
+        "image_position": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true
+      }
+    },
+    "slideshow-split2": {
+      "type": "slideshow-split",
+      "blocks": {
+        "slideshow-split2-0": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "",
+            "title": "Highlight products",
+            "title_size": 45,
+            "subheading": "Repurpose your product photography with our \"Indented\" image option",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "indent_image": true,
+            "color_scheme": "2"
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-split2-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "height": 550,
+        "height_mobile": 450,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "text-columns": {
+      "type": "text-columns",
+      "blocks": {
+        "block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "block-3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "disabled": true,
+      "settings": {
+        "title": "From the journal",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "blog": "news",
+        "blog_show_tags": true,
+        "blog_show_date": false,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "blog_image_size": "natural",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "featured-collections",
+    "featured-collection",
+    "logo-list",
+    "1ca9e6b3-1e17-41e2-9f50-b93de25bae5d",
+    "f55f9581-6e66-4d15-a146-1df42822e8a6",
+    "da518212-2604-410b-abff-325effdac263",
+    "hotspots",
+    "newsletter",
+    "slideshow-split2",
+    "text-columns",
+    "rich-text",
+    "blog-posts"
+  ]
+}
