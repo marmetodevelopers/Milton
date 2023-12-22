@@ -985,6 +985,7 @@ if (console && console.log) {
         }
         if(breezeButtons.length > 0) {
           breezeButtons[breezeButtons.length - 1].setAttribute('selectedproductvariantdata', btoa(JSON.stringify(this.currentVariant)));
+          breezeButtons[0].setAttribute('selectedproductvariantdata', btoa(JSON.stringify(this.currentVariant)));
         }
   
         if (this.enableHistoryState) {

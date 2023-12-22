@@ -62,10 +62,13 @@
         "heading",
         "text"
       ],
+      "custom_css": [
+        ".index-section:not(.index-section--sub-product):first-child {margin-bottom: 0px;}"
+      ],
       "settings": {
         "align_text": "center",
         "narrow_column": false,
-        "color_scheme": "3",
+        "color_scheme": "none",
         "divider": false
       }
     },
@@ -91,10 +94,13 @@
         "template--15936832569444__8d84d195-b54a-44ec-a90e-36e6548b1569-heading-1",
         "template--15936832569444__8d84d195-b54a-44ec-a90e-36e6548b1569-text-1"
       ],
+      "custom_css": [
+        ".index-section:not(.index-section--sub-product):first-child {padding-top: 0; margin-bottom: 0;}"
+      ],
       "settings": {
         "align_text": "center",
         "narrow_column": false,
-        "color_scheme": "3",
+        "color_scheme": "none",
         "divider": false
       }
     },
@@ -120,11 +126,83 @@
         "template--15936832569444__bac5623c-3785-448b-b03a-ea0ec5e42793-heading-1",
         "template--15936832569444__bac5623c-3785-448b-b03a-ea0ec5e42793-text-1"
       ],
+      "custom_css": [
+        ".index-section:not(.index-section--sub-product):first-child {padding-top: 10px;}"
+      ],
       "settings": {
         "align_text": "center",
         "narrow_column": false,
-        "color_scheme": "3",
+        "color_scheme": "none",
         "divider": false
+      }
+    },
+    "text-columns": {
+      "type": "text-columns",
+      "blocks": {
+        "column1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/innovation-1.png",
+            "image_mask": "none",
+            "image_width": 60,
+            "title": "Innovation",
+            "text": "<p>Innovation is the core of Milton’s being. It defines its motto - ‘Kuch Naya Sochte Hai’. It fuels its passion for simplifying consumers’ life with future-facing offerings such as oil-separating pickle jars, Microwow casseroles, Electric tiffins, Bluetooth Speaker bottles etc. that makes Milton’s name emblematic of household innovations.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/quality-1.png",
+            "image_mask": "none",
+            "image_width": 60,
+            "title": "Quality",
+            "text": "<p>Quality is the bedrock upon which Milton’s reputation rests. With its constant efforts to create groundbreaking and sustainable ideas for its consumers, Milton’s quality of work has built a name for itself. Hence, it prides itself for being consistent and ever-evolving in delivering quality, making it one of the most trusted brands in the homeware industry.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/durability-1.png",
+            "image_mask": "none",
+            "image_width": 60,
+            "title": "Durability",
+            "text": "<p>Milton-made products are built to withstand crowded commutes, boisterous school recess hours, and storing delicious meals day-in, day-out. When real-life is so tough, Milton makes sure that its products stand tougher by the consumers' side.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "341a33ca-0938-4ac8-9cbf-7dd6e76df749": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/customerservice-1.png",
+            "image_mask": "none",
+            "image_width": 60,
+            "title": "Customer Service",
+            "text": "<p>Milton not only believes in delivering quality products that ease customers’ lives but also ensures its accessibility to its users. Customer care executives can always be reached via a toll-free number, and the response team for the contact forms are thoroughly trained and ready to address every requirement.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3",
+        "341a33ca-0938-4ac8-9cbf-7dd6e76df749"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false,
+        "color_scheme": "none"
       }
     },
     "f6ddf5be-5584-457f-bef1-21b69c5095d7": {
@@ -157,10 +235,13 @@
         "4bcadaa2-6a78-4171-9053-6d3c625b0cfa",
         "template--15936832569444__f6ddf5be-5584-457f-bef1-21b69c5095d7-text-1"
       ],
+      "custom_css": [
+        ".index-section[class*=\"color-scheme-\"]:not(.color-scheme-none) {padding-top: 30px;}"
+      ],
       "settings": {
         "align_text": "center",
         "narrow_column": false,
-        "color_scheme": "3",
+        "color_scheme": "none",
         "divider": false
       }
     },
@@ -202,6 +283,7 @@
         "template--15936832569444__3e3a90cb-e382-4b22-ac18-69c91e4cbbd4-timer-1",
         "template--15936832569444__3e3a90cb-e382-4b22-ac18-69c91e4cbbd4-button-1"
       ],
+      "disabled": true,
       "settings": {
         "layout": "banner",
         "full_width": false,
@@ -211,61 +293,6 @@
         "overlay_color": "#000000",
         "overlay_opacity": 0,
         "lazyload_images": true
-      }
-    },
-    "text-columns": {
-      "type": "text-columns",
-      "blocks": {
-        "column1": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/2_b1173d50-1cd8-4bc7-bb01-5b2f97755e35.png",
-            "image_mask": "none",
-            "image_width": 60,
-            "title": "Easy 07 Days Returns",
-            "text": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column2": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/4_37a0f78e-a3df-4c58-8e24-a711e63c185f.png",
-            "image_mask": "none",
-            "image_width": 60,
-            "title": "BPA-Free & FDA- Approved Products",
-            "text": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "column3": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/1_6d0c7c02-4dc1-4533-ba8d-23206a277139.png",
-            "image_mask": "none",
-            "image_width": 60,
-            "title": "Free Shipping On All Orders",
-            "text": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "align_text": "center",
-        "divider": false,
-        "color_scheme": "none"
       }
     },
     "map": {
@@ -343,7 +370,7 @@
       "settings": {
         "align_text": "center",
         "narrow_column": false,
-        "color_scheme": "3",
+        "color_scheme": "none",
         "divider": false
       }
     },
@@ -355,7 +382,7 @@
           "settings": {
             "top_subheading": "Kensington Palace, London, 2019",
             "title": "World Branding Awards",
-            "title_size": 60,
+            "title_size": 30,
             "subheading": "The World Branding Awards is the premier awards of the World Branding Forum. Milton being named ‘Brand of the Year’ is an illustrious and reputable achievement.",
             "link": "",
             "link_text": "",
@@ -363,7 +390,7 @@
             "link_text_2": "",
             "text_position": "right",
             "image": "shopify:\/\/shop_images\/section6.1.png",
-            "indent_image": false,
+            "indent_image": true,
             "color_scheme": "2"
           }
         },
@@ -372,7 +399,7 @@
           "settings": {
             "top_subheading": "Good Design Awards",
             "title": "For Microwow Casserole, 2017",
-            "title_size": 60,
+            "title_size": 30,
             "subheading": "Good Design Award has been a sole comprehensive design evaluation and commendation system in Japan since 1957. Companies and designers from both inside and outside of Japan participate in the activity to enhance the industry or the quality of life through the design. “G Mark”, the symbol of the award has been recognized widely as a mark representing good design.",
             "link": "",
             "link_text": "",
@@ -381,13 +408,247 @@
             "text_position": "left",
             "image": "shopify:\/\/shop_images\/good-design_445x350_42afcf4a-a391-4123-a9a7-359d7a8f1f99.png",
             "indent_image": true,
-            "color_scheme": "1"
+            "color_scheme": "2"
+          }
+        },
+        "641e1a76-f1ae-421d-add5-2ccb6fc8951c": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "Kahaan Ka Piya TVC, Jul - Dec 2018",
+            "title": "Youtube’s Creative Excellence Awards",
+            "title_size": 30,
+            "subheading": "YouTube Creative Excellence Award listed the top 6 performing ads from July 2018 till December 2018, which were rated by an esteemed panel of 10 representatives from creative agencies, ad film direction and media planning agencies. Milton, along with other brands from different categories like Samsung, Apple, Hyundai, Bajaj Auto and Dove were the selected top 6 winners.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/youtubes_creative_excellence_awards_445x350_bb34a993-ee56-44c3-bee2-e862dc91af29.jpg",
+            "indent_image": true,
+            "color_scheme": "2"
+          }
+        },
+        "77f60829-0647-4efe-8ea2-5bcfc8bdd7f3": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "2nd Best Ad - Kahaan Ka Piya | Thermosteel TVC,",
+            "title": "Brand Equity Leaderboard",
+            "title_size": 30,
+            "subheading": "The Leader Board represents the Top 10 ads on YouTube in India that resonated most with the audiences in August’18 and recognizes the brands that performed best through a combination of popularity and promotion.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/brand_equity_leaderboard_445x350_12d16d85-3484-4520-adf0-a88eb9f0bc55.jpg",
+            "indent_image": true,
+            "color_scheme": "2"
+          }
+        },
+        "18350507-a989-4b21-a5d9-3d3da2474853": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "Best Marketer - Leak-lock tiffin TVC campaign, 2018",
+            "title": "Philip Kotler Award",
+            "title_size": 30,
+            "subheading": "The Kotler Awards is a tribute to the Father of Modern Marketing – internationally renowned Professor of Kellogg Graduate School of Management, Philip Kotler, in recognition of efforts of best advertisers and marketers from both the corporates and agencies.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/online-trophy_445x350_7d1174f5-8fe1-4b52-811e-3947e6455b31.png",
+            "indent_image": true,
+            "color_scheme": "2"
+          }
+        },
+        "1afcecf1-6ccd-4c9e-b77c-2453893f2c9a": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "Product Design Excellence Finalist - Cookware Category, 2018",
+            "title": "IHA Global Innovation Awards",
+            "title_size": 32,
+            "subheading": "Product design excellence Finalist in the Cookware category One Touch Microwow Casserole The IHA Global Innovation Awards (gia) for product design is a global platform that honors creations and cutting-edge innovations done by companies and exhibitors from all over the world with award recognition.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/frame_trophy-gia_445x350_48b16b42-9c92-4eb9-b05d-fe8f1a616dd1.png",
+            "indent_image": true,
+            "color_scheme": "2"
+          }
+        },
+        "2d009659-5a0f-4898-9b38-2b98d7df97b0": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "Consumer Durable Category - For Leak Lock Tiffin Ad, Sep 2017",
+            "title": "IndIAA Awards",
+            "title_size": 60,
+            "subheading": "IndIAA Awards is the intellectual property of the International Advertising Association (IAA) India chapter, and was instituted in 2015. It was born of the need for an award to recognize mainstream creative advertising campaigns. The IndIAA Awards chooses only one winner in a category, or a joint winner in case of tied scores. Awards are presented to real, hardworking campaigns that are backed by media spends.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/milton-india-award-_445x350_74e0243d-cc86-4a44-986e-21cd30e03116.png",
+            "indent_image": true,
+            "color_scheme": "2"
+          }
+        },
+        "acd871c0-13ef-4494-b91e-7d48055b053a": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "Symbol of Excellence, 2017",
+            "title": "The Economic Times - Iconic Awards (Made in India)",
+            "title_size": 31,
+            "subheading": "In today’s complex and busy world, brand names are everywhere—plastered all over websites, on railway and metro cars, on the sides of buses, and even in public places. But most of the time, even though they’re accepted as a part of the scenery, these brand names don’t signify much to those who observe them.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/frame_trophy_445x350_94dc251e-30c8-417f-8463-dd403fcfcec5.png",
+            "indent_image": true,
+            "color_scheme": "2"
+          }
+        },
+        "aebf79cc-7ed6-43c9-bf06-b66637d90d92": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "For Microwow Casserole, 2017",
+            "title": "Good Design Awards",
+            "title_size": 30,
+            "subheading": "Good Design Award has been a sole comprehensive design evaluation and commendation system in Japan since 1957. Companies and designers from both inside and outside of Japan participate in the activity to enhance the industry or the quality of life through the design. “G Mark”, the symbol of the award has been recognized widely as a mark representing good design.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/good-design_445x350_1.png",
+            "indent_image": true,
+            "color_scheme": "2"
+          }
+        },
+        "c9183ede-7bf5-4f91-a335-0b7983029dfa": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "For Microwow Casserole, Feb 2017",
+            "title": "India Design Mark - Good Design Award",
+            "title_size": 31,
+            "subheading": "India Design Mark is a design standard, a symbol, which recognizes good design. It symbolizes excellence in form, function, quality, safety, sustainability, and innovation and communicates that the product is usable, durable, aesthetically appealing and socially responsible.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/design-mark_445x350_067607b3-6c3e-4184-994b-9623f2def22a.png",
+            "indent_image": true,
+            "color_scheme": "2"
+          }
+        },
+        "ef0e82c2-7893-419c-b0cc-2d1a38a9c964": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "Most Attractive Kitchenware Brand, 2017",
+            "title": "India’s Most Attractive Brands",
+            "title_size": 31,
+            "subheading": "India’s Most Attractive Brands ranks Milton as the most attractive Kitchenware Brand.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/indias-most-atttractive-brand_445x350_25edcb95-f4c3-48e2-81f5-dc689ff4a17f.png",
+            "indent_image": true,
+            "color_scheme": "2"
+          }
+        },
+        "3ecc7ed9-1506-4a7f-ad09-daca986641c7": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "19-09-2019 to 18-09-2022",
+            "title": "SA Certificate",
+            "title_size": 30,
+            "subheading": "Social compliance is a continuing process in which organizations endeavour to protect the health, safety, and rights of their employees, the community and environment in which they operate, and the lives and communities of workers in their supply and distribution chains. SA8000 is an auditable certification standard that encourages organizations to develop, maintain, and apply socially acceptable practices in the workplace.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/sa_certificate_445x350_9c103481-597e-4c59-bb80-dfdafae297f3.jpg",
+            "indent_image": true,
+            "color_scheme": "2"
+          }
+        },
+        "2cf73984-caf6-4eba-a25f-b2de1dfbe585": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "Consumer Superbrands award in the year 2006-07",
+            "title": "Superbrands Awards",
+            "title_size": 31,
+            "subheading": "Milton bagged the prestigious Consumer Superbrands award in the year 2006-07\n\nSuperbrands believes that it can provide tremendous service by identifying those who have maintained the highest standards of product integrity and brand development. Winners are the brands that have worked hard to win their consumers’ trust.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/superbrands_445x350_f19d9d14-845b-404b-b17b-2abf6f7fc6a3.png",
+            "indent_image": true,
+            "color_scheme": "2"
+          }
+        },
+        "8443da0d-e5c6-4acd-ad64-0deb3c432c4a": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "Best Displayed Award, Aug 2000",
+            "title": "Gifts International",
+            "title_size": 30,
+            "subheading": "Tao Plastics Pvt. Ltd",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/gifts_445x350_fac307db-c1ce-4602-89e7-89b1b7a46407.png",
+            "indent_image": true,
+            "color_scheme": "2"
+          }
+        },
+        "8878663f-1b2d-4eb1-bd7e-74297b0c018a": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "Chicago , USA, 2023",
+            "title": "IHA Global Innovation Award – Smart Home Products",
+            "title_size": 30,
+            "subheading": "Our innovation - Smart Tiffin, has received the IHA Global Innovation Award (GIA) for cutting-edge innovation in the Home & Housewares category. It was presented by Inspired Home Show (The World’s Leading Home + Housewares Show) Chicago, USA! The IHA Global Innovation Award (",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/whatsapp_image_2023-04-07_at_3_49_28_pm.jpg",
+            "indent_image": true,
+            "color_scheme": "2"
           }
         }
       },
       "block_order": [
         "template--15936832569444__3bd94ea2-48c5-4d31-9272-66bed2eb5a01-slide-1",
-        "template--15936832569444__3bd94ea2-48c5-4d31-9272-66bed2eb5a01-slide-2"
+        "template--15936832569444__3bd94ea2-48c5-4d31-9272-66bed2eb5a01-slide-2",
+        "641e1a76-f1ae-421d-add5-2ccb6fc8951c",
+        "77f60829-0647-4efe-8ea2-5bcfc8bdd7f3",
+        "18350507-a989-4b21-a5d9-3d3da2474853",
+        "1afcecf1-6ccd-4c9e-b77c-2453893f2c9a",
+        "2d009659-5a0f-4898-9b38-2b98d7df97b0",
+        "acd871c0-13ef-4494-b91e-7d48055b053a",
+        "aebf79cc-7ed6-43c9-bf06-b66637d90d92",
+        "c9183ede-7bf5-4f91-a335-0b7983029dfa",
+        "ef0e82c2-7893-419c-b0cc-2d1a38a9c964",
+        "3ecc7ed9-1506-4a7f-ad09-daca986641c7",
+        "2cf73984-caf6-4eba-a25f-b2de1dfbe585",
+        "8443da0d-e5c6-4acd-ad64-0deb3c432c4a",
+        "8878663f-1b2d-4eb1-bd7e-74297b0c018a"
       ],
       "settings": {
         "full_width": true,
@@ -406,9 +667,9 @@
     "rich-text",
     "8d84d195-b54a-44ec-a90e-36e6548b1569",
     "bac5623c-3785-448b-b03a-ea0ec5e42793",
+    "text-columns",
     "f6ddf5be-5584-457f-bef1-21b69c5095d7",
     "3e3a90cb-e382-4b22-ac18-69c91e4cbbd4",
-    "text-columns",
     "map",
     "featured-collection",
     "form",

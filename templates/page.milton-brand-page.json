@@ -72,7 +72,7 @@
         "template--15972672962660__7c49b649-d468-4c3e-a429-5d491db6fcf6-text_block-1": {
           "type": "text_block",
           "settings": {
-            "icon": "chat",
+            "icon": "shield",
             "title": "Legacy of Quality",
             "text": "<p>For over 50 years, Milton has defined excellence in homeware, crafting reliable and innovative products that meet modern lifestyle needs. Explore our legacy of quality kitchenware.<\/p>"
           }
@@ -80,7 +80,7 @@
         "template--15972672962660__7c49b649-d468-4c3e-a429-5d491db6fcf6-text_block-2": {
           "type": "text_block",
           "settings": {
-            "icon": "chat",
+            "icon": "gears",
             "title": "Innovate with Milton",
             "text": "<p>Discover a world of innovation with Milton's range, from Thermosteel bottles to smart tiffins. We transform lives by enhancing convenience, safety, and aesthetics in your home.<\/p>"
           }
@@ -88,8 +88,8 @@
         "template--15972672962660__7c49b649-d468-4c3e-a429-5d491db6fcf6-text_block-3": {
           "type": "text_block",
           "settings": {
-            "icon": "chat",
-            "title": "Pioneering Sustainability at Milton",
+            "icon": "recycle",
+            "title": "Striving for Sustainability",
             "text": "<p>Milton is a trailblazer in sustainable practices, consistently working towards reducing our environmental footprint. From eco-friendly materials to energy-efficient manufacturing, we're committed to a greener future.<\/p>"
           }
         }
@@ -231,7 +231,7 @@
             "title": "Tiffins",
             "title_size": 31,
             "subheading": "Revolutionize your kitchen routine with Milton's Tiffins! Our stackable, portable, and leak-proof tiffin boxes offer convenience. From lunch boxes to kids' range, find various sizes, shapes, and colors. Enjoy hot meals on the go!",
-            "link": "",
+            "link": "shopify:\/\/collections\/electric-tiffins",
             "link_text": "View Product Range",
             "link_2": "",
             "link_text_2": "",
@@ -341,7 +341,7 @@
             "title": "Casseroles",
             "title_size": 31,
             "subheading": "Serve meals stylishly with Milton's casseroles! Vibrant colors, stackable design, and practicality define these quality kitchenware products. Oven-proof, microwave-friendly, and freezer-safe, choose from sizes to match your kitchen. Enjoy the convenience of hot meals anywhere!",
-            "link": "",
+            "link": "shopify:\/\/collections\/casseroles",
             "link_text": " View Product Range",
             "link_2": "",
             "link_text_2": "",
@@ -375,7 +375,7 @@
             "title": "Bottles and Flasks",
             "title_size": 31,
             "subheading": "Hydrate on the go with Milton's bottles and flasks! Explore Thermosteel, stainless steel, plastic\/PET, copper, and insulated bottles. The Thermosteel range keeps beverages hot or cold for 24 hours. Choose from various colors, sizes, and styles. Enjoy the convenience of hot drinks anytime!",
-            "link": "\/",
+            "link": "shopify:\/\/collections\/glass-bottles",
             "link_text": " View Product Range",
             "link_2": "",
             "link_text_2": "",
@@ -409,7 +409,7 @@
             "title": "Bathroom Essentials",
             "title_size": 31,
             "subheading": "Organize and beautify your bathroom with Milton's essentials! From corner racks to baby pots, our range blends style and practicality. Quality materials ensure durability, meeting the highest standards.",
-            "link": "\/",
+            "link": "shopify:\/\/products\/bathroom-brush-dble-clnr-kharata-plnger",
             "link_text": " View Product Range",
             "link_2": "",
             "link_text_2": "",
@@ -443,13 +443,13 @@
             "title": "Home Essentials",
             "title_size": 31,
             "subheading": "Enhance your home with Milton's essentials! Our collection, from storage solutions to gardening, combines organization and beauty. Affordable and high-quality, Milton products transform your home.",
-            "link": "\/",
+            "link": "shopify:\/\/collections\/home-essentials",
             "link_text": " View Product Range",
             "link_2": "",
             "link_text_2": "",
-            "text_position": "left",
+            "text_position": "right",
             "image": "shopify:\/\/shop_images\/home_essentials.png",
-            "indent_image": true,
+            "indent_image": false,
             "color_scheme": "2"
           }
         }
@@ -517,8 +517,8 @@
       "settings": {
         "full_width": true,
         "gutter_size": 20,
-        "space_above": true,
-        "space_below": true,
+        "space_above": false,
+        "space_below": false,
         "lazyload_images": true
       }
     },
@@ -528,44 +528,44 @@
         "block-1": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1.png",
+            "image": "shopify:\/\/shop_images\/1_211a190a-fc90-4124-9778-d16f371049c2.png",
             "link": "shopify:\/\/pages\/milton"
           }
         },
         "block-2": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2.png",
+            "image": "shopify:\/\/shop_images\/2_68c2ac9a-6492-4858-bbf5-87a65d09cf96.png",
             "link": "shopify:\/\/pages\/treo"
-          }
-        },
-        "block-3": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/3.png",
-            "link": "shopify:\/\/pages\/spotzero"
           }
         },
         "1ba0502d-21fb-4296-9247-f2a46485b251": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4.png",
+            "image": "shopify:\/\/shop_images\/3_e71c0f5e-c4a6-421a-a620-eb9aa58d8e8b.png",
             "link": "shopify:\/\/pages\/procook"
+          }
+        },
+        "block-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_0eab0be7-9f29-497d-878b-a19f8c61c3fd.png",
+            "link": "shopify:\/\/pages\/spotzero"
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3",
-        "1ba0502d-21fb-4296-9247-f2a46485b251"
+        "1ba0502d-21fb-4296-9247-f2a46485b251",
+        "block-3"
       ],
       "settings": {
-        "bg_color": "#6a6a6c",
-        "text_color": "#f9f9fb",
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "padding_top_mobile": 30,
+        "bg_color": "#e7e7e7",
+        "text_color": "#000000",
+        "padding_top": 6,
+        "padding_bottom": 32,
+        "padding_top_mobile": 10,
         "padding_bottom_mobile": 30,
         "title": "Shop by brand",
         "heading_size": "h2",
@@ -624,14 +624,8 @@
         "title": {
           "type": "title",
           "settings": {
-            "title": "Save 10% on your first purchase",
+            "title": "Subscribe today to hear first about our sales",
             "heading_size": "h2"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Sign up today and we'll send you a 10% discount code towards<br\/>your first purchase.<\/p>"
           }
         },
         "form": {
@@ -642,10 +636,8 @@
       },
       "block_order": [
         "title",
-        "text",
         "form"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "2",
         "align_text": "center",
@@ -734,6 +726,7 @@
     },
     "blog-posts": {
       "type": "blog-posts",
+      "disabled": true,
       "settings": {
         "title": "From the journal",
         "heading_size": "h2",
