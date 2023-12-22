@@ -10,7 +10,7 @@
             "title": "",
             "title_size": 70,
             "subheading": "",
-            "link": "shopify:\/\/collections",
+            "link": "shopify:\/\/collections\/flasks-bottles",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
@@ -82,14 +82,7 @@
         "featured-collections-3": {
           "type": "collection",
           "settings": {
-            "collection": "bakeware-serveware",
-            "title": ""
-          }
-        },
-        "featured-collections-4": {
-          "type": "collection",
-          "settings": {
-            "collection": "cleaning-products",
+            "collection": "jugs-tumblers",
             "title": ""
           }
         },
@@ -100,13 +93,6 @@
             "title": ""
           }
         },
-        "3bc3581f-538d-4875-bc7f-830040d227ea": {
-          "type": "collection",
-          "settings": {
-            "collection": "bakeware-serveware",
-            "title": ""
-          }
-        },
         "880bd874-809f-4710-a689-35d06f3e9f7d": {
           "type": "collection",
           "settings": {
@@ -114,24 +100,45 @@
             "title": ""
           }
         },
-        "5fb43c1b-73d2-4e10-8800-98463f0ee31d": {
+        "9da640d2-4e5d-41bf-a975-8b71a8bccfa6": {
           "type": "collection",
           "settings": {
-            "collection": "appam-appachetty",
-            "title": "Appam & Appachetty"
+            "collection": "electrical-appliances",
+            "title": ""
+          }
+        },
+        "3bc3581f-538d-4875-bc7f-830040d227ea": {
+          "type": "collection",
+          "settings": {
+            "collection": "bakeware-serveware",
+            "title": ""
+          }
+        },
+        "377dc1b7-9e5d-44ce-958b-6ff047255595": {
+          "type": "collection",
+          "settings": {
+            "collection": "home-essentials",
+            "title": ""
+          }
+        },
+        "featured-collections-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "cleaning-products",
+            "title": ""
+          }
+        },
+        "60ebd72a-406c-4f44-b8a0-ec3f30efd206": {
+          "type": "collection",
+          "settings": {
+            "collection": "buckets-dustbins",
+            "title": ""
           }
         },
         "9b8b7f22-9ec5-4877-8f48-dab6421e55fb": {
           "type": "collection",
           "settings": {
             "collection": "ice-packs-pails",
-            "title": ""
-          }
-        },
-        "05c269fd-5ec5-4ba0-b625-ff718f2ddd08": {
-          "type": "collection",
-          "settings": {
-            "collection": "copper-bottles",
             "title": ""
           }
         }
@@ -141,13 +148,14 @@
         "featured-collections-1",
         "featured-collections-2",
         "featured-collections-3",
-        "featured-collections-4",
         "featured-collections-5",
-        "3bc3581f-538d-4875-bc7f-830040d227ea",
         "880bd874-809f-4710-a689-35d06f3e9f7d",
-        "5fb43c1b-73d2-4e10-8800-98463f0ee31d",
-        "9b8b7f22-9ec5-4877-8f48-dab6421e55fb",
-        "05c269fd-5ec5-4ba0-b625-ff718f2ddd08"
+        "9da640d2-4e5d-41bf-a975-8b71a8bccfa6",
+        "3bc3581f-538d-4875-bc7f-830040d227ea",
+        "377dc1b7-9e5d-44ce-958b-6ff047255595",
+        "featured-collections-4",
+        "60ebd72a-406c-4f44-b8a0-ec3f30efd206",
+        "9b8b7f22-9ec5-4877-8f48-dab6421e55fb"
       ],
       "settings": {
         "title": "Categories",
@@ -162,7 +170,7 @@
         "title": "Best Sellers",
         "heading_size": "h2",
         "heading_position": "center",
-        "home_featured_products": "milton",
+        "home_featured_products": "bestsellers",
         "count": 5,
         "products_per_row": 5,
         "mobile_scrollable": true,
@@ -176,37 +184,37 @@
         "block-1": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1.png",
+            "image": "shopify:\/\/shop_images\/1_211a190a-fc90-4124-9778-d16f371049c2.png",
             "link": "shopify:\/\/pages\/milton"
           }
         },
         "block-2": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2.png",
+            "image": "shopify:\/\/shop_images\/2_68c2ac9a-6492-4858-bbf5-87a65d09cf96.png",
             "link": "shopify:\/\/pages\/treo"
-          }
-        },
-        "block-3": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/3.png",
-            "link": "shopify:\/\/pages\/spotzero"
           }
         },
         "1ba0502d-21fb-4296-9247-f2a46485b251": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4.png",
+            "image": "shopify:\/\/shop_images\/Shop_By_Brand_1.png",
             "link": "shopify:\/\/pages\/procook"
+          }
+        },
+        "block-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_0eab0be7-9f29-497d-878b-a19f8c61c3fd.png",
+            "link": "shopify:\/\/pages\/spotzero"
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3",
-        "1ba0502d-21fb-4296-9247-f2a46485b251"
+        "1ba0502d-21fb-4296-9247-f2a46485b251",
+        "block-3"
       ],
       "settings": {
         "bg_color": "#e7e7e7",
@@ -227,7 +235,7 @@
         "title": "New Arrivals",
         "heading_size": "h2",
         "heading_position": "center",
-        "home_featured_products": "milton",
+        "home_featured_products": "new-arrivals",
         "count": 5,
         "products_per_row": 5,
         "mobile_scrollable": true,
@@ -238,29 +246,11 @@
     "f55f9581-6e66-4d15-a146-1df42822e8a6": {
       "type": "slideshow",
       "blocks": {
-        "template--15936832503908__f55f9581-6e66-4d15-a146-1df42822e8a6-hero-1": {
-          "type": "hero",
-          "settings": {
-            "top_subheading": "",
-            "title": "<p>ProCook by Milton<\/p>",
-            "title_size": 40,
-            "subheading": "",
-            "link": "shopify:\/\/pages\/procook",
-            "link_text": "Explore Now",
-            "link_2": "shopify:\/\/pages\/procook",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/Carousel_Desktop.png",
-            "image_mobile": "shopify:\/\/shop_images\/Carousal_Banner_1_Mobile_f2e52161-9d48-43d8-b155-b3473fa88bfc.png",
-            "overlay_opacity": 16
-          }
-        },
         "9b04e57f-8a68-4791-83ef-1fd7606c18cd": {
           "type": "hero",
           "settings": {
             "top_subheading": "",
-            "title": "<p>Treo By Milton<\/p>",
+            "title": "<p>Treo by Milton<\/p>",
             "title_size": 40,
             "subheading": "",
             "link": "shopify:\/\/pages\/treo",
@@ -269,15 +259,52 @@
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/Carousel_Desktop_1.png",
-            "image_mobile": "shopify:\/\/shop_images\/Carousal_Banner_2_Mobile_ee4f7cba-9cdf-4858-b192-d760dee2e3a2.png",
+            "image": "shopify:\/\/shop_images\/Carousel_Desktop_2.png",
+            "image_mobile": "shopify:\/\/shop_images\/Carousel_Mobile_350_x_203_px_1.png",
             "overlay_opacity": 20
+          }
+        },
+        "template--15936832503908__f55f9581-6e66-4d15-a146-1df42822e8a6-hero-1": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>Milton ProCook<\/p>",
+            "title_size": 40,
+            "subheading": "",
+            "link": "shopify:\/\/pages\/procook",
+            "link_text": "Explore Now",
+            "link_2": "shopify:\/\/pages\/procook",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/Carousel_Desktop_4.png",
+            "image_mobile": "shopify:\/\/shop_images\/Carousel_Mobile_350_x_203_px_2.png",
+            "overlay_opacity": 16
+          }
+        },
+        "f68adf89-d6ee-4696-8c89-792b3888262c": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>Spotzero by Milton<\/p>",
+            "title_size": 40,
+            "subheading": "",
+            "link": "shopify:\/\/pages\/spotzero",
+            "link_text": "Explore Now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/Carousel_Desktop_3.png",
+            "image_mobile": "shopify:\/\/shop_images\/Carousel_Mobile_350_x_203_px.png",
+            "overlay_opacity": 0
           }
         }
       },
       "block_order": [
+        "9b04e57f-8a68-4791-83ef-1fd7606c18cd",
         "template--15936832503908__f55f9581-6e66-4d15-a146-1df42822e8a6-hero-1",
-        "9b04e57f-8a68-4791-83ef-1fd7606c18cd"
+        "f68adf89-d6ee-4696-8c89-792b3888262c"
       ],
       "settings": {
         "full_width": true,
@@ -287,6 +314,23 @@
         "autoplay": true,
         "autoplay_speed": 7,
         "lazyload_images": true
+      }
+    },
+    "e3c8dfe1-a467-44d8-ac77-0039a8935051": {
+      "type": "featured-collection",
+      "custom_css": [
+        "@media only screen and (min-width: 750px) {.index-section {margin-bottom: 0; }}"
+      ],
+      "settings": {
+        "title": "Featured Products",
+        "heading_size": "h2",
+        "heading_position": "center",
+        "home_featured_products": "featured-products",
+        "count": 5,
+        "products_per_row": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
       }
     },
     "da518212-2604-410b-abff-325effdac263": {
@@ -334,12 +378,13 @@
         "template--15844654547044__da518212-2604-410b-abff-325effdac263-advanced-2"
       ],
       "custom_css": [
-        ".promo-grid__bg img.image-fit {}"
+        ".flex-grid__item {padding-top: 0;}",
+        "@media only screen and (max-width: 749px) {image-element.aos-init.aos-animate {}}"
       ],
       "settings": {
         "full_width": true,
         "gutter_size": 20,
-        "space_above": true,
+        "space_above": false,
         "space_below": false,
         "lazyload_images": true
       }
@@ -351,16 +396,16 @@
           "type": "product",
           "settings": {
             "featured_product": "granito-induction-kadhai-with-glass-lid",
-            "vertical": 43,
-            "horizontal": 50
+            "vertical": 25,
+            "horizontal": 60
           }
         },
         "block-2": {
           "type": "product",
           "settings": {
             "featured_product": "hard-anodized-fry-pan-with-stainless-steel-lid",
-            "vertical": 70,
-            "horizontal": 25
+            "vertical": 60,
+            "horizontal": 40
           }
         },
         "block-3": {
@@ -368,7 +413,7 @@
           "settings": {
             "featured_product": "tawa-hard-anodized",
             "vertical": 85,
-            "horizontal": 70
+            "horizontal": 60
           }
         }
       },
@@ -377,11 +422,15 @@
         "block-2",
         "block-3"
       ],
+      "custom_css": [
+        ".index-section {margin-top: 0;}",
+        ".hotspots__title {padding-top: 0;}"
+      ],
       "settings": {
         "title": "Shop the look",
         "heading_size": "h2",
         "heading_position": "center",
-        "image": "shopify:\/\/shop_images\/hard-anodised_1080x849_e6fa23a6-1739-408d-9642-e35c55bfd0a3.jpg",
+        "image": "shopify:\/\/shop_images\/hard-anodised_1080x1080_963b16f4-e1fa-43ff-a944-00575eff712f.jpg",
         "indent_image": true,
         "image_position": "right",
         "hotspot_style": "bag",
@@ -561,6 +610,7 @@
     "logo-list",
     "1ca9e6b3-1e17-41e2-9f50-b93de25bae5d",
     "f55f9581-6e66-4d15-a146-1df42822e8a6",
+    "e3c8dfe1-a467-44d8-ac77-0039a8935051",
     "da518212-2604-410b-abff-325effdac263",
     "hotspots",
     "newsletter",

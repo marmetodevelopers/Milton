@@ -73,17 +73,19 @@
     {%- endif -%}
 
     {%- if isModal -%}
-      <p class="h2 product-single__title">
+      <p class="h2 product-single__title"> 
         {{ product.title }}
       </p>
+   
+
     {%- else -%}
-      <h1 class="h2 product-single__title">
+   <span>   <h1 class="h2 product-single__title">
         {%- unless product.empty? -%}
           {{ product.title }}
         {%- else -%}
           {{ 'home_page.onboarding.product_title' | t }}
         {%- endunless -%}
-      </h1>
+      </h1> </span>   
     {%- endif -%}
 
     {%- if settings.vendor_enable or sku_enable -%}
@@ -115,6 +117,7 @@
 
       <div class="product-single__header--mobile medium-up--hide">
         {{ product_header }}
+        
       </div>
 
       <div class="product-grid__container product--images grid{% unless image_position == 'left' %} grid--product-images-right{% endunless %}{% if mobile_layout == 'partial' %} grid--product-images--partial{% endif %}">
@@ -147,6 +150,7 @@
           <div class="product-single__meta">
             <div class="product-block product-block--header product-single__header small--hide">
               {{ product_header }}
+              
             </div>
 
             <div data-product-blocks>

@@ -16,7 +16,7 @@
     "color_header_text": "#000000",
     "color_announcement": "#ee3d43",
     "color_announcement_text": "#ffffff",
-    "color_header_search": "#efebeb",
+    "color_header_search": "#f7f0f0",
     "color_footer": "#f9f9fb",
     "color_footer_border": "#e8e8e1",
     "color_footer_text": "#272831",
@@ -29,7 +29,7 @@
     "color_scheme_3_bg": "#efebeb",
     "color_scheme_3_text": "#272831",
     "color_scheme_3_texture": "none",
-    "type_header_font_family": "poppins_n4",
+    "type_header_font_family": "poppins_n6",
     "type_header_spacing": "0",
     "type_header_base_size": 36,
     "type_header_line_height": 1.2,
@@ -48,6 +48,7 @@
     "icon_linecaps": "round",
     "animate_page_transitions": true,
     "superscript_decimals": true,
+    "product_save_type": "percent",
     "vendor_enable": true,
     "quick_shop_enable": true,
     "quick_add_enable": true,
@@ -66,14 +67,17 @@
     "cart_collection": "business-card-cases",
     "cart_notes_enable": true,
     "cart_terms_conditions_enable": false,
-    "social_facebook_link": "https:\/\/www.facebook.com\/shopify",
-    "social_pinterest_link": "https:\/\/www.pinterest.com\/shopify",
-    "social_instagram_link": "https:\/\/instagram.com\/shopify",
-    "social_tiktok_link": "https:\/\/www.tiktok.com\/@shopify",
+    "social_facebook_link": "https:\/\/www.facebook.com\/milton.in",
+    "social_twitter_link": "https:\/\/twitter.com\/MiltonHomewares",
+    "social_pinterest_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/milton_homewares\/",
+    "social_tiktok_link": "",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCfOPENEYyDMNd1Aqswa6zwQ",
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": true,
     "favicon": "shopify:\/\/shop_images\/favicon-u.png",
+    "predictive_search_enabled": true,
     "show_breadcrumbs": true,
     "show_breadcrumbs_collection_link": false,
     "checkout_logo_image": "shopify:\/\/shop_images\/Milton_Logo.png",
@@ -940,6 +944,12 @@
     "blocks": {
       "opinew-global-code": {
         "type": "shopify:\/\/apps\/opinew-product-reviews-app\/blocks\/global\/e1d8e0dc-17ff-4e4a-8a8a-1e73c8ef8676",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "1744347199190486471": {
+        "type": "shopify:\/\/apps\/hulk-advanced-wishlist\/blocks\/app\/330d9272-08ea-4193-b3e0-475a69fa65fa",
         "disabled": false,
         "settings": {
         }

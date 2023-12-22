@@ -86,19 +86,20 @@
         "footer-1": {
           "type": "contact",
           "settings": {
-            "phone": "+1 800 123 1234",
-            "contact": "",
+            "phone": "1800 209 2151",
+            "contact": "contact",
             "chat": "",
             "enable_social": true
           }
         },
         "footer-2": {
           "type": "payment",
+          "disabled": true,
           "settings": {
-            "show_payment_icons": true,
-            "show_locale_selector": true,
-            "show_currency_selector": true,
-            "show_currency_flags": true
+            "show_payment_icons": false,
+            "show_locale_selector": false,
+            "show_currency_selector": false,
+            "show_currency_flags": false
           }
         }
       },
@@ -110,7 +111,7 @@
         "footer-2"
       ],
       "settings": {
-        "show_newsletter": true,
+        "show_newsletter": false,
         "newsletter_richtext": "<p>Subscribe today to hear first about our sales<\/p>",
         "footer_main_menu": true,
         "show_copyright": false,

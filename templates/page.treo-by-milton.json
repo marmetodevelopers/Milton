@@ -58,7 +58,7 @@
       "settings": {
         "title": "Best Sellers",
         "heading_size": "h2",
-        "heading_position": "left",
+        "heading_position": "center",
         "home_featured_products": "treo-bestsellers-1",
         "count": 5,
         "products_per_row": 5,
@@ -73,7 +73,7 @@
         "template--15972672962660__7c49b649-d468-4c3e-a429-5d491db6fcf6-text_block-1": {
           "type": "text_block",
           "settings": {
-            "icon": "chat",
+            "icon": "thumbs-up",
             "title": "Cherish Every Sip",
             "text": "<p>Unwind with TREO's stylish serveware, perfect for rainy latte moments or family dinners. Crafted for elegance, each piece promises a memory in every sip.<\/p>"
           }
@@ -81,7 +81,7 @@
         "template--15972672962660__7c49b649-d468-4c3e-a429-5d491db6fcf6-text_block-2": {
           "type": "text_block",
           "settings": {
-            "icon": "chat",
+            "icon": "gift",
             "title": "Gifts That Speak Love",
             "text": "<p>Find the ideal gift in TREO's collection, adding magic to special occasions. Our curated range ensures the joy of gifting matches the love you intend to share.<\/p>"
           }
@@ -89,7 +89,7 @@
         "template--15972672962660__7c49b649-d468-4c3e-a429-5d491db6fcf6-text_block-3": {
           "type": "text_block",
           "settings": {
-            "icon": "chat",
+            "icon": "charity",
             "title": "Bake, Bond, Celebrate",
             "text": "<p>Bake up a storm for your kid's birthday with TREO's cookware. Exceptional quality and style combine, promising a future filled with cherished family memories.<\/p>"
           }
@@ -115,7 +115,7 @@
       "settings": {
         "title": "New Arrivals",
         "heading_size": "h2",
-        "heading_position": "left",
+        "heading_position": "center",
         "home_featured_products": "treo-new-arriavls",
         "count": 5,
         "products_per_row": 5,
@@ -229,10 +229,10 @@
           "type": "slide",
           "settings": {
             "top_subheading": "",
-            "title": " Glass Cookware And Bakeware Products",
+            "title": "Glass Cookware And Bakeware Products",
             "title_size": 26,
             "subheading": "Discover exquisite glassware at Treo, crafted from premium materials globally. Our collection includes glass bowls, baking dishes, and borosilicate cookware. Elevate your kitchen with elegance, style, and quality from Treo – where luxury meets functionality. Perfect for daily use or thoughtful gifts, our products redefine home aesthetics. Experience the allure of Treo today.",
-            "link": "",
+            "link": "shopify:\/\/collections\/glass-bakeware-casseroles",
             "link_text": "View Product Range",
             "link_2": "",
             "link_text_2": "",
@@ -340,9 +340,9 @@
           "settings": {
             "top_subheading": "",
             "title": "Glass & Ceramic Serveware Products And Sets",
-            "title_size": 60,
+            "title_size": 26,
             "subheading": "Tailored for longer text and smaller images. Explain more about your promotion.",
-            "link": "",
+            "link": "shopify:\/\/collections\/fridge-glass-containers",
             "link_text": " View Product Range",
             "link_2": "",
             "link_text_2": "",
@@ -374,9 +374,9 @@
           "settings": {
             "top_subheading": "",
             "title": "Glass Storage",
-            "title_size": 60,
+            "title_size": 26,
             "subheading": "Discover Treo's extensive range for all your storage needs. From chic glass bottles to a diverse selection of containers, jars, and canisters, we promise freshness for your treats and ingredients. Store, serve, and savor with Treo!",
-            "link": "\/",
+            "link": "shopify:\/\/collections\/storage-containers",
             "link_text": " View Product Range",
             "link_2": "",
             "link_text_2": "",
@@ -407,10 +407,10 @@
           "type": "slide",
           "settings": {
             "top_subheading": "",
-            "title": "Glass Drinkware",
-            "title_size": 60,
+            "title": "Glass Drinkware & Lunchbox",
+            "title_size": 26,
             "subheading": "Experience the versatility of Treo's tumbler glasses and barware, perfect for daily hydration or entertaining guests. Explore our stylish and durable collection, ensuring both functionality and elegance in every sip.",
-            "link": "\/",
+            "link": "shopify:\/\/collections\/glass-bottles",
             "link_text": " View Product Range",
             "link_2": "",
             "link_text_2": "",
@@ -442,15 +442,15 @@
           "settings": {
             "top_subheading": "",
             "title": "Gifting",
-            "title_size": 45,
+            "title_size": 26,
             "subheading": "Discover our premium glassware collection, featuring the Diya collection, barware, glass tiffins, heat-resistant bowls, and snack sets. Treo's stylish and functional items make cooking and serving a pleasure. Find ideal gifts for Diwali, Christmas, and New Year's celebrations, suitable for family, friends, and coworkers.",
-            "link": "\/",
+            "link": "shopify:\/\/collections\/tumblers",
             "link_text": " View Product Range",
             "link_2": "",
             "link_text_2": "",
-            "text_position": "left",
+            "text_position": "right",
             "image": "shopify:\/\/shop_images\/Side_By_Side_5_1.jpg",
-            "indent_image": true,
+            "indent_image": false,
             "color_scheme": "2"
           }
         }
@@ -530,41 +530,41 @@
         "block-1": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1.png",
+            "image": "shopify:\/\/shop_images\/1_211a190a-fc90-4124-9778-d16f371049c2.png",
             "link": "shopify:\/\/pages\/milton"
           }
         },
         "block-2": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2.png",
+            "image": "shopify:\/\/shop_images\/2_68c2ac9a-6492-4858-bbf5-87a65d09cf96.png",
             "link": "shopify:\/\/pages\/treo"
-          }
-        },
-        "block-3": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/3.png",
-            "link": "shopify:\/\/pages\/spotzero"
           }
         },
         "1ba0502d-21fb-4296-9247-f2a46485b251": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4.png",
+            "image": "shopify:\/\/shop_images\/3_e71c0f5e-c4a6-421a-a620-eb9aa58d8e8b.png",
             "link": "shopify:\/\/pages\/procook"
+          }
+        },
+        "block-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_0eab0be7-9f29-497d-878b-a19f8c61c3fd.png",
+            "link": "shopify:\/\/pages\/spotzero"
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3",
-        "1ba0502d-21fb-4296-9247-f2a46485b251"
+        "1ba0502d-21fb-4296-9247-f2a46485b251",
+        "block-3"
       ],
       "settings": {
-        "bg_color": "#6a6a6c",
-        "text_color": "#f9f9fb",
+        "bg_color": "#e7e7e7",
+        "text_color": "#000000",
         "padding_top": 60,
         "padding_bottom": 60,
         "padding_top_mobile": 30,
@@ -626,14 +626,8 @@
         "title": {
           "type": "title",
           "settings": {
-            "title": "Save 10% on your first purchase",
+            "title": "Subscribe today to hear first about our sales",
             "heading_size": "h2"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Sign up today and we'll send you a 10% discount code towards<br\/>your first purchase.<\/p>"
           }
         },
         "form": {
@@ -644,7 +638,6 @@
       },
       "block_order": [
         "title",
-        "text",
         "form"
       ],
       "settings": {
@@ -735,6 +728,7 @@
     },
     "blog-posts": {
       "type": "blog-posts",
+      "disabled": true,
       "settings": {
         "title": "From the journal",
         "heading_size": "h2",

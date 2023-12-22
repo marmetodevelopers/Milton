@@ -33,6 +33,7 @@
   {%- render 'font-face' -%}
   {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
   {{ 'next.css' | asset_url | stylesheet_tag }}
+  {{ 'custom.css' | asset_url | stylesheet_tag }}
   {%- render 'css-variables' -%}
 
   {%- liquid
@@ -59,6 +60,7 @@
         type="module"
         id="breeze-script-tag"
         data-environment="release"
+        data-merchantid="milton"
         data-platform="shopify"
         data-enable-external-trackers="false"
         data-enable-snap-tracker="false"
@@ -159,6 +161,7 @@
         window.hulkappsWishlist.baseURL = '/apps/advanced-wishlist/api';
         window.hulkappsWishlist.hasAppBlockSupport = '1';
         </script>
+  {% render 'rapid-search-settings' %}
 </head>
 
 <body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %}" data-transitions="{{ settings.animate_page_transitions }}" data-button_style="{{ settings.button_style }}" data-edges="{{ settings.roundness }}" data-type_header_capitalize="{{ settings.type_header_capitalize }}" data-swatch_style="{{ settings.swatch_style }}" data-grid-style="{{ settings.product_grid_style }}">
@@ -193,5 +196,16 @@
   -%}
   <div id="ProductModals"></div>
 {% render 'hulkappsWishlistPopup' %}
+
+  <script>
+    var interval = setInterval(function() {
+      if(document.readyState === 'complete') {
+$("#shopify-block-aa5f3615-4c8e-4a01-94a6-5a8d76417132").insertAfter($('.product-grid__content .product-single__title'));
+$('.product-grid__content .product-single__title').parent().addClass('customHulkClass');
+        clearInterval(interval);
+      }    
+    }, 100);
+  </script>
+
 </body>
 </html>

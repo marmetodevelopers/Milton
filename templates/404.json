@@ -8,7 +8,15 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Popular picks"
+        "title": "Popular picks",
+        "heading_size": "h2",
+        "heading_position": "center",
+        "home_featured_products": "bestsellers",
+        "count": 15,
+        "products_per_row": 3,
+        "mobile_scrollable": false,
+        "view_all": true,
+        "divider": false
       }
     }
   },
