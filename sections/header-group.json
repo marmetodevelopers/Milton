@@ -8,21 +8,21 @@
         "toolbar-0": {
           "type": "announcement",
           "settings": {
-            "richtext": "<p>Exclusive Deal: Shop above Rs. 1,499\/- and Avail a 5% Discount!<\/p>",
+            "richtext": "<p>Exclusive Deal: Shop above Rs. 1,499 and Avail a 5% Discount!<\/p>",
             "richtext_mobile": "<p>Shop above Rs. 1,499 & Get 5% Discount!<\/p>"
           }
         },
         "toolbar-1": {
           "type": "announcement",
           "settings": {
-            "richtext": "<p>Gifting Deal: Shop above Rs. 9,999\/- and Avail a 10%<\/p>",
+            "richtext": "<p>Gifting Deal: Shop above Rs. 9,999 and Avail a 10% Discount!<\/p>",
             "richtext_mobile": "<p>Shop above Rs. 9,999 & Get 10% Discount!<\/p>"
           }
         },
         "daa28145-6d67-427e-bc21-c7bec43fdd0d": {
           "type": "announcement",
           "settings": {
-            "richtext": "<p>Enjoy Free Shipping on Orders Above Rs. 499\/- & Nationwide Delivery Available<\/p>",
+            "richtext": "<p>Enjoy Free Shipping on Orders Above Rs. 499 & Nationwide Delivery Available<\/p>",
             "richtext_mobile": "<p>Free Shipping Above Rs. 499 & Nationwide Delivery Available<\/p>"
           }
         }
@@ -55,11 +55,14 @@
       "block_order": [
         "3c3eaf91-0c23-448a-8ca3-1242a3658042"
       ],
+      "custom_css": [
+        "@media only screen and (max-width: 749px) {img.medium-up--hide.image-element {max-height: 39px !important; }}"
+      ],
       "settings": {
         "main_menu_link_list": "mega-menu",
         "hover_menu": true,
         "main_menu_alignment": "below",
-        "mega_products": true,
+        "mega_products": false,
         "header_sticky": true,
         "header_footer_menu": true,
         "sticky_index": false,

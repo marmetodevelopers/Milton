@@ -1,5 +1,39 @@
 {
   "sections": {
+    "eb8e0328-76de-4dab-bdbd-73a82cab77d3": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15936832602212__eb8e0328-76de-4dab-bdbd-73a82cab77d3-hero-1": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 70,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/contact-banner_final-desktop.jpg",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--15936832602212__eb8e0328-76de-4dab-bdbd-73a82cab77d3-hero-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": false
+      }
+    },
     "1c299980-2c4f-440f-b83b-11b70d6fb888": {
       "type": "slideshow-image",
       "blocks": {
@@ -22,6 +56,7 @@
         "template--15936832602212__1c299980-2c4f-440f-b83b-11b70d6fb888-image-1",
         "template--15936832602212__1c299980-2c4f-440f-b83b-11b70d6fb888-image-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "style": "arrows",
@@ -58,6 +93,7 @@
         "heading",
         "text"
       ],
+      "disabled": true,
       "settings": {
         "align_text": "center",
         "narrow_column": true,
@@ -68,17 +104,18 @@
     "form": {
       "type": "contact-form",
       "settings": {
-        "title": "Contact us",
+        "title": "Contact Us",
         "heading_size": "h2",
-        "heading_position": "left",
+        "heading_position": "center",
         "text": "",
         "show_phone": false,
         "narrow_column": true,
-        "color_scheme": "1"
+        "color_scheme": "2"
       }
     }
   },
   "order": [
+    "eb8e0328-76de-4dab-bdbd-73a82cab77d3",
     "1c299980-2c4f-440f-b83b-11b70d6fb888",
     "main",
     "rich-text",

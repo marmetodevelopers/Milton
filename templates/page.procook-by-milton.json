@@ -58,7 +58,7 @@
       "settings": {
         "title": "Best Sellers",
         "heading_size": "h2",
-        "heading_position": "left",
+        "heading_position": "center",
         "home_featured_products": "procook-bestsellers",
         "count": 5,
         "products_per_row": 5,
@@ -73,7 +73,7 @@
         "template--15972672962660__7c49b649-d468-4c3e-a429-5d491db6fcf6-text_block-1": {
           "type": "text_block",
           "settings": {
-            "icon": "chat",
+            "icon": "trophy",
             "title": "Culinary Mastery Unleashed",
             "text": "<p>Elevate your cooking game with Milton ProCook. From professional chefs to cooking enthusiasts, our range offers superior tools for delightful creations every day.<\/p>"
           }
@@ -81,7 +81,7 @@
         "template--15972672962660__7c49b649-d468-4c3e-a429-5d491db6fcf6-text_block-2": {
           "type": "text_block",
           "settings": {
-            "icon": "chat",
+            "icon": "gift",
             "title": "Tools for Culinary Wizard",
             "text": "<p>Explore the magic of effortless cooking with Milton ProCook's diverse cookware collections. Crafted for superior heat distribution and easy maintenance, redefine your culinary experience.<\/p>"
           }
@@ -89,7 +89,7 @@
         "template--15972672962660__7c49b649-d468-4c3e-a429-5d491db6fcf6-text_block-3": {
           "type": "text_block",
           "settings": {
-            "icon": "chat",
+            "icon": "store",
             "title": " Embark on Culinary Excellence",
             "text": "<p>Upgrade your kitchen essentials with Milton ProCook. Discover the art of healthy cooking with our Tri-Ply Stainless Steel, Non-Stick, and more. Shop now to redefine your daily cooking journey.<\/p>"
           }
@@ -115,7 +115,7 @@
       "settings": {
         "title": "New Arrivals",
         "heading_size": "h2",
-        "heading_position": "left",
+        "heading_position": "center",
         "home_featured_products": "procook-new-arrivals",
         "count": 5,
         "products_per_row": 5,
@@ -232,7 +232,7 @@
             "title": "Pressure Cooker Range",
             "title_size": 26,
             "subheading": "Milton ProCook's Pressure Cookers are essential kitchen tools, saving time and energy while ensuring hygiene with 100% food safety. Flame safe and compatible with both Induction & Non-Induction cooktops, these cookers are versatile. The sturdy build guarantees durability, and premium Bakelite handles ensure a cool and secure grip. Overall, it's a range designed for healthy, safe, and convenient cooking.",
-            "link": "",
+            "link": "shopify:\/\/collections\/pressure-cookers",
             "link_text": "View Product Range",
             "link_2": "",
             "link_text_2": "",
@@ -342,7 +342,7 @@
             "title": "Tri-Ply Stainless Steel Products",
             "title_size": 28,
             "subheading": "Experience cooking excellence with Milton ProCook's Tri-Ply Stainless Steel cookware. The innovative three-layered metal construction ensures even heat distribution for uniform cooking. With sturdy handles, induction compatibility, and dishwasher-safe convenience, these items blend durability, efficiency, and versatility, enhancing your culinary journey. Elevate your kitchen with this valuable addition.",
-            "link": "",
+            "link": "shopify:\/\/collections\/stainless-steel-bottles",
             "link_text": " View Product Range",
             "link_2": "",
             "link_text_2": "",
@@ -376,7 +376,7 @@
             "title": "Non-Stick Products",
             "title_size": 27,
             "subheading": "Explore versatile cooking with Milton ProCook's Non-Stick collection. Available in both induction and non-induction variants, these cookware pieces cater to diverse kitchen setups. Premium Bakelite handles ensure a secure grip, while the 5-layer non-stick coating guarantees smooth cooking and easy cleaning. Flame-safe, dishwasher-friendly, and 100% food-safe, this collection provides a convenient, safe, and efficient cooking solution for various cooktops.",
-            "link": "\/",
+            "link": "shopify:\/\/collections\/all",
             "link_text": " View Product Range",
             "link_2": "",
             "link_text_2": "",
@@ -410,7 +410,7 @@
             "title": "Hard Anodised",
             "title_size": 27,
             "subheading": "Experience superior cooking with Milton ProCook's Hard Anodised cookware. Two times harder than alloyed steel, it's exceptionally durable and scratch-resistant. Heavy Gauge aluminum ensures even heat dispersion and steady retention. Enjoy sturdy, comfortable handles for secure gripping. Flame and hot plate safe, this collection combines versatility, durability, and ease of use for efficient and safe cooking.",
-            "link": "\/",
+            "link": "shopify:\/\/products\/sandwich-toaster",
             "link_text": " View Product Range",
             "link_2": "",
             "link_text_2": "",
@@ -444,13 +444,13 @@
             "title": "Sandwich Bottom Stainless Steel cookware collection",
             "title_size": 27,
             "subheading": "Elevate your cooking with Milton ProCook's Sandwich Bottom Stainless Steel cookware. Featuring riveted stainless-steel handles for lasting use, ensuring secure and comfortable grip. Hot plate safe and dishwasher-friendly, these items promise durability and convenience. Induction compatibility expands cooktop options. In summary, it's a durable, convenient, and versatile addition to any kitchen.",
-            "link": "\/",
+            "link": "shopify:\/\/collections\/sandwich-griller",
             "link_text": " View Product Range",
             "link_2": "",
             "link_text_2": "",
             "text_position": "right",
-            "image": "shopify:\/\/shop_images\/Sandwich_Griller.png",
-            "indent_image": true,
+            "image": "shopify:\/\/shop_images\/Sandwich_Bottom.webp",
+            "indent_image": false,
             "color_scheme": "2"
           }
         }
@@ -530,41 +530,41 @@
         "block-1": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1.png",
+            "image": "shopify:\/\/shop_images\/1_211a190a-fc90-4124-9778-d16f371049c2.png",
             "link": "shopify:\/\/pages\/milton"
           }
         },
         "block-2": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2.png",
+            "image": "shopify:\/\/shop_images\/2_68c2ac9a-6492-4858-bbf5-87a65d09cf96.png",
             "link": "shopify:\/\/pages\/treo"
-          }
-        },
-        "block-3": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/3.png",
-            "link": "shopify:\/\/pages\/spotzero"
           }
         },
         "1ba0502d-21fb-4296-9247-f2a46485b251": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4.png",
+            "image": "shopify:\/\/shop_images\/3_e71c0f5e-c4a6-421a-a620-eb9aa58d8e8b.png",
             "link": "shopify:\/\/pages\/procook"
+          }
+        },
+        "block-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_0eab0be7-9f29-497d-878b-a19f8c61c3fd.png",
+            "link": "shopify:\/\/pages\/spotzero"
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3",
-        "1ba0502d-21fb-4296-9247-f2a46485b251"
+        "1ba0502d-21fb-4296-9247-f2a46485b251",
+        "block-3"
       ],
       "settings": {
-        "bg_color": "#6a6a6c",
-        "text_color": "#f9f9fb",
+        "bg_color": "#e7e7e7",
+        "text_color": "#000000",
         "padding_top": 60,
         "padding_bottom": 60,
         "padding_top_mobile": 30,
@@ -626,14 +626,8 @@
         "title": {
           "type": "title",
           "settings": {
-            "title": "Save 10% on your first purchase",
+            "title": "Subscribe today to hear first about our sales",
             "heading_size": "h2"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Sign up today and we'll send you a 10% discount code towards<br\/>your first purchase.<\/p>"
           }
         },
         "form": {
@@ -644,7 +638,6 @@
       },
       "block_order": [
         "title",
-        "text",
         "form"
       ],
       "settings": {
@@ -735,6 +728,7 @@
     },
     "blog-posts": {
       "type": "blog-posts",
+      "disabled": true,
       "settings": {
         "title": "From the journal",
         "heading_size": "h2",

@@ -58,7 +58,7 @@
       "settings": {
         "title": "Best Sellers",
         "heading_size": "h2",
-        "heading_position": "left",
+        "heading_position": "center",
         "home_featured_products": "spotzero-bestsellers",
         "count": 5,
         "products_per_row": 5,
@@ -73,7 +73,7 @@
         "template--15972672962660__7c49b649-d468-4c3e-a429-5d491db6fcf6-text_block-1": {
           "type": "text_block",
           "settings": {
-            "icon": "chat",
+            "icon": "thumbs-up",
             "title": "Efficient Home Cleaning",
             "text": "<p>Spotzero offers advanced cleaning solutions, ensuring a quicker, hassle-free experience. Our products are designed for adaptability and multifaceted usage, revolutionizing your cleaning routine efficiently.<br\/><\/p>"
           }
@@ -81,7 +81,7 @@
         "template--15972672962660__7c49b649-d468-4c3e-a429-5d491db6fcf6-text_block-2": {
           "type": "text_block",
           "settings": {
-            "icon": "chat",
+            "icon": "ribbon",
             "title": "Innovative Cleaning Solutions",
             "text": "<p>Elevate your cleaning experience with Spotzero's innovative solutions. Our products are advanced, multifunctional, and cater to modern homemakers, reducing time and effort while maintaining affordability.<br\/><\/p>"
           }
@@ -89,7 +89,7 @@
         "template--15972672962660__7c49b649-d468-4c3e-a429-5d491db6fcf6-text_block-3": {
           "type": "text_block",
           "settings": {
-            "icon": "chat",
+            "icon": "globe",
             "title": "Transforming Home Maintenance",
             "text": "<p>Spotzero transforms age-old cleaning routines with evolved, convenient, and affordable products. Our comprehensive range is unmatched in originality, quality, and results, promising a transformed home maintenance experience.<\/p>"
           }
@@ -115,7 +115,7 @@
       "settings": {
         "title": "New Arrivals",
         "heading_size": "h2",
-        "heading_position": "left",
+        "heading_position": "center",
         "home_featured_products": "spotzero-new-arrivals",
         "count": 5,
         "products_per_row": 5,
@@ -229,10 +229,10 @@
           "type": "slide",
           "settings": {
             "top_subheading": "",
-            "title": " Glass Cookware And Bakeware Products",
+            "title": "Spin Mops & Floor Mops",
             "title_size": 26,
-            "subheading": "Discover exquisite glassware at Treo, crafted from premium materials globally. Our collection includes glass bowls, baking dishes, and borosilicate cookware. Elevate your kitchen with elegance, style, and quality from Treo – where luxury meets functionality. Perfect for daily use or thoughtful gifts, our products redefine home aesthetics. Experience the allure of Treo today.",
-            "link": "",
+            "subheading": "Explore our range of versatile and durable cleaning solutions. Our spin mop, dustpan set, and disinfectant cleaners ensure a spotless home. The mop's 360-degree movement and removable wringer make cleaning a breeze.",
+            "link": "shopify:\/\/collections\/spin-mops",
             "link_text": "View Product Range",
             "link_2": "",
             "link_text_2": "",
@@ -339,10 +339,10 @@
           "type": "slide",
           "settings": {
             "top_subheading": "",
-            "title": "Glass & Ceramic Serveware Products And Sets",
-            "title_size": 60,
-            "subheading": "Tailored for longer text and smaller images. Explain more about your promotion.",
-            "link": "",
+            "title": "Liquid Cleaning Products",
+            "title_size": 26,
+            "subheading": "Our disinfectant toilet and floor cleaners eliminate 99.9% of germs, ensuring a safe and hygienic living space.",
+            "link": "shopify:\/\/collections\/liquid-cleaners",
             "link_text": " View Product Range",
             "link_2": "",
             "link_text_2": "",
@@ -373,10 +373,10 @@
           "type": "slide",
           "settings": {
             "top_subheading": "",
-            "title": "Glass Storage",
-            "title_size": 60,
-            "subheading": "Discover Treo's extensive range for all your storage needs. From chic glass bottles to a diverse selection of containers, jars, and canisters, we promise freshness for your treats and ingredients. Store, serve, and savor with Treo!",
-            "link": "\/",
+            "title": "Buckets & Dustbins",
+            "title_size": 26,
+            "subheading": "Enhance your bathroom and maintain cleanliness with our Bucket & Dustbin collection. This durable option adds elegance to your space and is versatile for both hot and cold water. Our stylish swing bin, with an easy-to-use lid, is perfect for home and office use. Elevate your living spaces with these functional and chic essentials.",
+            "link": "shopify:\/\/collections\/buckets-dustbins",
             "link_text": " View Product Range",
             "link_2": "",
             "link_text_2": "",
@@ -407,10 +407,10 @@
           "type": "slide",
           "settings": {
             "top_subheading": "",
-            "title": "Glass Drinkware",
-            "title_size": 60,
-            "subheading": "Experience the versatility of Treo's tumbler glasses and barware, perfect for daily hydration or entertaining guests. Explore our stylish and durable collection, ensuring both functionality and elegance in every sip.",
-            "link": "\/",
+            "title": "Brushes, Brooms & Cleaning Cloths",
+            "title_size": 26,
+            "subheading": "Upgrade your cleaning with our Brushes, Brooms & Cleaning Cloths. Our specially designed floor broom, made of durable synthetic fiber, efficiently tackles dust on wet and dry surfaces. Spotzero by Milton offers innovative, lightweight, and durable products for versatile kitchen & bathroom use.",
+            "link": "shopify:\/\/collections\/brooms-brushes",
             "link_text": " View Product Range",
             "link_2": "",
             "link_text_2": "",
@@ -531,41 +531,41 @@
         "block-1": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1.png",
+            "image": "shopify:\/\/shop_images\/1_211a190a-fc90-4124-9778-d16f371049c2.png",
             "link": "shopify:\/\/pages\/milton"
           }
         },
         "block-2": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2.png",
+            "image": "shopify:\/\/shop_images\/2_68c2ac9a-6492-4858-bbf5-87a65d09cf96.png",
             "link": "shopify:\/\/pages\/treo"
-          }
-        },
-        "block-3": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/3.png",
-            "link": "shopify:\/\/pages\/spotzero"
           }
         },
         "1ba0502d-21fb-4296-9247-f2a46485b251": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4.png",
+            "image": "shopify:\/\/shop_images\/3_e71c0f5e-c4a6-421a-a620-eb9aa58d8e8b.png",
             "link": "shopify:\/\/pages\/procook"
+          }
+        },
+        "block-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_0eab0be7-9f29-497d-878b-a19f8c61c3fd.png",
+            "link": "shopify:\/\/pages\/spotzero"
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3",
-        "1ba0502d-21fb-4296-9247-f2a46485b251"
+        "1ba0502d-21fb-4296-9247-f2a46485b251",
+        "block-3"
       ],
       "settings": {
-        "bg_color": "#6a6a6c",
-        "text_color": "#f9f9fb",
+        "bg_color": "#e7e7e7",
+        "text_color": "#000000",
         "padding_top": 60,
         "padding_bottom": 60,
         "padding_top_mobile": 30,
@@ -627,14 +627,8 @@
         "title": {
           "type": "title",
           "settings": {
-            "title": "Save 10% on your first purchase",
+            "title": "Subscribe today to hear first about our sales",
             "heading_size": "h2"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Sign up today and we'll send you a 10% discount code towards<br\/>your first purchase.<\/p>"
           }
         },
         "form": {
@@ -645,7 +639,6 @@
       },
       "block_order": [
         "title",
-        "text",
         "form"
       ],
       "settings": {
@@ -736,6 +729,7 @@
     },
     "blog-posts": {
       "type": "blog-posts",
+      "disabled": true,
       "settings": {
         "title": "From the journal",
         "heading_size": "h2",

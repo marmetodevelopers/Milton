@@ -734,6 +734,7 @@
     },
     "blog-posts": {
       "type": "blog-posts",
+      "disabled": true,
       "settings": {
         "title": "From the journal",
         "heading_size": "h2",
