@@ -10,7 +10,7 @@
             "title": "",
             "title_size": 70,
             "subheading": "",
-            "link": "shopify:\/\/collections\/flasks-bottles",
+            "link": "shopify:\/\/collections\/bottles-flasks",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
@@ -61,7 +61,7 @@
         "featured-collections-0": {
           "type": "collection",
           "settings": {
-            "collection": "flasks-bottles",
+            "collection": "bottles-flasks",
             "title": ""
           }
         },
@@ -343,7 +343,7 @@
             "heading": "",
             "textarea": "",
             "cta_text1": "",
-            "cta_link1": "shopify:\/\/collections\/flasks-bottles",
+            "cta_link1": "shopify:\/\/collections\/bottles-flasks",
             "cta_text2": "",
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/Offer_banner_1.png",
