@@ -2,8 +2,8 @@
   "sections": {
     "pledge-form": {
       "type": "take-pledge",
-      "disabled": true,
       "settings": {
+        "color_scheme": "1"
       }
     }
   },
