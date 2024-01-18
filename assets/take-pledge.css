@@ -1,0 +1,34 @@
+.pledge-width-control {
+  max-width: fit-content;
+  padding-top: 5rem;
+}
+.pledge__title {
+  margin-bottom: 2rem;
+}
+.pledge__top-container,
+.pledge__bottom-container {
+  margin-bottom: 2rem;
+}
+.pledge__bottom-container,
+.thank-you__message-container {
+  padding-top: 1.6rem;
+  border-top: black 1px solid;
+}
+.pledge__descritpion p {
+  margin-bottom: 1.5rem;
+}
+form#pledge-Form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3rem;
+}
+dialog#pledge__form-container {
+  min-width: 32rem;
+}
+#pledge__form-container label {
+  margin: 0;
+}
+#pledge__form-container input {
+  margin-bottom: 1rem;
+  display: block;
+}

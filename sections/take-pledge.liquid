@@ -1,3 +1,54 @@
+{{ 'take-pledge.css' | asset_url | stylesheet_tag }}
+
+<div class="take-pledge-{{ section.id }} color-scheme-{{ section.settings.color_scheme }}">
+  <div class="page-width text-{{ section.settings.align_text }} pledge-width-control">
+    <div class="pledge__main-container">
+        <div class="pledge__top-container">
+            <div class="pledge__title">
+                <p>Reduce | Reuse | Recycle</p>
+                <p>On an Average a Person in India generate 4 Kg of waste plastic every day</p>
+            </div>
+            <div class="pledge__next-button">
+            <button class="btn">Next</button>
+            </div>
+        </div>
+        <div class="pledge__bottom-container hide">
+            <div class="pledge__descritpion">
+                <p>Take a pledge to reduce & reuse. With every pledge Milton will recycle 1kg Plastic on your behalf</p>
+            </div>
+            <div class="pledge__start-button">
+                <button class="btn">Take Pledge</button>
+            </div>
+        </div>
+    </div>
+
+    <dialog id="pledge__form-container">
+      <form method="POST" action="https://script.google.com/macros/s/AKfycbzRGnWNhhc0Pa0BB5SLweJTzeLdODPwbROTbSd0Cy8AFklyif_4KlYIugz1YzcSJXbq/exec" id="pledge-Form">
+        <label for="Name">Name:</label>
+        <input type="text" id="name" name="Name" required>
+
+        <label for="Email">Email:</label>
+        <input type="email" id="email" name="Email" required>
+
+        <label for="Contact">Phone Number:</label>
+        <input type="tel" id="phone" name="Contact" required>
+
+        <button type="submit" class="pledge__submit-button btn">Submit</button>
+      </form>
+    </dialog>
+
+    <div class="thank-you__message-container hide">
+      <div class="ty__text">
+        <p>Thank you for taking pledge, till now we have recycled <span class="pledge-count__update">xyz</span> number of plastic waste</p>
+        <p>Start your journey now. Stop using one time use plastic bottles and buy our Steel bottle with flat 30% discount - use code <span class="discount-code__text">"REUSE30"</span></p>
+        <button class="copy__discount-code btn hide">Copy code</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="{{ 'take-pledge.js' | asset_url }}" defer></script>
+
 {% schema %}
 {
     "name": "t:sections.take-pledge.name",
@@ -24,6 +75,26 @@
         {
           "value": "3",
           "label": "3"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "align_text",
+      "label": "t:sections.take-pledge.settings.align_text.label",
+      "default": "center",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.take-pledge.settings.align_text.options.left.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.take-pledge.settings.align_text.options.center.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.take-pledge.settings.align_text.options.right.label"
         }
       ]
     }
