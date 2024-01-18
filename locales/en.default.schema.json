@@ -3206,6 +3206,84 @@
           }
         }
       }
+    },
+    "take-pledge": {
+      "name": "Take Pledge",
+      "settings": {
+        "align_text": {
+          "label": "Content alignment",
+          "options": {
+            "left": {
+              "label": "Left"
+            },
+            "center": {
+              "label": "Centered"
+            },
+            "right": {
+              "label": "Right"
+            }
+          }
+        },
+        "narrow_column": {
+          "label": "Narrow column"
+        },
+        "color_scheme": {
+          "label": "Color scheme",
+          "options": {
+            "none": {
+              "label": "None"
+            }
+          }
+        },
+        "divider": {
+          "label": "Show section divider"
+        }
+      },
+      "blocks": {
+        "heading": {
+          "name": "Heading",
+          "settings": {
+            "title": {
+              "label": "Heading"
+            }
+          }
+        },
+        "text": {
+          "name": "Text",
+          "settings": {
+            "enlarge_text": {
+              "label": "Enlarge text"
+            },
+            "text": {
+              "label": "Text"
+            }
+          }
+        },
+        "button": {
+          "name": "Button",
+          "settings": {
+            "link": {
+              "label": "Button link"
+            },
+            "link_text": {
+              "label": "Button text"
+            }
+          }
+        },
+        "page": {
+          "name": "Page",
+          "settings": {
+            "page_text": {
+              "label": "Page"
+            }
+          }
+        }
+      },
+      "presets": {
+        "take-pledge": {
+          "name": "Take Pledge"
+        }
+      }
     }
   },
   "settings_schema": {
