@@ -1,13 +1,38 @@
 {
   "sections": {
+    "slideshow_image_GqQbw6": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_xDiL7P": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify:\/\/shop_images\/Home_Page_Banner_Desktop_3.png",
+            "image_mobile": "shopify:\/\/shop_images\/Home_Page_Banner_Desktop_3.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_xDiL7P"
+      ],
+      "settings": {
+        "full_width": true,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
     "pledge": {
       "type": "pledge",
-      "disabled": true,
       "settings": {
+        "color_scheme": "none",
+        "align_text": "center"
       }
     }
   },
   "order": [
+    "slideshow_image_GqQbw6",
     "pledge"
   ]
 }
