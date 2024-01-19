@@ -1,14 +1,6 @@
 {{ 'pledge.css' | asset_url | stylesheet_tag }}
 
 <div class="pledge-{{ section.id }} color-scheme-{{ section.settings.color_scheme }}">
-  <div class="pledge__banner-image">
-    {% if section.settings.image != blank %}
-      <img src="{{ section.settings.image }}" alt="banner image" class="small--hide" loading="eager">
-      <img src="{{ section.settings.mobile_image }}" alt="banner image" class="medium-up--hide" loading="eager">
-    {% else %}
-      {{ 'image' | placeholder_svg_tag }}
-    {% endif %}
-  </div>
   <div class="page-width text-{{ section.settings.align_text }}">
     
   </div>
@@ -25,16 +17,6 @@
   "name": "t:sections.take-pledge.name",
   "tag": "section",
   "settings": [
-    {
-      "type": "image_picker",
-        "id": "image",
-        "label": "Banner image"
-    },
-    {
-      "type": "image_picker",
-        "id": "mobile_image",
-        "label": "Mobile Banner image"
-    },
     {
       "type": "select",
       "id": "color_scheme",
