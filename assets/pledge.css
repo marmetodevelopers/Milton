@@ -111,6 +111,8 @@
   .pledge__success-msg {
     padding-inline: 2rem;
   }
+}
+@media screen and (max-width: 549px) {
   .pledge__container > div,
   .pledge__success-msg {
     padding-block: 3rem;
