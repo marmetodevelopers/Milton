@@ -54,6 +54,10 @@
 }
 .success-msg-btns {
   margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
 }
 .btn.discount-code__copied {
   position: relative;
@@ -101,17 +105,10 @@
 .pledge__success-msg button,
 .pledge__success-msg a {
   min-width: 140px;
-  margin: 0 2rem 0 0;
 }
 @media screen and (max-width: 990px) {
   .pledge__container,
   .pledge__success-msg {
     padding-inline: 2rem;
-  }
-  .pledge__success-msg a {
-    margin: 0
-  }
-  .pledge__success-msg button {
-    margin: 0 0 12px 0;
   }
 }
