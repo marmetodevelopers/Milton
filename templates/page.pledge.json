@@ -3,8 +3,8 @@
     "pledge": {
       "type": "pledge",
       "settings": {
-        "image": "",
-        "mobile_image": "",
+        "image": "shopify:\/\/shop_images\/71aE8AO52AL._SL1500.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/617R2zfDMfL._SL1500.jpg",
         "color_scheme": "none",
         "align_text": "center"
       }
