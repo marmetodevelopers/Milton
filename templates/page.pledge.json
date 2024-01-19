@@ -3,8 +3,6 @@
     "pledge": {
       "type": "pledge",
       "settings": {
-        "image": "shopify:\/\/shop_images\/71aE8AO52AL._SL1500.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/617R2zfDMfL._SL1500.jpg",
         "color_scheme": "none",
         "align_text": "center"
       }
@@ -16,8 +14,8 @@
           "type": "image",
           "settings": {
             "link": "",
-            "image": "shopify:\/\/shop_images\/71aE8AO52AL._SL1500.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/617R2zfDMfL._SL1500.jpg"
+            "image": "shopify:\/\/shop_images\/Home_Page_Banner_Desktop_1.png",
+            "image_mobile": "shopify:\/\/shop_images\/Home_Page_Banner_Desktop_1.png"
           }
         }
       },
