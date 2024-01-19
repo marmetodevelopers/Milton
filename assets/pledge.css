@@ -18,25 +18,54 @@
   width: 25px;
   height: 25px;
 }
-.loader-logo__img svg circle {
-  stroke: var(--colorTextBody);
+.spinner {
+  animation: rotator 1.4s linear infinite;
+}
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+.path {
+  stroke-dasharray: 280;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  stroke: #000000;
+  animation: dash 1.4s ease-in-out infinite;
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 280;
+  }
+  50% {
+    stroke-dashoffset: 75;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 280;
+    transform: rotate(450deg);
+  }
 }
 .pledge__description p {
   margin-bottom: 2rem;
 }
-.discount-code__copy {
-  position: relative;
-}
 .success-msg-btns {
+  position: relative;
   margin-top: 25px;
+}
+.btn.discount-code__copied {
+  cursor: auto;
 }
 #success-copy {
   font-size: 12px;
   font-weight: 400;
   color: var(--colorTextBody);
   position: absolute;
-  bottom: -2rem;
-  right: -7rem;
+  top: 3.5rem;
+  right: 40rem;
   width: 140px;
   padding: 0;
   box-shadow: 1px 1px 1px 0.2px var(--colorTextBody);

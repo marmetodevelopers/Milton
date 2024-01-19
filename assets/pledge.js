@@ -60,8 +60,7 @@ function handlePledgeSubmit(ev) {
 function copyToClipboard() {
   const successMSG = successMSGSection.querySelector('span#success-copy');
   const discountCode = successMSGSection.querySelector('.discount-code__text').innerHTML;
-  // debugger;
-  const copiedTextBTN = successMSGSection.querySelector('.discount-code__copied');
+  const copiedTextBTN = document.querySelector('.discount-code__copied');
   
   navigator.clipboard.writeText(discountCode);
 
