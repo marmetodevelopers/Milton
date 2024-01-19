@@ -3,14 +3,38 @@
     "pledge": {
       "type": "pledge",
       "settings": {
-        "image": "",
-        "mobile_image": "",
+        "image": "shopify:\/\/shop_images\/71aE8AO52AL._SL1500.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/617R2zfDMfL._SL1500.jpg",
         "color_scheme": "none",
         "align_text": "center"
+      }
+    },
+    "slideshow_image_GqQbw6": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_xDiL7P": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify:\/\/shop_images\/71aE8AO52AL._SL1500.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/617R2zfDMfL._SL1500.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_xDiL7P"
+      ],
+      "settings": {
+        "full_width": false,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
       }
     }
   },
   "order": [
-    "pledge"
+    "pledge",
+    "slideshow_image_GqQbw6"
   ]
 }
