@@ -1,4 +1,13 @@
-.pledge__title {
+.pledge__banner-image {
+  height: 55vh;
+}
+.pledge__banner-image svg,
+.pledge__banner-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* .pledge__title {
   margin-bottom: 2rem;
 }
 .pledge__top-container,
@@ -27,4 +36,4 @@ dialog#pledge__form-container {
 #pledge__form-container input {
   margin-bottom: 1rem;
   display: block;
-}
+} */

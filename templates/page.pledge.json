@@ -3,6 +3,8 @@
     "pledge": {
       "type": "pledge",
       "settings": {
+        "image": "",
+        "mobile_image": "",
         "color_scheme": "none",
         "align_text": "center"
       }

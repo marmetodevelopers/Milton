@@ -8,7 +8,7 @@ let responseData;
 
 nextButton.addEventListener('click', ()=> {
   const pledgeInitiateContainer = document.querySelector('.pledge__bottom-container');
-  // pledgeInitiateContainer.classList.remove('hide');
+  pledgeInitiateContainer.classList.remove('hide');
 })
 
 openPledgeFormButton.addEventListener('click', () => {

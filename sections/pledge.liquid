@@ -1,49 +1,16 @@
 {{ 'pledge.css' | asset_url | stylesheet_tag }}
 
 <div class="pledge-{{ section.id }} color-scheme-{{ section.settings.color_scheme }}">
+  <div class="pledge__banner-image">
+    {% if section.settings.image != blank %}
+      <img src="{{ section.settings.image }}" alt="banner image" class="small--hide" loading="eager">
+      <img src="{{ section.settings.mobile_image }}" alt="banner image" class="medium-up--hide" loading="eager">
+    {% else %}
+      {{ 'image' | placeholder_svg_tag }}
+    {% endif %}
+  </div>
   <div class="page-width text-{{ section.settings.align_text }}">
-    <div class="pledge__main-container">
-        <div class="pledge__top-container">
-            <div class="pledge__title">
-                <h2>Reduce | Reuse | Recycle</h2>
-                <p>On an Average a Person in India generate 4 Kg of waste plastic every day</p>
-            </div>
-            <div class="pledge__next-button">
-            <button class="btn">Next</button>
-            </div>
-        </div>
-        <div class="pledge__bottom-container">
-            <div class="pledge__descritpion">
-                <p>Take a pledge to reduce & reuse. With every pledge Milton will recycle 1kg Plastic on your behalf</p>
-            </div>
-            <div class="pledge__start-button">
-                <button class="btn">Take Pledge</button>
-            </div>
-        </div>
-    </div>
-
-    <dialog id="pledge__form-container">
-      <form method="POST" action="https://script.google.com/macros/s/AKfycbzRGnWNhhc0Pa0BB5SLweJTzeLdODPwbROTbSd0Cy8AFklyif_4KlYIugz1YzcSJXbq/exec" id="pledge-Form">
-        <label for="Name">Name:</label>
-        <input type="text" id="name" name="Name" required>
-
-        <label for="Email">Email:</label>
-        <input type="email" id="email" name="Email" required>
-
-        <label for="Contact">Phone Number:</label>
-        <input type="tel" id="phone" name="Contact" required>
-
-        <button type="submit" class="pledge__submit-button btn">Submit</button>
-      </form>
-    </dialog>
-
-    <div class="thank-you__message-container hide">
-      <div class="ty__text">
-        <p>Thank you for taking pledge, till now we have recycled <span class="pledge-count__update">xyz</span> Kgs of plastic waste</p>
-        <p>Start your journey now. Stop using one time use plastic bottles and buy our Steel bottle with flat 30% discount - use code <span class="discount-code__text">"REUSE30"</span></p>
-        <button class="copy__discount-code btn hide">Copy code</button>
-      </div>
-    </div>
+    
   </div>
 </div>
 {% comment %} <div class="loader-logo__img">
@@ -51,13 +18,23 @@
       <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
     </svg>
 </div> {% endcomment %}
-<script src="{{ 'pledge.js' | asset_url }}" defer></script>
+{% comment %} <script src="{{ 'pledge.js' | asset_url }}" defer></script> {% endcomment %}
 
 {% schema %}
 {
-    "name": "t:sections.take-pledge.name",
-    "tag": "section",
-    "settings": [
+  "name": "t:sections.take-pledge.name",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+        "id": "image",
+        "label": "Banner image"
+    },
+    {
+      "type": "image_picker",
+        "id": "mobile_image",
+        "label": "Mobile Banner image"
+    },
     {
       "type": "select",
       "id": "color_scheme",
