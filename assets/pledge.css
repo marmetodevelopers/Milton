@@ -108,7 +108,7 @@
   .pledge__success-msg {
     padding-inline: 2rem;
   }
-  ..pledge__success-msg a {
+  .pledge__success-msg a {
     margin: 0
   }
   .pledge__success-msg button {
