@@ -1,12 +1,5 @@
 {
   "sections": {
-    "pledge": {
-      "type": "pledge",
-      "settings": {
-        "color_scheme": "none",
-        "align_text": "center"
-      }
-    },
     "slideshow_image_GqQbw6": {
       "type": "slideshow-image",
       "blocks": {
@@ -29,10 +22,17 @@
         "autoplay_speed": 7,
         "lazyload_images": true
       }
+    },
+    "pledge": {
+      "type": "pledge",
+      "settings": {
+        "color_scheme": "none",
+        "align_text": "center"
+      }
     }
   },
   "order": [
-    "pledge",
-    "slideshow_image_GqQbw6"
+    "slideshow_image_GqQbw6",
+    "pledge"
   ]
 }
