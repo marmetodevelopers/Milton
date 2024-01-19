@@ -3,7 +3,8 @@
     "pledge-form": {
       "type": "take-pledge",
       "settings": {
-        "color_scheme": "1"
+        "color_scheme": "none",
+        "align_text": "center"
       }
     }
   },
