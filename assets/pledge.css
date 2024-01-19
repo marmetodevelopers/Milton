@@ -112,3 +112,9 @@
     padding-inline: 2rem;
   }
 }
+@media screen and (max-width: 990px) {
+  .pledge__container > div,
+  .pledge__success-msg {
+    padding-block: 3rem;
+  }
+}
