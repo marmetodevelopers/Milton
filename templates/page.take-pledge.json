@@ -1,5 +1,26 @@
 {
   "sections": {
+    "slideshow_image_nPgU9L": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_mMY833": {
+          "type": "image",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_mMY833"
+      ],
+      "settings": {
+        "full_width": true,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
     "pledge-form": {
       "type": "take-pledge",
       "settings": {
@@ -8,6 +29,7 @@
     }
   },
   "order": [
+    "slideshow_image_nPgU9L",
     "pledge-form"
   ]
 }
