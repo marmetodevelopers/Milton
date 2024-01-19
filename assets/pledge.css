@@ -1,0 +1,111 @@
+.pledge__container > div,
+.pledge__success-msg {
+  padding-block: 8rem;
+}
+.loader-logo__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 99;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+.loader-logo__img svg {
+  width: 25px;
+  height: 25px;
+}
+.spinner {
+  animation: rotator 1.4s linear infinite;
+}
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+.path {
+  stroke-dasharray: 280;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  stroke: #000000;
+  animation: dash 1.4s ease-in-out infinite;
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 280;
+  }
+  50% {
+    stroke-dashoffset: 75;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 280;
+    transform: rotate(450deg);
+  }
+}
+.pledge__description p {
+  margin-bottom: 2rem;
+}
+.success-msg-btns {
+  margin-top: 25px;
+}
+.btn.discount-code__copied {
+  position: relative;
+  cursor: auto;
+}
+#success-copy {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--colorTextBody);
+  position: absolute;
+  bottom: -2rem;
+  right: -6rem;
+  width: 140px;
+  padding: 0;
+  box-shadow: 1px 1px 1px 0.2px var(--colorTextBody);
+}
+.pledge__form {
+  max-width: 40rem;
+  margin: auto;
+  text-align: left;
+  box-shadow: 0px 0px 3px 0.1px var(--colorTextBody);
+  border-radius: calc(var(--buttonRadius) * 2);
+  padding: 1rem 2rem;
+}
+.pledge__form * {
+  width: 100%;
+}
+#pledge-Form {
+  text-align: center;
+}
+#pledge-Form label {
+  margin: 0;
+  width: fit-content;
+}
+#pledge-Form input {
+  border-radius: var(--buttonRadius);
+}
+#pledge-Form > div {
+  margin-block: 1rem;
+}
+.pledge__submit-button {
+  margin-top: 1rem;
+  width: 40%;
+}
+.pledge__success-msg button,
+.pledge__success-msg a {
+  min-width: 140px;
+  margin-right: 2rem;
+}
+@media screen and (max-width: 990px) {
+  .pledge__container,
+  .pledge__success-msg {
+    padding-inline: 2rem;
+  }
+}

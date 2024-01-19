@@ -1,17 +1,19 @@
 {
   "sections": {
-    "slideshow_image_nPgU9L": {
+    "slideshow_image_GqQbw6": {
       "type": "slideshow-image",
       "blocks": {
-        "image_mMY833": {
+        "image_xDiL7P": {
           "type": "image",
           "settings": {
-            "link": ""
+            "link": "",
+            "image": "shopify:\/\/shop_images\/Home_Page_Banner_Desktop_3.png",
+            "image_mobile": "shopify:\/\/shop_images\/Home_Page_Banner_Desktop_3.png"
           }
         }
       },
       "block_order": [
-        "image_mMY833"
+        "image_xDiL7P"
       ],
       "settings": {
         "full_width": true,
@@ -21,15 +23,16 @@
         "lazyload_images": true
       }
     },
-    "pledge-form": {
-      "type": "take-pledge",
+    "pledge": {
+      "type": "pledge",
       "settings": {
-        "color_scheme": "1"
+        "color_scheme": "none",
+        "align_text": "center"
       }
     }
   },
   "order": [
-    "slideshow_image_nPgU9L",
-    "pledge-form"
+    "slideshow_image_GqQbw6",
+    "pledge"
   ]
 }
