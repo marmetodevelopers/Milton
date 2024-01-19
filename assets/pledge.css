@@ -1,33 +1,34 @@
-.ppb-8 {
-  padding-block: 8rem !important;
+.pledge__container > div,
+.pledge__success-msg {
+  padding-block: 8rem;
 }
-.ppb-5 {
-  padding-block: 5rem !important;
-}
-.ppt-5 {
-  padding: 0 !important;
-  padding-top: 5rem !important;
-}
-.pledge__description-container,
-.pledge__form-container {
-  position: relative;
-}
-.pledge__description-overlay,
-.pledge__form-overlay {
+.loader-logo__img {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.65);
-  z-index: 1;
+  z-index: 99;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+.loader-logo__img svg {
+  width: 25px;
+  height: 25px;
+}
+.loader-logo__img svg circle {
+  stroke: var(--colorTextBody);
 }
 .pledge__description p {
   margin-bottom: 2rem;
-  ;
 }
 .discount-code__copy {
   position: relative;
+}
+.success-msg-btns {
+  margin-top: 25px;
 }
 #success-copy {
   font-size: 12px;
@@ -44,6 +45,9 @@
   max-width: 40rem;
   margin: auto;
   text-align: left;
+  box-shadow: 0px 0px 3px 0.1px var(--colorTextBody);
+  border-radius: calc(var(--buttonRadius) * 2);
+  padding: 1rem 2rem;
 }
 .pledge__form * {
   width: 100%;
@@ -65,15 +69,8 @@
   margin-top: 1rem;
   width: 40%;
 }
-button.discount-code__copy,
-a.shop-now__redirection {
-  display: inline-block;
-  padding: 0.4rem 0.8rem;
-  background: var(--colorBtnPrimary);
-  border: 1px solid transparent;
-  border-radius: var(--buttonRadius);
-  color: var(--colorBtnPrimaryText);
-}
-.pledge__success-msg p:last-child {
-  margin-bottom: 20px;
+.pledge__success-msg button,
+.pledge__success-msg a {
+  min-width: 140px;
+  margin-right: 2rem;
 }
