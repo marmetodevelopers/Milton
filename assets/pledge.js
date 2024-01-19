@@ -1,29 +1,57 @@
+const mainContainer = document.querySelector('.pledge__container');
+const headerSection = document.getElementById('pl-header');
+const descriptionSection = document.getElementById('pl-description');
+const descriptionOverlay = descriptionSection.querySelector('.pledge__description-overlay');
+const formSection = document.getElementById('pl-form');
+const formSectionOverlay = formSection.querySelector('.pledge__form-overlay');
+const form = formSection.querySelector('.pledge__form form');
+const successMSGSection = document.querySelector('.pledge__success-msg');
+const copyCode = successMSGSection.querySelector('.discount-code__copy');
 
-const nextButton = document.querySelector('.pledge__next-button button');
-const openPledgeFormButton = document.querySelector('.pledge__start-button button');
-const closePledgeFormButton = document.querySelector('.pledge__submit-button');
-const pledgeFormContainer = document.getElementById('pledge__form-container');
-const pledgeForm = document.getElementById('pledge-Form');
+const nextButton = headerSection.querySelector('button.pledge__next');
+const pledgeButton = descriptionSection.querySelector('button.pledge__start');
 let responseData;
 
-nextButton.addEventListener('click', ()=> {
-  const pledgeInitiateContainer = document.querySelector('.pledge__bottom-container');
-  pledgeInitiateContainer.classList.remove('hide');
-})
+nextButton.addEventListener('click', (ev)=> {
+  ev.preventDefault();
 
-openPledgeFormButton.addEventListener('click', () => {
-  pledgeFormContainer.showModal();
+  // remove the overlay in the description section
+  descriptionOverlay.classList.add('hide');
+
+  // show the form section
+  formSection.classList.remove('hide');
+
+  // changing padding for sections
+  headerSection.classList.remove('ppb-5');
+  headerSection.classList.add('ppt-5');
+  descriptionSection.classList.remove('ppb-8');
+  descriptionSection.classList.add('ppb-5');
+  formSection.classList.add('ppb-8');
+
+  pledgeButton.addEventListener('click', openForm);
 });
 
-closePledgeFormButton.addEventListener('click', closePledgeForm);
+function openForm(ev) {
+  ev.preventDefault();
 
-pledgeForm.addEventListener('submit', handlePledgeSubmit)
+  // remove the overlay in the form section
+  formSectionOverlay.classList.add('hide');
 
-function handlePledgeSubmit() {
-  event.preventDefault();
+  descriptionSection.classList.remove('ppb-5');
+  descriptionSection.classList.add('ppt-5');
+  formSection.classList.remove('ppb-8');
+  formSection.classList.add('ppb-5');
 
-  const data = new FormData(pledgeForm);
-  const action = event.target.action;
+  pledgeButton.removeEventListener('click', openForm);
+  formSection.addEventListener('submit', handlePledgeSubmit);
+}
+
+
+function handlePledgeSubmit(ev) {
+  ev.preventDefault();
+
+  const data = new FormData(form);
+  const action = ev.target.action;
 
   fetch(action, {
     method: 'POST',
@@ -32,22 +60,29 @@ function handlePledgeSubmit() {
     .then((response) => response.json())
     .then((response) => responseData = response)
     .finally(()=> {
-      debugger;
       const pledgeCountFromSheet = responseData.row - 1;
-      const pledgeCountUpdate = document.querySelector('.thank-you__message-container .pledge-count__update');
+      const pledgeCountUpdate = successMSGSection.querySelector('.pledge-count__update');
       pledgeCountUpdate.innerHTML = pledgeCountFromSheet;
       
-      const pledgeMainContainer = document.querySelector('.pledge__main-container');
-      pledgeMainContainer.classList.add('hide');
+      // hide the main container
+      mainContainer.classList.add('hide');
 
       // show thank you message
-      const thankYouContainer = document.querySelector('.thank-you__message-container');
-      thankYouContainer.classList.remove('hide');
-      closePledgeForm();
-      pledgeForm.removeEventListener(handlePledgeSubmit);
+      successMSGSection.classList.remove('hide');
+
+      // copy to clipboard function
+      copyCode.addEventListener('click', copyToClipboard);
     });
 };
 
-function closePledgeForm() {
-  pledgeFormContainer.close();
+function copyToClipboard() {
+  const successMSG = successMSGSection.querySelector('span#success-copy');
+  const discountCode = successMSGSection.querySelector('.discount-code__text').innerHTML;
+  
+  navigator.clipboard.writeText(discountCode);
+
+  successMSG.classList.remove('hide');
+  setTimeout(() => {
+    successMSG.classList.add('hide');
+  }, 1500);
 }

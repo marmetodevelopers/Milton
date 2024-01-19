@@ -1,39 +1,79 @@
-.pledge__banner-image {
-  height: 55vh;
+.ppb-8 {
+  padding-block: 8rem !important;
 }
-.pledge__banner-image svg,
-.pledge__banner-image img {
-  height: 100%;
+.ppb-5 {
+  padding-block: 5rem !important;
+}
+.ppt-5 {
+  padding: 0 !important;
+  padding-top: 5rem !important;
+}
+.pledge__description-container,
+.pledge__form-container {
+  position: relative;
+}
+.pledge__description-overlay,
+.pledge__form-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}
+.pledge__description p {
+  margin-bottom: 2rem;
+  ;
+}
+.discount-code__copy {
+  position: relative;
+}
+#success-copy {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--colorTextBody);
+  position: absolute;
+  bottom: -2rem;
+  right: -7rem;
+  width: 140px;
+  padding: 0;
+  box-shadow: 1px 1px 1px 0.2px var(--colorTextBody);
+}
+.pledge__form {
+  max-width: 40rem;
+  margin: auto;
+  text-align: left;
+}
+.pledge__form * {
   width: 100%;
-  object-fit: cover;
 }
-/* .pledge__title {
-  margin-bottom: 2rem;
+#pledge-Form {
+  text-align: center;
 }
-.pledge__top-container,
-.pledge__bottom-container {
-  margin-bottom: 2rem;
-}
-.pledge__bottom-container,
-.thank-you__message-container {
-  padding-top: 1.6rem;
-  border-top: black 1px solid;
-}
-.pledge__descritpion p {
-  margin-bottom: 1.5rem;
-}
-form#pledge-Form {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 3rem;
-}
-dialog#pledge__form-container {
-  min-width: 32rem;
-}
-#pledge__form-container label {
+#pledge-Form label {
   margin: 0;
+  width: fit-content;
 }
-#pledge__form-container input {
-  margin-bottom: 1rem;
-  display: block;
-} */
+#pledge-Form input {
+  border-radius: var(--buttonRadius);
+}
+#pledge-Form > div {
+  margin-block: 1rem;
+}
+.pledge__submit-button {
+  margin-top: 1rem;
+  width: 40%;
+}
+button.discount-code__copy,
+a.shop-now__redirection {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--colorBtnPrimary);
+  border: 1px solid transparent;
+  border-radius: var(--buttonRadius);
+  color: var(--colorBtnPrimaryText);
+}
+.pledge__success-msg p:last-child {
+  margin-bottom: 20px;
+}

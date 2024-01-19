@@ -23,7 +23,7 @@
         "image_xDiL7P"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "style": "arrows",
         "autoplay": true,
         "autoplay_speed": 7,
@@ -32,7 +32,7 @@
     }
   },
   "order": [
-    "pledge",
-    "slideshow_image_GqQbw6"
+    "slideshow_image_GqQbw6",
+    "pledge"
   ]
 }
