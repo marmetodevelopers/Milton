@@ -1,18 +1,18 @@
-{{ 'take-pledge.css' | asset_url | stylesheet_tag }}
+{{ 'pledge.css' | asset_url | stylesheet_tag }}
 
-<div class="take-pledge-{{ section.id }} color-scheme-{{ section.settings.color_scheme }}">
-  <div class="page-width text-{{ section.settings.align_text }} pledge-width-control">
+<div class="pledge-{{ section.id }} color-scheme-{{ section.settings.color_scheme }}">
+  <div class="page-width text-{{ section.settings.align_text }}">
     <div class="pledge__main-container">
         <div class="pledge__top-container">
             <div class="pledge__title">
-                <p>Reduce | Reuse | Recycle</p>
+                <h2>Reduce | Reuse | Recycle</h2>
                 <p>On an Average a Person in India generate 4 Kg of waste plastic every day</p>
             </div>
             <div class="pledge__next-button">
             <button class="btn">Next</button>
             </div>
         </div>
-        <div class="pledge__bottom-container hide">
+        <div class="pledge__bottom-container">
             <div class="pledge__descritpion">
                 <p>Take a pledge to reduce & reuse. With every pledge Milton will recycle 1kg Plastic on your behalf</p>
             </div>
@@ -51,7 +51,7 @@
       <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
     </svg>
 </div> {% endcomment %}
-<script src="{{ 'take-pledge.js' | asset_url }}" defer></script>
+<script src="{{ 'pledge.js' | asset_url }}" defer></script>
 
 {% schema %}
 {

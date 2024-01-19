@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "pledge": {
+      "type": "pledge",
+      "settings": {
+        "color_scheme": "none",
+        "align_text": "center"
+      }
+    }
+  },
+  "order": [
+    "pledge"
+  ]
+}
