@@ -1,6 +1,112 @@
+{{ 'pledge.css' | asset_url | stylesheet_tag }}
+
+<div class="pledge-{{ section.id }} color-scheme-{{ section.settings.color_scheme }}">
+  <div class="text-{{ section.settings.align_text }}">
+    <div class="pledge__container">
+      <div id="pl-header" class="pledge__header">
+        <h2>Join us in making India more Sustainable!</h2>
+        <p>India generates estimated 42 Billion KG* of plastic waste every year</p>
+        <button class="btn pledge__next">Next</button>
+      </div>
+      <div id="pl-description" class="pledge__description-container hide">
+        <div class="pledge__description">
+          <p>Take the pledge to Reduce & Reuse plastic, and for every commitment, we'll Recycle <span id="promised-count">5</span> KG of plastic waste on your behalf</p>
+          <button class="btn pledge__start">Take Pledge</button>
+        </div>
+      </div>
+      
+      <div id="pl-form" class="pledge__form-container hide">
+        <div class="pledge__form">
+          <form method="POST" action="https://script.google.com/macros/s/AKfycbzRGnWNhhc0Pa0BB5SLweJTzeLdODPwbROTbSd0Cy8AFklyif_4KlYIugz1YzcSJXbq/exec" id="pledge-Form">
+            <div>
+              <label for="Name">Name</label>
+              <input type="text" id="name" name="Name" required>
+            </div>
+            <div>
+              <label for="Email">Email</label>
+              <input type="email" id="email" name="Email" required>
+            </div>
+            <div>
+              <label for="Contact">Phone Number</label>
+              <input type="tel" id="phone" name="Contact" required>
+            </div>
+            <button type="submit" class="pledge__submit-button btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="pledge__success-msg hide">
+      <p>Thank you for taking pledge, till now we have recycled <span class="pledge-count__update">xyz Kg</span> of plastic waste</p>
+      <p>Start your journey now. Stop using one time use plastic bottles and buy our Steel bottle with flat 30% discount - use code "<span class="discount-code__text">MLKGBFNX24</span>"</p>
+      <div class="success-msg-btns">
+        <button class="btn discount-code__copy">Copy code</button>
+        <button class="btn discount-code__copied hide">Copied<span id="success-copy" class="hide"> copied to clipboard</span></button>
+        <a href="/pages/kala-ghoda-art-festival" class="btn shop-now__redirection">shop now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="loader-logo__img hide">
+  <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+      <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+    </svg>
+</div>
+<script src="{{ 'pledge.js' | asset_url }}" defer></script>
+
+
+
+
 {% schema %}
-  {
-    "name": "Pledge",
-    "settings": []
-  }
+{
+  "name": "t:sections.take-pledge.name",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "t:sections.rich-text.settings.color_scheme.label",
+      "default": "1",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.rich-text.settings.color_scheme.options.none.label"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "align_text",
+      "label": "t:sections.take-pledge.settings.align_text.label",
+      "default": "center",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.take-pledge.settings.align_text.options.left.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.take-pledge.settings.align_text.options.center.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.take-pledge.settings.align_text.options.right.label"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
