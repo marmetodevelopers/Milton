@@ -1,0 +1,435 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 70,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/Home_Page_Banner_Desktop_1.png",
+            "overlay_opacity": 0
+          }
+        },
+        "slide-2": {
+          "type": "hero",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>Make an Impact<\/p>",
+            "title_size": 70,
+            "subheading": "Supports multiple text alignments and mobile-specific images.",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "slide-1",
+        "slide-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "text-columns": {
+      "type": "text-columns",
+      "blocks": {
+        "block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "block-3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "disabled": true,
+      "settings": {
+        "title": "From the journal",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "blog": "milton-brand",
+        "blog_show_tags": true,
+        "blog_show_date": false,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "blog_image_size": "square",
+        "divider": false
+      }
+    },
+    "2bc2e662-4e2b-49a6-8dd6-c6972e8f5c44": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "home_featured_products": "all-products",
+        "count": 100,
+        "products_per_row": 5,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "3f59d32e-11f1-4cf6-a48c-fe3373083ea5": {
+      "type": "Feacture-collection-pages",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "home_featured_products": "milton-x-cultfit-promotion",
+        "count": 1000,
+        "products_per_row": 4,
+        "mobile_scrollable": false,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "text_with_icons_Kx3dtX": {
+      "type": "text-with-icons",
+      "blocks": {
+        "text_block_49UdzB": {
+          "type": "text_block",
+          "settings": {
+            "icon": "gears",
+            "title": "Volt  Fitness",
+            "text": "<p>2986, 12th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560075<\/p>"
+          }
+        },
+        "text_block_4m3y3e": {
+          "type": "text_block",
+          "settings": {
+            "icon": "gears",
+            "title": "Vouge",
+            "text": "<p>79, 1st Floor, 3rd Main Rd, JP Nagar 4th Phase, Dollar Layout, JP Nagar Phase 5, J.P. Nagar<\/p>"
+          }
+        },
+        "text_block_Wp6qeA": {
+          "type": "text_block",
+          "settings": {
+            "icon": "gears",
+            "title": "Gold's Gym Malleswaram",
+            "text": "<p>Sai Sharan Heights, No-78, 4th Main, 15th Cross Rd, Malleshwara,<\/p>"
+          }
+        },
+        "text_block_TB3MTG": {
+          "type": "text_block",
+          "settings": {
+            "icon": "gears",
+            "title": "Gold's Gym JP Nagar",
+            "text": "<p>67, 1st Floor 15th Cross Road, 6th B Main Rd, 3rd Phase, J. P. Nagar, Bengaluru, Karnataka 560078<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_49UdzB",
+        "text_block_4m3y3e",
+        "text_block_Wp6qeA",
+        "text_block_TB3MTG"
+      ],
+      "settings": {
+        "heading_title": "Bengaluru",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "divider": true
+      }
+    },
+    "text_with_icons_rhHHHd": {
+      "type": "text-with-icons",
+      "blocks": {
+        "text_block_P7La3K": {
+          "type": "text_block",
+          "settings": {
+            "icon": "gears",
+            "title": "Select City Walk",
+            "text": "<p>Select Citywalk Mall, The New Delhi Dome, 5th & 6th Floor, Saket District Centre, New Delhi, Delhi 110017<br\/><\/p>"
+          }
+        },
+        "text_block_FKTLtp": {
+          "type": "text_block",
+          "settings": {
+            "icon": "gears",
+            "title": "Hamilton House",
+            "text": "<p>Building No. 1 & 2, 1-A, Radial Rd Number 2, Connaught Place, New Delhi, Delhi 110001<br\/><\/p>"
+          }
+        },
+        "text_block_tgbwgt": {
+          "type": "text_block",
+          "settings": {
+            "icon": "gears",
+            "title": "Gold's Gym Greater Kailash",
+            "text": "<p>E-15, Block E, East of Kailash, New Delhi, Delhi 110065<br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_P7La3K",
+        "text_block_FKTLtp",
+        "text_block_tgbwgt"
+      ],
+      "settings": {
+        "heading_title": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "divider": true
+      }
+    },
+    "text_with_icons_VeWUHR": {
+      "type": "text-with-icons",
+      "blocks": {
+        "text_block_8MADQw": {
+          "type": "text_block",
+          "settings": {
+            "icon": "gears",
+            "title": "Gold's Gym Janakpuri",
+            "text": "<p>A1, 289, Pankha Rd, Block A1, Janakpuri, New Delhi, Delhi, 110058<br\/><\/p>"
+          }
+        },
+        "text_block_9jeajN": {
+          "type": "text_block",
+          "settings": {
+            "icon": "gears",
+            "title": "Gold's Gym Dayanand Vihar",
+            "text": "<p>9, Above Platinum Diagnostics, Dayanand Vihar, Anand Vihar, New Delhi, Delhi, 110092<br\/><\/p>"
+          }
+        },
+        "text_block_EDjLTf": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "icon": "chat",
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_8MADQw",
+        "text_block_9jeajN",
+        "text_block_EDjLTf"
+      ],
+      "settings": {
+        "heading_title": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "divider": false
+      }
+    },
+    "text_with_icons_zpDD3n": {
+      "type": "text-with-icons",
+      "blocks": {
+        "text_block_iTJnRX": {
+          "type": "text_block",
+          "settings": {
+            "icon": "gears",
+            "title": "Fitness First - South Point Mall",
+            "text": "<p>302, 3rd South Point Mall, 306, Golf Course Rd, DLF Phase 5, Sector 53, Gurugram, Haryana 122002<br\/><\/p>"
+          }
+        },
+        "text_block_fCfkta": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "icon": "chat",
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.<\/p>"
+          }
+        },
+        "text_block_WrP3qQ": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "icon": "chat",
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_iTJnRX",
+        "text_block_fCfkta",
+        "text_block_WrP3qQ"
+      ],
+      "settings": {
+        "heading_title": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "divider": true
+      }
+    },
+    "text_with_icons_rYjekU": {
+      "type": "text-with-icons",
+      "blocks": {
+        "text_block_rcXcnJ": {
+          "type": "text_block",
+          "settings": {
+            "icon": "gears",
+            "title": "Fitness First - BKC",
+            "text": "<p>1st Floor of Inspire BKC Building on G Block  BKC Road, Bandra East, Mumbai, Maharashtra<br\/><\/p>"
+          }
+        },
+        "text_block_Jgha4W": {
+          "type": "text_block",
+          "settings": {
+            "icon": "gears",
+            "title": "Crest Mukta",
+            "text": "<p>Fitness First, 2nd Floor Crest Mukta, Plot N-18, CTS-688 Fun Republic Cinema Lane, Off Veera Desai Rd, near Balaji Telefilms, Andheri West, Mumbai, Maharashtra 400053<br\/><\/p>"
+          }
+        },
+        "text_block_fbMYqk": {
+          "type": "text_block",
+          "settings": {
+            "icon": "gears",
+            "title": "Fitness First - Palladium Mall",
+            "text": "<p>462, Senapati Bapat Marg, Lower, Parel, Mumbai, Maharashtra 400013<\/p>"
+          }
+        },
+        "text_block_VF4Bjt": {
+          "type": "text_block",
+          "settings": {
+            "icon": "gears",
+            "title": "Gold's Gym Bandra",
+            "text": "<p>4th Floor, Landmark Building, Above HDFC Bank Dr BR Ambedkar Road, Pali Mala Rd, Bandra West, W, Maharashtra 400050<\/p>"
+          }
+        },
+        "text_block_XeQMqD": {
+          "type": "text_block",
+          "settings": {
+            "icon": "gears",
+            "title": "Gold's Gym Lower Parel",
+            "text": "<p>3rd Floor, TOWER-1, One World Center, A-2, Lower Parel, Mumbai, Maharashtra 400013<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_rcXcnJ",
+        "text_block_Jgha4W",
+        "text_block_fbMYqk",
+        "text_block_VF4Bjt",
+        "text_block_XeQMqD"
+      ],
+      "settings": {
+        "heading_title": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "divider": true
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "text-columns",
+    "rich-text",
+    "blog-posts",
+    "2bc2e662-4e2b-49a6-8dd6-c6972e8f5c44",
+    "3f59d32e-11f1-4cf6-a48c-fe3373083ea5",
+    "text_with_icons_Kx3dtX",
+    "text_with_icons_rhHHHd",
+    "text_with_icons_VeWUHR",
+    "text_with_icons_zpDD3n",
+    "text_with_icons_rYjekU"
+  ]
+}

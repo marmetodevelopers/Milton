@@ -148,7 +148,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.featured-collection.name",
+  "name": "feacture-collection-pages",
   "class": "index-section",
   "settings": [
     {
@@ -210,10 +210,10 @@
       "type": "range",
       "id": "count",
       "label": "t:sections.featured-collection.settings.count.label",
-      "default": 6,
-      "min": 5,
-      "max": 101,
-      "step": 1
+      "default": 50,
+      "min": 1000,
+      "max": 1000,
+      "step": 50
     },
     {
       "type": "range",
@@ -245,7 +245,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.featured-collection.presets.featured_collection.name"
+      "name": "feacture-collection-pages"
     }
   ],
   "blocks": [],

@@ -3,6 +3,25 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "slide-2": {
+          "type": "hero",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 70,
+            "subheading": "",
+            "link": "shopify:\/\/collections\/all-products",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Red_Modern_Christmas_Sale_Outdoor_Banner_1.png",
+            "image_mobile": "shopify:\/\/shop_images\/Milton_Christmas_Sale_Mobile.png",
+            "overlay_opacity": 0
+          }
+        },
         "slide-1": {
           "type": "hero",
           "settings": {
@@ -20,30 +39,11 @@
             "image_mobile": "shopify:\/\/shop_images\/Home_Page_Banner_Mobile_390_x_238_px_90237249-a9d4-4731-ae7d-da3846eed49a.png",
             "overlay_opacity": 0
           }
-        },
-        "slide-2": {
-          "type": "hero",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "",
-            "title": "",
-            "title_size": 70,
-            "subheading": "",
-            "link": "",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/Carousal_Banner_2_Desktop_e5a98fe0-34d8-4dbb-a6ec-e965a54df0eb.png",
-            "image_mobile": "shopify:\/\/shop_images\/Carousal_Banner_2_Mobile_96666005-2132-47ff-91c2-d58400ea56a1.png",
-            "overlay_opacity": 0
-          }
         }
       },
       "block_order": [
-        "slide-1",
-        "slide-2"
+        "slide-2",
+        "slide-1"
       ],
       "settings": {
         "full_width": true,
@@ -138,7 +138,7 @@
         "9b8b7f22-9ec5-4877-8f48-dab6421e55fb": {
           "type": "collection",
           "settings": {
-            "collection": "ice-packs-pails",
+            "collection": "all-products",
             "title": ""
           }
         }
@@ -171,7 +171,7 @@
         "heading_size": "h2",
         "heading_position": "center",
         "home_featured_products": "bestsellers",
-        "count": 5,
+        "count": 10,
         "products_per_row": 5,
         "mobile_scrollable": true,
         "view_all": true,

@@ -1,0 +1,156 @@
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "disabled": true,
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "d0f2039c-0fa4-42a4-9845-16ffd980f092": {
+      "type": "collection-list-metafield",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "promo-grid": {
+      "type": "promo-grid",
+      "blocks": {
+        "2a76f00b-d6ae-40c0-b7da-a87341d9d7b4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Red_Modern_Christmas_Sale_Outdoor_Banner_1.png",
+            "link": "",
+            "width": "100"
+          }
+        }
+      },
+      "block_order": [
+        "2a76f00b-d6ae-40c0-b7da-a87341d9d7b4"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": false,
+        "lazyload_images": true
+      }
+    },
+    "a2a01644-c80b-489c-8817-e96b174bfd38": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--15844654284900__a2a01644-c80b-489c-8817-e96b174bfd38-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ collection }}",
+            "title": ""
+          }
+        },
+        "template--15844654284900__a2a01644-c80b-489c-8817-e96b174bfd38-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        },
+        "template--15844654284900__a2a01644-c80b-489c-8817-e96b174bfd38-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        },
+        "template--15844654284900__a2a01644-c80b-489c-8817-e96b174bfd38-collection-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        },
+        "template--15844654284900__a2a01644-c80b-489c-8817-e96b174bfd38-collection-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        },
+        "template--15844654284900__a2a01644-c80b-489c-8817-e96b174bfd38-collection-6": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15844654284900__a2a01644-c80b-489c-8817-e96b174bfd38-collection-1",
+        "template--15844654284900__a2a01644-c80b-489c-8817-e96b174bfd38-collection-2",
+        "template--15844654284900__a2a01644-c80b-489c-8817-e96b174bfd38-collection-3",
+        "template--15844654284900__a2a01644-c80b-489c-8817-e96b174bfd38-collection-4",
+        "template--15844654284900__a2a01644-c80b-489c-8817-e96b174bfd38-collection-5",
+        "template--15844654284900__a2a01644-c80b-489c-8817-e96b174bfd38-collection-6"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Popular categories",
+        "heading_size": "h3",
+        "heading_position": "left",
+        "divider": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "grid_style": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapse_filters": true,
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "d0f2039c-0fa4-42a4-9845-16ffd980f092",
+    "promo-grid",
+    "a2a01644-c80b-489c-8817-e96b174bfd38",
+    "main-collection",
+    "recently-viewed"
+  ]
+}

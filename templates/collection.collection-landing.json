@@ -1,45 +1,34 @@
 {
   "sections": {
-    "main-collection": {
-      "type": "main-collection",
-      "blocks": {
-        "collection_description": {
-          "type": "collection_description",
-          "settings": {
-          }
-        },
-        "product_grid": {
-          "type": "product_grid",
-          "settings": {
-          }
-        },
-        "subcollections": {
-          "type": "subcollections",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "collection_description",
-        "subcollections",
-        "product_grid"
-      ],
-      "disabled": true,
-      "settings": {
-      }
-    },
     "promo-grid": {
       "type": "promo-grid",
       "blocks": {
         "banner": {
           "type": "banner",
+          "disabled": true,
           "settings": {
+            "heading": "Banner promotion",
+            "text": "Add the details of your promotion in smaller text",
+            "link": "",
+            "label": "Shop now",
             "color_scheme": "2"
           }
         },
         "advanced": {
           "type": "advanced",
           "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "100",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "color_accent": "#fff"
           }
         }
       },
@@ -48,18 +37,41 @@
         "advanced"
       ],
       "settings": {
+        "full_width": false,
+        "gutter_size": 20,
         "space_above": true,
-        "space_below": false
+        "space_below": false,
+        "lazyload_images": true
       }
     },
     "featured-collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
+        "title": "Featured collection",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "home_featured_products": "",
+        "count": 6,
+        "products_per_row": 3,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
       }
     },
     "featured-collection2": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
+        "title": "Featured collection",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "home_featured_products": "",
+        "count": 6,
+        "products_per_row": 3,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
       }
     },
     "promo-grid2": {
@@ -68,13 +80,27 @@
         "simple": {
           "type": "simple",
           "settings": {
-            "width": "50"
+            "link": "",
+            "text": "",
+            "width": "50",
+            "height": 300
           }
         },
         "advanced": {
           "type": "advanced",
           "settings": {
-            "width": "50"
+            "subheading": "",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "color_accent": "#fff"
           }
         }
       },
@@ -82,14 +108,28 @@
         "simple",
         "advanced"
       ],
+      "disabled": true,
       "settings": {
+        "full_width": false,
+        "gutter_size": 20,
         "space_above": false,
-        "space_below": false
+        "space_below": false,
+        "lazyload_images": true
       }
     },
     "featured-collection3": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
+        "title": "Featured collection",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "home_featured_products": "",
+        "count": 15,
+        "products_per_row": 3,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
       }
     },
     "featured-collections": {
@@ -98,31 +138,43 @@
         "collection1": {
           "type": "collection",
           "settings": {
+            "collection": "",
+            "title": ""
           }
         },
         "collection2": {
           "type": "collection",
           "settings": {
+            "collection": "",
+            "title": ""
           }
         },
         "collection3": {
           "type": "collection",
           "settings": {
+            "collection": "",
+            "title": ""
           }
         },
         "collection4": {
           "type": "collection",
           "settings": {
+            "collection": "",
+            "title": ""
           }
         },
         "collection5": {
           "type": "collection",
           "settings": {
+            "collection": "",
+            "title": ""
           }
         },
         "collection6": {
           "type": "collection",
           "settings": {
+            "collection": "",
+            "title": ""
           }
         }
       },
@@ -134,8 +186,45 @@
         "collection5",
         "collection6"
       ],
+      "disabled": true,
       "settings": {
-        "title": "You may also like"
+        "title": "You may also like",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "divider": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {
+          }
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "grid_style": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_sidebar": true,
+        "collapse_filters": true,
+        "enable_color_swatches": false,
+        "enable_sort": true
       }
     }
   },

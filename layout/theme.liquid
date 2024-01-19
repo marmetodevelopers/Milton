@@ -1,6 +1,8 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ settings.text_direction }}">
 <head>
+  <meta name="robots" content="index,follow">
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -33,7 +35,6 @@
   {%- render 'font-face' -%}
   {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
   {{ 'next.css' | asset_url | stylesheet_tag }}
-  {{ 'custom.css' | asset_url | stylesheet_tag }}
   {%- render 'css-variables' -%}
 
   {%- liquid
@@ -62,14 +63,36 @@
         data-environment="release"
         data-merchantid="milton"
         data-platform="shopify"
+        data-enable-external-trackers="true"
+        data-enable-snap-tracker="true"
+        data-enable-ga="true"
+        data-enable-fbp="true"
+        data-emit-tracker-events="true"
+        data-ga4-measurement-id="G-W90DS5E6VV"
+        data-gaVersion="new"
+        >
+      </script>
+      <!-- <script
+        src="https://sdk.breeze.in/kavach/index.js"
+        type="module"
+        async
+      ></script>  -->
+   <!-- <script type="module"
+        src="http://localhost:5173/dist/breeze-app.js"
+        type="module"
+        id="breeze-script-tag"
+        data-environment="release"
+        data-platform="shopify"
         data-enable-external-trackers="false"
         data-enable-snap-tracker="false"
         data-enable-ga="false"
         data-emit-tracker-events="true"
         data-ga4-measurement-id=""
         data-gaVersion="new"
-        >
-      </script>
+        async>
+      </script> -->
+  <!-- The above can be modified as per the merchant's requirement -->
+  <!-- End of Breeze App Loader -->
   
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
@@ -140,7 +163,25 @@
         window.hulkappsWishlist.baseURL = '/apps/advanced-wishlist/api';
         window.hulkappsWishlist.hasAppBlockSupport = '1';
         </script>
-  {% render 'rapid-search-settings' %}
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5C25VK2');</script>
+<!-- End Google Tag Manager -->
+
+  <!-- Google Tag Manager (old website) -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M6X87VL');</script>
+<!-- End Google Tag Manager -->
+
+  <script type="text/javascript" id="zsiqchat">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "siq6373f846b05ff009a183ed728bcbe6952d6830ae2b5f4af7f3ac39825b843247", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zohopublic.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);</script>
+  
 </head>
 
 <body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %}" data-transitions="{{ settings.animate_page_transitions }}" data-button_style="{{ settings.button_style }}" data-edges="{{ settings.roundness }}" data-type_header_capitalize="{{ settings.type_header_capitalize }}" data-swatch_style="{{ settings.swatch_style }}" data-grid-style="{{ settings.product_grid_style }}">

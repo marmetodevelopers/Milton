@@ -1,5 +1,3 @@
-  {{ 'collection-list-metafield.css' | asset_url | stylesheet_tag }}
-
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -16,17 +14,14 @@
 
 {% assign meta = collection.metafields.custom.subcollection.value %}
 {% if collection.metafields.custom.subcollection != blank %}
-  <div class="page-width collection__metafield--section section-{{ section.id }}-padding">
+  <div class="page-width collection__metafield--section section-{{ section.id }}-padding ">
     <h1 class="section-header__title h3">{{ section.settings.heading }}</h1>
     <div class="collection-metafield__section">
       {% for list in meta %}
         <div class="grid-item">
           <a href="{{ list.url }}">
             <div class="collections-section__image">
-              {%- render 'image',
-                  desktopImage: list.image, 
-                  mobileImage: list.image 
-                -%}
+              <img src="{{ list.image | image_url }}">
               <div class="collection-item__title">{{ list.title }}</div>
             </div>
           </a>
@@ -35,6 +30,34 @@
     </div>
   </div>
 {% endif %}
+
+{% style %}
+    .collections-section__image{
+      text-align: center;
+    }
+    .collection-metafield__section .grid-item{
+      flex: 0 0 16%;
+    }
+  .collection-metafield__section {
+    display: flex;
+    gap: 10px; /* Changed gap to 40px */
+    overflow: scroll;
+  }
+
+
+  .collection-metafield__section::-webkit-scrollbar {
+    display: none;
+  }
+  .collections-section__list--collection.grid.grid--1-col.grid--2-col-tablet {
+    width: 20%; 
+  }
+
+    @Media only screen and (max-width:749px){
+       .collection-metafield__section .grid-item{
+      flex: 0 0 33%;
+    }
+      }
+{% endstyle %}
 
 {% schema %}
 {
@@ -47,7 +70,7 @@
     },
     {
       "type": "header",
-      "content": "Section Padding"
+      "content": "padding"
     },
     {
       "type": "range",
@@ -56,7 +79,7 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Padding Top",
+      "label": "padding_top",
       "default": 36
     },
     {
@@ -66,7 +89,7 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Padding Bottom",
+      "label": "padding_bottom",
       "default": 36
     }
   ],
