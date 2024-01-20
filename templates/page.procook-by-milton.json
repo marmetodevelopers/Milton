@@ -101,7 +101,7 @@
         "template--15972672962660__7c49b649-d468-4c3e-a429-5d491db6fcf6-text_block-3"
       ],
       "settings": {
-        "t:common.text_with_icons.settings.title.label": "",
+        "heading_title": "",
         "align_text": "center",
         "desktop_columns_per_row": 3,
         "icon_color": "#000000",
@@ -342,7 +342,7 @@
             "title": "Tri-Ply Stainless Steel Products",
             "title_size": 28,
             "subheading": "Experience cooking excellence with Milton ProCook's Tri-Ply Stainless Steel cookware. The innovative three-layered metal construction ensures even heat distribution for uniform cooking. With sturdy handles, induction compatibility, and dishwasher-safe convenience, these items blend durability, efficiency, and versatility, enhancing your culinary journey. Elevate your kitchen with this valuable addition.",
-            "link": "shopify:\/\/collections\/stainless-steel-bottles",
+            "link": "shopify:\/\/collections\/kadhai",
             "link_text": " View Product Range",
             "link_2": "",
             "link_text_2": "",
