@@ -3207,8 +3207,8 @@
         }
       }
     },
-    "take-pledge": {
-      "name": "Take Pledge",
+    "pledge": {
+      "name": "Pledge",
       "settings": {
         "align_text": {
           "label": "Content alignment",
@@ -3280,8 +3280,8 @@
         }
       },
       "presets": {
-        "take-pledge": {
-          "name": "Take Pledge"
+        "pledge": {
+          "name": "Pledge"
         }
       }
     }
