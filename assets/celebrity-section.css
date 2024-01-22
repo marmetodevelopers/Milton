@@ -1,0 +1,328 @@
+.mobile_video {
+  width: 100%;
+  height: 100%;
+}
+.heading_celeb {
+  font-size: 30px;
+  color: #5BB7A1;
+  font-weight: 600;
+  letter-spacing: 1.61px;
+  margin-left: 35px;
+  margin-right: 35px
+}
+.dot_1 {
+  height: 10px;
+  width: 10px;
+  background: red;
+  border-radius: 10px;
+}
+.dot_2 {
+  height: 13px;
+  width: 13px;
+  background: red;
+  border-radius: 10px;
+}
+.dot_3 {
+  height: 16px;
+  width: 16px;
+  background: red;
+  border-radius: 10px;
+}
+svg.flickity-button-icon {
+  fill: #C8B668;
+}
+.celebs_subheading h4 {
+  font-size: calc(7px + (22 - 7) * (100vw - 375px) / (1440 - 375));
+}
+.donts_heading {
+  font-size: 0;
+  background: #b49755;
+  margin: 6px;
+}
+.celeb_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px
+}
+.celebs_subheading h4 {
+  font-family: Montserrat, sans-serif;
+  line-height: 17px;
+  letter-spacing: 0.11px;
+}
+.celeb_main_wrapper.flickity-enabled.is-draggable .flickity-prev-next-button.next {
+  background: transparent;
+}
+.celeb_wrapper_container {
+  position: relative;
+}
+.image_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.subheading_celebs {
+  font-size: 2.2rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.011rem;
+  bottom: 0;
+  padding: 2.7rem;
+  width: 100%;
+  background: #C8B668;
+  text-align: center;
+}
+.subheading_celebs h4 {
+  font-weight: 700;
+  padding-bottom: 6px;
+}
+.playButton svg {
+  width: 100%;
+  height: 100%;
+}
+.playButton {
+  height: 50px;
+  width: 50px;
+  background: transparent;
+  border: none;
+  position: absolute;
+  pointer-events: none;
+}
+.desktop_video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobile_view_video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-cell {
+  margin-right: 3px;
+}
+video::-webkit-media-controls-play-button {
+  width: 3em;
+  height: 3em;
+  background-size: contain;
+}
+video::-webkit-media-controls-play-button {
+  width: 3em !important;
+  height: 3em !important;
+  background-size: contain !important;
+}
+/* Style for the video controls */
+.mobile_view_video video::-webkit-media-controls {
+  display: none;
+  width: 20px;
+  height: 20px;
+  /* Hide default controls for WebKit browsers (e.g., Chrome, Safari) */
+}
+.mobile_view_video video::-webkit-media-controls-start-playback-button,
+.mobile_view_video video::-webkit-media-controls-play-button,
+.mobile_view_video video::-webkit-media-controls-timeline {
+  width: 20px;
+  /* Adjust the width of specific control buttons as needed */
+  height: 20px;
+  /* Adjust the height of specific control buttons as needed */
+}
+@media only screen and (max-width: 749px) {
+  .subheading_celebs {
+    border-radius: 0 0 5px 5px;
+    font-size: 7px;
+    padding: 6px;
+    font-weight: 700;
+    padding: 5px;
+   
+  }
+  .heading_celeb {
+    font-size: 16px;
+  }
+  .celebrity_image_video_wrapper video {
+    border-radius: 3px 3px 0 0;
+  }
+
+
+  .subheading_celebs h4 {
+    margin: 0;
+    padding: 6px 9px 6px 9px;
+    font-family: Montserrat;
+    font-size: 7px;
+    letter-spacing: 0.11px;
+    text-transform: capitalize;
+    margin-bottom: 3px
+  }
+  .celeb_main_wrapper.flickity-enabled.is-draggable .flickity-prev-next-button {
+    top: 61%;
+  }
+  .celeb_main_wrapper.flickity-enabled.is-draggable .flickity-prev-next-button.previous {
+    left: -19px !important;
+  }
+  .celeb_main_wrapper.flickity-enabled.is-draggable .flickity-button-icon {
+    width: 39% !important;
+    height: 38% !important;
+  }
+  .celebs_subheading {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .celeb_heading {
+    padding-bottom: 7px;
+  }
+  .celeb_section_container {
+    /* padding-top: 25px; */
+    width: 96%;
+    margin: auto;
+  }
+  .heading_celeb {
+    font-weight: 500;
+    line-height: 17.5px;
+    letter-spacing: 0.5px;
+  }
+  .heading_celeb {
+    margin: 0;
+  }
+  .donts_heading {
+    margin: 0;
+  }
+  .celeb_main_wrapper.flickity-enabled.is-draggable button.flickity-button.flickity-prev-next-button.next svg.flickity-button-icon {
+    left: 49%;
+  }
+  .celebs_subheading h4 {
+    padding: 4px;
+  }
+  .celeb_main_wrapper.flickity-enabled.is-draggable {
+    padding-top: 26px;
+  }
+  .image_wrapper {
+    position: relative;
+    margin-bottom: none;
+  }
+  .celebs_subheading {
+    position: absolute;
+    bottom: 0;
+    width: 89%;
+  }
+  .flickity-button:focus {
+    box-shadow: none !important;
+  }
+  .dot_1 {
+    height: 3px;
+    width: 3px;
+    background: #b49755;
+    border-radius: 10px;
+  }
+  .dot_2 {
+    height: 6px;
+    width: 6px;
+    background: #b49755;
+    border-radius: 10px;
+  }
+  .dot_3 {
+    height: 6px;
+    width: 6px;
+    background: #b49755;
+    border-radius: 10px;
+  }
+  .celebs_subheading h4 {
+    margin: 0;
+  }
+  .flickity-prev-next-button {
+    width: 31px !important;
+  }
+  .celebs_subheading h4 {
+    font-size: 7px;
+  }
+  .celebs_subheading {
+    padding: 0;
+  }
+  .celeb_section_wrapper {
+    width: 100%;
+  }
+  .flickity-prev-next-button.next {
+    right: -14px;
+  }
+  .flickity-prev-next-button.previous {
+    left: -14px;
+  }
+  .desktop_video {
+    display: none;
+  }
+
+}
+@media only screen and (min-width: 750px) {
+
+  .image_wrapper,
+  .celebrity_image_video_wrapper {
+    border-radius: 2.5rem;
+  }
+  .celeb_main_wrapper.flickity-enabled.is-draggable .flickity-prev-next-button.next {
+    right: -3%;
+  }
+  .mobile_view_video {
+    display: none;
+  }
+  .subheading_celebs h4 {
+    padding: 34px 40px 34px 39px;
+    margin: 0;
+  }
+  .subheading_celebs {
+    font-weight: 700;
+    /* border-radius: 0px 0px 25px 25px; */
+  }
+  .celeb_main_wrapper.flickity-enabled.is-draggable .flickity-button-icon {
+    height: 100%;
+    width: 86%;
+  }
+  .celebs_subheading {
+    position: absolute;
+    bottom: 0;
+    width: 85%;
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+  }
+  .celeb_section_container {
+    /* padding-top: 68px; */
+  }
+  .celeb_heading {
+    padding-bottom: 70px;
+    gap: 10px;
+  }
+  .celebs_subheading {
+    padding: 14px
+  }
+  .celeb_section_wrapper {
+    width: 100%;
+  }
+}
+.celeb_main_wrapper ol {
+  opacity: 0;
+}
+.celebs_subheading {
+  background: #c8b668;
+}
+.image_wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.celebrity_image_video_wrapper video {
+  width: 100%;
+  height: 100%;
+}
+.celebs_subheading {
+  text-align: center
+}
+.celebrity_image_video_wrapper img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 95%;
+  border-radius: 20px 20px 20px 20px;
+}
+.celebrity_image_video_wrapper .video_celeb {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border-radius: 0px 0px 20px 20px;
+}
+@media only screen and (max-width: 749px) {}
