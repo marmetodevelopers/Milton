@@ -1,6 +1,188 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+{{ 'celebrity-section.css' | asset_url | stylesheet_tag }}
+{{ 'flikity.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'flickity.js' | asset_url }}" defer="defer"></script>
+
+
+<div class="section-{{ section.id }}-padding">
+  <div class="">
+    <div class="celeb_section_container">
+      <div
+        class="celeb_main_wrapper main-carousel"
+       data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": 15500, "prevNextButtons": false, "pageDots": false }'
+      >
+        {% for block in section.blocks %}
+          <div class="celeb_section_wrapper carousel-cell">
+            <div class="celeb_wrapper_container">
+              {% if block.settings.celeb_image != blank and block.settings.video_picker == blank %}
+                <div class="image_wrapper">
+                  <img src="{{ block.settings.celeb_image | image_url }}" alt="image">
+
+                </div>
+
+              {% elsif block.settings.video_picker != blank %}
+                <div class="celebrity_image_video_wrapper">
+                  <div class="desktop_video video-container desktop_hide">
+                   
+                    {{
+                      block.settings.video_picker
+                      | video_tag:
+                        autoplay: true,
+                        loop: true,
+                        controls: true,
+                        muted: true
+                    }}
+                 
+                  </div>
+                  <div class="mobile_view_video video-container mobile-video" >   
+                   {{
+                    block.settings.video_picker_mobile
+                    | video_tag:
+                      autoplay: true,
+                      loop: true,
+                      controls: true,
+                      muted: true,
+                      playinline: true
+                  }}    
+                  
+                  </div>
+                
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% style %}
+  .video-container {
+  max-width: 100%;
+  height: auto;
+}
+
+  {% for block in section.blocks %}
+      .subheading--{{ block.id }}{
+         color: {{ block.settings.subheading_color }}
+      }
+  {% endfor %}
+
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile}}px;
   }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+    @media only screen and (max-width: 749px){
+      .desktop_hide{
+        display: none;
+      }
+    }
+        @media only screen and (min-width: 750px){
+      .mobile-video{
+      display: none;
+}
+    }
+{% endstyle %}
+
+
+{% schema %}
+{
+  "name": "Celebrity-Section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "header",
+      "content": "Mobile padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Top Padding",
+      "default": 20,
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Bottom Padding",
+      "default": 20,
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "block",
+      "type": "block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "celeb_image",
+          "label": "Celebrity Image"
+        },
+        {
+          "type": "video",
+          "id": "video_picker",
+          "label": "Celebrity Video"
+        },
+        {
+          "type": "video",
+          "id": "video_picker_mobile",
+          "label": "Video Mobile"
+        },
+        {
+          "type": "text",
+          "id": "subheading_text",
+          "label": "Subheading"
+        },
+        {
+          "type": "color",
+          "id": "subheading_color",
+          "label": "Color"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Celebrity-Section"
+    }
+  ]
+}
 {% endschema %}
