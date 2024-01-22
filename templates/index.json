@@ -1,5 +1,29 @@
 {
   "sections": {
+    "video_slider_bar_image_FhXn88": {
+      "type": "video-slider-bar-image",
+      "blocks": {
+        "block_pW6Tig": {
+          "type": "block",
+          "settings": {
+            "video_picker": "shopify:\/\/files\/videos\/White Happy Republic Day Video Message (1920 x 600 px)(1).mp4",
+            "video_picker_mobile": "shopify:\/\/files\/videos\/White Happy Republic Day Video Message (390 x 238 px)(2).mp4",
+            "subheading_text": "",
+            "subheading_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "block_pW6Tig"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "heading_text": ""
+      }
+    },
     "slideshow": {
       "type": "slideshow",
       "blocks": {
@@ -45,6 +69,7 @@
         "slide-2",
         "slide-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "desktop_size": 0,
@@ -601,33 +626,10 @@
         "blog_image_size": "natural",
         "divider": false
       }
-    },
-    "video_slider_bar_image_FhXn88": {
-      "type": "video-slider-bar-image",
-      "blocks": {
-        "block_pW6Tig": {
-          "type": "block",
-          "settings": {
-            "video_picker": "shopify:\/\/files\/videos\/White Happy Republic Day Video Message (1920 x 600 px)(1).mp4",
-            "video_picker_mobile": "shopify:\/\/files\/videos\/White Happy Republic Day Video Message (390 x 238 px)(2).mp4",
-            "subheading_text": "",
-            "subheading_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "block_pW6Tig"
-      ],
-      "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_top_mobile": 20,
-        "padding_bottom_mobile": 20,
-        "heading_text": ""
-      }
     }
   },
   "order": [
+    "video_slider_bar_image_FhXn88",
     "slideshow",
     "featured-collections",
     "featured-collection",
@@ -641,7 +643,6 @@
     "slideshow-split2",
     "text-columns",
     "rich-text",
-    "blog-posts",
-    "video_slider_bar_image_FhXn88"
+    "blog-posts"
   ]
 }
