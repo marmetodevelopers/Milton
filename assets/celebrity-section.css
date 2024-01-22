@@ -253,6 +253,9 @@ video::-webkit-media-controls-play-button {
 
 }
 @media only screen and (min-width: 750px) {
+    .celeb_main_wrapper.main-carousel.flickity-enabled .flickity-viewport{
+    height: 480px !important;
+  }
 
   .image_wrapper,
   .celebrity_image_video_wrapper {
