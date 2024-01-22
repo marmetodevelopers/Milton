@@ -1,0 +1,54 @@
+ <div class="video-banner">
+<video autoplay muted loop class="desktop_hide">
+  <source src="{{ section.settings.video_url | media_tag }}
+</video>
+
+
+
+    <!-- Mobile Video -->
+   <video autoplay muted loop class="mobile-video">
+      <source src="{{ section.settings.video_url_mobile | media_tag }}
+    </video>
+  </div> 
+
+
+  {% style %}
+    video.mobile-video,
+    video.desktop_hide{
+      width: 100%;
+    }
+    @media only screen and (max-width: 749px){
+      .desktop_hide{
+        display: none;
+      }
+    }
+        @media only screen and (min-width: 750px){
+      .mobile-video{
+      display: none;
+}
+    }
+
+{% endstyle %}
+
+{% schema %}
+  {
+    "name": "Video Banner",
+    "settings": [
+       {
+          "type": "video",
+          "id": "video_url",
+          "label": "Video URL"
+        },
+        {
+          "type": "video",
+          "id": "video_url_mobile",
+          "label": "Mobile Video URL"
+        }
+    ],
+    "presets":[
+      {
+        "name":"Video Banner"
+      }
+    ]
+  }
+{% endschema %}
