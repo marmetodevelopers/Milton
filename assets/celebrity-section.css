@@ -127,7 +127,7 @@ video::-webkit-media-controls-play-button {
 }
 @media only screen and (max-width: 749px) {
   .celeb_main_wrapper.main-carousel.flickity-enabled .flickity-viewport{
-    height: 160px !important;
+    height: 224px !important;
   }
   .subheading_celebs {
     border-radius: 0 0 5px 5px;
