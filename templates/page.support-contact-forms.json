@@ -11,6 +11,7 @@
       "blocks": {
         "template--15936832700516__66fcdf49-a124-484e-890e-24330bc4035d-hero-1": {
           "type": "hero",
+          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "",
@@ -30,6 +31,7 @@
       "block_order": [
         "template--15936832700516__66fcdf49-a124-484e-890e-24330bc4035d-hero-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "desktop_size": 0,
@@ -40,24 +42,32 @@
         "lazyload_images": true
       }
     },
-    "rich_text_JB7RWQ": {
+    "rich_text_kdF9BR": {
       "type": "rich-text",
       "blocks": {
-        "heading_fP7hNR": {
+        "heading_WqUpgQ": {
           "type": "heading",
           "settings": {
-            "title": "Rich text",
-            "heading_size": "h2"
+            "title": "Customer care",
+            "heading_size": "h1"
+          }
+        },
+        "text_aeywzE": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Please fill the form below to contact our customer care team. <\/p>"
           }
         }
       },
       "block_order": [
-        "heading_fP7hNR"
+        "heading_WqUpgQ",
+        "text_aeywzE"
       ],
       "settings": {
         "align_text": "center",
         "narrow_column": true,
-        "color_scheme": "1",
+        "color_scheme": "2",
         "divider": false
       }
     },
@@ -81,12 +91,26 @@
         "space_around": true,
         "lazyload_images": true
       }
+    },
+    "map_LkUCxB": {
+      "type": "map",
+      "settings": {
+        "map_title": "",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "address": "<p>Hamilton Housewares Private Limited,2nd Floor, One Forbes, Dr. V B Gandhi Marg,Kala Ghoda, Fort, Mumbai - 400023, India<\/p>",
+        "map_address": "Hamilton Housewares Private Limited,2nd Floor, One Forbes, Dr. V B Gandhi Marg,Kala Ghoda, Fort, Mumbai - 400023, India",
+        "api_key": "",
+        "show_button": true,
+        "lazyload_images": true
+      }
     }
   },
   "order": [
     "main",
     "66fcdf49-a124-484e-890e-24330bc4035d",
-    "rich_text_JB7RWQ",
-    "advanced_content_H4gRUb"
+    "rich_text_kdF9BR",
+    "advanced_content_H4gRUb",
+    "map_LkUCxB"
   ]
 }
