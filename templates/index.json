@@ -30,7 +30,6 @@
       "blocks": {
         "slide-2": {
           "type": "hero",
-          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "",
@@ -42,13 +41,14 @@
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/Red_Modern_Christmas_Sale_Outdoor_Banner_1.png",
-            "image_mobile": "shopify:\/\/shop_images\/Milton_Christmas_Sale_Mobile.png",
+            "image": "shopify:\/\/shop_images\/Home_Page_Banner_Desktop_6.png",
+            "image_mobile": "shopify:\/\/shop_images\/Home_Page_Banner_Desktop_390_x_238_px_2.png",
             "overlay_opacity": 0
           }
         },
         "slide-1": {
           "type": "hero",
+          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "",
