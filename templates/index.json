@@ -30,13 +30,12 @@
       "blocks": {
         "slide-2": {
           "type": "hero",
-          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "",
             "title_size": 70,
             "subheading": "",
-            "link": "shopify:\/\/collections\/all-products",
+            "link": "shopify:\/\/collections\/tri-ply-stainless-steel",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
@@ -49,6 +48,7 @@
         },
         "slide-1": {
           "type": "hero",
+          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "",
