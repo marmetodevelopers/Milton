@@ -30,6 +30,7 @@
       "blocks": {
         "slide-2": {
           "type": "hero",
+          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "",
@@ -48,7 +49,6 @@
         },
         "slide-1": {
           "type": "hero",
-          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "",
