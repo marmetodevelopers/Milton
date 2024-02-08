@@ -10,7 +10,7 @@
     // Page has loaded and theme assets are ready
   });
 */
-
+document.documentElement.style.setProperty('--announcement-bar-height', document.querySelector('.toolbar-section').getBoundingClientRect().bottom + 'px');
 window.theme = window.theme || {};
 window.Shopify = window.Shopify || {};
 
