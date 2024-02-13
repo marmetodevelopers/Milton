@@ -1,0 +1,24 @@
+@media only screen and (min-width: 750px) {
+  .header-layout {
+    margin-top: 13px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  #AnnouncementSlider .flickity-viewport {
+    max-height: 37px;
+    height: 37px !important;
+    /* This height is comming from the flikity so i have given the !important here */
+  }
+  .header-layout {
+    padding-top: 10px;
+  }
+  .header-item.header-item--logo {
+    width: 30%;
+  }
+  .h1.site-header__logo,
+  a.site-header__logo-link,
+  image-element.aos-init.aos-animate,
+  img.medium-up--hide.image-element {
+    max-width: 100%;
+  }
+}
