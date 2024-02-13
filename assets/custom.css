@@ -1,9 +1,395 @@
+header.section-header.section-header--with-link button.section-header__link.address-new-toggle {
+  border: 1px solid #EE3D43;
+  padding: 0.5rem;
+  text-decoration: none;
+  background-color: #EE3D43;
+  color: white;
+}
+.product-tab__content p {
+  line-height: 3rem;
+}
+header.section-header.section-header--with-link.acccount-page-section .section-header__title {
+  border-bottom: 1px solid gray;
+  width: 30%;
+}
+td.trackorder a {
+  border: 1px solid #EE3D43;
+  text-decoration: none;
+  background-color: #ee3d43;
+  color: #fff;
+}
+h1.section-header__title {
+  border-bottom: 1px solid gray;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.account_overview_text {
+  border: 1px solid gray;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.account_overview_text {
+  font-size: 15px;
+}
+.product-tab__content p.customer_details_overview {
+  line-height: 0;
+}
+.product-tab__content p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.product-tab__content.tab_content_account_page {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+p.address_account {
+  font-size: 1.5rem;
+}
+.address_book_account_page {
+  border: 1px solid gray;
+  padding-right: 0;
+}
+.product-tab__content.addres_form_account {
+  font-size: 15px;
+}
+td.track-order-button.section-header__link.address-new-toggle a {
+  border: 1px solid #EE3D43;
+  padding: 0.5rem;
+  text-decoration: none;
+  background-color: #ee3d43;
+  color: #fff;
+  border-radius: 5px;
+}
+.account_manage_order,
+.account_shipping,
+.account_wishlist {
+  border: 1px solid gray;
+  padding: 0.5rem;
+}
+.main-view-order {
+  line-height: 0;
+}
+.main-view-order {
+  margin-top: 10px;
+  text-align: center;
+}
+.logout-btn {
+  cursor: pointer;
+  border: 1px solid gray;
+  padding: 1rem;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* account page tabs sections */
+.heading_content {
+  padding-bottom: 62px;
+}
+.logout-btn {
+  padding: 0;
+}
+.faq_section-list {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 40px;
+  gap: 5rem;
+}
+.product-tab__content {
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 4.2rem;
+  letter-spacing: 0.011rem;
+}
+.product-tab__content p {
+  padding: 0;
+  margin: 0;
+}
+p.address_text_save {
+  font-size: 15px;
+  line-height: 28px;
+  min-height: 5rem;
+}
+.product-tab__content p:first-child {
+  font-size: 15px;
+  color: #000000;
+}
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 60%;
+  border-left: none;
+  height: 300px;
+}
+.faq_section-left {
+  float: left;
+  width: 20%;
+}
+.faq_section-right {
+  width: 70%;
+  margin: 2rem 0;
+}
+.faq_image {
+  padding: 0 8rem;
+}
+.faq_section-left .tablinks {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.11px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.tab-content {
+  float: left;
+  width: 100%;
+}
+.faq_section-left h3 {
+  display: block;
+  text-align: left;
+  transition: 0.3s;
+  font-weight: 500;
+  padding: 1.3rem 0;
+  margin: 0;
+}
+.faq_section-left .tablinks:last-child {
+  border-bottom: none;
+}
+.faq_section-left h3.is--active {
+  color: black;
+  font-weight: 600;
+}
+.faq-tab__summary span::before {
+  display: inline-block;
+  content: "";
+  -webkit-border-radius: -21.625rem;
+  border-radius: 0.375rem;
+  height: 0.7rem;
+  width: 0.75rem;
+  margin-right: 0.5rem;
+  background-color: #c8b668;
+}
+.details {
+  display: none;
+}
+.faq_section-right .details:first-child {
+  display: block;
+}
+.faq_mobile-section {
+  display: none;
+}
+.questions {
+  width: 40%;
+}
+.faq-tab__details .product-tab__content {
+  font-size: 12px;
+  line-height: 23px;
+  letter-spacing: 0.11px;
+  font-weight: 500;
+  color: #9b9b9b;
+  width: 84%;
+  padding: 0 0 30px 10px;
+}
+/*animation */
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-2px, 2px);
+  }
+  50% {
+    transform: translate(2px, -2px);
+  }
+  75% {
+    transform: translate(2px, 2px);
+  }
+  100% {
+    transform: translate(-2px, -2px);
+  }
+}
+/* animation svg */
+h1.section-header__title svg {
+  animation: shake 0.5s ease infinite;
+}
+@media only screen and (max-width: 749px) {
+  .product-tab__content.tab_content_account_page {
+    gap: 1rem;
+  }
+  div#logout-btn-account {
+    font-size: 16px;
+    line-height: 37px;
+  }
+  .product-tab__content p {
+    font-size: 12px;
+  }
+  .account_overview_text p {
+    line-height: 27px;
+    margin-top: 10px;
+  }
+  .main_container_tab_section {
+    display: flex;
+    overflow-x: scroll;
+    align-items: center;
+  }
+  .main_container_tab_section::-webkit-scrollbar {
+    width: 1px;
+    height: 2px;
+  }
+  .main_container_tab_section::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .main_container_tab_section::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  .main_container_tab_section::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .faq_section-right {
+    width: 100%;
+  }
+  div#logout-btn-account {
+    padding: 0;
+  }
+  .logout-btn {
+    width: 100%;
+  }
+  h1.section-header__title {
+    border-bottom: none;
+    justify-content: center;
+  }
+  .faq_section-list {
+    flex-direction: column;
+    gap: 0;
+  }
+  .main_container_tab_section {
+    display: flex;
+    overflow-x: scroll;
+  }
+  .product-tab__content {
+    font-size: 12px;
+  }
+  .faq_section-left .tablinks {
+    font-size: 10px;
+    padding: 0;
+    line-height: 1px;
+    height: 10px;
+  }
+  .description_tab_wrapper {
+    padding-bottom: 0;
+  }
+  .faq_mobile-section {
+    display: block;
+  }
+  .tab-content {
+    margin-bottom: 1rem;
+  }
+  .questions {
+    width: 100%;
+  }
+  .faq_heading-text {
+    font-size: 24px;
+    font-weight: 9900;
+    line-height: 20px;
+    letter-spacing: -0.38px;
+    text-align: center;
+  }
+  .faq_section-left {
+    float: left;
+    width: 100%;
+  }
+  .faq_section-left .tablinks {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid gray;
+    flex: 0 0 40%;
+    margin-bottom: 1rem;
+  }
+}
+/* account end page tabs sections */
 @media only screen and (min-width: 750px) {
+  .product-tab__content td {
+    height: 150px;
+  }
   .header-layout {
     margin-top: 13px;
   }
+  header.section-header.section-header--with-link.acccount-page-section {
+    justify-content: space-between;
+  }
+  .account_overview_text,
+  .address_book_account_page {
+    width: 45%;
+  }
+  .account_overview_text {
+    padding: 2rem;
+  }
+  .address_book_account_page {
+    padding: 2rem;
+  }
+  .main_description_tabs {
+    display: none;
+  }
+  .description_tabs_container {
+    width: 80%;
+  }
+  .faq_section-list {
+    padding-top: 57px;
+  }
+  .faq_section-left h3.is--active {
+    font-size: 18px;
+  }
+  h1.section-header__title {
+    gap: 10px;
+  }
+  .faq_section-left h3.is--active th {
+    padding: 10px 5px;
+  }
 }
 @media only screen and (max-width: 749px) {
+  h1.section-header__title {
+    gap: 10px;
+  }
+  .faq_section-list {
+    padding-top: 0;
+  }
+  .main_description_tabs {
+    width: 80%;
+  }
+  .mobile_tabs_content p.email_customer_account_page {
+    font-size: 15px;
+  }
+  .mobile_tabs_content p.address_account_wishlist,
+  .mobile_tabs_content p.customer_details_overview {
+    font-size: 24px;
+  }
+  .account_overview_text,
+  .address_book_account_page {
+    margin-bottom: 1rem;
+  }
+  div#logout-btn-account {
+    margin-top: 2rem;
+  }
+  .account_overview_text,
+  .address_book_account_page {
+    padding: 1rem;
+  }
   #AnnouncementSlider .flickity-viewport {
     max-height: 37px;
     height: 37px !important;
@@ -20,5 +406,16 @@
   image-element.aos-init.aos-animate,
   img.medium-up--hide.image-element {
     max-width: 100%;
+  }
+  .account_overview_text,
+  .address_book_account_page {
+    width: 100%;
+  }
+  .mobile_tabs_content p {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 1rem;
+    padding-bottom: 1rem;
   }
 }
