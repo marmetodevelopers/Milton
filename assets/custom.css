@@ -20,11 +20,14 @@ td.trackorder a {
 }
 h1.section-header__title {
   border-bottom: 1px solid gray;
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
   padding-top: 1.5rem;
   font-size: 20px;
   display: flex;
   align-items: center;
+}
+.product-tab__content td {
+  text-align: center;
 }
 .account_overview_text {
   border: 1px solid gray;
@@ -203,6 +206,11 @@ p.address_text_save {
   width: 84%;
   padding: 0 0 30px 10px;
 }
+.slideshow__slide.announcement-slider__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /*animation */
 @keyframes shake {
   0% {
@@ -363,6 +371,10 @@ h1.section-header__title svg {
   }
 }
 @media only screen and (max-width: 749px) {
+
+  .newsletter-section--no-image .newsletter-section__content {
+    width: 100%;
+  }
   h1.section-header__title {
     gap: 10px;
   }

@@ -245,11 +245,10 @@
                   <tr>
                     <th>{{ 'customer.orders.order_number' | t }}</th>
                     <th>{{ 'customer.orders.date' | t }}</th>
+                    <th>{{ 'Count' }}</th>
                     <th>{{ 'customer.orders.payment_status' | t }}</th>
-                    <th>{{ 'customer.orders.fulfillment_status' | t }}</th>
-                    <th>{{'Track Your Order' }}</th>
+                    <th>{{'View / Track Your Order' }}</th>
                     <th>{{ 'customer.orders.total' | t }}</th>
-
                     <th>Return / Exchange</th>
                   </tr>
                 </thead>
@@ -264,11 +263,14 @@
                     <td data-label="{{ 'customer.orders.date' | t }}">
                       {{ order.created_at | time_tag: format: 'date' }}
                     </td>
-                    {% comment %} <td data-label="{{ 'customer.orders.payment_status' | t }}">{{ order.financial_status_label }}</td> {% endcomment %}
-                    {% comment %} <td data-label="{{ 'customer.orders.fulfillment_status' | t }}">
-                      {{ order.fulfillment_status_label }}
-                    </td> {% endcomment %}
-                   
+                    <td data-label="{{ 'count' }}">{{ order.item_count }}</td>
+                     <td data-label="{{ 'customer.orders.payment_status' | t }}">{{ order.financial_status_label }}</td> 
+                    <td data-label="Track Your Order"  class="track-order-button section-header__link address-new-toggle" data-order="{{ order.name }}">
+                      {{ 'View Your Order' | link_to: order.customer_url }}
+                        <div class="main-view-order">
+                          <a href="https://hamilton-tracking.unicommerce.com/">Track Your Order</a>
+                        </div>
+                      </td>
                     <td data-label="{{ 'customer.orders.total' | t }}">{{ order.total_price | money }}</td>
                     <td data-order_name={{order.id}} data-label="Return" class="return__exchange">
                       {% if order.fulfillment_status == 'fulfilled' %}
@@ -279,27 +281,10 @@
                       <p class="js-return-exchange disabled"> Not Available </p>
                       {% endif %}
                     </td>
-                    <td data-label="Track Your Order"  class="track-order-button section-header__link address-new-toggle" data-order="{{ order.name }}">
-                    {{ 'Track Your Order' | link_to: order.customer_url }}
-                      <div class="main-view-order">
-                        <a href="https://hamilton-tracking.unicommerce.com/">View Order</a>
-                      </div>
-                      
-                    </td>
-                  </tr>
-                   
+                    </tr>                
                     {% assign order_status = order.fulfillment_status %}
-                    {% assign cancel_status = order.cancelled_at %}
-                    
+                    {% assign cancel_status = order.cancelled_at %}  
                   </tr>
-                  {% comment %} <tr>
-                    <td data-label="Track Your Order">
-                      <button class="track-order-button" data-order="{{ order.name }}">Track</button>
-                    </td>
-                  </tr> {% endcomment %}
-                 
-                  
-        
                   {%- endfor -%}
                 </tbody>
               </table>
