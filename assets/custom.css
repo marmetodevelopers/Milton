@@ -20,7 +20,7 @@ td.trackorder a {
 }
 h1.section-header__title {
   border-bottom: 1px solid gray;
-  padding-bottom: 0.5rem;
+  padding-bottom: .5rem;
   padding-top: 1.5rem;
   font-size: 20px;
   display: flex;
@@ -234,6 +234,9 @@ h1.section-header__title svg {
   animation: shake 0.5s ease infinite;
 }
 @media only screen and (max-width: 749px) {
+  h1.section-header__title {
+    padding-bottom: 1.5rem;
+  }
   .product-tab__content.tab_content_account_page {
     gap: 1rem;
   }
@@ -371,7 +374,6 @@ h1.section-header__title svg {
   }
 }
 @media only screen and (max-width: 749px) {
-
   .newsletter-section--no-image .newsletter-section__content {
     width: 100%;
   }
