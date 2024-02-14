@@ -73,6 +73,9 @@ td.track-order-button.section-header__link.address-new-toggle a {
 .account_wishlist {
   border: 1px solid gray;
   padding: 0.5rem;
+  background: #EE3D43;
+  color: white;
+  border: none;
 }
 .main-view-order {
   line-height: 0;
