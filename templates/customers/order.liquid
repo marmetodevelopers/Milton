@@ -32,7 +32,6 @@
         <thead>
           <tr>
             <th>{{ 'customer.order.product' | t }}</th>
-            {% comment %} <th>{{ 'customer.order.sku' | t }}</th> {% endcomment %}
             <th>{{ 'customer.order.price' | t }}</th>
             <th class="text-right">{{ 'customer.order.quantity' | t }}</th>
             <th class="text-right table--small-hide">{{ 'customer.order.total' | t }}</th>
@@ -81,7 +80,6 @@
                 </div>
               {% endif %}
             </td>
-            {% comment %} <td data-label="{{ 'customer.order.sku' | t }}">{{ line_item.sku }}</td> {% endcomment %}
             <td data-label="{{ 'customer.order.price' | t }}">
               {%- if line_item.original_price != line_item.final_price -%}
                 <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
