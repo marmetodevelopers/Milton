@@ -269,9 +269,9 @@
                     </td>
                     <td data-label="{{ 'count' }}">{{ order.item_count }}</td>
                      <td data-label="{{ 'customer.orders.payment_status' | t }}">{{ order.financial_status_label }}</td> 
-                    <td data-label="Track Your Order"  class="track-order-button section-header__link address-new-toggle" data-order="{{ order.name }}">
+                    <td data-label="View / Track Your Order"  class="track-order-button section-header__link address-new-toggle" data-order="{{ order.name }}">
+                      <div class="main-view-order">
                       {{ 'View Your Order' | link_to: order.customer_url }}
-                        <div class="main-view-order">
                           <a href="https://hamilton-tracking.unicommerce.com/">Track Your Order</a>
                         </div>
                       </td>

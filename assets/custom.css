@@ -68,6 +68,16 @@ td.track-order-button.section-header__link.address-new-toggle a {
   color: #fff;
   border-radius: 5px;
 }
+.collection__metafield--section h1.section-header__title,
+header.section-header.section-header--flush h1.section-header__title {
+  border-bottom: none;
+}
+.grid-product__tag.inqure_now {
+  color: #fff;
+}
+.table--responsive td:before {
+  font-weight: 900;
+}
 .account_manage_order,
 .account_shipping,
 .account_wishlist {
@@ -236,7 +246,29 @@ p.address_text_save {
 h1.section-header__title svg {
   animation: shake 0.5s ease infinite;
 }
+button.btn.btn--full.add-to-cart.breeze-button,
+a.btn.btn--full.inqure-now-form {
+  margin-top: 1rem;
+}
 @media only screen and (max-width: 749px) {
+  td.track-order-button.section-header__link.address-new-toggle a {
+    padding: 1rem;
+  }
+  .product-tab__content td {
+    text-align: end;
+  }
+  .main-view-order {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .table--responsive td:before {
+    font-size: 15px;
+  }
+  td.track-order-button.section-header__link.address-new-toggle {
+    margin-top: 0;
+  }
   h1.section-header__title {
     padding-bottom: 1.5rem;
   }
@@ -338,6 +370,22 @@ h1.section-header__title svg {
 }
 /* account end page tabs sections */
 @media only screen and (min-width: 750px) {
+  .main-view-order {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    margin: auto;
+  }
+  td.track-order-button.section-header__link.address-new-toggle a {
+    padding: 1rem;
+  }
+  .table--responsive td:before {
+    font-size: 15px;
+  }
+  .product-tab__content th {
+    font-size: 15px;
+  }
   .product-tab__content td {
     height: 150px;
   }
