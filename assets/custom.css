@@ -421,9 +421,7 @@ button#addresses-add-submit {
   p.customer_main_id {
     margin-top: 1.8rem;
   }
-  .product-tab__content th {
-    line-height: 18px;
-  }
+
   .main-view-order {
     display: flex;
     flex-direction: column;
