@@ -2,7 +2,6 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
       }
     },
@@ -30,6 +29,7 @@
       "block_order": [
         "template--15936832700516__66fcdf49-a124-484e-890e-24330bc4035d-hero-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "desktop_size": 0,
@@ -62,6 +62,7 @@
         "template--15936832700516__06900638-622a-4ac5-a345-cd7502f99617-heading-1",
         "template--15936832700516__06900638-622a-4ac5-a345-cd7502f99617-text-1"
       ],
+      "disabled": true,
       "settings": {
         "align_text": "center",
         "narrow_column": true,
@@ -108,6 +109,7 @@
         "template--15936832700516__8dc87be9-9a4d-4753-8569-24741b83d08a-timer-1",
         "template--15936832700516__8dc87be9-9a4d-4753-8569-24741b83d08a-button-1"
       ],
+      "disabled": true,
       "settings": {
         "layout": "banner",
         "full_width": false,
@@ -120,6 +122,7 @@
     },
     "b4ddd3dd-9339-4529-a37d-078b7aaad19d": {
       "type": "background-image-text",
+      "disabled": true,
       "settings": {
         "subtitle": "",
         "title": "Large image with text box",
@@ -136,6 +139,7 @@
     },
     "1f91866e-02e2-4ac4-a646-a94a278244a4": {
       "type": "contact-form",
+      "disabled": true,
       "settings": {
         "title": "Contact us",
         "heading_size": "h2",
@@ -235,7 +239,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Storex_Container_3_Pcs_Set_Round_Blue_750_Ml_5.jpg",
             "image_mask": "none",
             "image_width": 650,
             "title": "Example title",
@@ -248,7 +251,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Storex_Container_3_Pcs_Set_Round_2_Ltr_Pink_5.jpg",
             "image_mask": "none",
             "image_width": 650,
             "title": "Example title",
@@ -263,6 +265,7 @@
         "template--15936832700516__134d58fd-82f5-454c-a328-3a8729e621e9-text_block-2",
         "template--15936832700516__134d58fd-82f5-454c-a328-3a8729e621e9-text_block-3"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "align_text": "left",
