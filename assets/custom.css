@@ -26,9 +26,9 @@ h1.section-header__title {
   display: flex;
   align-items: center;
 }
-.product-tab__content td {
+/* .product-tab__content td {
   text-align: center;
-}
+} */
 .account_overview_text {
   border: 1px solid gray;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -250,15 +250,53 @@ button.btn.btn--full.add-to-cart.breeze-button,
 a.btn.btn--full.inqure-now-form {
   margin-top: 1rem;
 }
+a.section-header__link.logout_btn_account.section-header__link.logout-btn {}
 @media only screen and (max-width: 749px) {
+  span.order_info_span {
+    width: 61%;
+    display: block;
+  }
+  span.order_info_span_count {
+    width: 52%;
+    display: block;
+  }
+  span.order_info_span_date {
+    width: 83%;
+    display: block;
+  }
+  span.order_info_span_total {
+    display: block;
+    width: 69%;
+  }
+  .main_account_address hr.hr--medium {
+    margin-bottom: 20px;
+  }
+  .faq_section-right {
+    margin-top: 1rem;
+  }
+  .product-tab__content.addres_form_account .breadcrumb {
+    line-height: 0;
+  }
+  .section-header--with-link .section-header__title {
+    display: inline;
+  }
+  .product-tab__content p {
+    line-height: 24px;
+  }
+  .product-tab__content td {
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  .main-view-order {
+    margin-left: 10rem;
+  }
   td.track-order-button.section-header__link.address-new-toggle a {
     padding: 1rem;
   }
-  .product-tab__content td {
-    text-align: end;
-  }
   .main-view-order {
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -316,7 +354,6 @@ a.btn.btn--full.inqure-now-form {
   }
   h1.section-header__title {
     border-bottom: none;
-    justify-content: center;
   }
   .faq_section-list {
     flex-direction: column;
@@ -330,10 +367,10 @@ a.btn.btn--full.inqure-now-form {
     font-size: 12px;
   }
   .faq_section-left .tablinks {
-    font-size: 10px;
+    font-size: 14px;
     padding: 0;
     line-height: 1px;
-    height: 10px;
+    height: 20px;
   }
   .description_tab_wrapper {
     padding-bottom: 0;
@@ -377,8 +414,12 @@ button#addresses-add-submit {
 .left-button-content.svelte-9mhw2v {
   align-items: baseline;
 }
+
 /* account end page tabs sections */
 @media only screen and (min-width: 750px) {
+  .product-tab__content th {
+    line-height: 18px;
+  }
   .main-view-order {
     display: flex;
     flex-direction: column;

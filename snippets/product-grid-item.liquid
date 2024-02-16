@@ -97,12 +97,6 @@
               
             </div>
           {%- endunless -%}
-          {%- unless product.available -%}
-            <div class="grid-product__tag inqure_now">
-              <a href="">Inqure Now</a>
-              
-            </div>
-          {%- endunless -%}
           {%- if on_sale and product.available -%}
             <div class="grid-product__tag grid-product__tag--sale">
               {{ 'products.general.sale' | t }}

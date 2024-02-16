@@ -236,7 +236,7 @@
       "title": "Order History",
       "order_number": "Order",
       "date": "Date",
-      "payment_status": "Payment status",
+      "payment_status": "Payment Status",
       "fulfillment_status": "Fulfillment status",
       "total": "Total",
       "none": "You haven't placed any orders yet."
