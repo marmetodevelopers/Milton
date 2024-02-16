@@ -477,6 +477,9 @@ button#addresses-add-submit {
   }
 }
 @media only screen and (max-width: 749px) {
+  .text-center .newsletter-section__content form{
+    overflow: hidden;
+  }
   .site-header__search-container.is-active {
   margin-top: 4rem;
   }
