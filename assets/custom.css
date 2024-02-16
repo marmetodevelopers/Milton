@@ -477,6 +477,9 @@ button#addresses-add-submit {
   }
 }
 @media only screen and (max-width: 749px) {
+  .header-layout {
+     overflow: hidden;
+  }
   .text-center .newsletter-section__content form{
     overflow: hidden;
   }
