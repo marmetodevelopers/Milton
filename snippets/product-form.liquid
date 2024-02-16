@@ -54,14 +54,6 @@
       </span>
     </button>
 
-    {%- unless product.available -%}
-      <a href="{{ section.settings.inquire-now-url }}"
-      class="btn btn--full inqure-now-form">
-      Inquire Now
-    </a>
-
-    {%- endunless -%}
-
     {%- if enable_dynamic_buttons -%}
       {% if current_variant.available %} 
         <div style='margin-top: 10px; box-sizing: border-box'>

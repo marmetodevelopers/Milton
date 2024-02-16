@@ -35,8 +35,8 @@
             assign index = forloop.index %} {% if forloop.index == index %} <p class="faq-tab__details">
             <div class="product-tab__content tab_content_account_page">
               <div class="account_overview_text">
-                <p class="customer_details_overview"> {% render 'account-icon' %} {{ customer.name }} </p>
-                <p> Email: {{ customer.email }} </p>
+                <p class="customer_details_overview cutsomer_name_account"> {% render 'account-icon' %} {{ customer.name }} </p>
+                <p class="customer_main_id"> Email: {{ customer.email }} </p>
                 <p> Phone: {{ customer.phone }} </p>
               </div>
               <div class="address_book_account_page">
