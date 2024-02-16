@@ -6,15 +6,13 @@
   }
 </style>
 
-{% comment %}=========================================== Account Page Tabs Starting ========================= {% endcomment %}
-  
+{% comment %}=========================================== Account Page Tabs Starting ========================={%endcomment %}
 <div class="faq-section">
   <div class="faq-container section-{{ section.id }}-padding">
     <div class="bg-{{section.id}}">
       <div class="faq_section-list page-width">
         <div class="faq_section-left ">
           <h1 class="section-header__title"><span>{% render 'hello-icon' %}</span> Hello, {{ customer.name }}</h1>
-<!-- {% render 'hulkapps-wishlist-account-btn' %} -->
           <div class="main_container_tab_section">
             <h3 class="tablinks details is--active " data-tab="Tab-{{ section.id }}-1">
               Account Overview
@@ -30,8 +28,8 @@
             </h3>
           </div>
         </div>
+
         <div class="faq_section-right">
-  
           {% comment %}=========  Account Overview ============= {% endcomment %}
           <div id="Tab-{{ section.id }}-1" class="tab-content details question1" data-tab="Tab-{{ section.id }}-1"> {%
             assign index = forloop.index %} {% if forloop.index == index %} <p class="faq-tab__details">
@@ -77,7 +75,6 @@
                 {%- endif -%}
                 <header class="section-header section-header--with-link">
                   <h1 class="section-header__title">Address</h1>
-<!-- {% render 'hulkapps-wishlist-account-btn' %} -->
                   <button type="button" class="section-header__link address-new-toggle">
                     {{ 'customer.addresses.add_new' | t }}</a>
                 </header>
@@ -247,6 +244,9 @@
           <div id="Tab-{{ section.id }}-3" class="tab-content details question3" data-tab="Tab-{{ section.id }}-3"> {% assign index = forloop.index %} {% if forloop.index == index %} <p class="faq-tab__details">
           {%  comment  %}========== Manage Orders==============  {% endcomment %}
             <div class="product-tab__content">
+              {% if customer.orders.size == 0 %}
+                <p>No orders are there.</p>
+            {% else %}
               <table class="table--responsive table--small-text">
                 <thead>
                   <tr>
@@ -301,6 +301,7 @@
                   {%- endfor -%}
                 </tbody>
               </table>
+                {% endif %}
             </div>
             </p> {% endif %}
             {% comment %} endManage Orders {% endcomment %}
