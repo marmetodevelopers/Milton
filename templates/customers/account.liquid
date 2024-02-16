@@ -13,6 +13,7 @@
       <div class="faq_section-list page-width">
         <div class="faq_section-left ">
           <h1 class="section-header__title"><span>{% render 'hello-icon' %}</span> Hello, {{ customer.name }}</h1>
+{% render 'hulkapps-wishlist-account-btn' %}
           <div class="main_container_tab_section">
             <h3 class="tablinks details is--active " data-tab="Tab-{{ section.id }}-1">
               Account Overview
@@ -75,6 +76,7 @@
                 {%- endif -%}
                 <header class="section-header section-header--with-link">
                   <h1 class="section-header__title">Address</h1>
+{% render 'hulkapps-wishlist-account-btn' %}
                   <button type="button" class="section-header__link address-new-toggle">
                     {{ 'customer.addresses.add_new' | t }}</a>
                 </header>
