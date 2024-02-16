@@ -477,6 +477,9 @@ button#addresses-add-submit {
   }
 }
 @media only screen and (max-width: 749px) {
+  .site-header__search-container.is-active {
+  margin-top: 4rem;
+  }
   .newsletter-section--no-image .newsletter-section__content {
     width: 100%;
   }
