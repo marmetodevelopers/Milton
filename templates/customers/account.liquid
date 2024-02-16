@@ -6,7 +6,8 @@
   }
 </style>
 
-{% comment %}=========================================== Account Page Tabs Starting ========================={%endcomment %}
+{% comment %}=========================================== Account Page Tabs Starting ========================= {% endcomment %}
+  
 <div class="faq-section">
   <div class="faq-container section-{{ section.id }}-padding">
     <div class="bg-{{section.id}}">
@@ -29,8 +30,8 @@
             </h3>
           </div>
         </div>
-
         <div class="faq_section-right">
+  
           {% comment %}=========  Account Overview ============= {% endcomment %}
           <div id="Tab-{{ section.id }}-1" class="tab-content details question1" data-tab="Tab-{{ section.id }}-1"> {%
             assign index = forloop.index %} {% if forloop.index == index %} <p class="faq-tab__details">
