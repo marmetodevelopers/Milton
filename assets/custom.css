@@ -26,9 +26,6 @@ h1.section-header__title {
   display: flex;
   align-items: center;
 }
-/* .product-tab__content td {
-  text-align: center;
-} */
 .account_overview_text {
   border: 1px solid gray;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
