@@ -415,7 +415,7 @@ button#addresses-add-submit {
 }
 /* account end page tabs sections */
 @media only screen and (min-width: 990px) and (max-width: 1280px){
-  .product-tab__content table.table--responsive.table--small-text th{
+ .product-tab__content th{
   line-height: 23px;
 }
 }
