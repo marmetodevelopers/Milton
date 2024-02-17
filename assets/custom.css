@@ -453,6 +453,7 @@ button#addresses-add-submit {
   }
   .product-tab__content th {
     font-size: 15px;
+    line-height: 23px;
   }
   .product-tab__content td {
     height: 150px;
