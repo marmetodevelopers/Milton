@@ -2569,20 +2569,8 @@ body,html{
   border:0;
 }
 
-@media only screen and (max-width: 1280px){
-   .table--responsive td,.table--responsive tr{
-      clear:both;
-      float:left;
-      width:100%;
-    }
-      .table--responsive td,.table--responsive th{
-      display:block;
-      padding:15px;
-      text-align:right;
-    }
-}
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:1280px){
     .table--responsive thead{
       display:none;
     }
@@ -2591,7 +2579,17 @@ body,html{
       display:block;
     }
 
+    .table--responsive td,.table--responsive tr{
+      clear:both;
+      float:left;
+      width:100%;
+    }
 
+    .table--responsive td,.table--responsive th{
+      display:block;
+      padding:15px;
+      text-align:right;
+    }
 
     .table--responsive td:before{
       content:attr(data-label);
