@@ -417,6 +417,9 @@ button#addresses-add-submit {
 
 
 @media only screen and (min-width: 750px) {
+  .hulk__wishlist-wrap {
+  padding-top: 4rem;
+  }
   .product-tab__content td{
     margin-top: 0;
   }
