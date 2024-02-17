@@ -418,6 +418,7 @@ button#addresses-add-submit {
   .product-tab__content table.table--responsive.table--small-text th{
   line-height: 23px;
 }
+}
 @media only screen and (min-width: 750px) {
   header.section-header.section-header--with-link button.section-header__link.address-new-toggle {
   margin-top: 19px;
