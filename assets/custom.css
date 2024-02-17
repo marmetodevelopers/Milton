@@ -415,7 +415,7 @@ button#addresses-add-submit {
 }
 /* account end page tabs sections */
 @media only screen and (min-width: 750px) {
-  .product-tab__content p{
+  .product-tab__content .main_account_address p{
         line-height: normal;
     margin-bottom: 15px;
   }
