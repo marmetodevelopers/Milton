@@ -490,7 +490,11 @@ button#addresses-add-submit {
   }
 }
 @media only screen and (max-width: 749px) {
+  .product-tab__content p {
+ margin-bottom: 10px;
+  }
   .header-layout {
+    
      overflow: hidden;
   }
   .text-center .newsletter-section__content form{
