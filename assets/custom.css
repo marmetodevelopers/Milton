@@ -421,6 +421,9 @@ button#addresses-add-submit {
 }
 
 @media only screen and (min-width: 750px) {
+  .product-tab__content td{
+    margin-top: 0;
+  }
   header.section-header.section-header--with-link button.section-header__link.address-new-toggle {
   margin-top: 19px;
   }
