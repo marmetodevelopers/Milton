@@ -5,6 +5,7 @@
       "blocks": {
         "aa5f3615-4c8e-4a01-94a6-5a8d76417132": {
           "type": "shopify:\/\/apps\/hulk-advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
+          "disabled": true,
           "settings": {
             "button_style": "style_1",
             "button_border": 1,
@@ -110,7 +111,7 @@
       ],
       "settings": {
         "sku_enable": false,
-        "inquire-now-url": "shopify:\/\/pages\/inquire-now",
+        "inquire-now-url": "",
         "image_position": "left",
         "image_container_size": "medium",
         "product_image_size": "square",
