@@ -24,11 +24,38 @@
             "image": "shopify:\/\/shop_images\/media_sipper.jpg",
             "image_mobile": "shopify:\/\/shop_images\/media_sipper.jpg"
           }
+        },
+        "image_Xb84pG": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify:\/\/shop_images\/media_microwave-casserole.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/media_microwave-casserole.jpg"
+          }
+        },
+        "image_CREPCc": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify:\/\/shop_images\/media_metro.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/media_metro.jpg"
+          }
+        },
+        "image_YbqJKC": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify:\/\/shop_images\/media_roziroti.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/media_roziroti.jpg"
+          }
         }
       },
       "block_order": [
         "image_AXWjtE",
-        "image_ADKAMU"
+        "image_ADKAMU",
+        "image_Xb84pG",
+        "image_CREPCc",
+        "image_YbqJKC"
       ],
       "settings": {
         "full_width": true,

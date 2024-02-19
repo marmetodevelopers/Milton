@@ -7,15 +7,15 @@
           "type": "hero",
           "settings": {
             "top_subheading": "",
-            "title": "",
+            "title": "<p>Contact us<\/p>",
             "title_size": 70,
-            "subheading": "",
+            "subheading": "Home > Contact",
             "link": "",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
-            "text_align": "vertical-bottom horizontal-left",
+            "text_align": "vertical-center horizontal-center",
             "image": "shopify:\/\/shop_images\/contact-banner_final-desktop.jpg",
             "overlay_opacity": 0
           }
@@ -26,7 +26,7 @@
       ],
       "settings": {
         "full_width": true,
-        "desktop_size": 0,
+        "desktop_size": -10,
         "mobile_size": 0,
         "style": "arrows",
         "autoplay": true,
@@ -104,13 +104,17 @@
     "form": {
       "type": "contact-form",
       "settings": {
+        "Contact_details": "<p>Contact Location Info<\/p>",
+        "address": "31002A, Melbourne st, Australia",
+        "mobile_number": "+91 9198767865",
+        "email_address": "info@example.com",
         "title": "Contact Us",
         "heading_size": "h2",
         "heading_position": "center",
         "text": "",
         "show_phone": false,
         "narrow_column": true,
-        "color_scheme": "2"
+        "color_scheme": "3"
       }
     }
   },

@@ -35,8 +35,10 @@
 
 
   {%- endif -%}
-  <div class="page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
-    {%- if section.settings.title != blank or section.settings.text != blank -%}
+  <div class="page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %} {{ page.title }}">
+    <div>
+         {%- if section.settings.title != blank or section.settings.text != blank -%}
+
       <div class="section-header text-{{ section.settings.heading_position }}">
         {%- if section.settings.title != blank -%}
           <h2 class="section-header__title {{ section.settings.heading_size }}">
@@ -96,8 +98,66 @@
 
       {%- endform -%}
     </div>
+
+    </div>
+    <div>
+<h2>Contact Details</h2>
+<p>{{ section.settings.Contact_details }}</p>
+<p class="contactus_svg"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Capa_1" width="800px" height="800px" viewBox="0 0 395.71 395.71" xml:space="preserve">
+<g>
+	<path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738   c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388   C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191   c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z"/>
+</g>
+</svg></span>{{ section.settings.address }}</p>
+<p class="contactus_svg"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 15 15" version="1.1">
+    
+<title>call [#192]</title>
+<desc>Created with Sketch.</desc>
+<defs>
+
+</defs>
+<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Dribbble-Light-Preview" transform="translate(-103.000000, -7321.000000)" fill="#000000">
+        <g id="icons" transform="translate(56.000000, 160.000000)">
+            <path d="M61.7302966,7173.99596 C61.2672966,7175.40296 59.4532966,7176.10496 58.1572966,7175.98796 C56.3872966,7175.82796 54.4612966,7174.88896 52.9992966,7173.85496 C50.8502966,7172.33496 48.8372966,7169.98396 47.6642966,7167.48896 C46.8352966,7165.72596 46.6492966,7163.55796 47.8822966,7161.95096 C48.3382966,7161.35696 48.8312966,7161.03996 49.5722966,7161.00296 C50.6002966,7160.95296 50.7442966,7161.54096 51.0972966,7162.45696 C51.3602966,7163.14196 51.7112966,7163.84096 51.9072966,7164.55096 C52.2742966,7165.87596 50.9912966,7165.93096 50.8292966,7167.01396 C50.7282966,7167.69696 51.5562966,7168.61296 51.9302966,7169.09996 C52.6632966,7170.05396 53.5442966,7170.87696 54.5382966,7171.50296 C55.1072966,7171.86196 56.0262966,7172.50896 56.6782966,7172.15196 C57.6822966,7171.60196 57.5872966,7169.90896 58.9912966,7170.48196 C59.7182966,7170.77796 60.4222966,7171.20496 61.1162966,7171.57896 C62.1892966,7172.15596 62.1392966,7172.75396 61.7302966,7173.99596 C61.4242966,7174.92396 62.0362966,7173.06796 61.7302966,7173.99596" id="call-[#192]">
+
+</path>
+        </g>
+    </g>
+</g>
+</svg></span>{{ section.settings.mobile_number }}</p>
+<p class="contactus_svg"><span><svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 1920 1920">
+<path d="M1920 428.266v1189.54l-464.16-580.146-88.203 70.585 468.679 585.904H83.684l468.679-585.904-88.202-70.585L0 1617.805V428.265l959.944 832.441L1920 428.266ZM1919.932 226v52.627l-959.943 832.44L.045 278.628V226h1919.887Z" fill-rule="evenodd"/>
+</svg></span>{{ section.settings.email_address }}</p>
+    </div>
+ 
+
+ 
   </div>
 </div>
+
+{%  style  %}
+p.contactus_svg{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.page-width.page-width--narrow.Contact-us{
+  display: flex;
+  gap: 2rem;
+  max-width: 70%;
+
+}
+.page-width.page-width--narrow.Contact-us svg{
+  height: 20px;
+  width: 20px;
+}
+@media only screen and (max-width: 749px){
+  .page-width.page-width--narrow.Contact-us{
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+}
+{% endstyle %} 
 
 {% schema %}
 {
@@ -106,6 +166,27 @@
     {
       "type": "paragraph",
       "content": "t:sections.contact-form.settings.content"
+    },
+    {
+      "type": "richtext",
+      "id":"Contact_details",
+      "label":"Contact Location"
+    },
+    {
+      "type": "text",
+      "id":"address",
+      "label":"Address"
+    },
+    {
+      "type": "text",
+      "id":"mobile_number",
+      "label":"Mobile Number"
+    },
+    
+    {
+      "type": "text",
+      "id":"email_address",
+      "label":"Eamil"
     },
     {
       "type": "text",

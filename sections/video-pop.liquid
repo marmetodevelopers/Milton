@@ -1,0 +1,50 @@
+<div clas>
+    <div>
+        <div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+{%  schema  %}  
+{
+    "name": "Meta collection list",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading_text",
+        "label": "Heading"
+      }, {
+        "type": "header",
+        "content": "Section Padding"
+      }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 200,
+        "step": 4,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 32
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 200,
+        "step": 4,
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 32
+      }
+    ],
+    "presets": [
+      {
+        "name": "Meta collection list"
+      }
+    ]
+  }
+{% endschema %}
