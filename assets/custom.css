@@ -368,7 +368,6 @@ a.section-header__link.logout_btn_account.section-header__link.logout-btn {}
   .faq_section-left .tablinks {
     font-size: 14px;
     padding: 0;
-
     height: 35px;
   }
   .description_tab_wrapper {
@@ -413,27 +412,27 @@ button#addresses-add-submit {
 .left-button-content.svelte-9mhw2v {
   align-items: baseline;
 }
-
-
 /* account end page tabs sections */
-
-  .hulk__wishlist-wrap {
+.hulk__wishlist-wrap {
   padding-top: 4rem;
-  }
+}
+.collapsible-content__inner.rte p{
+  margin-bottom: 0;
+}
 @media only screen and (min-width: 750px) {
   .section-header--with-link {
     width: 76%;
     display: flex;
     gap: 3rem;
   }
-  .product-tab__content td{
+  .product-tab__content td {
     margin-top: 0;
   }
   header.section-header.section-header--with-link button.section-header__link.address-new-toggle {
-  margin-top: 19px;
+    margin-top: 19px;
   }
-  .product-tab__content .main_account_address p{
-        line-height: normal;
+  .product-tab__content .main_account_address p {
+    line-height: normal;
     margin-bottom: 15px;
   }
   .customer_details_overview.cutsomer_name_account {
@@ -442,7 +441,6 @@ button#addresses-add-submit {
   p.customer_main_id {
     margin-top: 1.8rem;
   }
-
   .main-view-order {
     display: flex;
     flex-direction: column;
@@ -459,7 +457,7 @@ button#addresses-add-submit {
   .product-tab__content th {
     font-size: 15px;
     line-height: 24px;
-  } 
+  }
   .product-tab__content td {
     height: 150px;
   }
@@ -500,17 +498,16 @@ button#addresses-add-submit {
 }
 @media only screen and (max-width: 749px) {
   .product-tab__content p {
- margin-bottom: 10px;
+    margin-bottom: 10px;
   }
   .header-layout {
-    
-     overflow: hidden;
+    overflow: hidden;
   }
-  .text-center .newsletter-section__content form{
+  .text-center .newsletter-section__content form {
     overflow: hidden;
   }
   .site-header__search-container.is-active {
-  margin-top: 4rem;
+    margin-top: 4rem;
   }
   .newsletter-section--no-image .newsletter-section__content {
     width: 100%;
