@@ -86,6 +86,26 @@ header.section-header.section-header--flush h1.section-header__title {
   border-radius: 5px;
   width: 80%;
 }
+span.collapsible-trigger__layout {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(51, 51, 51);
+}
+.page-width.page-width--narrow.faq_page_container {
+  width: 60%;
+  max-width: 60%;
+}
+.collection-metafield__sections.meta_collection_faq {
+  width: 80%;
+  margin: auto;
+}
+.grid-item.main_faq_collection_item {
+  width: 33%;
+  justify-content: center;
+  @media only screen and (max-width: 749px) {
+    width: 100%;
+  }
+}
 .main-view-order {
   line-height: 0;
 }
@@ -249,8 +269,20 @@ button.btn.btn--full.add-to-cart.breeze-button,
 a.btn.btn--full.inqure-now-form {
   margin-top: 1rem;
 }
-a.section-header__link.logout_btn_account.section-header__link.logout-btn {}
+.collection-metafield__sections.meta_collection_faq.flickity-enabled.is-draggable button.flickity-button.flickity-prev-next-button.flickity-next {
+  right: -2rem;
+}
+.collection-metafield__sections.meta_collection_faq.flickity-enabled.is-draggable button.flickity-button.flickity-prev-next-button.flickity-previous {
+  left: -2rem;
+}
 @media only screen and (max-width: 749px) {
+  .recognition-section--dot-container {
+    margin-top: 0;
+  }
+  .page-width.page-width--narrow.faq_page_container {
+    width: 100%;
+    max-width: 100%;
+  }
   span.order_info_span {
     width: 61%;
     display: block;
@@ -415,6 +447,13 @@ button#addresses-add-submit {
 }
 /* account end page tabs sections */
 @media only screen and (min-width: 750px) {
+  .collapsible-trigger {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .collapsible-content__inner.rte:last-child {
+    border-bottom: 1px solid;
+  }
   .customer_details_overview.cutsomer_name_account {
     margin-top: 1rem;
   }
