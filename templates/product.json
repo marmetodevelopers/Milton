@@ -110,7 +110,6 @@
       ],
       "settings": {
         "sku_enable": false,
-        "inquire-now-url": "shopify:\/\/pages\/inquire-now",
         "image_position": "left",
         "image_container_size": "medium",
         "product_image_size": "square",
@@ -145,7 +144,7 @@
           "type": "tab",
           "settings": {
             "title": "Manufacturer Details & Country of Origin",
-            "content": "<p>{{ product.metafields.custom.country_of_origin | metafield_tag }}<\/p>",
+            "content": "",
             "page": ""
           }
         },

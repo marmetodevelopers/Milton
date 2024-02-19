@@ -143,6 +143,14 @@
       "type": "recently-viewed",
       "settings": {
       }
+    },
+    "collection_description_metafield_KDPtxF": {
+      "type": "collection-description-metafield",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "heading_text": ""
+      }
     }
   },
   "order": [
@@ -151,6 +159,7 @@
     "promo-grid",
     "a2a01644-c80b-489c-8817-e96b174bfd38",
     "main-collection",
-    "recently-viewed"
+    "recently-viewed",
+    "collection_description_metafield_KDPtxF"
   ]
 }

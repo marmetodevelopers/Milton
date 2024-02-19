@@ -244,6 +244,9 @@
           <div id="Tab-{{ section.id }}-3" class="tab-content details question3" data-tab="Tab-{{ section.id }}-3"> {% assign index = forloop.index %} {% if forloop.index == index %} <p class="faq-tab__details">
           {%  comment  %}========== Manage Orders==============  {% endcomment %}
             <div class="product-tab__content">
+              {% if customer.orders.size == 0 %}
+                <p>No orders are there.</p>
+            {% else %}
               <table class="table--responsive table--small-text">
                 <thead>
                   <tr>
@@ -298,6 +301,7 @@
                   {%- endfor -%}
                 </tbody>
               </table>
+                {% endif %}
             </div>
             </p> {% endif %}
             {% comment %} endManage Orders {% endcomment %}
