@@ -413,11 +413,7 @@ button#addresses-add-submit {
 .left-button-content.svelte-9mhw2v {
   align-items: baseline;
 }
-@media only screen and (min-width: 990px) and (max-width: 1280px) {
-  .product-tab__content th {
-    line-height: 23px !important; /* Adding !important to ensure the rule takes precedence */
-  }
-}
+
 
 /* account end page tabs sections */
 
