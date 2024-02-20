@@ -243,69 +243,67 @@
           </div>
           <div id="Tab-{{ section.id }}-3" class="tab-content details question3" data-tab="Tab-{{ section.id }}-3"> {% assign index = forloop.index %} {% if forloop.index == index %} <p class="faq-tab__details">
           {%  comment  %}========== Manage Orders==============  {% endcomment %}
-            <div class="product-tab__content">
-              {% if customer.orders.size == 0 %}
-                <p>No orders are there.</p>
+          <div class="product-tab__content">
+            {% if customer.orders.size == 0 %}
+            <p>No orders are there.</p>
             {% else %}
-              <table class="table--responsive table--small-text">
-                <thead>
+            <table class="table--responsive table--small-text">
+               <thead>
                   <tr>
-                    <th>{{ 'customer.orders.order_number' | t }}</th>
-                    <th>{{ 'customer.orders.date' | t }}</th>
-                    <th>{{ 'Count' }}</th>
-                    <th>{{ 'customer.orders.payment_status' | t }}</th>
-                    <th>{{'View / Track Your Order' }}</th>
-                    <th>{{ 'customer.orders.total' | t }}</th>
-                    <th>Return / Exchange</th>
+                     <th>{{ 'customer.orders.order_number' | t }}</th>
+                     <th>{{ 'customer.orders.date' | t }}</th>
+                     <th>{{ 'Count' }}</th>
+                     <th>{{ 'customer.orders.payment_status' | t }}</th>
+                     <th>{{'View / Track Your Order' }}</th>
+                     <th>{{ 'customer.orders.total' | t }}</th>
+                     <th>Return / Exchange</th>
                   </tr>
-                </thead>
-             
-                <tbody>
+               </thead>
+               <tbody>
                   {%- for order in customer.orders -%}
                   <tr class="table__section">
-                  
-                    <td data-label="{{ 'customer.orders.order_number' | t }}">
-     
-                      <span class="order_info_span">{{ order.name }}</span> 
-                  
-                    
-                    </td>
-                    <td data-label="{{ 'customer.orders.date' | t }}">
-                      <span class="order_info_span_date">   {{ order.created_at | time_tag: format: 'date' }} </span>
-                    </td>
-                    <td data-label="{{ 'Count' }}">
-                   <span class="order_info_span_count">{{ order.item_count }}</span>   </td>
+                     <td data-label="{{ 'customer.orders.order_number' | t }}">
+                        <span class="order_info_span">{{ order.name }}</span> 
+                     </td>
+                     <td data-label="{{ 'customer.orders.date' | t }}">
+                        <span class="order_info_span_date">   {{ order.created_at | time_tag: format: 'date' }} </span>
+                     </td>
+                     <td data-label="{{ 'Count' }}">
+                        <span class="order_info_span_count">{{ order.item_count }}</span>   
+                     </td>
                      <td data-label="{{ 'customer.orders.payment_status' | t }}">
-                      <span class="order_info_span"> {{ order.financial_status_label }}  </span></td> 
-                    <td data-label="View / Track"  class="track-order-button section-header__link address-new-toggle" data-order="{{ order.name }}">
-                      <div class="main-view-order">
-                      {{ 'View Your Order' | link_to: order.customer_url }}
-                          <a href="https://hamilton-tracking.unicommerce.com/">Track Your Order</a>
+                        <span class="order_info_span"> {{ order.financial_status_label }}  </span>
+                     </td>
+                     <td data-label="View / Track"  class="track-order-button section-header__link address-new-toggle" data-order="{{ order.name }}">
+                        <div class="main-view-order">
+                           {{ 'View Your Order' | link_to: order.customer_url }}
+                           <a href="https://hamilton-tracking.unicommerce.com/">Track Your Order</a>
                         </div>
-                      </td>
-                    <td data-label="{{ 'customer.orders.total' | t }}">
-                      <span class="order_info_span_total">{{ order.total_price | money }}</span></td>
-                    <td data-order_name={{order.id}} data-label="Return" class="return__exchange">
-                      {% if order.fulfillment_status == 'fulfilled' %}
-                      <button
-                        class="js-return-exchange {% if order.fulfillment_status != 'fulfilled' %} disabled{% endif %}"
-                        data-order="{{ order.name }}" data-customer="{{ customer.email }}">Return / Exchange</button>
-                      {% else %}
-                      <p class="js-return-exchange disabled"> Not Available </p>
-                      {% endif %}
-                    </td>
-                    </tr>                
-                    {% assign order_status = order.fulfillment_status %}
-                    {% assign cancel_status = order.cancelled_at %}  
+                     </td>
+                     <td data-label="{{ 'customer.orders.total' | t }}">
+                        <span class="order_info_span_total">{{ order.total_price | money }}</span>
+                     </td>
+                     <td data-order_name={{order.id}} data-label="Return" class="return__exchange">
+                        {% if order.fulfillment_status == 'fulfilled' %}
+                        <button
+                           class="js-return-exchange {% if order.fulfillment_status != 'fulfilled' %} disabled{% endif %}"
+                           data-order="{{ order.name }}" data-customer="{{ customer.email }}">Return / Exchange</button>
+                        {% else %}
+                        <p class="js-return-exchange disabled"> Not Available </p>
+                        {% endif %}
+                     </td>
+                  </tr>
+                  {% assign order_status = order.fulfillment_status %}
+                  {% assign cancel_status = order.cancelled_at %}  
                   </tr>
                   {%- endfor -%}
-                </tbody>
-              </table>
-                {% endif %}
-            </div>
-            </p> {% endif %}
-            {% comment %} endManage Orders {% endcomment %}
-          </div>
+               </tbody>
+            </table>
+            {% endif %}
+         </div>
+         </p> {% endif %}
+         {% comment %} endManage Orders {% endcomment %}
+         </div>
           {% comment %} Wishlist {% endcomment %}
           <div id="Tab-{{ section.id }}-4" class="tab-content details question4" data-tab="Tab-{{ section.id }}-4"> {% assign index = forloop.index %} {% if forloop.index == index %} <p class="faq-tab__details">
             <div class="product-tab__content">

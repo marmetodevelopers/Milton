@@ -101,23 +101,18 @@
   }
 
   @media screen and (min-width: 750px){
-
-  .section_padding-{{ section.id }}{
-padding-top: {{ section.settings.padding_top }}px;
-padding-bottom: {{ section.settings.padding_bottom }}px;
-}
+.section_padding-{{ section.id }}{
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
 }
 @media screen and (max-width: 749px){
-
 .section_padding-{{ section.id }}{
-padding-top: {{ section.settings.mpadding_top }}px;
-padding-bottom: {{ section.settings.mpadding_bottom }}px;
+  padding-top: {{ section.settings.mpadding_top }}px;
+  padding-bottom: {{ section.settings.mpadding_bottom }}px;
+  }
 }
-}
-
-
-  
-  {% endstyle %}
+{% endstyle %}
 
 {% schema %}
 {
