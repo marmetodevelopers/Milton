@@ -1,0 +1,71 @@
+<script src="{{ 'collection-description-meta.js' | asset_url }}" defer="defer"></script>
+{{ 'collection-description-meta.css' | asset_url | stylesheet_tag }}
+
+<div class="page-width">
+    <div class="section-{{ section.id }}-padding">
+        <div class="collection_description_container">
+            <div class="collection_description_wrapper">
+                <div class="collection_description_text_wrapper">
+                    <p class="collection_description_text">{{ collection.metafields.custom.collection_description_ | metafield_tag }}</p>
+                </div>
+                <button class="read_more_button">Read More</button>
+            </div>    
+        </div>
+    </div>
+</div>
+
+
+{%  style  %} 
+
+@media screen and (min-width: 750px){
+.section-{{ section.id }}-padding{
+   padding-top: {{ section.settings.padding_top }}px;
+   padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+}
+@media screen and (max-width: 749px){
+.section-{{ section.id }}-padding{
+   padding-top: {{ section.settings.mpadding_top }}px;
+   padding-bottom: {{ section.settings.mpadding_bottom }}px;
+  }
+}
+
+{% endstyle %} 
+
+{% schema %} 
+{
+  "name": "Collection Description",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection Description"
+    }
+  ]
+}
+{% endschema %}

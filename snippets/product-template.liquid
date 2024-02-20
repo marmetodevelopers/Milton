@@ -85,7 +85,13 @@
         {%- else -%}
           {{ 'home_page.onboarding.product_title' | t }}
         {%- endunless -%}
-      </h1> </span>   
+      </h1> 
+   
+
+    
+  {% render 'hulkapps-wishlist-product-btn' %}
+
+   </span>   
     {%- endif -%}
 
     {%- if settings.vendor_enable or sku_enable -%}
