@@ -620,7 +620,7 @@ button#addresses-add-submit {
 p.contactus_svg {
   display: flex;
   align-items: normal;
-  gap: 5px;
+  gap:1.5rem;
 }
 .page-width.page-width--narrow.Contact-us {
   display: flex;
