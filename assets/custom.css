@@ -368,7 +368,6 @@ a.section-header__link.logout_btn_account.section-header__link.logout-btn {}
   .faq_section-left .tablinks {
     font-size: 14px;
     padding: 0;
-
     height: 35px;
   }
   .description_tab_wrapper {
@@ -413,27 +412,24 @@ button#addresses-add-submit {
 .left-button-content.svelte-9mhw2v {
   align-items: baseline;
 }
-
-
 /* account end page tabs sections */
-
-  .hulk__wishlist-wrap {
+.hulk__wishlist-wrap {
   padding-top: 4rem;
-  }
+}
 @media only screen and (min-width: 750px) {
   .section-header--with-link {
     width: 76%;
     display: flex;
     gap: 3rem;
   }
-  .product-tab__content td{
+  .product-tab__content td {
     margin-top: 0;
   }
   header.section-header.section-header--with-link button.section-header__link.address-new-toggle {
-  margin-top: 19px;
+    margin-top: 19px;
   }
-  .product-tab__content .main_account_address p{
-        line-height: normal;
+  .product-tab__content .main_account_address p {
+    line-height: normal;
     margin-bottom: 15px;
   }
   .customer_details_overview.cutsomer_name_account {
@@ -442,7 +438,6 @@ button#addresses-add-submit {
   p.customer_main_id {
     margin-top: 1.8rem;
   }
-
   .main-view-order {
     display: flex;
     flex-direction: column;
@@ -459,7 +454,7 @@ button#addresses-add-submit {
   .product-tab__content th {
     font-size: 15px;
     line-height: 24px;
-  } 
+  }
   .product-tab__content td {
     height: 150px;
   }
@@ -500,17 +495,16 @@ button#addresses-add-submit {
 }
 @media only screen and (max-width: 749px) {
   .product-tab__content p {
- margin-bottom: 10px;
+    margin-bottom: 10px;
   }
   .header-layout {
-    
-     overflow: hidden;
+    overflow: hidden;
   }
-  .text-center .newsletter-section__content form{
+  .text-center .newsletter-section__content form {
     overflow: hidden;
   }
   .site-header__search-container.is-active {
-  margin-top: 4rem;
+    margin-top: 4rem;
   }
   .newsletter-section--no-image .newsletter-section__content {
     width: 100%;
@@ -570,4 +564,77 @@ button#addresses-add-submit {
     gap: 1rem;
     padding-bottom: 1rem;
   }
+}
+/* Styles for the popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+/* Styles for the close button */
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+/* popup */
+.pop-wrapper_container {
+  padding-bottom: 0;
+}
+.pop-wrapper_container {
+  position: relative;
+}
+.pop_img {
+  position: absolute;
+  right: 68px;
+  top: 29px;
+}
+.main_pop_wrappper_product {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(-1% + 64px);
+  justify-content: center;
+  padding-top: 27px;
+  padding-left: 63px;
+  padding-right: 63px;
+}
+.popup_upsell.pop_recomendations {
+  display: none;
+}
+.pop_heading {
+  display: flex;
+  justify-content: space-around;
+}
+.popup_upsell.pop_recomendations {
+  position: relative;
+}
+.popup_upsell.pop_recomendations {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  z-index: 50;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+}
+.bg_pop_recomendation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  z-index: 999;
+  width: 69%;
+  max-height: 579px;
+  z-index: 999;
+  overflow: scroll;
 }
