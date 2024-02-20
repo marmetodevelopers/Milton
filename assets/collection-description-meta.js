@@ -40,15 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   readMoreButton.addEventListener("click", function () {
-    let currentPosition = window.scrollY; // Get the current scroll position
-
     if (descriptionWrapper.classList.contains("expanded")) {
       descriptionWrapper.style.maxHeight = lineHeight * 10 + "px";
       readMoreButton.textContent = "Read More";
-      
-      // Scroll to the previous position on mobile screens when "Read Less" is clicked
+
+      // Scroll to top 300px when "Read Less" is clicked
       if (window.innerWidth <= 768) { // Adjust the breakpoint as needed
-        window.scrollTo(0, currentPosition); 
+        window.scrollTo(0, 300);
       }
     } else {
       descriptionWrapper.style.maxHeight =
@@ -56,19 +54,18 @@ document.addEventListener("DOMContentLoaded", function () {
       readMoreButton.textContent = "Read Less";
     }
 
-    // Scroll to the top of the container when "Read Less" is clicked
+    // Scroll to the top of the container
     document.querySelector(".collection_description_container").scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-    
-    // Adjust scroll position based on device and scroll direction
-    if (window.innerWidth <= 768 && currentPosition > 300) { // For mobile screens
+
+    // Scroll up 300px from the top
+    if (window.innerWidth <= 768) { // For mobile screens
       window.scrollBy(0, -300);
-    } else if (currentPosition > 100) { // For desktop screens
-      window.scrollBy(0, -100); 
     }
 
     descriptionWrapper.classList.toggle("expanded");
   });
 });
+
 
 
 
