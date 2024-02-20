@@ -43,8 +43,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (descriptionWrapper.classList.contains("expanded")) {
       descriptionWrapper.style.maxHeight = lineHeight * 10 + "px";
       readMoreButton.textContent = "Read More";
-      // Scroll to the top of the container when "Read Less" is clicked
-      document.querySelector(".collection_description_container").scrollIntoView();
+      // Scroll to 100 pixels from the top of the container when "Read Less" is clicked
+      document.querySelector(".collection_description_container").scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+      window.scrollBy(0, -100);
     } else {
       descriptionWrapper.style.maxHeight =
         descriptionWrapper.scrollHeight + "px";
@@ -53,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     descriptionWrapper.classList.toggle("expanded");
   });
 });
+
 
 
 
