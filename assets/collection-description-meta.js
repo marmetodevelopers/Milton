@@ -23,3 +23,19 @@ document.addEventListener("DOMContentLoaded", function () {
     descriptionWrapper.classList.toggle("expanded");
   });
 });
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  let readMoreButton = document.querySelector("button.read_more_button");
+  let descriptionWrapper = document.querySelector(
+    ".collection_description_text_wrapper.expanded"
+  );
+
+  readMoreButton.addEventListener("click", function () {
+    // Scroll to the expanded description wrapper
+    descriptionWrapper.scrollIntoView({ behavior: "smooth" });
+  });
+});
