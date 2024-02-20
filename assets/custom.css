@@ -568,3 +568,6 @@ button#addresses-add-submit {
     padding-bottom: 1rem;
   }
 }
+.collection_description_text_wrapper.expanded {
+  scroll-margin-top: 100px; /* Adjust the value as needed */
+}
