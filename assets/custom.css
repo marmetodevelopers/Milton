@@ -577,3 +577,8 @@ button#addresses-add-submit {
     padding-bottom: 1rem;
   }
 }
+/* contact us */
+.location_main_wrapper iframe {
+  width: 100%;
+  margin-bottom: -6px;
+}

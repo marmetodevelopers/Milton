@@ -26,7 +26,7 @@
       ],
       "settings": {
         "full_width": true,
-        "desktop_size": -10,
+        "desktop_size": -20,
         "mobile_size": 0,
         "style": "arrows",
         "autoplay": true,
@@ -110,11 +110,19 @@
         "email_address": "info@example.com",
         "title": "Contact Us",
         "heading_size": "h2",
-        "heading_position": "center",
+        "heading_position": "left",
         "text": "",
-        "show_phone": false,
+        "show_phone": true,
         "narrow_column": true,
         "color_scheme": "3"
+      }
+    },
+    "locattion_rPq6xX": {
+      "type": "locattion",
+      "settings": {
+        "heading": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
@@ -123,6 +131,7 @@
     "1c299980-2c4f-440f-b83b-11b70d6fb888",
     "main",
     "rich-text",
-    "form"
+    "form",
+    "locattion_rPq6xX"
   ]
 }

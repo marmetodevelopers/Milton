@@ -85,7 +85,7 @@
 
         <label for="contact-form-submit-{{ section.id }}" class="hidden-label">{{ 'contact.form.send' | t }}</label>
         <button type="submit" id="contact-form-submit-{{ section.id }}" class="btn">
-          {{ 'contact.form.send' | t }}
+          {{ 'SEND MESSAGE' }}
         </button>
 
         {% comment %}
@@ -136,6 +136,9 @@
 </div>
 
 {%  style  %}
+.page-width.page-width--narrow.Contact-us button{
+   background: red;
+}
 p.contactus_svg{
   display: flex;
   align-items: center;
