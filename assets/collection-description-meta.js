@@ -48,12 +48,13 @@ document.addEventListener("DOMContentLoaded", function () {
       descriptionWrapper.style.maxHeight =
         descriptionWrapper.scrollHeight + "px";
       readMoreButton.textContent = "Read Less";
-      // Scroll to the .collection_description_container when "Read Less" is clicked
-      collectionContainer.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+      // Scroll to the top of .collection_description_container when "Read Less" is clicked
+      collectionContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     descriptionWrapper.classList.toggle("expanded");
   });
 });
+
 
 
 
