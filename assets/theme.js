@@ -10,6 +10,8 @@
     // Page has loaded and theme assets are ready
   });
 */
+document.querySelector('.error-message').style.zIndex = '10'; // Adjust the z-index value as needed
+
 
 window.theme = window.theme || {};
 window.Shopify = window.Shopify || {};

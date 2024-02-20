@@ -8,6 +8,10 @@ header.section-header.section-header--with-link button.section-header__link.addr
 .product-tab__content p {
   line-height: 3rem;
 }
+.error-message {
+    z-index: 999; /* Change this value to a lower one, like 10 or any value that suits your layout */
+}
+
 header.section-header.section-header--with-link.acccount-page-section .section-header__title {
   border-bottom: 1px solid gray;
   width: 30%;
