@@ -582,28 +582,29 @@ button#addresses-add-submit {
   width: 100%;
   margin-bottom: -6px;
 }
-
-.page-width.page-width--narrow.Contact-us button{
-  background: red;
+.page-width.page-width--narrow.Contact-us button {
+  background: #EE3D43;
 }
-p.contactus_svg{
- display: flex;
- align-items: center;
- gap: 5px;
+p.contactus_svg {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
-.page-width.page-width--narrow.Contact-us{
- display: flex;
- gap: 2rem;
- max-width: 70%;
-
+.page-width.page-width--narrow.Contact-us {
+  display: flex;
+  gap: 2rem;
+  max-width: 70%;
 }
-.page-width.page-width--narrow.Contact-us svg{
- height: 20px;
- width: 20px;
+.page-width.page-width--narrow.Contact-us svg {
+  height: 20px;
+  width: 20px;
 }
-@media only screen and (max-width: 749px){
- .page-width.page-width--narrow.Contact-us{
- flex-wrap: wrap;
- max-width: 100%;
+@media only screen and (max-width: 749px) {
+  .page-width.page-width--narrow.Contact-us {
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
 }
+label:not(.variant__button-label):not(.text-label) {
+  text-transform: capitalize;
 }
