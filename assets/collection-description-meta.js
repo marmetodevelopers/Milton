@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
       readMoreButton.textContent = "Read More";
       // Scroll to 100 pixels from the top of the container when "Read Less" is clicked
       document.querySelector(".collection_description_container").scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-      window.scrollBy(0, -100);
+      window.scrollBy(0, -200);
     } else {
       descriptionWrapper.style.maxHeight =
         descriptionWrapper.scrollHeight + "px";
