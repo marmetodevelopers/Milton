@@ -619,7 +619,7 @@ button#addresses-add-submit {
 }
 p.contactus_svg {
   display: flex;
-  align-items: center;
+  align-items: normal;
   gap: 5px;
 }
 .page-width.page-width--narrow.Contact-us {
