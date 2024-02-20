@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   readMoreButton.addEventListener("click", function () {
-    // Scroll to the expanded description wrapper
-    descriptionWrapper.scrollIntoView({ behavior: "smooth" });
+    // Scroll to the expanded description wrapper with an offset of 100px from the top
+    descriptionWrapper.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest", offsetTop: 100 });
   });
 });
