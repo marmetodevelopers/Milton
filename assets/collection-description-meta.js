@@ -29,13 +29,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  let readMoreButton = document.querySelector("button.read_more_button");
-  let descriptionWrapper = document.querySelector(
-    ".collection_description_text_wrapper.expanded"
-  );
+  let readMoreButton = document.querySelector(".read_more_button");
+  let descriptionWrapper = document.querySelector(".collection_description_text_wrapper");
 
   readMoreButton.addEventListener("click", function () {
-    // Scroll to the expanded description wrapper with an offset of 100px from the top
-    descriptionWrapper.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest", offsetTop: 100 });
+    // Toggle the 'expanded' class on the description wrapper
+    descriptionWrapper.classList.toggle("expanded");
+
+    // Check if the description wrapper is expanded
+    if (descriptionWrapper.classList.contains("expanded")) {
+      // Scroll to the expanded description wrapper with an offset of 100px from the top
+      descriptionWrapper.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+      window.scrollBy(0, -100); // Scroll 100px up from the current position
+    }
   });
 });
