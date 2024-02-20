@@ -44,9 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
       descriptionWrapper.style.maxHeight = lineHeight * 10 + "px";
       readMoreButton.textContent = "Read More";
 
-      // Scroll to top 300px when "Read Less" is clicked
+      // Scroll to top 500px when "Read Less" is clicked on mobile
       if (window.innerWidth <= 768) { // Adjust the breakpoint as needed
-        window.scrollTo(0, 300);
+        window.scrollTo(0, 500);
       }
     } else {
       descriptionWrapper.style.maxHeight =
@@ -57,9 +57,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Scroll to the top of the container
     document.querySelector(".collection_description_container").scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
 
-    // Scroll up 300px from the top
+    // Scroll up 500px from the top on mobile
     if (window.innerWidth <= 768) { // For mobile screens
-      window.scrollBy(0, -300);
+      window.scrollBy(0, -500);
     }
 
     descriptionWrapper.classList.toggle("expanded");
