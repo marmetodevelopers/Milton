@@ -28,19 +28,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  let readMoreButton = document.querySelector(".read_more_button");
-  let descriptionWrapper = document.querySelector(".collection_description_text_wrapper");
+// document.addEventListener("DOMContentLoaded", function () {
+//   let readMoreButton = document.querySelector(".read_more_button");
+//   let descriptionWrapper = document.querySelector(".collection_description_text_wrapper");
 
-  readMoreButton.addEventListener("click", function () {
-    // Toggle the 'expanded' class on the description wrapper
-    descriptionWrapper.classList.toggle("expanded");
+//   readMoreButton.addEventListener("click", function () {
+//     // Toggle the 'expanded' class on the description wrapper
+//     descriptionWrapper.classList.toggle("expanded");
 
-    // Check if the description wrapper is expanded
-    if (descriptionWrapper.classList.contains("expanded")) {
-      // Scroll to the expanded description wrapper with an offset of 100px from the top
-      descriptionWrapper.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-      window.scrollBy(0, -100); // Scroll 100px up from the current position
-    }
-  });
-});
+//     // Check if the description wrapper is expanded
+//     if (descriptionWrapper.classList.contains("expanded")) {
+//       // Scroll to the expanded description wrapper with an offset of 100px from the top
+//       descriptionWrapper.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+//       window.scrollBy(0, -100); // Scroll 100px up from the current position
+//     }
+//   });
+// });
