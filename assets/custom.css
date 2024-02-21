@@ -445,12 +445,6 @@ button#addresses-add-submit {
   align-items: baseline;
 }
 /* account end page tabs sections */
-.hulk__wishlist-wrap {
-  padding-top: 4rem;
-}
-.collapsible-content__inner.rte p {
-  margin-bottom: 0;
-}
 @media only screen and (min-width: 750px) {
   .page-width.page-width--narrow.Contact-us .location_info {
     width: 50%;
@@ -623,8 +617,8 @@ button#addresses-add-submit {
 }
 p.contactus_svg {
   display: flex;
-  align-items: normal;
-  gap: 1rem;
+  align-items: center;
+  gap: 5px;
 }
 .page-width.page-width--narrow.Contact-us {
   display: flex;
@@ -644,15 +638,7 @@ p.contactus_svg {
 label:not(.variant__button-label):not(.text-label) {
   text-transform: capitalize;
 }
-.collection_description_text_wrapper.expanded {
-  scroll-margin-top: 100px;
-  /* Adjust the value as needed */
-}
-.hero__animation-contents a {
+.hero__animation-contents.Contact-us a {
   color: white;
   text-decoration: none;
-}
-p.contactus_svg span {
-  display: flex;
-  align-items: center;
 }
