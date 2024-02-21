@@ -184,12 +184,9 @@
                           <div class="hero__text-shadow">
                             {%- unless block.settings.top_subheading == blank -%}
                               <div class="hero__top-subtitle">
-                                <div class="hero__animation-contents {{ page.title }} aaaaa">
+                                <div class="hero__animation-contents">
                                   {{ block.settings.top_subheading | escape }}
                                 </div>
-                              {% if page.title == "Contact-us" %}
-                                {{ block.settings.breadcrum }}
-                                {% endif %}
                                 </div>
                             {%- endunless -%}
                             {%- unless block.settings.title == blank -%}
@@ -202,9 +199,12 @@
                             {%- if block.settings.subheading or block.settings.link or block.settings.link_2 -%}
                               {%- unless block.settings.subheading == blank -%}
                                 <div class="hero__subtitle">
-                                  <div class="hero__animation-contents">
+                                  <div class="hero__animation-contents {{ page.title }}">
                                     {{ block.settings.subheading | escape }}
                                   </div>
+                                    {% if page.title == "Contact-us" %}
+                                {{ block.settings.breadcrum }}
+                                {% endif %}
                                 </div>
                               {%- endunless -%}
                               {%- if block.settings.link_text != blank or block.settings.link_text_2 != blank -%}
