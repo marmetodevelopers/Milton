@@ -5,6 +5,9 @@
 .read_more_button {
   display: none;
 }
+.read_more_button:hover{
+  color: red;
+}
 .read_more_button {
   display: none;
   text-align: center;
