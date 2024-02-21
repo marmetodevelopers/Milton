@@ -400,8 +400,7 @@ a.btn.btn--full.inqure-now-form {
   .faq_section-left .tablinks {
     font-size: 14px;
     padding: 0;
-    line-height: 1px;
-    height: 20px;
+    height: 35px;
   }
   .description_tab_wrapper {
     padding-bottom: 0;
@@ -446,7 +445,19 @@ button#addresses-add-submit {
   align-items: baseline;
 }
 /* account end page tabs sections */
+.hulk__wishlist-wrap {
+  padding-top: 4rem;
+}
+.collapsible-content__inner.rte p {
+  margin-bottom: 0;
+}
 @media only screen and (min-width: 750px) {
+  .page-width.page-width--narrow.Contact-us .location_info {
+    width: 50%;
+  }
+  .page-width.page-width--narrow.Contact-us .form_info {
+    width: 50%;
+  }
   .collapsible-trigger {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -454,14 +465,26 @@ button#addresses-add-submit {
   .collapsible-content__inner.rte:last-child {
     border-bottom: 1px solid;
   }
+  .section-header--with-link {
+    width: 76%;
+    display: flex;
+    gap: 3rem;
+  }
+  .product-tab__content td {
+    margin-top: 0;
+  }
+  header.section-header.section-header--with-link button.section-header__link.address-new-toggle {
+    margin-top: 19px;
+  }
+  .product-tab__content .main_account_address p {
+    line-height: normal;
+    margin-bottom: 15px;
+  }
   .customer_details_overview.cutsomer_name_account {
     margin-top: 1rem;
   }
   p.customer_main_id {
     margin-top: 1.8rem;
-  }
-  .product-tab__content th {
-    line-height: 18px;
   }
   .main-view-order {
     display: flex;
@@ -478,6 +501,7 @@ button#addresses-add-submit {
   }
   .product-tab__content th {
     font-size: 15px;
+    line-height: 24px;
   }
   .product-tab__content td {
     height: 150px;
@@ -518,6 +542,18 @@ button#addresses-add-submit {
   }
 }
 @media only screen and (max-width: 749px) {
+  .product-tab__content p {
+    margin-bottom: 10px;
+  }
+  .header-layout {
+    overflow: hidden;
+  }
+  .text-center .newsletter-section__content form {
+    overflow: hidden;
+  }
+  .site-header__search-container.is-active {
+    margin-top: 4rem;
+  }
   .newsletter-section--no-image .newsletter-section__content {
     width: 100%;
   }
@@ -587,13 +623,13 @@ button#addresses-add-submit {
 }
 p.contactus_svg {
   display: flex;
-  align-items: center;
-  gap: 5px;
+  align-items: normal;
+  gap: 1rem;
 }
 .page-width.page-width--narrow.Contact-us {
   display: flex;
   gap: 2rem;
-  max-width: 70%;
+  max-width: 90%;
 }
 .page-width.page-width--narrow.Contact-us svg {
   height: 20px;
@@ -607,4 +643,16 @@ p.contactus_svg {
 }
 label:not(.variant__button-label):not(.text-label) {
   text-transform: capitalize;
+}
+.collection_description_text_wrapper.expanded {
+  scroll-margin-top: 100px;
+  /* Adjust the value as needed */
+}
+.hero__animation-contents a {
+  color: white;
+  text-decoration: none;
+}
+p.contactus_svg span {
+  display: flex;
+  align-items: center;
 }

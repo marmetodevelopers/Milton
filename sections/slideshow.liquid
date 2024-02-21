@@ -187,7 +187,7 @@
                                 <div class="hero__animation-contents">
                                   {{ block.settings.top_subheading | escape }}
                                 </div>
-                              </div>
+                                </div>
                             {%- endunless -%}
                             {%- unless block.settings.title == blank -%}
                               <h2 class="h1 hero__title">
@@ -199,11 +199,19 @@
                             {%- if block.settings.subheading or block.settings.link or block.settings.link_2 -%}
                               {%- unless block.settings.subheading == blank -%}
                                 <div class="hero__subtitle">
-                                  <div class="hero__animation-contents">
+                                  <div class="hero__animation-contents {{ page.title }}">
                                     {{ block.settings.subheading | escape }}
-                                  </div>
+                                  </div>                      
                                 </div>
                               {%- endunless -%}
+                            {% comment %} Need to present this one only in Contact Us Page only {% endcomment %}
+                               {% if page.title == "Contact-us" %}
+                                <div class="hero__subtitle">
+                                  <div class="hero__animation-contents {{ page.title }}">
+                                  {{ block.settings.breadcrum }}
+                                  </div>
+                                </div>
+                              {% endif %}    
                               {%- if block.settings.link_text != blank or block.settings.link_text_2 != blank -%}
                                 <div class="hero__link">
                                   {%- if block.settings.link_text != blank -%}
@@ -352,6 +360,11 @@
           "id": "subheading",
           "label": "t:sections.slideshow.blocks.hero.settings.subheading.label",
           "default": "And optional subtext"
+        },
+        {
+          "type":"richtext",
+          "id":"breadcrum",
+          "label":"Contact Us Breadcrum"
         },
         {
           "type": "url",

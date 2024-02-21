@@ -2444,7 +2444,7 @@ image-compare {
 }
 .newsletter-section__content form {
   display: flex;
-  width: 90%;
+  width: 100%;
 }
 .text-left .newsletter-section__content form {
   justify-content: flex-start;
@@ -2620,9 +2620,7 @@ div#PageContainer {
   color: white;
   background: black;
 }
-.recently_view [data-view=medium] .grid-item {
-  flex: 0 0 20%
-}
+
 .heading_recently_view {
   text-align: center
 }
@@ -2630,6 +2628,9 @@ div#PageContainer {
   display: flex;
 }
 @media only screen and (min-width:750px) {
+  .recently_view [data-view=medium] .grid-item {
+  flex: 0 0 20%
+}
   .header-layout {
     max-height: 55px;
   }

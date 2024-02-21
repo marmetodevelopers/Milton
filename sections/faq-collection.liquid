@@ -24,7 +24,7 @@
           <div class="grid-item main_faq_collection_item">
             <a href="{{ list.url }}">
               <div class="collections-section__image">
-                <img src="{{ list.image | image_url }}">
+                {% render 'image', class: '', mobileSrc: list.image, desktopSrc: list.image %}
                 <div class="collection-item__title">{{ list.title }}</div>
               </div>
             </a>
