@@ -95,6 +95,11 @@
             "surface_pickup_enable": true,
             "show_gift_card_recipient": false
           }
+        },
+        "inqure_now_form_hkfq4T": {
+          "type": "Inqure_Now_form",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -107,7 +112,8 @@
         "sales_point3",
         "sales_point4",
         "inventory_status",
-        "buy_buttons"
+        "buy_buttons",
+        "inqure_now_form_hkfq4T"
       ],
       "settings": {
         "sku_enable": false,
