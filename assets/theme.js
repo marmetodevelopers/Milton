@@ -12,6 +12,7 @@
 */
 
 
+
 function togglePopupUpsell() {
   var popup = document.getElementsByClassName('popup_upsell pop_recomendations')[0];
   popup.style.display = 'block';

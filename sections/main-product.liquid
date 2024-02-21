@@ -9,6 +9,8 @@
     assign isAjax = true
   endif
 -%}
+<script src="{{ 'inqurie-form.js' | asset_url }}" defer="defer"></script>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
 {%- render 'product-template',
   product: product,
