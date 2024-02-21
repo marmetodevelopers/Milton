@@ -184,11 +184,11 @@
                           <div class="hero__text-shadow">
                             {%- unless block.settings.top_subheading == blank -%}
                               <div class="hero__top-subtitle">
-                                <div class="hero__animation-contents {{ page.title }}">
+                                <div class="hero__animation-contents {{ page.title }} aaaaa">
                                   {{ block.settings.top_subheading | escape }}
                                 </div>
-                              {% if page.title == "contact" %}
-            
+                              {% if page.title == "Contact-us" %}
+                                {{ block.settings.breadcrum }}
                                 {% endif %}
                                 </div>
                             {%- endunless -%}
