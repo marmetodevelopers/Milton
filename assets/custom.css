@@ -444,6 +444,9 @@ button#addresses-add-submit {
 .left-button-content.svelte-9mhw2v {
   align-items: baseline;
 }
+p.contactus_svg svg.whatsapp_icon_footer {
+  margin-right: 0;
+}
 /* account end page tabs sections */
 @media only screen and (min-width: 750px) {
   .page-width.page-width--narrow.Contact-us .location_info {
