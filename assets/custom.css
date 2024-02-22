@@ -78,6 +78,8 @@ header.section-header.section-header--flush h1.section-header__title {
 }
 .grid-product__tag.inqure_now a {
   color: white;
+  font-size: 16px;
+  text-transform: capitalize;
 }
 .table--responsive td:before {
   font-weight: 900;
@@ -256,8 +258,19 @@ button.btn.btn--full.add-to-cart.breeze-button,
 a.btn.btn--full.inqure-now-form {
   margin-top: 1rem;
 }
-a.section-header__link.logout_btn_account.section-header__link.logout-btn {}
+.main_submit_button[disabled] {
+  background-color: gray;
+}
 @media only screen and (max-width: 749px) {
+  .Inqure_Now_form {
+    margin-bottom: 7rem;
+  }
+  lable.product_form_email_id {
+    margin-top: 10px;
+  }
+  .grid-product__tag.inqure_now a {
+    font-size: 14px;
+  }
   span.order_info_span {
     width: 61%;
     display: block;
@@ -624,6 +637,9 @@ span.optional_field {
   }
 }
 @media only screen and (max-width: 749px) {
+  /* #loadingMessage {
+    top: 100%;
+  } */
   .main_pop_wrappper_product label {
     margin-bottom: 0;
     margin-top: 10px;

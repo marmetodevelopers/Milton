@@ -406,28 +406,30 @@
                               </div>
                               <div class="main_pop_wrappper_product">
                                 <form id="myForm" class="myform_container" method="POST" action="https://script.google.com/macros/s/AKfycbzY2I-OhodHCJcPlvmVfinQp1Gd8LYVNzB1AutwbKnSo5EZ7zEj4MBOF1F9oNxCkjkDQQ/exec">
-                                  <h3 class="main_pop_product_name">{{ product.title }}</h3>
-                                  {% assign current_variant = product.selected_or_first_available_variant %}
-                                  <p>{{ product.sku }}</p>
-                                  <input name="Product_Name" class="hide" type="text" placeholder="{{ product.title }}" value="{{ product.title }}"> 
-                                  <input name="Sku" class="hide"  type="text" value="{{ current_variant.sku }}">
-                                  <label class="product_form_email_id">Required Quantity</label>
-                                  <input name="Qty" type="number" placeholder="Number" required>
-                                  <label>Name</label>
-                                  <input name="Name" type="text" placeholder="Name" required>
-                                  <label class="product_form_email_id">Email</label>
-                                  <input name="Email" type="email" placeholder="Email" required>  
-                                  <label>Mobile Number</label>
-                                  <input id="phone" name="Phone" type="text" pattern="[0-9]{10}" maxlength="10" placeholder="Mobile Number" required>
-                                  <lable class="product_form_email_id comments">Comments<span class="optional_field">(optional field)</span></lable>
-                                  <textarea name="Message" type="text" rows="4" cols="50" placeholder="Enter Message"></textarea>
-                                  <button class="main_submit_button" type="button" onclick="submitForm()">Send</button>
-                                </form>      
+                                <h3 class="main_pop_product_name">{{ product.title }}</h3>
+                                {% assign current_variant = product.selected_or_first_available_variant %}
+                                <p>{{ product.sku }}</p>
+                                <input name="Product_Name" class="hide" type="text" placeholder="{{ product.title }}" value="{{ product.title }}"> 
+                                <input name="Sku" class="hide" type="text" value="{{ current_variant.sku }}">
+                                <label class="product_form_email_id">Required Quantity</label>
+                                <input id="qtyInput" name="Qty" type="number" placeholder="Number" required>
+                                <label>Name</label>
+                                <input id="nameInput" name="Name" type="text" placeholder="Name" required>
+                                <label class="product_form_email_id">Email</label>
+                                <input id="emailInput" name="Email" type="email" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"> 
+                                <div id="emailErrorMessage" style="color: red; display: none;">Please enter a valid email address.</div> 
+                                <label>Mobile Number</label>
+                                <input id="phoneInput" name="Phone" type="text" pattern="[0-9]{10}" maxlength="10" placeholder="Mobile Number" required>
+                                <div id="phoneErrorMessage" style="color: red; display: none;">Please enter a valid 10-digit mobile number.</div>
+                                <lable class="product_form_email_id comments">Comments<span class="optional_field">(optional field)</span></lable>
+                                <textarea name="Message" type="text" rows="4" cols="50" placeholder="Enter Message"></textarea>
+                                <button id="submitButton" class="main_submit_button" type="button" onclick="submitForm()" disabled>Send</button>
+                                </form> 
                                 <div id="thankYouMessage" style="display: none;">
                                 <div>
                                   <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"></circle><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"></path></svg>
                                 </div>
-                              <h2> Thank you for your inquiry! We'll notify you as soon as the product is back in stock</h2> 
+                                <h2> Thank you for your inquiry! We'll notify you as soon as the product is back in stock</h2> 
                                 </div>
                                 <div id="loadingMessage" style="display: none;">
                                   <h3>Your response is being submitted...</h3>
