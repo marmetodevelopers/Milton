@@ -1,0 +1,34 @@
+.collection_description_text_wrapper {
+  max-height: calc(2em * 10);
+  overflow: hidden;
+}
+.read_more_button {
+  display: none;
+}
+.read_more_button:hover{
+  color: red;
+}
+.read_more_button {
+  display: none;
+  text-align: center;
+  margin: auto;
+  width: 20%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-decoration: underline;
+}
+@media only screen and (max-width: 749px) {
+  .read_more_button {
+    width: 50%;
+  }
+  .collection_description_text_wrapper {
+    max-height: calc(2.2em * 20);
+    overflow: hidden;
+  }
+}
+
+
+
+

@@ -24,10 +24,11 @@
       {% if force_open %}style="height: auto;"{% endif %}>
       <div class="collapsible-content__inner rte">
         {% if  title == 'Manufacturer Details & Country of Origin' %}
-{{ product.metafields.custom.country_of_origin }}
+          {{ product.metafields.custom.country_of_origin }}
         {% endif %}
         {{ content }}
       </div>
     </div>
   </div>
+  
 {%- endif -%}
