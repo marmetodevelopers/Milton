@@ -1,0 +1,38 @@
+.collections-section__image {
+  text-align: center;
+}
+.collection-metafield__section .grid-item {
+  flex: 0 0 16%;
+}
+.collection-metafield__section {
+  display: flex;
+  gap: 10px;
+  /* Changed gap to 40px */
+  overflow: scroll;
+}
+.collection-metafield__section::-webkit-scrollbar {
+  display: none;
+}
+.collections-section__list--collection.grid.grid--1-col.grid--2-col-tablet {
+  width: 20%;
+}
+.collection__metafield--section h1.section-header__title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  font-size: 30px;
+}
+span.collapsible-trigger__layout span:hover {
+  color: red;
+}
+.main-content.FAQs {
+  background: #F5F5F5;
+}
+.shopify-section.index-section.faq_page {
+  padding-top: 0;
+}
+@Media only screen and (max-width:749px) {
+  .collection-metafield__section .grid-item {
+    flex: 0 0 33%;
+  }
+}
