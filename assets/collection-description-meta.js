@@ -1,3 +1,6 @@
+
+/* On the collection page, if the text is too lengthy, a "Read More" button is provided. Clicking on "Read More" will reveal the hidden text, and clicking on "Read Less" will hide the text again. */
+
 document.addEventListener("DOMContentLoaded", function () {
   let descriptionWrapper = document.querySelector(
     ".collection_description_text_wrapper"

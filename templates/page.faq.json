@@ -11,31 +11,69 @@
       "blocks": {
         "faq-0": {
           "type": "rich-text",
+          "disabled": true,
           "settings": {
-            "title": "Shipping",
-            "text": ""
+            "title": "FAQs",
+            "text": "<p>ddd<\/p>",
+            "align_text": "left"
           }
         },
         "faq-1": {
           "type": "question",
           "settings": {
+            "title": "What is covered under warranty?",
+            "text": "<p>The warranty for a product is counted from the date of its retail purchase. It includes any manufacturing defect in material and workmanship. However, it does not cover damages resulting from accidents, mishandling or tampering with the product.<\/p>"
           }
         },
         "faq-2": {
           "type": "question",
           "settings": {
-          }
-        },
-        "faq-3": {
-          "type": "rich-text",
-          "settings": {
-            "title": "Returns",
-            "text": ""
+            "title": "Who do I contact in case of any query\/complaint?",
+            "text": "<p>Our customer service team is available on 18002092151 between 10 AM – 5.30 PM. You may also write to us at info@hamiltonindia.in for any complaints and sales.enquiry@hamiltonindia.in for any product related query.<\/p>"
           }
         },
         "faq-4": {
           "type": "question",
           "settings": {
+            "title": "Does Milton provide home services in case of any complaints?",
+            "text": "<p>No, Milton doesn’t provide home services. However, you can contact its customer care and drop the product to the respective local dealer\/distributor, and it’ll be taken from there by Milton’s team.<\/p>"
+          }
+        },
+        "question_66drBF": {
+          "type": "question",
+          "settings": {
+            "title": "There are many websites and shops selling Milton cooker, gas stove, electric chimney, etc. How does one confirm which products are original Milton products?",
+            "text": "<p>As of now, Milton has a variety of products ranging from steel flasks, water bottle, insulated and non-insulated tiffins, soft thermoware to simple house items like containers and buckets. You can check the whole range at www.milton.in before buying. You can also contact our customer care to confirm the products before buying.<\/p>"
+          }
+        },
+        "question_BDcbLy": {
+          "type": "question",
+          "settings": {
+            "title": "If someone received a flask with a different logo, how does one check its authenticity?",
+            "text": "<p>Milton has revamped its logo and product packaging designs; hence a different logo can now be seen on the product packaging. To check the authenticity of the product, kindly send the product images and a bill copy at<strong>info@hamiltonindia.in<\/strong>.<\/p>"
+          }
+        },
+        "question_GkjM9a": {
+          "type": "question",
+          "settings": {
+            "title": "Where can one buy Milton Products?",
+            "text": "<p>Milton products are available widely across the country. Please call on our toll-free number - 1800-209-2151, to find the closest Milton dealer. Alternatively, the products are also available on online portals like Amazon, Flipkart, Snapdeal, Paytm, etc.<\/p>"
+          }
+        },
+        "question_eANr74": {
+          "type": "question",
+          "settings": {
+            "title": "Are your products BPA free?",
+            "text": "<p>BPA stands for Bisphenol A. It is an industrial chemical used to make certain kinds of plastic and resins. It could seep into food or beverages from containers that are made with this material, and have adverse effects on human health. All Milton products are BPA-free, and FDA-approved as safe-for-use.<\/p>"
+          }
+        },
+        "faq-3": {
+          "type": "rich-text",
+          "disabled": true,
+          "settings": {
+            "title": "Returns",
+            "text": "",
+            "align_text": "left"
           }
         }
       },
@@ -43,16 +81,45 @@
         "faq-0",
         "faq-1",
         "faq-2",
-        "faq-3",
-        "faq-4"
+        "faq-4",
+        "question_66drBF",
+        "question_BDcbLy",
+        "question_GkjM9a",
+        "question_eANr74",
+        "faq-3"
       ],
       "settings": {
-        "title": ""
+        "bg_color": "",
+        "title": "FAQ",
+        "heading_size": "h2",
+        "heading_position": "center"
+      }
+    },
+    "faq_collection_PpeAr8": {
+      "type": "faq-collection",
+      "settings": {
+        "collection_list_value": [
+          "appam-appachetty",
+          "bakeware-serveware",
+          "beer-mugs",
+          "bottles-flasks",
+          "bowls-cups-saucers",
+          "brooms-brushes",
+          "buckets-dustbins",
+          "ceramic-mugs",
+          "casseroles",
+          "cleaning-cloths",
+          "cleaning-products"
+        ],
+        "heading": "Product Queries",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "main",
-    "faq"
+    "faq",
+    "faq_collection_PpeAr8"
   ]
 }
