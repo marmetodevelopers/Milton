@@ -7,15 +7,16 @@
           "type": "hero",
           "settings": {
             "top_subheading": "",
-            "title": "",
+            "title": "<p>Contact us<\/p>",
             "title_size": 70,
             "subheading": "",
+            "breadcrum": "<p><a href=\"\/\" title=\"\/\">Home <\/a>&gt; Contact<\/p>",
             "link": "",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
-            "text_align": "vertical-bottom horizontal-left",
+            "text_align": "vertical-center horizontal-center",
             "image": "shopify:\/\/shop_images\/contact-banner_final-desktop.jpg",
             "overlay_opacity": 0
           }
@@ -26,7 +27,7 @@
       ],
       "settings": {
         "full_width": true,
-        "desktop_size": 0,
+        "desktop_size": -20,
         "mobile_size": 0,
         "style": "arrows",
         "autoplay": true,
@@ -104,13 +105,26 @@
     "form": {
       "type": "contact-form",
       "settings": {
+        "Contact_details": "<p>Contact Location Info<\/p>",
+        "address": "Plot No. 20\/ABCD, Government Industrial Estate, Hindustan Naka, Charkop, Charkop Industrial Estate, Kandivali West, Mumbai, Maharashtra 400067",
+        "whatsapp_number": "7506006010",
+        "mobile_number": "1800 209 2151",
+        "email_address": " support@hamiltonindia.in",
         "title": "Contact Us",
         "heading_size": "h2",
-        "heading_position": "center",
+        "heading_position": "left",
         "text": "",
-        "show_phone": false,
+        "show_phone": true,
         "narrow_column": true,
-        "color_scheme": "2"
+        "color_scheme": "3"
+      }
+    },
+    "locattion_rPq6xX": {
+      "type": "locattion",
+      "settings": {
+        "heading": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
@@ -119,6 +133,7 @@
     "1c299980-2c4f-440f-b83b-11b70d6fb888",
     "main",
     "rich-text",
-    "form"
+    "form",
+    "locattion_rPq6xX"
   ]
 }

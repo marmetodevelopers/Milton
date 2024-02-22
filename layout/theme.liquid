@@ -184,7 +184,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       {%- sections 'header-group' -%}
       {%- sections 'popup-group' -%}
 
-      <main class="main-content" id="MainContent">
+      <main class="main-content {{ page.title }}" id="MainContent" >
         {{ content_for_layout }}
       </main>
 
