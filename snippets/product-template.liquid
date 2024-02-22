@@ -391,9 +391,9 @@
                                 <div class="new_category_heaidng dots-container recomendation_container_heading">
                                   <div class="pop_heading">
                                     <h3 class="heaing_text_new_category pop-wrapper_container metafield_collection_title recomendations_heading {{ section.settings.heading_size }}">
-                                      Inquiry Form
+                                      {{ block.settings.heaing_text }}
                                     </h3>
-                                    <p>We will get in touch with you shortly</p>
+                                    <p>{{ block.settings.subheading }}</p>
                                   </div>           
                                 </div>
                                 <a href="#" class="pop_img" onclick="closeButton()" id="closebtn">
@@ -425,10 +425,10 @@
                                 <div>
                                   <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"></circle><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"></path></svg>
                                 </div>
-                                <h2> Thank you for your inquiry! We'll notify you as soon as the product is back in stock</h2> 
+                                <h2>{{ block.settings.success_message }}</h2> 
                                 </div>
                                 <div id="loadingMessage" style="display: none;">
-                                  <h3>Your response is being submitted...</h3>
+                                  <h3>{{ block.settings.loading-message }}</h3>
                                 </div>
                               </div>
                             </div>

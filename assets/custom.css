@@ -637,9 +637,6 @@ span.optional_field {
   }
 }
 @media only screen and (max-width: 749px) {
-  /* #loadingMessage {
-    top: 100%;
-  } */
   .main_pop_wrappper_product label {
     margin-bottom: 0;
     margin-top: 10px;

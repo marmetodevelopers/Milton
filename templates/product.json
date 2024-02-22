@@ -99,6 +99,10 @@
         "inqure_now_form_hkfq4T": {
           "type": "Inqure_Now_form",
           "settings": {
+            "heaing_text": "Inquiry Form",
+            "subheading": "We will get in touch with you shortly",
+            "loading-message": "Your response is being submitted...",
+            "success_message": "Thank you for your inquiry! We'll notify you as soon as the product is back in stock"
           }
         }
       },
