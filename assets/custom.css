@@ -625,7 +625,7 @@ p.contactus_svg {
 }
 .page-width.page-width--narrow.Contact-us {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   max-width: 90%;
 }
 .page-width.page-width--narrow.Contact-us svg {
