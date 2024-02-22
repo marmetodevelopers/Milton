@@ -621,7 +621,7 @@ p.contactus_svg svg.whatsapp_icon_footer {
 p.contactus_svg {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 12px;
 }
 .page-width.page-width--narrow.Contact-us {
   display: flex;
