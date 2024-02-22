@@ -91,7 +91,11 @@
      <p>{{ section.settings.Contact_details }}</p>
      <p class="contactus_svg"><span>{%  render 'location.icon' %}</span> <a  href="https://maps.app.goo.gl/KBXjKB9pMqkkMgxJA">{{ section.settings.address }}</a></p>
      <p class="contactus_svg"><span>{%  render 'whatsapp-icon' %}</span> <a  href="https://api.whatsapp.com/send?phone={{ section.settings.whatsapp_number }}&text=Hi, was looking to order">{{ section.settings.whatsapp_number }}</a></p>
-     <p class="contactus_svg"><span>{%  render 'phone-icon' %}</span>  <a href="tel:{{ section.settings.mobile_number }}">{{ section.settings.mobile_number }}</a> </p>
+    <p class="contactus_svg">
+    <span>{% render 'phone-icon' %}</span>
+    <a href="tel:{{ section.settings.mobile_number }}" target="_self">{{ section.settings.mobile_number }}</a>
+</p>
+
      <p class="contactus_svg"><span>{% render 'email-icon' %}</span><a class="gamil_text" href="mailto:{{ section.settings.email_address }}">{{ section.settings.email_address }}</a></p>
      <p class="contactus_svg"><span>{% render 'milton-icon' %}</span><a class="gamil_text" href="https://www.hamiltonindia.in/">Corporate Website</a></p>
   </div>
