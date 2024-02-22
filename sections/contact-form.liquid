@@ -91,6 +91,7 @@
      <p>{{ section.settings.Contact_details }}</p>
      <p class="contactus_svg"><span>{%  render 'location.icon' %}</span> <a  href="https://maps.app.goo.gl/KBXjKB9pMqkkMgxJA">{{ section.settings.address }}</a></p>
      <p class="contactus_svg"><span>{%  render 'whatsapp-icon' %}</span> <a  href="https://api.whatsapp.com/send?phone={{ section.settings.whatsapp_number }}&text=Hi, was looking to order">{{ section.settings.whatsapp_number }}</a></p>
+     
 <p class="contactus_svg">
     <span>{% render 'phone-icon' %}</span>
     <a href="tel:7506006010" onclick="openInSameTab('{{ section.settings.mobile_number }}')">{{ section.settings.mobile_number }}</a>
