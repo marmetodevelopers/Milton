@@ -73,20 +73,7 @@
         data-gaVersion="new"
         >
   </script>
-   <!-- <script type="module"
-        src="http://localhost:5173/dist/breeze-app.js"
-        type="module"
-        id="breeze-script-tag"
-        data-environment="release"
-        data-platform="shopify"
-        data-enable-external-trackers="false"
-        data-enable-snap-tracker="false"
-        data-enable-ga="false"
-        data-emit-tracker-events="true"
-        data-ga4-measurement-id=""
-        data-gaVersion="new"
-        async>
-      </script>  -->
+  
   <!-- The above can be modified as per the merchant's requirement -->
   <!-- End of Breeze App Loader -->
   
@@ -197,7 +184,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       {%- sections 'header-group' -%}
       {%- sections 'popup-group' -%}
 
-      <main class="main-content" id="MainContent">
+      <main class="main-content {{ page.title }}" id="MainContent" >
         {{ content_for_layout }}
       </main>
 
