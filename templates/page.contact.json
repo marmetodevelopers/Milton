@@ -122,6 +122,7 @@
     },
     "locattion_rPq6xX": {
       "type": "locattion",
+      "disabled": true,
       "settings": {
         "heading": "",
         "padding_top": 0,
