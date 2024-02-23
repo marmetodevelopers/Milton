@@ -30,26 +30,26 @@
       "blocks": {
         "slide-2": {
           "type": "hero",
-          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "",
             "title_size": 70,
             "subheading": "",
             "breadcrum": "",
-            "link": "shopify:\/\/collections\/tri-ply-stainless-steel",
+            "link": "shopify:\/\/collections\/all-products",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/Home_Page_Banner_Desktop_7.png",
-            "image_mobile": "shopify:\/\/shop_images\/Home_Page_Banner_Desktop_390_x_238_px_2_d78e10bb-1f56-4377-a34b-d5ab88ef8060.png",
+            "image": "shopify:\/\/shop_images\/Home_Page_Banner_Desktop_7_625401f3-6a71-4bf6-90dc-6ba16f1a0607.png",
+            "image_mobile": "shopify:\/\/shop_images\/Home_Page_Banner_Desktop_390_x_238_px_2_4d11a7c3-4103-4eff-b3e5-b6b8c22d0441.png",
             "overlay_opacity": 0
           }
         },
         "slide-1": {
           "type": "hero",
+          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "",
