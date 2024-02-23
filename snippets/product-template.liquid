@@ -78,6 +78,7 @@
             {{ product.title }}
           </p>
         {%- else -%}
+        {% comment %} Product page details Mobile  {% endcomment %}
        <span><h1 class="h2 product-single__title mobile-title">
             {%- unless product.empty? -%}
               {{ product.title }}
@@ -127,7 +128,8 @@
                   {{ product.title }}
                 </p>     
               {%- else -%}
-             <span>   <h2 class="h2 product-single__title desktop-title">
+              {% comment %} Product page details Desktop {% endcomment %}
+             <span><h2 class="h2 product-single__title desktop-title">
                   {%- unless product.empty? -%}
                     {{ product.title }}
                   {%- else -%}
