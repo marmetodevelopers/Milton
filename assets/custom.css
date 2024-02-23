@@ -645,3 +645,7 @@ label:not(.variant__button-label):not(.text-label) {
   color: white;
   text-decoration: none;
 }
+.grid-item__content.milton-peek-a-book .color-swatch--small{
+  height: 17px;
+  width: 17px;
+}
