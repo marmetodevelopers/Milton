@@ -95,16 +95,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-/// pop up open and close
-function togglePopupUpsell() {
-  var popup = document.getElementsByClassName('popup_upsell pop_recomendations')[0];
-  popup.style.display = 'block';
-
-  document.querySelector('body').style.overflow = 'hidden';
-}
-
-function closeButton() {
-  var popup = document.getElementsByClassName('popup_upsell pop_recomendations')[0];
-  popup.style.display = 'none';
-  document.querySelector('body').style.overflow = 'scroll';
-}
