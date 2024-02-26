@@ -95,3 +95,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+// in the Quantity field it will take only numbers
+function allowOnlyNumbers(inputElement) {
+    inputElement.addEventListener('input', function() {
+        // Remove any non-numeric characters
+        this.value = this.value.replace(/\D/g, '');
+    });
+}
+
+// Call the function for the quantity input
+allowOnlyNumbers(document.getElementById('qtyInput'));
