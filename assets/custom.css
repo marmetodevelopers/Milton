@@ -543,6 +543,9 @@ span.optional_field {
   font-size: 10px;
   margin-left: 10px;
 }
+.modal--quick-shop .Inqure_Now_form {
+  display: none;
+}
 @media only screen and (min-width: 750px) {
   #loadingMessage {
     top: 70%;
