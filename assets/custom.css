@@ -520,18 +520,13 @@ h3.main_pop_product_name {
 #loadingMessage {
   display: none;
   position: absolute;
-  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.9);
   /* Semi-transparent white background */
-  height: 100vh;
   width: 100%;
   padding: 20px;
   border-radius: 10px;
-  text-align: center;
-  justify-content: center;
-  align-items: flex-end;
   z-index: 9999;
   /* Higher z-index to ensure it's above blurred container */
 }
@@ -549,6 +544,13 @@ span.optional_field {
   margin-left: 10px;
 }
 @media only screen and (min-width: 750px) {
+  #loadingMessage {
+    top: 90%;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+  }
   .main_pop_wrappper_product form#myForm {
     width: 100%;
   }
@@ -644,9 +646,13 @@ span.optional_field {
   }
 }
 @media only screen and (max-width: 749px) {
-  /* #loadingMessage {
-    top: 100%;
-  } */
+  #loadingMessage {
+    top: 50%;
+    height: 50vh;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+  }
   .main_pop_wrappper_product label {
     margin-bottom: 0;
     margin-top: 10px;
