@@ -647,11 +647,9 @@ span.optional_field {
 }
 @media only screen and (max-width: 749px) {
   #loadingMessage {
-    top: 50%;
-    height: 50vh;
-    text-align: center;
-    justify-content: center;
-    align-items: flex-start;
+    top: 100%;
+    height: 80vh;
+    align-items: flex-end
   }
   .main_pop_wrappper_product label {
     margin-bottom: 0;
