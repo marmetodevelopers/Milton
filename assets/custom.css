@@ -544,13 +544,13 @@ span.optional_field {
   margin-left: 10px;
 }
 @media only screen and (min-width: 750px) {
-  #loadingMessage {
-    top: 90%;
-    height: 100vh;
+  /* #loadingMessage {
+    top: 70%;
+    height: 80vh;
     text-align: center;
     justify-content: center;
     align-items: flex-end;
-  }
+  } */
   .main_pop_wrappper_product form#myForm {
     width: 100%;
   }
