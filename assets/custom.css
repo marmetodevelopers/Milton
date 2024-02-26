@@ -549,7 +549,7 @@ span.optional_field {
 @media only screen and (min-width: 750px) {
   #loadingMessage {
     top: 70%;
-    height: 80vh;
+    height: 52vh;
     text-align: center;
     justify-content: center;
     align-items: flex-end;
