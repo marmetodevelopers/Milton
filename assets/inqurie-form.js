@@ -1,5 +1,6 @@
 // Function to check if all required fields are filled and validate email
-function checkForm() {
+  // Define the checkForm function
+  function checkForm() {
     var qty = document.getElementById("qtyInput").value;
     var name = document.getElementById("nameInput").value;
     var email = document.getElementById("emailInput").value;
@@ -13,13 +14,13 @@ function checkForm() {
     var emailErrorMessage = document.getElementById("emailErrorMessage");
     var phoneErrorMessage = document.getElementById("phoneErrorMessage");
 
-    if (qty && name && emailPattern.test(email) && phone && phone.length === 10 && !isNaN(phone)) {
+    if (qty && name && email && emailPattern.test(email) && phone && phone.length === 10 && !isNaN(phone)) {
         submitButton.disabled = false;
         emailErrorMessage.style.display = "none"; // Hide email error message
         phoneErrorMessage.style.display = "none"; // Hide phone error message
     } else {
         submitButton.disabled = true;
-        if (email && !emailPattern.test(email)) {
+        if (!email || !emailPattern.test(email)) {
             emailErrorMessage.style.display = "block"; // Show email error message
         } else {
             emailErrorMessage.style.display = "none"; // Hide email error message
@@ -32,39 +33,8 @@ function checkForm() {
     }
 }
 
-// Function to allow only numbers in the input field
-function allowOnlyNumbers(inputElement) {
-    inputElement.addEventListener('input', function() {
-        // Remove any non-numeric characters
-        this.value = this.value.replace(/\D/g, '');
-        checkForm(); // Call checkForm after each input change
-    });
-}
 
-// Mobile number validation
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("phoneInput").addEventListener("input", function () {
-        var phoneNumber = this.value;
-        var isValidPhoneNumber = /^\d{10}$/.test(phoneNumber);
-        var phoneErrorMessage = document.getElementById("phoneErrorMessage");
-        if (!isValidPhoneNumber) {
-            phoneErrorMessage.style.display = "block";
-            this.setCustomValidity("Please enter a 10-digit number.");
-        } else {
-            phoneErrorMessage.style.display = "none";
-            this.setCustomValidity("");
-        }
-        checkForm(); // Call checkForm after each input change
-    });
-});
-
-// Listen for input events on required fields
-document.getElementById("qtyInput").addEventListener("input", checkForm);
-document.getElementById("nameInput").addEventListener("input", checkForm);
-document.getElementById("emailInput").addEventListener("input", checkForm);
-document.getElementById("phoneInput").addEventListener("input", checkForm);
-
-// Function to submit the form
+// Define the submitForm function
 function submitForm() {
     var form = document.getElementById("myForm");
     var formData = new FormData(form);
@@ -99,3 +69,41 @@ function submitForm() {
     };
     xhr.send(formData);
 }
+
+// Listen for input events on required fields
+document.getElementById("qtyInput").addEventListener("input", checkForm);
+document.getElementById("nameInput").addEventListener("input", checkForm);
+document.getElementById("emailInput").addEventListener("input", checkForm);
+document.getElementById("phoneInput").addEventListener("input", checkForm);
+
+
+
+
+// mobile number validation
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("phone").addEventListener("input", function () {
+    var phoneNumber = this.value;
+    var isValidPhoneNumber = /^\d{10}$/.test(phoneNumber);
+    if (!isValidPhoneNumber) {
+      this.setCustomValidity("Please enter a 10-digit number.");
+    } else {
+      this.setCustomValidity("");
+    }
+  });
+});
+
+
+
+
+
+// in the Quantity field it will take only numbers
+function allowOnlyNumbers(inputElement) {
+    inputElement.addEventListener('input', function() {
+        // Remove any non-numeric characters
+        this.value = this.value.replace(/\D/g, '');
+    });
+}
+
+// Call the function for the quantity input
+allowOnlyNumbers(document.getElementById('qtyInput'));
