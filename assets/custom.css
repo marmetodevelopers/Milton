@@ -548,8 +548,8 @@ span.optional_field {
 }
 @media only screen and (min-width: 750px) {
   #loadingMessage {
-    top: 70%;
-    height: 52vh;
+    top: 68%;
+    height: 100vh;
     text-align: center;
     justify-content: center;
     align-items: flex-end;
@@ -648,11 +648,18 @@ span.optional_field {
     padding: 10px 5px;
   }
 }
+div#loadingMessage svg {
+  width: 100%;
+  height: 100%;
+}
+#loadingMessage {
+  flex-direction: column;
+}
 @media only screen and (max-width: 749px) {
   #loadingMessage {
-    top: 100%;
-    height: 100vh;
-    align-items: flex-end
+    top: 86%;
+    align-items: flex-end;
+    transform: translate(-50%, -65%);
   }
   .main_pop_wrappper_product label {
     margin-bottom: 0;
