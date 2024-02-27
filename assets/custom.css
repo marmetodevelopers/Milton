@@ -15,6 +15,10 @@ header.section-header.section-header--with-link.acccount-page-section .section-h
   border-bottom: 1px solid gray;
   width: 30%;
 }
+textarea{
+  width: 100%;
+  max-width: 100%;
+}
 td.trackorder a {
   border: 1px solid #EE3D43;
   text-decoration: none;
@@ -526,7 +530,6 @@ h3.main_pop_product_name {
 #loadingMessage {
   display: none;
   position: absolute;
-  /* left: 50%; */
   background-color: rgba(255, 255, 255, 0.9);
   /* Semi-transparent white background */
   width: 116%;
