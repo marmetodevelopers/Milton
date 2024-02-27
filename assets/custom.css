@@ -440,7 +440,8 @@ a.btn.btn--full.inqure-now-form {
     margin-bottom: 1rem;
   }
 }
-.Inqure_Now_form{
+.Inqure_Now_form,
+.main_pop_inquire_form_recomendation{
   height: 100vh;
 }
 input#address_default_address_new {
