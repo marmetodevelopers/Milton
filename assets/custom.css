@@ -851,11 +851,11 @@ div#loadingMessage svg {
 p.contactus_svg {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 12px;
 }
 .page-width.page-width--narrow.Contact-us {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   max-width: 90%;
 }
 .page-width.page-width--narrow.Contact-us svg {
@@ -874,4 +874,8 @@ label:not(.variant__button-label):not(.text-label) {
 .hero__animation-contents.Contact-us a {
   color: white;
   text-decoration: none;
+}
+.grid-item__content.milton-peek-a-book .color-swatch--small{
+  height: 17px;
+  width: 17px;
 }

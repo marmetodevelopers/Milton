@@ -25,7 +25,7 @@
 -%}
 
 <div class="grid-item grid-product {{ classes }}" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
-  <div class="grid-item__content">
+  <div class="grid-item__content {{ page.title |  handleize }}">
 
     {%- unless no_actions -%}
       {%- if settings.quick_add_enable or settings.quick_shop_enable -%}
