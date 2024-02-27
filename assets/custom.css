@@ -666,7 +666,7 @@ div#loadingMessage svg {
   #loadingMessage {
     top: 86%;
     align-items: flex-end;
-        transform: translate(-55%,-170%);
+        transform: translate(-45%,-170%);
   }
   .main_pop_wrappper_product label {
     margin-bottom: 0;
