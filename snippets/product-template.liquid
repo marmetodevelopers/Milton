@@ -404,14 +404,14 @@
                                 <p>{{ product.sku }}</p>
                                 <input name="Product_Name" class="hide" type="text" placeholder="{{ product.title }}" value="{{ product.title }}"> 
                                 <input name="Sku" class="hide" type="text" value="{{ current_variant.sku }}">
-                                <label class="product_form_email_id">Required Quantity</label>
+                                <label class="product_form_email_id">Required Quantity*</label>
                                 <input id="qtyInput" name="Qty" type="text" placeholder="Number" required min="0">                               
-                                <label>Name</label>
+                                <label>Name*</label>
                                 <input id="nameInput" name="Name" type="text" placeholder="Name" required>
-                                <label class="product_form_email_id">Email</label>
+                                <label class="product_form_email_id">Email*</label>
                                 <input id="emailInput" name="Email" type="email" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"> 
                                 <div id="emailErrorMessage" style="color: red; display: none;">Please enter a valid email address.</div> 
-                                <label>Mobile Number</label>
+                                <label>Mobile Number*</label>
                                 <input id="phoneInput" name="Phone" type="text" pattern="[0-9]{10}" maxlength="10" placeholder="Mobile Number" required>
                                 <div id="phoneErrorMessage" style="color: red; display: none;">Please enter a valid 10-digit mobile number.</div>
                                 <lable class="product_form_email_id comments">Comments<span class="optional_field">(optional field)</span></lable>
