@@ -11,6 +11,29 @@
   });
 */
 
+// Function to check if all required fields are filled and validate email
+  // Define the checkForm function
+// 
+
+
+/// pop up open and close
+function togglePopupUpsell() {
+  var popup = document.getElementsByClassName('popup_upsell pop_recomendations')[0];
+  popup.style.display = 'block';
+
+  document.querySelector('body').style.overflow = 'hidden';
+}
+
+function closeButton() {
+  var popup = document.getElementsByClassName('popup_upsell pop_recomendations')[0];
+  popup.style.display = 'none';
+  document.querySelector('body').style.overflow = 'scroll';
+}
+
+
+
+
+
 window.theme = window.theme || {};
 window.Shopify = window.Shopify || {};
 

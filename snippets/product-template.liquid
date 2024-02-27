@@ -4,6 +4,9 @@
   mobile_layout
 {% endcomment %}
 
+
+
+
 {%- liquid
   assign current_variant = product.selected_or_first_available_variant
 
@@ -346,7 +349,6 @@
                           -%}
                         </div>
                       {%- endunless -%}
-
                       {%- if block.settings.surface_pickup_enable -%}
                         <div
                           data-store-availability-holder
@@ -355,6 +357,75 @@
                           ></div>
                       {%- endif -%}
                     </div>
+
+                    {% when  'Inqure_Now_form'%}
+                      <div class="Inqure_Now_form">
+                        {%- unless product.available -%}
+                      
+                        <div class="grid-product__tag inqure_now">
+                          <a href="#" class="button button--primary {% if upsell__handles.size < 5 %} not-present {% endif %}" onclick="togglePopupUpsell()" id="viewMoreButton">Inquire Now</a>
+                        </div>
+                      <div class="main_pop_inquire_form_recomendation">
+                         <div class="popup_upsell pop_recomendations" style="display: none;">
+                          <div class="bg_pop_recomendation">
+                            
+                            
+                            <div id="popup_upsell_div">
+                              <div>
+                                <div class="new_category_heaidng dots-container recomendation_container_heading">
+                                  <div class="pop_heading">
+                                    <h3 class="heaing_text_new_category pop-wrapper_container metafield_collection_title recomendations_heading {{ section.settings.heading_size }}">
+                                      {{ block.settings.heaing_text }}
+                                    </h3>
+                                    <p>{{ block.settings.subheading }}</p>
+                                  </div>           
+                                </div>
+                                <a href="#" class="pop_img" onclick="closeButton()" id="closebtn">
+                                {% render 'close-pop' %}
+                                </a>
+                              </div>
+                              <div class="main_pop_wrappper_product">
+                                <form id="myForm" class="myform_container" method="POST" action="https://script.google.com/macros/s/AKfycbzY2I-OhodHCJcPlvmVfinQp1Gd8LYVNzB1AutwbKnSo5EZ7zEj4MBOF1F9oNxCkjkDQQ/exec">
+                                <h3 class="main_pop_product_name">{{ product.title }}</h3>
+                                {% assign current_variant = product.selected_or_first_available_variant %}
+                                <p>{{ product.sku }}</p>
+                                <input name="Product_Name" class="hide" type="text" placeholder="{{ product.title }}" value="{{ product.title }}"> 
+                                <input name="Sku" class="hide" type="text" value="{{ current_variant.sku }}">
+                                <label class="product_form_email_id">Required Quantity*</label>
+                                <input id="qtyInput" name="Qty" type="text" placeholder="Number" required min="0">                               
+                                <label>Name*</label>
+                                <input id="nameInput" name="Name" type="text" placeholder="Name" required>
+                                <label class="product_form_email_id">Email*</label>
+                                <input id="emailInput" name="Email" type="email" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"> 
+                                <div id="emailErrorMessage" style="color: red; display: none;">Please enter a valid email address.</div> 
+    <label>Mobile Number*</label>
+<input id="phoneInput" name="Phone" type="text" pattern="[0-9]{10}" maxlength="10" placeholder="Mobile Number" required>
+                                <div id="phoneErrorMessage" style="color: red; display: none;">Please enter a valid 10-digit mobile number.</div>
+                                <lable class="product_form_email_id comments">Comments<span class="optional_field">(optional)</span></lable>
+                                <textarea name="Message" type="text" placeholder="Enter Message"></textarea>
+                                <button id="submitButton" class="main_submit_button" type="button" onclick="submitForm()" disabled>Send</button>
+                                </form> 
+                                <div id="thankYouMessage" style="display: none;">
+                                <div>
+                                  <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"></circle><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"></path></svg>
+                                </div>
+                                <h2>{{ block.settings.success_message }}</h2> 
+                                </div>
+                                
+                              </div>
+                            </div>
+                        
+
+                          </div>
+                           
+                      </div>
+                         <div id="loadingMessage" style="display: none;">
+                        {%  render 'animationload' %} 
+                        {%  render 'animationload2' %}
+                               </div>
+                        </div>  
+                        {%- endunless -%}
+                      </div> 
                   {%- when 'sales_point' -%}
                     {%- unless block.settings.text == blank -%}
                       <div class="product-block product-block--sales-point" {{ block.shopify_attributes }}>

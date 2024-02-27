@@ -9,6 +9,8 @@
     assign isAjax = true
   endif
 -%}
+<script src="{{ 'inqurie-form.js' | asset_url }}" defer="defer"></script>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
 {%- render 'product-template',
   product: product,
@@ -400,6 +402,33 @@
     }
   ]
 },
+{
+      "type":"Inqure_Now_form",
+      "name":"Inqure_Now_form",
+      "limit":1,
+      "settings": [
+        {
+          "type": "text",
+          "id":"heaing_text",
+          "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id":"subheading",
+          "label": "Sub heading"
+        },
+        {
+          "type": "text",
+          "id":"loading-message",
+          "label": "Loading Message"
+        },
+        {
+          "type": "text",
+          "id":"success_message",
+          "label": "Success Message"
+        }
+      ]
+    },
 {
   "type": "sales_point",
   "name": "t:product_block.sales_point.name",
