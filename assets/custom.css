@@ -203,6 +203,9 @@ p.address_text_save {
   color: black;
   font-weight: 600;
 }
+.main_pop_inquire_form_recomendation{
+ position: relative;
+}
 .faq-tab__summary span::before {
   display: inline-block;
   content: "";
@@ -556,6 +559,8 @@ span.optional_field {
     text-align: center;
     justify-content: center;
     align-items: flex-end;
+      transform: translate(-68%, -90%);
+    left:0;
   }
   .main_pop_wrappper_product form#myForm {
     width: 100%;
