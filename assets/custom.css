@@ -527,7 +527,6 @@ h3.main_pop_product_name {
   display: none;
   position: absolute;
   /* left: 50%; */
-  transform: translate(-68%, -90%);
   background-color: rgba(255, 255, 255, 0.9);
   /* Semi-transparent white background */
   width: 100%;
@@ -667,7 +666,7 @@ div#loadingMessage svg {
   #loadingMessage {
     top: 86%;
     align-items: flex-end;
-    transform: translate(-50%, -65%);
+        transform: translate(-50%,-91%);
   }
   .main_pop_wrappper_product label {
     margin-bottom: 0;
