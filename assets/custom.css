@@ -659,6 +659,11 @@ div#loadingMessage svg {
   width: 100%;
   height: 100%;
 }
+.main_pop_wrappper_product form#myForm textarea{
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
 #loadingMessage {
   flex-direction: column;
 }
