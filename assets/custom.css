@@ -441,7 +441,7 @@ a.btn.btn--full.inqure-now-form {
   }
 }
 .Inqure_Now_form{
-  height: 100%;
+  height: 100vh;
 }
 input#address_default_address_new {
   margin-bottom: .5rem;
