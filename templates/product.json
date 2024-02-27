@@ -99,10 +99,10 @@
         "inqure_now_form_FpKhny": {
           "type": "Inqure_Now_form",
           "settings": {
-            "heaing_text": "",
-            "subheading": "",
+            "heaing_text": "Inquiry Form",
+            "subheading": "We will get in touch with you shortly",
             "loading-message": "",
-            "success_message": ""
+            "success_message": "Thank you for your inquiry! We'll notify you as soon as the product is back in stock"
           }
         }
       },
