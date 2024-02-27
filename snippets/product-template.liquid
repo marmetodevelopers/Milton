@@ -411,8 +411,8 @@
                                 <label class="product_form_email_id">Email*</label>
                                 <input id="emailInput" name="Email" type="email" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"> 
                                 <div id="emailErrorMessage" style="color: red; display: none;">Please enter a valid email address.</div> 
-               <label>Mobile Number*</label>
-<input id="phoneInput" name="Phone" type="number" inputmode="numeric" min="0" max="9999999999" step="1" placeholder="Mobile Number" required>
+           <label>Mobile Number*</label>
+<input id="phoneInput" name="Phone" type="text" pattern="[0-9]{10}" maxlength="10" placeholder="Mobile Number" required>
 
                                 <div id="phoneErrorMessage" style="color: red; display: none;">Please enter a valid 10-digit mobile number.</div>
                                 <lable class="product_form_email_id comments">Comments<span class="optional_field">(optional field)</span></lable>
