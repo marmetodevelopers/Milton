@@ -556,14 +556,17 @@ span.optional_field {
   display: none;
 }
 @media only screen and (min-width: 750px) {
+
   #loadingMessage {
     min-height: 100%;
-   height: fit-content;
+   height: 100%;
+    width: 100%;
+    position: fixed;
     text-align: center;
     justify-content: center;
     align-items: flex-end;
-      transform: translate(-63%, -90%);
-    left:0;
+    inset: 0;
+    
   }
   .main_pop_wrappper_product form#myForm {
     width: 100%;
