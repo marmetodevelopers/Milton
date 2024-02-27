@@ -523,8 +523,8 @@ h3.main_pop_product_name {
 #loadingMessage {
   display: none;
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* left: 50%; */
+  transform: translate(-68%, -78%);
   background-color: rgba(255, 255, 255, 0.9);
   /* Semi-transparent white background */
   width: 100%;
@@ -551,8 +551,8 @@ span.optional_field {
 }
 @media only screen and (min-width: 750px) {
   #loadingMessage {
-    top: 68%;
-    height: 100vh;
+    min-height: 100%;
+   height: fit-content;
     text-align: center;
     justify-content: center;
     align-items: flex-end;
