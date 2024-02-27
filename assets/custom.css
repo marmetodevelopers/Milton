@@ -524,7 +524,7 @@ h3.main_pop_product_name {
   display: none;
   position: absolute;
   /* left: 50%; */
-  transform: translate(-68%, -78%);
+  transform: translate(-68%, -90%);
   background-color: rgba(255, 255, 255, 0.9);
   /* Semi-transparent white background */
   width: 100%;
