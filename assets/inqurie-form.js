@@ -107,3 +107,19 @@ function allowOnlyNumbers(inputElement) {
 
 // Call the function for the quantity input
 allowOnlyNumbers(document.getElementById('qtyInput'));
+
+// Limit the input value to a maximum length of 10 characters
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("phoneInput").addEventListener("input", function () {
+        // Get the input value
+        var inputValue = this.value;
+        // Remove any non-numeric characters using a regular expression
+        var numericValue = inputValue.replace(/\D/g, '');
+        if (numericValue.length > 10) {
+            numericValue = numericValue.substring(0, 10);
+        }
+
+        // Update the input value
+        this.value = numericValue;
+    });
+});

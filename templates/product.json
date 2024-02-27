@@ -96,12 +96,12 @@
             "show_gift_card_recipient": false
           }
         },
-        "inqure_now_form_hkfq4T": {
+        "inqure_now_form_FpKhny": {
           "type": "Inqure_Now_form",
           "settings": {
             "heaing_text": "Inquiry Form",
             "subheading": "We will get in touch with you shortly",
-            "loading-message": "Your response is being submitted...",
+            "loading-message": "",
             "success_message": "Thank you for your inquiry! We'll notify you as soon as the product is back in stock"
           }
         }
@@ -117,7 +117,7 @@
         "sales_point4",
         "inventory_status",
         "buy_buttons",
-        "inqure_now_form_hkfq4T"
+        "inqure_now_form_FpKhny"
       ],
       "settings": {
         "sku_enable": false,
