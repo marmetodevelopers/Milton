@@ -12,6 +12,10 @@ header.section-header.section-header--with-link.acccount-page-section .section-h
   border-bottom: 1px solid gray;
   width: 30%;
 }
+textarea{
+  width: 100%;
+  max-width: 100%;
+}
 td.trackorder a {
   border: 1px solid #EE3D43;
   text-decoration: none;
