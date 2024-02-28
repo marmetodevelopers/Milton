@@ -22,6 +22,7 @@
       "blocks": {
         "banner": {
           "type": "banner",
+          "disabled": true,
           "settings": {
             "heading": "Banner promotion",
             "text": "Add the details of your promotion in smaller text",
@@ -29,12 +30,30 @@
             "label": "Shop now",
             "color_scheme": "1"
           }
+        },
+        "advanced_Y8Bc7m": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/Home_Page_Banner_Desktop_45529240-93f9-425d-a78b-401f1d03faeb.webp",
+            "video_url": "",
+            "width": "100",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "color_accent": "#fff"
+          }
         }
       },
       "block_order": [
-        "banner"
+        "banner",
+        "advanced_Y8Bc7m"
       ],
-      "disabled": true,
       "settings": {
         "full_width": false,
         "gutter_size": 20,
