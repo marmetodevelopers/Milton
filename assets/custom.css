@@ -5,6 +5,9 @@ header.section-header.section-header--with-link button.section-header__link.addr
   background-color: #EE3D43;
   color: white;
 }
+.thankYouMessage h3{
+  margin-top: 2rem;
+}
 .product-tab__content p {
   line-height: 3rem;
 }
