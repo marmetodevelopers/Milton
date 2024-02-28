@@ -1,28 +1,5 @@
 {
   "sections": {
-    "slideshow_image_b96wdc": {
-      "type": "slideshow-image",
-      "blocks": {
-        "image_iR9fa6": {
-          "type": "image",
-          "settings": {
-            "link": "",
-            "image": "{{ collection.metafields.custom.collection_banner_image_desktop.value }}",
-            "image_mobile": "{{ collection.metafields.custom.collection_banner_image_mobile.value }}"
-          }
-        }
-      },
-      "block_order": [
-        "image_iR9fa6"
-      ],
-      "settings": {
-        "full_width": true,
-        "style": "arrows",
-        "autoplay": true,
-        "autoplay_speed": 7,
-        "lazyload_images": true
-      }
-    },
     "collection-header": {
       "type": "collection-header",
       "settings": {
@@ -56,6 +33,7 @@
         },
         "advanced_Y8Bc7m": {
           "type": "advanced",
+          "disabled": true,
           "settings": {
             "subheading": "",
             "heading": "",
@@ -69,7 +47,7 @@
             "width": "100",
             "height": 500,
             "text_align": "vertical-center horizontal-center",
-            "color_accent": "#ffffff"
+            "color_accent": "#fff"
           }
         }
       },
@@ -77,6 +55,7 @@
         "banner",
         "advanced_Y8Bc7m"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "gutter_size": 20,
@@ -195,7 +174,6 @@
     }
   },
   "order": [
-    "slideshow_image_b96wdc",
     "collection-header",
     "d0f2039c-0fa4-42a4-9845-16ffd980f092",
     "promo-grid",
