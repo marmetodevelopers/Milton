@@ -887,6 +887,9 @@ p.contactus_svg {
 #thankYouMessage h3{
   margin-top: 3rem
 }
+.Inqure_Now_form{
+  margin-bottom: 7rem;
+}
 label:not(.variant__button-label):not(.text-label) {
   text-transform: capitalize;
 }
