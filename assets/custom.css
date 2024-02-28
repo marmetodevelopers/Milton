@@ -8,12 +8,29 @@ header.section-header.section-header--with-link button.section-header__link.addr
 .product-tab__content p {
   line-height: 3rem;
 }
-
+.main_pop_inquire_form_recomendation {
+  position: relative;
+}
+.bg_pop_recomendation {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+/* WebKit-specific styling for scrollbar */
+.bg_pop_recomendation::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.bg_pop_recomendation::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.bg_pop_recomendation::-webkit-scrollbar-track {
+  background-color: transparent;
+}
 header.section-header.section-header--with-link.acccount-page-section .section-header__title {
   border-bottom: 1px solid gray;
   width: 30%;
 }
-textarea{
+textarea {
   width: 100%;
   max-width: 100%;
 }
@@ -205,8 +222,8 @@ p.address_text_save {
   color: black;
   font-weight: 600;
 }
-.main_pop_inquire_form_recomendation{
- position: relative;
+.main_pop_inquire_form_recomendation {
+  position: relative;
 }
 .faq-tab__summary span::before {
   display: inline-block;
@@ -564,7 +581,6 @@ span.optional_field {
     justify-content: center;
     align-items: flex-end;
     inset: 0;
-    
   }
   .main_pop_wrappper_product form#myForm {
     width: 100%;
@@ -664,7 +680,7 @@ div#loadingMessage svg {
   width: 100%;
   height: 100%;
 }
-.main_pop_wrappper_product form#myForm textarea{
+.main_pop_wrappper_product form#myForm textarea {
   width: 100%;
   max-width: 100%;
   min-width: 100%;
