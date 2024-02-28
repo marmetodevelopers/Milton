@@ -5,6 +5,9 @@ header.section-header.section-header--with-link button.section-header__link.addr
   background-color: #EE3D43;
   color: white;
 }
+#thankYouMessage h3{
+  margin-top: 2rem;
+}
 .product-tab__content p {
   line-height: 3rem;
 }
@@ -25,6 +28,13 @@ header.section-header.section-header--with-link button.section-header__link.addr
 }
 .bg_pop_recomendation::-webkit-scrollbar-track {
   background-color: transparent;
+
+.zipcode_container{
+ margin-top: 2rem; 
+}
+.Inqure_Now_form{
+  margin-bottom: 7rem;
+
 }
 header.section-header.section-header--with-link.acccount-page-section .section-header__title {
   border-bottom: 1px solid gray;
