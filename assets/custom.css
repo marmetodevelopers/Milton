@@ -11,6 +11,9 @@ header.section-header.section-header--with-link button.section-header__link.addr
 .zipcode_container{
  margin-top: 2rem; 
 }
+.Inqure_Now_form{
+  margin-bottom: 7rem;
+}
 header.section-header.section-header--with-link.acccount-page-section .section-header__title {
   border-bottom: 1px solid gray;
   width: 30%;
