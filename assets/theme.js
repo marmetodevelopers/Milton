@@ -11,6 +11,11 @@
   });
 */
 
+// Function to check if all required fields are filled and validate email
+  // Define the checkForm function
+// 
+
+
 /// pop up open and close
 function togglePopupUpsell() {
   var popup = document.getElementsByClassName('popup_upsell pop_recomendations')[0];
