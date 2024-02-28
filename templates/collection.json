@@ -10,18 +10,10 @@
             "image": "{{ collection.metafields.custom.collection_banner_image_desktop.value }}",
             "image_mobile": "{{ collection.metafields.custom.collection_banner_image_mobile.value }}"
           }
-        },
-        "image_WGDVVx": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "image_XzPrpD",
-        "image_WGDVVx"
+        "image_XzPrpD"
       ],
       "disabled": true,
       "settings": {
