@@ -104,6 +104,12 @@
             "loading-message": "We will get in touch with you shortly",
             "success_message": "Thank you for your inquiry! We'll notify you as soon as the product is back in stock"
           }
+        },
+        "zip_code_app_G4XzmE": {
+          "type": "ZipCodeApp",
+          "settings": {
+            "zip_heading": ""
+          }
         }
       },
       "block_order": [
@@ -117,7 +123,8 @@
         "sales_point4",
         "inventory_status",
         "buy_buttons",
-        "inqure_now_form_AYqEqN"
+        "inqure_now_form_AYqEqN",
+        "zip_code_app_G4XzmE"
       ],
       "settings": {
         "sku_enable": false,
