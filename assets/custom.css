@@ -884,6 +884,9 @@ p.contactus_svg {
     max-width: 100%;
   }
 }
+#thankYouMessage h3{
+  margin-top: 3rem
+}
 label:not(.variant__button-label):not(.text-label) {
   text-transform: capitalize;
 }
