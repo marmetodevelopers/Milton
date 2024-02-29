@@ -215,6 +215,9 @@ p.address_text_save {
   padding: 1.3rem 0;
   margin: 0;
 }
+.empty_collection_banner{
+  display: none;
+}
 .faq_section-left .tablinks:last-child {
   border-bottom: none;
 }
