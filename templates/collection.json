@@ -15,9 +15,8 @@
       "block_order": [
         "image_XzPrpD"
       ],
-      "disabled": true,
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "style": "arrows",
         "autoplay": true,
         "autoplay_speed": 7,
