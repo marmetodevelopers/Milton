@@ -1,18 +1,46 @@
-<div clas>
-    <div>
-        <div>
-
-        </div>
+{{ 'video-popup.css' | asset_url | stylesheet_tag: preload: true }}
+<div class="page-width section-padding--{{ section.id }}">
+    <div class="popup_conatiner">
+        {% for block in section.blocks %}
+            <div class="popup_wrapper">
+                <div class="pop_wrapper_content_items">
+                  {% if block.settings.video_url.id %}
+                    <iframe
+                      src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}?enablejsapi=1"
+                      class="js-youtube"
+                      allow="autoplay; encrypted-media"
+                      allowfullscreen
+                    ></iframe>
+                  {% elsif block.settings.video_picker %}
+                    {{ block.settings.video_picker | video_tag: autoplay: false, loop: false, controls: true, muted: true }}
+                  {% endif %}     
+                    <h3>{{ block.settings.heading }}</h3>
+                </div>
+            </div>
+        {% endfor %}
     </div>
 </div>
 
+{%  style  %} 
+@media screen and (min-width: 750px){
+.section-padding--{{ section.id }}{
+   padding-top: {{ section.settings.padding_top }}px;
+   padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+}
+@media screen and (max-width: 749px){
+.section-padding--{{ section.id }}{
+   padding-top: {{ section.settings.padding_top }}px;
+   padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+}
 
-
+{% endstyle %}
 
 
 {%  schema  %}  
 {
-    "name": "Meta collection list",
+    "name": "Video Blocks",
     "settings": [
       {
         "type": "text",
@@ -41,9 +69,31 @@
         "default": 32
       }
     ],
+    "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "settings": [
+        {
+        "type": "video_url",
+        "id": "video_url",
+        "accept": ["youtube", "vimeo"],
+        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "label": "t:sections.video.settings.video_url.label",
+        "info": "t:sections.video.settings.video_url.info"
+      },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Hello, world!"
+        }
+      ]
+    }
+  ],
     "presets": [
       {
-        "name": "Meta collection list"
+        "name": "Video Blocks"
       }
     ]
   }
