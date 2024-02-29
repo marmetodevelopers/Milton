@@ -10,7 +10,7 @@
             "title": "<p>Contact us<\/p>",
             "title_size": 70,
             "subheading": "",
-            "breadcrum": "<p><a href=\"\/\" title=\"\/\">Home <\/a>&gt; Contact<\/p>",
+            "breadcrum": "<p><a href=\"\/\" title=\"\/\">Home<\/a> &gt; Contact<\/p>",
             "link": "",
             "link_text": "",
             "link_2": "",
@@ -105,10 +105,11 @@
     "form": {
       "type": "contact-form",
       "settings": {
-        "Contact_details": "<p>Contact Location Info<\/p>",
+        "Contact_details": "",
         "address": "Plot No. 20\/ABCD, Government Industrial Estate, Hindustan Naka, Charkop, Charkop Industrial Estate, Kandivali West, Mumbai, Maharashtra 400067",
         "whatsapp_number": "7506006010",
-        "mobile_number": "1800 209 2151",
+        "mobile_number": " 1800-209-2151",
+        "corporate_website_link": "https:\/\/www.hamiltonindia.in",
         "email_address": " support@hamiltonindia.in",
         "title": "Contact Us",
         "heading_size": "h2",
@@ -121,6 +122,7 @@
     },
     "locattion_rPq6xX": {
       "type": "locattion",
+      "disabled": true,
       "settings": {
         "heading": "",
         "padding_top": 0,

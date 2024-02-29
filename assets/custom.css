@@ -5,12 +5,44 @@ header.section-header.section-header--with-link button.section-header__link.addr
   background-color: #EE3D43;
   color: white;
 }
+#thankYouMessage h3{
+  margin-top: 2rem;
+}
 .product-tab__content p {
   line-height: 3rem;
+}
+.main_pop_inquire_form_recomendation {
+  position: relative;
+}
+.bg_pop_recomendation {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+/* WebKit-specific styling for scrollbar */
+.bg_pop_recomendation::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.bg_pop_recomendation::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.bg_pop_recomendation::-webkit-scrollbar-track {
+  background-color: transparent;
+
+.zipcode_container{
+ margin-top: 2rem; 
+}
+.Inqure_Now_form{
+  margin-bottom: 7rem;
+
 }
 header.section-header.section-header--with-link.acccount-page-section .section-header__title {
   border-bottom: 1px solid gray;
   width: 30%;
+}
+textarea {
+  width: 100%;
+  max-width: 100%;
 }
 td.trackorder a {
   border: 1px solid #EE3D43;
@@ -199,6 +231,9 @@ p.address_text_save {
 .faq_section-left h3.is--active {
   color: black;
   font-weight: 600;
+}
+.main_pop_inquire_form_recomendation {
+  position: relative;
 }
 .faq-tab__summary span::before {
   display: inline-block;
@@ -430,6 +465,7 @@ a.btn.btn--full.inqure-now-form {
     margin-bottom: 1rem;
   }
 }
+
 input#address_default_address_new {
   margin-bottom: .5rem;
 }
@@ -520,11 +556,9 @@ h3.main_pop_product_name {
 #loadingMessage {
   display: none;
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.9);
   /* Semi-transparent white background */
-  width: 100%;
+  width: 116%;
   padding: 20px;
   border-radius: 10px;
   z-index: 9999;
@@ -547,12 +581,16 @@ span.optional_field {
   display: none;
 }
 @media only screen and (min-width: 750px) {
+
   #loadingMessage {
-    top: 68%;
-    height: 100vh;
+    min-height: 100%;
+   height: 100%;
+    width: 100%;
+    position: fixed;
     text-align: center;
     justify-content: center;
     align-items: flex-end;
+    inset: 0;
   }
   .main_pop_wrappper_product form#myForm {
     width: 100%;
@@ -652,14 +690,24 @@ div#loadingMessage svg {
   width: 100%;
   height: 100%;
 }
+.main_pop_wrappper_product form#myForm textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
 #loadingMessage {
   flex-direction: column;
 }
 @media only screen and (max-width: 749px) {
   #loadingMessage {
-    top: 86%;
+ min-height: 100%;
+   height: 100%;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    justify-content: center;
     align-items: flex-end;
-    transform: translate(-50%, -65%);
+    inset: 0;
   }
   .main_pop_wrappper_product label {
     margin-bottom: 0;
@@ -829,11 +877,11 @@ div#loadingMessage svg {
 p.contactus_svg {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 12px;
 }
 .page-width.page-width--narrow.Contact-us {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   max-width: 90%;
 }
 .page-width.page-width--narrow.Contact-us svg {
@@ -852,4 +900,8 @@ label:not(.variant__button-label):not(.text-label) {
 .hero__animation-contents.Contact-us a {
   color: white;
   text-decoration: none;
+}
+.grid-item__content.milton-peek-a-book .color-swatch--small{
+  height: 17px;
+  width: 17px;
 }
