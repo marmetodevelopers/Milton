@@ -6,7 +6,7 @@
         <div class="collection_description_container">
             <div class="collection_description_wrapper">
                 <div class="collection_description_text_wrapper">
-                    <p class="collection_description_text">{{ collection.metafields.custom.collection_description_ | metafield_tag }}</p>
+                    <p class="collection_description_text"><div>{{ collection.metafields.custom.collection_description_ | safe }}</div></p>
                 </div>
                 <button class="read_more_button">Read More</button>
             </div>    
