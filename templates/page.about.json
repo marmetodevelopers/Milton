@@ -16,6 +16,7 @@
             "title": "",
             "title_size": 70,
             "subheading": "",
+            "breadcrum": "",
             "link": "",
             "link_text": "",
             "link_2": "",
@@ -328,6 +329,12 @@
       "type": "contact-form",
       "disabled": true,
       "settings": {
+        "Contact_details": "",
+        "address": "",
+        "whatsapp_number": "",
+        "mobile_number": "",
+        "corporate_website_link": "",
+        "email_address": "",
         "title": "Contact us",
         "heading_size": "h2",
         "heading_position": "left",
@@ -335,6 +342,35 @@
         "show_phone": false,
         "narrow_column": true,
         "color_scheme": "none"
+      }
+    },
+    "slideshow_image_Gd9zXh": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_PtnF6h": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-03-01_162720.png"
+          }
+        },
+        "image_XQTgVx": {
+          "type": "image",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_PtnF6h",
+        "image_XQTgVx"
+      ],
+      "settings": {
+        "full_width": false,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
       }
     },
     "8e16050f-359b-483a-890f-3f334947a0db": {
@@ -673,6 +709,7 @@
     "map",
     "featured-collection",
     "form",
+    "slideshow_image_Gd9zXh",
     "8e16050f-359b-483a-890f-3f334947a0db",
     "3bd94ea2-48c5-4d31-9272-66bed2eb5a01"
   ]
