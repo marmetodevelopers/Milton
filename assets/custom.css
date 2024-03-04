@@ -261,6 +261,12 @@ p.address_text_save {
   align-items: center;
   justify-content: center;
 }
+collapsible-elements .collapsible-trigger__layout:hover {
+  color: #FF123A;
+}
+.grid.grid--uniform.grid--flush-bottom.about-us {
+  flex-wrap: wrap;
+}
 /*animation */
 @keyframes shake {
   0% {
@@ -291,7 +297,7 @@ a.btn.btn--full.inqure-now-form {
   background-color: gray;
 }
 @media only screen and (max-width: 749px) {
-    .page-width.page-width--narrow.faq_page_container {
+  .page-width.page-width--narrow.faq_page_container {
     width: 100%;
     max-width: 100%;
   }
@@ -459,7 +465,6 @@ a.btn.btn--full.inqure-now-form {
     margin-bottom: 1rem;
   }
 }
-
 input#address_default_address_new {
   margin-bottom: .5rem;
 }
@@ -575,13 +580,16 @@ span.optional_field {
   display: none;
 }
 @media only screen and (min-width: 750px) {
-.page-width.page-width--narrow.faq_page_container {
-  width: 60%;
-  max-width: 60%;
-}
+  main#MainContent .shopify-policy__container {
+    max-width: 53%;
+  }
+  .page-width.page-width--narrow.faq_page_container {
+    width: 60%;
+    max-width: 60%;
+  }
   #loadingMessage {
     min-height: 100%;
-   height: 100%;
+    height: 100%;
     width: 100%;
     position: fixed;
     text-align: center;
@@ -697,8 +705,8 @@ div#loadingMessage svg {
 }
 @media only screen and (max-width: 749px) {
   #loadingMessage {
- min-height: 100%;
-   height: 100%;
+    min-height: 100%;
+    height: 100%;
     width: 100%;
     position: fixed;
     text-align: center;
@@ -890,7 +898,6 @@ p.contactus_svg {
     flex-wrap: wrap;
     max-width: 100%;
   }
-  
 }
 label:not(.variant__button-label):not(.text-label) {
   text-transform: capitalize;
@@ -899,17 +906,14 @@ label:not(.variant__button-label):not(.text-label) {
   color: white;
   text-decoration: none;
 }
-.grid-item__content.milton-peek-a-book .color-swatch--small{
+.grid-item__content.milton-peek-a-book .color-swatch--small {
   height: 17px;
   width: 17px;
 }
-
 span.collapsible-trigger__layout {
   font-size: 20px;
   font-weight: 500;
-  color: rgb(51, 51, 51);
 }
-
 .collection-metafield__sections.meta_collection_faq {
   width: 80%;
   margin: auto;
