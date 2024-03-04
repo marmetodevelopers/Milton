@@ -107,12 +107,13 @@
         "template--15936832700516__06900638-622a-4ac5-a345-cd7502f99617-heading-1": {
           "type": "heading",
           "settings": {
-            "title": "Your neighbourhood store, online.",
-            "heading_size": "h2"
+            "title": "Media",
+            "heading_size": "h0"
           }
         },
         "template--15936832700516__06900638-622a-4ac5-a345-cd7502f99617-text-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "enlarge_text": true,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
@@ -123,11 +124,10 @@
         "template--15936832700516__06900638-622a-4ac5-a345-cd7502f99617-heading-1",
         "template--15936832700516__06900638-622a-4ac5-a345-cd7502f99617-text-1"
       ],
-      "disabled": true,
       "settings": {
         "align_text": "center",
         "narrow_column": true,
-        "color_scheme": "1",
+        "color_scheme": "none",
         "divider": false
       }
     },
