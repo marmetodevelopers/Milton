@@ -75,6 +75,7 @@
             "title": "",
             "title_size": 70,
             "subheading": "",
+            "breadcrum": "",
             "link": "",
             "link_text": "",
             "link_2": "",
@@ -201,6 +202,12 @@
       "type": "contact-form",
       "disabled": true,
       "settings": {
+        "Contact_details": "",
+        "address": "",
+        "whatsapp_number": "",
+        "mobile_number": "",
+        "corporate_website_link": "",
+        "email_address": "",
         "title": "Contact us",
         "heading_size": "h2",
         "heading_position": "left",
@@ -332,6 +339,74 @@
         "divider": false,
         "color_scheme": "none"
       }
+    },
+    "video_pop_up_HxJYjW": {
+      "type": "video-pop-up",
+      "settings": {
+        "heading": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video_pop_NzkC6T": {
+      "type": "video-pop",
+      "blocks": {
+        "heading_abA6ji": {
+          "type": "heading",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "heading": "Milton Leak Lock Tiffins and Bottles"
+          }
+        },
+        "heading_XjWQx7": {
+          "type": "heading",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "heading": "Milton Leak Lock Tiffins and Bottles"
+          }
+        },
+        "heading_CpnbwN": {
+          "type": "heading",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "heading": "Milton Leak Lock Tiffins and Bottles"
+          }
+        },
+        "heading_N7UnbH": {
+          "type": "heading",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "heading": "Milton Leak Lock Tiffins and Bottles"
+          }
+        },
+        "heading_zBCzBN": {
+          "type": "heading",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "heading": "Milton Leak Lock Tiffins and Bottles"
+          }
+        },
+        "heading_zaa7fp": {
+          "type": "heading",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "heading": "Milton Leak Lock Tiffins and Bottles"
+          }
+        }
+      },
+      "block_order": [
+        "heading_abA6ji",
+        "heading_XjWQx7",
+        "heading_CpnbwN",
+        "heading_N7UnbH",
+        "heading_zBCzBN",
+        "heading_zaa7fp"
+      ],
+      "settings": {
+        "heading_text": "",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
     }
   },
   "order": [
@@ -343,6 +418,9 @@
     "b4ddd3dd-9339-4529-a37d-078b7aaad19d",
     "1f91866e-02e2-4ac4-a646-a94a278244a4",
     "61a52f7b-e9a6-4707-81af-594a451ceae0",
-    "134d58fd-82f5-454c-a328-3a8729e621e9"
+    "134d58fd-82f5-454c-a328-3a8729e621e9",
+    "video_pop_up_HxJYjW",
+    "video_pop_NzkC6T"
   ]
 }
+
