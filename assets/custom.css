@@ -916,3 +916,9 @@ span.collapsible-trigger__layout {
     width: 100%;
   }
 }
+.collection-metafield__sections.meta_collection_faq.flickity-enabled.is-draggable button.flickity-button.flickity-prev-next-button.flickity-next {
+  right: -2rem;
+}
+.collection-metafield__sections.meta_collection_faq.flickity-enabled.is-draggable button.flickity-button.flickity-prev-next-button.flickity-previous {
+  left: -2rem;
+}
