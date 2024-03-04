@@ -291,6 +291,10 @@ a.btn.btn--full.inqure-now-form {
   background-color: gray;
 }
 @media only screen and (max-width: 749px) {
+    .page-width.page-width--narrow.faq_page_container {
+    width: 100%;
+    max-width: 100%;
+  }
   #loadingMessage {
     top: 50%;
   }
@@ -883,6 +887,7 @@ p.contactus_svg {
     flex-wrap: wrap;
     max-width: 100%;
   }
+  
 }
 label:not(.variant__button-label):not(.text-label) {
   text-transform: capitalize;
