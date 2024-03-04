@@ -37,6 +37,41 @@
             </div>
         </div>
     </div>
+    <div class="wishlist-popup wishlist-selected-popup" data-hulkappsMyWishlistDrawer>
+        <div class="wishlist-modal modal-medium">
+            <div class="wishlist-modal__content">
+                <div class="wishlist-modal__header">
+                    <h2 data-wishlistdrawertitle>Your wishlist</h2>
+                    <button class="close-popup" data-closeMyWishlistDrawer2><span class="icon-wishlist-cross"></span></button>
+                </div>
+                <div class="wishlist-modal__body">
+                    <select class="hulk-wishlists multiple-wishlists" data-hulkDrawerWishlists style="display: none;"></select>
+                    <div class="wishlist-empty" data-hulkemptywishlist="" style="display: none;">
+                        <div class="empty_content">
+                            <span>Please add product to your wishlist to see them here.</span>
+                        </div>
+                    </div>
+                    <div class="wishlist-login" data-hulkloginmsg="" style="display: none;">
+                        <div class="empty_content">
+                            <span>Login to see your wishlist!</span>
+                        </div>
+                    </div>
+                    <ul class="bulk_action">
+                        <li data-selectalldrawerwishlist="" style="display: inline-block;"><input type="checkbox" id="hulk_select_drawer_all" name="select_all" value="select_all" data-com.bitwarden.browser.user-edited="yes"><span>Select All</span></li>
+                        <li data-hulkmoveallitmes="" style="display: none;"><a href="javascript:void(0)" aria-describedby="a11y-external-message">Move to cart</a></li>
+                        <li data-hulkdeleteallitmes="" style="display: none;"><a href="javascript:void(0)" aria-describedby="a11y-external-message">Delete</a></li>
+                    </ul>
+                    <div class="wishlist-grid-view" data-hulkMyDrawerItems="">
+                    </div>
+                </div>
+                <div class="wishlist-modal__footer">
+                    <a href="/account/login" class="hulkBtnStyle login-drawer" data-loginBtn style="display: none;">Login</a>
+                    <a href="/{{ shop.metafields.hulkapps_wishlist.hulkapps_wishlist_general.app_proxy_prefix }}/{{ shop.metafields.hulkapps_wishlist.hulkapps_wishlist_general.app_proxy_path }}" class="wishlist-btn hulkBtnStyle right-space" data-viewMoreDrawer style="display: none;">Explore more products</a>
+                    <a href="/collections" class="wishlist-btn hulkBtnStyle right-space" data-addProductDrawerBtn style="display: none;">Add products</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="wishlist-popup" data-hulkappsWishlistPopup>
         <div class="wishlist-modal modal-small">
             <div class="wishlist-modal__content">
