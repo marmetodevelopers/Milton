@@ -20,9 +20,12 @@
         </span>
       </a>
     {%- endif -%} -->
+
         <div class="header_wishlist_icon">
           <a href=“/apps/advanced-wishlist” class=“site-header__icon icon-wishlist-heart-empty” style=“font-size: x-large;“></a>
         </div>
+
+   
 
     {%- if shop.customer_accounts_enabled -%}
       {% if customer %}
@@ -41,6 +44,7 @@
           </span>
         </div>
         <!-- </a> -->
+        
       {% endif %}
       <script>
         const button = document.getElementById('modal-open-button');
@@ -75,6 +79,15 @@
       </span>
     </a>
 
+    <div class="tracking_order_svg">
+      <a href="https://hamilton-tracking.unicommerce.com/" class="site-nav__link site-nav__link--icon js-no-transition">
+        <div class="tracking_order_container">
+          <span>{% render 'track-order-svg' %}</span> 
+          <p>Track Order</p>
+        </div>
+      </a>
+     
+       </div>
     <button type="button"
       aria-controls="MobileNav"
       class="site-nav__link site-nav__link--icon medium-up--hide mobile-nav-trigger">

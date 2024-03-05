@@ -282,6 +282,21 @@ p.address_text_save {
     transform: translate(-2px, -2px);
   }
 }
+.tracking_order_svg svg {
+  height: 35px;
+  width: 32px;
+}
+.tracking_order_svg p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 13px;
+  color: #000000;
+}
+.tracking_order_container {
+  display: flex;
+  gap: 10px;
+}
 /* animation svg */
 h1.section-header__title svg {
   animation: shake 0.5s ease infinite;
@@ -294,6 +309,9 @@ a.btn.btn--full.inqure-now-form {
   background-color: gray;
 }
 @media only screen and (max-width: 749px) {
+  .tracking_order_container p {
+    display: none;
+  }
   #loadingMessage {
     top: 50%;
   }
