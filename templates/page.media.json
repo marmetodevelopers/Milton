@@ -75,6 +75,7 @@
             "title": "",
             "title_size": 70,
             "subheading": "",
+            "breadcrum": "",
             "link": "",
             "link_text": "",
             "link_2": "",
@@ -106,12 +107,13 @@
         "template--15936832700516__06900638-622a-4ac5-a345-cd7502f99617-heading-1": {
           "type": "heading",
           "settings": {
-            "title": "Your neighbourhood store, online.",
-            "heading_size": "h2"
+            "title": "Media",
+            "heading_size": "h0"
           }
         },
         "template--15936832700516__06900638-622a-4ac5-a345-cd7502f99617-text-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "enlarge_text": true,
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
@@ -122,11 +124,10 @@
         "template--15936832700516__06900638-622a-4ac5-a345-cd7502f99617-heading-1",
         "template--15936832700516__06900638-622a-4ac5-a345-cd7502f99617-text-1"
       ],
-      "disabled": true,
       "settings": {
         "align_text": "center",
         "narrow_column": true,
-        "color_scheme": "1",
+        "color_scheme": "none",
         "divider": false
       }
     },
@@ -201,6 +202,12 @@
       "type": "contact-form",
       "disabled": true,
       "settings": {
+        "Contact_details": "",
+        "address": "",
+        "whatsapp_number": "",
+        "mobile_number": "",
+        "corporate_website_link": "",
+        "email_address": "",
         "title": "Contact us",
         "heading_size": "h2",
         "heading_position": "left",
@@ -332,6 +339,98 @@
         "divider": false,
         "color_scheme": "none"
       }
+    },
+    "video_pop_3WQ8hE": {
+      "type": "video-pop",
+      "blocks": {
+        "heading_DqH4YP": {
+          "type": "heading",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/gyYxusqawWA",
+            "heading": "Milton Leak Lock Tiffins and Bottles"
+          }
+        },
+        "heading_j9MLD7": {
+          "type": "heading",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/J0dmfWRjEU0",
+            "heading": "Rozi Roti – Microwow Tiffin"
+          }
+        },
+        "heading_Xf6NQY": {
+          "type": "heading",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/xneXIP5IW90",
+            "heading": "Hands-Free Sipper Bottles"
+          }
+        },
+        "heading_RUjwww": {
+          "type": "heading",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/OH8NJLTjDJs",
+            "heading": "Metro – Coloured Thermosteel Flasks"
+          }
+        },
+        "heading_KJyyGE": {
+          "type": "heading",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/8CYDMQnnllE",
+            "heading": "Kahaan Ka Piya – Thermosteel Flasks – 24 hours hot and cold"
+          }
+        },
+        "heading_xLyb3e": {
+          "type": "heading",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/idSot1pCG_E",
+            "heading": "Microwow Casseroles – World’s First Microwaveable Steel Casseroles"
+          }
+        },
+        "heading_bg43DY": {
+          "type": "heading",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/ybdllPW1sMY",
+            "heading": "Army – Electron Tiffin"
+          }
+        },
+        "heading_Vc9VJp": {
+          "type": "heading",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/VX_8bCvXpQw",
+            "heading": "Army – Thermosteel Flask"
+          }
+        },
+        "heading_4tEmjF": {
+          "type": "heading",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/NX7XX3DQmOM",
+            "heading": "Crisp Casserole"
+          }
+        },
+        "heading_KBK7XT": {
+          "type": "heading",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/DG6EbyjtJQA",
+            "heading": "Glass Lid Casseroles"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DqH4YP",
+        "heading_j9MLD7",
+        "heading_Xf6NQY",
+        "heading_RUjwww",
+        "heading_KJyyGE",
+        "heading_xLyb3e",
+        "heading_bg43DY",
+        "heading_Vc9VJp",
+        "heading_4tEmjF",
+        "heading_KBK7XT"
+      ],
+      "settings": {
+        "heading_text": "",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
     }
   },
   "order": [
@@ -343,6 +442,7 @@
     "b4ddd3dd-9339-4529-a37d-078b7aaad19d",
     "1f91866e-02e2-4ac4-a646-a94a278244a4",
     "61a52f7b-e9a6-4707-81af-594a451ceae0",
-    "134d58fd-82f5-454c-a328-3a8729e621e9"
+    "134d58fd-82f5-454c-a328-3a8729e621e9",
+    "video_pop_3WQ8hE"
   ]
 }
