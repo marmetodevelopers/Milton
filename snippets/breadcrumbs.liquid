@@ -24,6 +24,7 @@
 
     {% elsif template.name == 'collection' and collection.handle %}
       {% if settings.show_breadcrumbs_collection_link %}
+        {%  comment  %} Collection Page Breadcrumbs {% endcomment %}
         <span class="breadcrumb__divider" aria-hidden="true">{% render 'right-arrow'%}</span>
         <a href="{{ routes.collections_url }}" class="collection_name_breadcrums">{{ collection.title }}</a>
       {% endif %}
