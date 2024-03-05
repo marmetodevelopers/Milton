@@ -24,12 +24,9 @@
 
     {% elsif template.name == 'collection' and collection.handle %}
       {% if settings.show_breadcrumbs_collection_link %}
-        <span class="breadcrumb__divider" aria-hidden="true">/</span>
-        <a href="{{ routes.collections_url }}">{{ 'general.search.collections' | t | replace: ':', ''}}</a>
+        <span class="breadcrumb__divider" aria-hidden="true">{% render 'right-arrow'%}</span>
+        <a href="{{ routes.collections_url }}" class="collection_name_breadcrums">{{ collection.title }}</a>
       {% endif %}
-
-      <span class="breadcrumb__divider" aria-hidden="true">/</span>
-
       {% if current_tags %}
         {% capture url %}{{ routes.collections_url }}/{{ collection.handle }}{% endcapture %}
         {{ collection.title | link_to: url }}

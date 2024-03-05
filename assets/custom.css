@@ -215,7 +215,7 @@ p.address_text_save {
   padding: 1.3rem 0;
   margin: 0;
 }
-.empty_collection_banner{
+.empty_collection_banner {
   display: none;
 }
 .faq_section-left .tablinks:last-child {
@@ -458,7 +458,6 @@ a.btn.btn--full.inqure-now-form {
     margin-bottom: 1rem;
   }
 }
-
 input#address_default_address_new {
   margin-bottom: .5rem;
 }
@@ -573,11 +572,20 @@ span.optional_field {
 .modal--quick-shop .Inqure_Now_form {
   display: none;
 }
+.collection_name_breadcrums {
+  font-size: 13px;
+}
+span.breadcrumb__divider svg {
+  height: 10px;
+  width: 10px;
+}
+h1.section-header__title.h3:empty {
+  display: none;
+}
 @media only screen and (min-width: 750px) {
-
   #loadingMessage {
     min-height: 100%;
-   height: 100%;
+    height: 100%;
     width: 100%;
     position: fixed;
     text-align: center;
@@ -693,8 +701,8 @@ div#loadingMessage svg {
 }
 @media only screen and (max-width: 749px) {
   #loadingMessage {
- min-height: 100%;
-   height: 100%;
+    min-height: 100%;
+    height: 100%;
     width: 100%;
     position: fixed;
     text-align: center;
@@ -887,10 +895,10 @@ p.contactus_svg {
     max-width: 100%;
   }
 }
-#thankYouMessage h3{
+#thankYouMessage h3 {
   margin-top: 3rem
 }
-.Inqure_Now_form{
+.Inqure_Now_form {
   margin-bottom: 7rem;
 }
 label:not(.variant__button-label):not(.text-label) {
@@ -900,7 +908,29 @@ label:not(.variant__button-label):not(.text-label) {
   color: white;
   text-decoration: none;
 }
-.grid-item__content.milton-peek-a-book .color-swatch--small{
+.grid-item__content.milton-peek-a-book .color-swatch--small {
   height: 17px;
   width: 17px;
+}
+.collections-section__image {
+  text-align: center;
+}
+.collection-metafield__section .grid-item {
+  flex: 0 0 16%;
+}
+.collection-metafield__section {
+  display: flex;
+  gap: 10px;
+  overflow: scroll;
+}
+.collection-metafield__section::-webkit-scrollbar {
+  display: none;
+}
+.collections-section__list--collection.grid.grid--1-col.grid--2-col-tablet {
+  width: 20%;
+}
+@Media only screen and (max-width:749px) {
+  .collection-metafield__section .grid-item {
+    flex: 0 0 33%;
+  }
 }
