@@ -267,9 +267,7 @@ p.address_text_save {
 collapsible-elements .collapsible-trigger__layout:hover {
   color: #FF123A;
 }
-.grid.grid--uniform.grid--flush-bottom.about-us {
-  flex-wrap: wrap;
-}
+
 /*animation */
 @keyframes shake {
   0% {
@@ -325,6 +323,9 @@ a.btn.btn--full.inqure-now-form {
   .tracking_order_container p {
     display: none;
   }
+  .grid.grid--uniform.grid--flush-bottom.about-us {
+  flex-wrap: wrap;
+}
   .page-width.page-width--narrow.faq_page_container {
     width: 100%;
     max-width: 100%;
