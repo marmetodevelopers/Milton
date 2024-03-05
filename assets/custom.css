@@ -283,8 +283,8 @@ p.address_text_save {
   }
 }
 .tracking_order_svg svg {
-  height: 35px;
-  width: 32px;
+  height: 27px;
+  width: 27px;
 }
 .tracking_order_svg p {
   display: flex;
