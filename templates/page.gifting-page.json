@@ -34,7 +34,7 @@
       "disabled": true,
       "settings": {
         "full_width": true,
-        "desktop_size": 0,
+        "desktop_size": -20,
         "mobile_size": 0,
         "style": "arrows",
         "autoplay": true,
