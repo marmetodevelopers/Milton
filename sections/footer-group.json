@@ -67,6 +67,14 @@
             "enable_account_link": false
           }
         },
+        "menu_erjiY3": {
+          "type": "menu",
+          "settings": {
+            "title": "",
+            "menu": "static-pages",
+            "enable_account_link": false
+          }
+        },
         "3dfce0e6-3a81-44d1-8850-0a456f665a16": {
           "type": "menu",
           "settings": {
@@ -105,6 +113,7 @@
       },
       "block_order": [
         "5dc2b7ed-3acc-484e-809b-f3fdf5302cd8",
+        "menu_erjiY3",
         "3dfce0e6-3a81-44d1-8850-0a456f665a16",
         "footer-0",
         "footer-1",
