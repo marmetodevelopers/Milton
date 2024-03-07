@@ -23,7 +23,7 @@
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/milton_banner_adaptation_1920x900_73bfbcca-9410-4f43-8704-0e47c50e454f.jpg",
+            "image": "shopify:\/\/shop_images\/womans-hands-cups.webp",
             "overlay_opacity": 0
           }
         }
@@ -31,6 +31,7 @@
       "block_order": [
         "template--15936832700516__66fcdf49-a124-484e-890e-24330bc4035d-hero-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "desktop_size": -20,
