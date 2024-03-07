@@ -215,6 +215,9 @@ p.address_text_save {
   padding: 1.3rem 0;
   margin: 0;
 }
+.empty_collection_banner{
+  display: none;
+}
 .faq_section-left .tablinks:last-child {
   border-bottom: none;
 }
@@ -899,6 +902,12 @@ p.contactus_svg {
     flex-wrap: wrap;
     max-width: 100%;
   }
+}
+#thankYouMessage h3{
+  margin-top: 3rem
+}
+.Inqure_Now_form{
+  margin-bottom: 7rem;
 }
 label:not(.variant__button-label):not(.text-label) {
   text-transform: capitalize;
