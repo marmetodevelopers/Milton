@@ -1,7 +1,7 @@
 {% if settings.show_breadcrumbs %}
 
 {% unless template.name == 'index' or template.name == 'cart' %}
-  <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
+<nav class="breadcrumb {%if template.name == 'collection'%} collection_breadcrumb {% endif %}" role="navigation" aria-label="breadcrumbs">
     <a href="{{ routes.root_url }}" title="{{ 'general.breadcrumbs.home_link_title' | t }}">{{ 'general.breadcrumbs.home' | t }}</a>
 
     {% if template.name == 'product' %}
@@ -24,12 +24,10 @@
 
     {% elsif template.name == 'collection' and collection.handle %}
       {% if settings.show_breadcrumbs_collection_link %}
-        <span class="breadcrumb__divider" aria-hidden="true">/</span>
-        <a href="{{ routes.collections_url }}">{{ 'general.search.collections' | t | replace: ':', ''}}</a>
+        {%  comment  %} Collection Page Breadcrumbs {% endcomment %}
+        <span class="breadcrumb__divider" aria-hidden="true">{% render 'right-arrow'%}</span>
+        <a href="{{ routes.collections_url }}" class="collection_name_breadcrums">{{ collection.title }}</a>
       {% endif %}
-
-      <span class="breadcrumb__divider" aria-hidden="true">/</span>
-
       {% if current_tags %}
         {% capture url %}{{ routes.collections_url }}/{{ collection.handle }}{% endcapture %}
         {{ collection.title | link_to: url }}

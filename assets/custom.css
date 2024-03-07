@@ -215,7 +215,7 @@ p.address_text_save {
   padding: 1.3rem 0;
   margin: 0;
 }
-.empty_collection_banner{
+.empty_collection_banner {
   display: none;
 }
 .faq_section-left .tablinks:last-child {
@@ -286,6 +286,21 @@ collapsible-elements .collapsible-trigger__layout:hover {
     transform: translate(-2px, -2px);
   }
 }
+.tracking_order_svg svg {
+  height: 32px;
+  width: 32px;
+}
+.tracking_order_svg p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 13px;
+  color: #000000;
+}
+.tracking_order_container {
+  display: flex;
+  gap: 10px;
+}
 /* animation svg */
 h1.section-header__title svg {
   animation: shake 0.5s ease infinite;
@@ -298,6 +313,16 @@ a.btn.btn--full.inqure-now-form {
   background-color: gray;
 }
 @media only screen and (max-width: 749px) {
+  nav.breadcrumb.collection_breadcrumb {
+    margin-bottom: 5px;
+  }
+  header.section-header.section-header--flush p.medium-up--hide {
+    margin-top: 0px;
+    font-size: 9px;
+  }
+  .tracking_order_container p {
+    display: none;
+  }
   .grid.grid--uniform.grid--flush-bottom.about-us {
   flex-wrap: wrap;
 }
@@ -581,6 +606,16 @@ span.optional_field {
   margin-left: 10px;
 }
 .modal--quick-shop .Inqure_Now_form {
+  display: none;
+}
+.collection_name_breadcrums {
+  font-size: 13px;
+}
+span.breadcrumb__divider svg {
+  height: 10px;
+  width: 10px;
+}
+h1.section-header__title.h3:empty {
   display: none;
 }
 @media only screen and (min-width: 750px) {
@@ -903,9 +938,10 @@ p.contactus_svg {
     max-width: 100%;
   }
 }
-#thankYouMessage h3{
+#thankYouMessage h3 {
   margin-top: 3rem
 }
+
 .Inqure_Now_form{
   margin-bottom: 7rem;
 }
@@ -919,6 +955,28 @@ label:not(.variant__button-label):not(.text-label) {
 .grid-item__content.milton-peek-a-book .color-swatch--small {
   height: 17px;
   width: 17px;
+}
+.collections-section__image {
+  text-align: center;
+}
+.collection-metafield__section .grid-item {
+  flex: 0 0 16%;
+}
+.collection-metafield__section {
+  display: flex;
+  gap: 10px;
+  overflow: scroll;
+}
+.collection-metafield__section::-webkit-scrollbar {
+  display: none;
+}
+.collections-section__list--collection.grid.grid--1-col.grid--2-col-tablet {
+  width: 20%;
+}
+@Media only screen and (max-width:749px) {
+  .collection-metafield__section .grid-item {
+    flex: 0 0 33%;
+  }
 }
 span.collapsible-trigger__layout {
   font-size: 20px;

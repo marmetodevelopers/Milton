@@ -344,6 +344,16 @@
         "color_scheme": "none"
       }
     },
+    "slideshow_image_Gd9zXh": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_PtnF6h": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-03-01_162720.png"
+          }
+        },
     "slideshow_Bm8EkR": {
       "type": "slideshow",
       "blocks": {
@@ -421,6 +431,11 @@
         }
       },
       "block_order": [
+        "image_PtnF6h",
+        "image_XQTgVx"
+      ],
+      "settings": {
+        "full_width": false,
         "hero_3WaGN3",
         "hero_J76JqA",
         "hero_Gb9Cxj",
@@ -772,7 +787,7 @@
     "map",
     "featured-collection",
     "form",
-    "slideshow_Bm8EkR",
+    "slideshow_image_Gd9zXh",
     "8e16050f-359b-483a-890f-3f334947a0db",
     "3bd94ea2-48c5-4d31-9272-66bed2eb5a01"
   ]
