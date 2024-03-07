@@ -289,6 +289,7 @@ collapsible-elements .collapsible-trigger__layout:hover {
 .tracking_order_svg svg {
   height: 32px;
   width: 32px;
+    margin-top: 9px;
 }
 .tracking_order_svg p {
   display: flex;
