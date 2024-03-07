@@ -70,7 +70,7 @@
         "menu_erjiY3": {
           "type": "menu",
           "settings": {
-            "title": "",
+            "title": "Pages",
             "menu": "static-pages",
             "enable_account_link": false
           }
