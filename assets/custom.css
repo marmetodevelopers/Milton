@@ -5,6 +5,10 @@ header.section-header.section-header--with-link button.section-header__link.addr
   background-color: #EE3D43;
   color: white;
 }
+.tracking_order_container img {
+  height: 42px;
+  width: 41px;
+}
 .product-tab__content p {
   line-height: 3rem;
 }
