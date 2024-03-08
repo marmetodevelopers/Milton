@@ -239,7 +239,7 @@
 
                       {%- if color_count <= max_colors_show -%}
                         <span
-                          class="{% if value == "Steel" %} onee {% endif %}aaaa color-swatch color-swatch--small color-swatch--{{ value | handle }}{% if variant.image %} color-swatch--with-image{% endif %}"
+                          class="{% if value == "Steel" %} onee {% endif %}color-swatch color-swatch--small color-swatch--{{ value | handle }}{% if variant.image %} color-swatch--with-image{% endif %}"
                           data-url="{{ variant.url | within: collection }}"
                           {% if variant.image %}
                             data-variant-id="{{ variant.id }}"
