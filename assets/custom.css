@@ -6,8 +6,8 @@ header.section-header.section-header--with-link button.section-header__link.addr
   color: white;
 }
 .tracking_order_container img {
-  height: 42px;
-  width: 41px;
+  height: 50px;
+  width: 50px;
 }
 .product-tab__content p {
   line-height: 3rem;
@@ -293,6 +293,7 @@ collapsible-elements .collapsible-trigger__layout:hover {
 .tracking_order_svg svg {
   height: 32px;
   width: 32px;
+    margin-top: 9px;
 }
 .tracking_order_svg p {
   display: flex;
@@ -317,6 +318,9 @@ a.btn.btn--full.inqure-now-form {
   background-color: gray;
 }
 @media only screen and (max-width: 749px) {
+  .tracking_order_svg svg {
+    margin-top: 6px;
+  }
   nav.breadcrumb.collection_breadcrumb {
     margin-bottom: 5px;
   }
@@ -747,6 +751,10 @@ div#loadingMessage svg {
   flex-direction: column;
 }
 @media only screen and (max-width: 749px) {
+  .grid-item__content.promotions .color-swatch--small {
+      height: 18px;
+      width: 18px;
+  }
   #loadingMessage {
     min-height: 100%;
     height: 100%;
