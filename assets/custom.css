@@ -905,3 +905,6 @@ label:not(.variant__button-label):not(.text-label) {
   height: 17px;
   width: 17px;
 }
+.logout-btn {
+  cursor: pointer;
+} 
