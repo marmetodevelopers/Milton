@@ -1,15 +1,18 @@
 {%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
 
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
+@media screen and (min-width: 750px){
+.section-{{ section.id }}-padding{
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
   }
+}
+@media screen and (max-width: 749px){
+.section-{{ section.id }}-padding{
+    padding-top: {{ section.settings.mpadding_top }}px;
+    padding-bottom: {{ section.settings.mpadding_bottom }}px;
+  }
+}
+
 {%- endstyle -%}
 
 {% assign meta = collection.metafields.custom.subcollection.value %}
@@ -31,33 +34,6 @@
   </div>
 {% endif %}
 
-{% style %}
-    .collections-section__image{
-      text-align: center;
-    }
-    .collection-metafield__section .grid-item{
-      flex: 0 0 16%;
-    }
-  .collection-metafield__section {
-    display: flex;
-    gap: 10px; /* Changed gap to 40px */
-    overflow: scroll;
-  }
-
-
-  .collection-metafield__section::-webkit-scrollbar {
-    display: none;
-  }
-  .collections-section__list--collection.grid.grid--1-col.grid--2-col-tablet {
-    width: 20%; 
-  }
-
-    @Media only screen and (max-width:749px){
-       .collection-metafield__section .grid-item{
-      flex: 0 0 33%;
-    }
-      }
-{% endstyle %}
 
 {% schema %}
 {
@@ -91,7 +67,27 @@
       "unit": "px",
       "label": "padding_bottom",
       "default": 36
-    }
+    },
+    {
+      "type": "range",
+      "id": "mpadding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile Padding Top",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "mpadding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile Padding Bottom",
+      "default": 100
+    }  
   ],
   "presets":[{
     "name": "collections metafield"
