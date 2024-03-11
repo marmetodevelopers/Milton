@@ -36,8 +36,10 @@
       "type": "collection-list-metafield",
       "settings": {
         "heading": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 28,
+        "padding_bottom": 0,
+        "mpadding_top": 0,
+        "mpadding_bottom": 0
       }
     },
     "a2a01644-c80b-489c-8817-e96b174bfd38": {

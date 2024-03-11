@@ -45,7 +45,7 @@
       </div>
     {%- endif -%}
 
-    <div class="grid{% unless section.blocks.size == 5 %} grid--uniform{% endunless %} grid--flush-bottom">
+    <div class="grid{% unless section.blocks.size == 5 %} grid--uniform{% endunless %} grid--flush-bottom {{ page.title |  handleize }}">
       {%- liquid
         assign grid_item_width = 'medium-up--one-third'
         case section.blocks.size

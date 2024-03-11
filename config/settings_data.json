@@ -79,7 +79,7 @@
     "favicon": "shopify:\/\/shop_images\/android-chrome-192x192.png",
     "predictive_search_enabled": true,
     "show_breadcrumbs": true,
-    "show_breadcrumbs_collection_link": false,
+    "show_breadcrumbs_collection_link": true,
     "checkout_logo_image": "shopify:\/\/shop_images\/Milton_Logo.png",
     "checkout_logo_position": "left",
     "checkout_logo_size": "small",
