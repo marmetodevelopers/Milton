@@ -801,9 +801,6 @@ div#loadingMessage svg {
     height: 37px !important;
     /* This height is comming from the flikity so i have given the !important here */
   }
-  .header-layout {
-    padding-top: 10px;
-  }
   .header-item.header-item--logo {
     width: 30%;
   }
