@@ -705,7 +705,8 @@ div#loadingMessage svg {
     width: 18px;
   }
   .site-nav__link--icon {
-    padding-right: 3px;
+    padding-right: 11px;
+    margin-right: 1rem;
   }
   .tracking_order_svg svg {
     margin-top: 6px;
@@ -975,7 +976,6 @@ collapsible-elements .collapsible-trigger__layout:hover {
   display: flex;
   gap: 10px;
 }
-
 .collections-section__image {
   text-align: center;
 }
