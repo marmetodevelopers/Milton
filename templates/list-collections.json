@@ -3,6 +3,9 @@
     "main": {
       "type": "list-collections-template",
       "settings": {
+        "title_enable": true,
+        "display_type": "all",
+        "sort": "alphabetical"
       }
     },
     "logo-list": {
@@ -11,31 +14,37 @@
         "logo1": {
           "type": "logo_image",
           "settings": {
+            "link": ""
           }
         },
         "logo2": {
           "type": "logo_image",
           "settings": {
+            "link": ""
           }
         },
         "logo3": {
           "type": "logo_image",
           "settings": {
+            "link": ""
           }
         },
         "logo4": {
           "type": "logo_image",
           "settings": {
+            "link": ""
           }
         },
         "logo5": {
           "type": "logo_image",
           "settings": {
+            "link": ""
           }
         },
         "logo6": {
           "type": "logo_image",
           "settings": {
+            "link": ""
           }
         }
       },
@@ -47,8 +56,18 @@
         "logo5",
         "logo6"
       ],
+      "disabled": true,
       "settings": {
-        "title": "Our brands"
+        "bg_color": "",
+        "text_color": "",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30,
+        "title": "Our brands",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "divider": false
       }
     }
   },
