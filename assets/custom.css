@@ -711,7 +711,8 @@ div#loadingMessage svg {
     margin-top: 6px;
   }
   button.site-nav__link.site-nav__link--icon.medium-up--hide.mobile-nav-trigger.is-active {
-    margin-right: 1.5rem;
+    margin-right: 5px;
+    margin-top: 5px;
   }
   nav.breadcrumb.collection_breadcrumb {
     margin-bottom: 5px;
