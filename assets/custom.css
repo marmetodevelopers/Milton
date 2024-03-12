@@ -705,11 +705,13 @@ div#loadingMessage svg {
     width: 18px;
   }
   .site-nav__link--icon {
-    padding-right: 11px;
-    margin-right: 1rem;
+    padding-right: 3px;
   }
   .tracking_order_svg svg {
     margin-top: 6px;
+  }
+  button.site-nav__link.site-nav__link--icon.medium-up--hide.mobile-nav-trigger.is-active {
+    margin-right: 1.5rem;
   }
   nav.breadcrumb.collection_breadcrumb {
     margin-bottom: 5px;
