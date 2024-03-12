@@ -271,7 +271,6 @@ p.address_text_save {
 collapsible-elements .collapsible-trigger__layout:hover {
   color: #FF123A;
 }
-
 /*animation */
 @keyframes shake {
   0% {
@@ -293,7 +292,7 @@ collapsible-elements .collapsible-trigger__layout:hover {
 .tracking_order_svg svg {
   height: 32px;
   width: 32px;
-    margin-top: 9px;
+  margin-top: 9px;
 }
 .tracking_order_svg p {
   display: flex;
@@ -319,7 +318,7 @@ a.btn.btn--full.inqure-now-form {
 }
 @media only screen and (max-width: 749px) {
   .site-nav__link--icon {
-  padding-right: 3px;
+    padding-right: 3px;
   }
   .tracking_order_svg svg {
     margin-top: 6px;
@@ -335,8 +334,8 @@ a.btn.btn--full.inqure-now-form {
     display: none;
   }
   .grid.grid--uniform.grid--flush-bottom.about-us {
-  flex-wrap: wrap;
-}
+    flex-wrap: wrap;
+  }
   .page-width.page-width--narrow.faq_page_container {
     width: 100%;
     max-width: 100%;
@@ -755,8 +754,8 @@ div#loadingMessage svg {
 }
 @media only screen and (max-width: 749px) {
   .grid-item__content.promotions .color-swatch--small {
-      height: 18px;
-      width: 18px;
+    height: 18px;
+    width: 18px;
   }
   #loadingMessage {
     min-height: 100%;
@@ -956,8 +955,14 @@ p.contactus_svg {
 #thankYouMessage h3 {
   margin-top: 3rem
 }
-
-.Inqure_Now_form{
+.cart__item {
+  position: relative;
+}
+.cart__item .cart_error_text {
+  position: absolute;
+  bottom: 0;
+}
+.cart__item .Inqure_Now_form {
   margin-bottom: 7rem;
 }
 label:not(.variant__button-label):not(.text-label) {
