@@ -752,6 +752,9 @@ div#loadingMessage svg {
 #loadingMessage {
   flex-direction: column;
 }
+.cart_error_text {
+  color: #EE3D43;
+}
 @media only screen and (max-width: 749px) {
   .grid-item__content.promotions .color-swatch--small {
     height: 18px;

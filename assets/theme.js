@@ -15,14 +15,12 @@
 // Define the checkForm function
 //
 
-// cart-items
+// cart-items only 100 product variants only able to select
 function checkMaxQuantity(input) {
-  debugger;
-  var errorMessage = document.getElementById(
+  let errorMessage = document.getElementById(
     "error_message_" + input.getAttribute("data-id")
   );
-  var value = parseInt(input.value);
-
+  let value = parseInt(input.value);
   if (value > 100 || isNaN(value) || value < 0) {
     input.value = ""; // Clear the input value if it's invalid
     errorMessage.style.display = "inline"; // Show the error message
