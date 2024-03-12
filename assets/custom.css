@@ -5,10 +5,6 @@ header.section-header.section-header--with-link button.section-header__link.addr
   background-color: #EE3D43;
   color: white;
 }
-.tracking_order_container img {
-  height: 50px;
-  width: 50px;
-}
 .product-tab__content p {
   line-height: 3rem;
 }
@@ -268,10 +264,6 @@ p.address_text_save {
   align-items: center;
   justify-content: center;
 }
-collapsible-elements .collapsible-trigger__layout:hover {
-  color: #FF123A;
-}
-
 /*animation */
 @keyframes shake {
   0% {
@@ -290,22 +282,6 @@ collapsible-elements .collapsible-trigger__layout:hover {
     transform: translate(-2px, -2px);
   }
 }
-.tracking_order_svg svg {
-  height: 32px;
-  width: 32px;
-    margin-top: 9px;
-}
-.tracking_order_svg p {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 13px;
-  color: #000000;
-}
-.tracking_order_container {
-  display: flex;
-  gap: 10px;
-}
 /* animation svg */
 h1.section-header__title svg {
   animation: shake 0.5s ease infinite;
@@ -318,29 +294,6 @@ a.btn.btn--full.inqure-now-form {
   background-color: gray;
 }
 @media only screen and (max-width: 749px) {
-  .site-nav__link--icon {
-  padding-right: 3px;
-  }
-  .tracking_order_svg svg {
-    margin-top: 6px;
-  }
-  nav.breadcrumb.collection_breadcrumb {
-    margin-bottom: 5px;
-  }
-  header.section-header.section-header--flush p.medium-up--hide {
-    margin-top: 0px;
-    font-size: 9px;
-  }
-  .tracking_order_container p {
-    display: none;
-  }
-  .grid.grid--uniform.grid--flush-bottom.about-us {
-  flex-wrap: wrap;
-}
-  .page-width.page-width--narrow.faq_page_container {
-    width: 100%;
-    max-width: 100%;
-  }
   #loadingMessage {
     top: 50%;
   }
@@ -619,15 +572,8 @@ span.optional_field {
 .modal--quick-shop .Inqure_Now_form {
   display: none;
 }
-.collection_name_breadcrums {
-  font-size: 13px;
-}
-span.breadcrumb__divider svg {
-  height: 10px;
-  width: 10px;
-}
-h1.section-header__title.h3:empty {
-  display: none;
+.cart__footer {
+  padding-bottom: 3rem;
 }
 @media only screen and (min-width: 750px) {
   main#MainContent .shopify-policy__container {
@@ -755,8 +701,35 @@ div#loadingMessage svg {
 }
 @media only screen and (max-width: 749px) {
   .grid-item__content.promotions .color-swatch--small {
-      height: 18px;
-      width: 18px;
+    height: 18px;
+    width: 18px;
+  }
+  .site-nav__link--icon {
+    padding-right: 3px;
+  }
+  .tracking_order_svg svg {
+    margin-top: 6px;
+  }
+  button.site-nav__link.site-nav__link--icon.medium-up--hide.mobile-nav-trigger.is-active {
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  nav.breadcrumb.collection_breadcrumb {
+    margin-bottom: 5px;
+  }
+  header.section-header.section-header--flush p.medium-up--hide {
+    margin-top: 0px;
+    font-size: 9px;
+  }
+  .tracking_order_container p {
+    display: none;
+  }
+  .grid.grid--uniform.grid--flush-bottom.about-us {
+    flex-wrap: wrap;
+  }
+  .page-width.page-width--narrow.faq_page_container {
+    width: 100%;
+    max-width: 100%;
   }
   #loadingMessage {
     min-height: 100%;
@@ -828,9 +801,6 @@ div#loadingMessage svg {
     max-height: 37px;
     height: 37px !important;
     /* This height is comming from the flikity so i have given the !important here */
-  }
-  .header-layout {
-    padding-top: 10px;
   }
   .header-item.header-item--logo {
     width: 30%;
@@ -925,6 +895,16 @@ div#loadingMessage svg {
   z-index: 999;
   overflow: scroll;
 }
+.collection_name_breadcrums {
+  font-size: 13px;
+}
+span.breadcrumb__divider svg {
+  height: 10px;
+  width: 10px;
+}
+h1.section-header__title.h3:empty {
+  display: none;
+}
 /* contact us */
 .location_main_wrapper iframe {
   width: 100%;
@@ -956,8 +936,7 @@ p.contactus_svg {
 #thankYouMessage h3 {
   margin-top: 3rem
 }
-
-.Inqure_Now_form{
+.Inqure_Now_form {
   margin-bottom: 7rem;
 }
 label:not(.variant__button-label):not(.text-label) {
@@ -970,6 +949,32 @@ label:not(.variant__button-label):not(.text-label) {
 .grid-item__content.milton-peek-a-book .color-swatch--small {
   height: 17px;
   width: 17px;
+}
+.logout-btn {
+  cursor: pointer;
+}
+.tracking_order_container img {
+  height: 50px;
+  width: 50px;
+}
+collapsible-elements .collapsible-trigger__layout:hover {
+  color: #FF123A;
+}
+.tracking_order_svg svg {
+  height: 32px;
+  width: 32px;
+  margin-top: 9px;
+}
+.tracking_order_svg p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 13px;
+  color: #000000;
+}
+.tracking_order_container {
+  display: flex;
+  gap: 10px;
 }
 .collections-section__image {
   text-align: center;

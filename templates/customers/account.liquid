@@ -1,11 +1,5 @@
 <script src="{{ 'account-page-tabs.js' | asset_url }}" defer="defer"></script>
 {%- paginate customer.orders by 20 -%}
-<style>
-  .logout-btn {
-    cursor: pointer;
-  }
-</style>
-
 {% comment %}=========================================== Account Page Tabs Starting ========================={%endcomment %}
 <div class="faq-section">
   <div class="faq-container section-{{ section.id }}-padding">
@@ -72,6 +66,7 @@
                   <span class="divider" aria-hidden="true">></span>
                   Address
                 </nav>
+                
                 {%- endif -%}
                 <header class="section-header section-header--with-link">
                   <h1 class="section-header__title">Address</h1>
@@ -247,6 +242,13 @@
             {% if customer.orders.size == 0 %}
             <p>No orders are there.</p>
             {% else %}
+            {%- if settings.show_breadcrumbs -%}
+              <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
+                <a href="{{ routes.account_url }}">{{ 'customer.account.title' | t }}</a>
+                <span class="divider" aria-hidden="true">></span>
+                Orders
+              </nav>
+            {% endif %}
             <table class="table--responsive table--small-text">
                <thead>
                   <tr>
