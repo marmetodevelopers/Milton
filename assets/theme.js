@@ -23,7 +23,7 @@ function checkMaxQuantity(input) {
   );
   var value = parseInt(input.value);
 
-  if (value > 50 || isNaN(value) || value < 0) {
+  if (value > 100 || isNaN(value) || value < 0) {
     input.value = ""; // Clear the input value if it's invalid
     errorMessage.style.display = "inline"; // Show the error message
   } else {

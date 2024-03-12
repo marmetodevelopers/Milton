@@ -55,10 +55,10 @@
           <input type="text"
           id="cart_updates_{{ product.key }}"
           name="updates[]"
-    class="{% if product.quantity >= 50%} not_allow {% endif %} js-qty__num"
+    class="{% if product.quantity >= 100%} not_allow {% endif %} js-qty__num"
           value="{{ product.quantity }}"
           min="0"
-          max="50"
+          max="100"
           pattern="[0-9]*"
           data-id="{{ product.key }}"
           oninput="checkMaxQuantity(this)">
@@ -71,7 +71,7 @@
           </button>
           <button type="button"
             class="js-qty__adjust js-qty__adjust--plus"
-          {% if product.quantity >= 50%} disabled {% endif %} 
+          {% if product.quantity >= 100%} disabled {% endif %} 
             aria-label="{{ 'cart.general.increase_quantity' | t }}">
               <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 64 64"><path class="cls-1" d="M32 9v46m23-23H9"/></svg>
               <span class="icon__fallback-text" aria-hidden="true">+</span>
@@ -123,7 +123,7 @@
       </div>
     </div>
   </div>
-  {% if product.quantity >= 50%}
-    <span id="error_message_{{ product.key }}" class="cart_error_text" style="color: red;">Max limit will be only 50</span>
+  {% if product.quantity >= 100%}
+    <span id="error_message_{{ product.key }}" class="cart_error_text" style="color: red;">Max limit will be only 100</span>
    {% endif %}
 </div>
