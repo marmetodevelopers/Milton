@@ -35,7 +35,6 @@ function togglePopupUpsell() {
     "popup_upsell pop_recomendations"
   )[0];
   popup.style.display = "block";
-
   document.querySelector("body").style.overflow = "hidden";
 }
 
