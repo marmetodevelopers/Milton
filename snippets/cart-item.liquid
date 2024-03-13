@@ -124,6 +124,9 @@
     </div>
   </div>
   {% if product.quantity >= 100%}
-    <span id="error_message_{{ product.key }}" class="cart_error_text">Only, 100 products can be selected</span>
+    <div>
+      <span id="error_message_{{ product.key }}" class="cart_error_text">Only, 100 products can be selected</span>
+    </div>
+    
    {% endif %}
 </div>
