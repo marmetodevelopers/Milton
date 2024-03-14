@@ -48,7 +48,7 @@
       {% endif %}
       <script>
         const button = document.getElementById('modal-open-button');
-        button.addEventListener('click', (ev) => {
+        button?.addEventListener('click', (ev) => {
           ev.preventDefault();
           window.openBreezeLoginModal();
         })

@@ -961,7 +961,8 @@ p.contactus_svg {
 .cart__item {
   position: relative;
 }
-.cart__item .cart_error_text {
+.cart__item .cart_error_text,
+.cart__item .gift_wrapper_container {
   position: absolute;
   bottom: 0;
 }
@@ -1021,4 +1022,7 @@ span.collapsible-trigger__layout {
 }
 .collection-metafield__sections.meta_collection_faq.flickity-enabled.is-draggable button.flickity-button.flickity-prev-next-button.flickity-previous {
   left: -2rem;
+}
+.cart__item{
+  padding-bottom: 4rem;
 }

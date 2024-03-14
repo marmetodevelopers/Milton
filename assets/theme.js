@@ -15,6 +15,98 @@
 // Define the checkForm function
 //
 
+
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   // Get all gift wrapper checkboxes
+//   var giftWrapCheckboxes = document.querySelectorAll('.gift_wrap_checkbox');
+  
+//   // Add event listener to each checkbox
+//   giftWrapCheckboxes.forEach(function(checkbox) {
+//     checkbox.addEventListener('change', function() {
+//       updateCartTotal();
+//       console.log("===============================>")
+//     });
+//   });
+
+//   // Function to update cart total based on gift wrapper checkboxes
+//   function updateCartTotal() {
+//     var giftWrapperTotal = 0;
+//     console.log("===============================>")
+//     giftWrapCheckboxes.forEach(function(checkbox) {
+//       if (checkbox.checked) {
+//         // Add gift wrapper cost to total if checkbox is checked
+//         var giftPrice = parseInt(checkbox.getAttribute('data-gift-price'));
+//         giftWrapperTotal += giftPrice;
+//         console.log("===============================>")
+//       }
+//     });
+
+//     // Update cart total display
+//     var cartTotalElement = document.querySelector('[data-subtotal]');
+//     var currentTotal = parseFloat(cartTotalElement.textContent.replace(/[^\d.]/g, ''));
+//     var newTotal = currentTotal + giftWrapperTotal;
+//     cartTotalElement.textContent = newTotal.toFixed(2);
+//     console.log("===============================>")
+//   }
+// });
+
+  // Get all gift wrap checkboxes
+  // Get all gift wrap checkboxes
+  // const giftWrapCheckboxes = document.querySelectorAll('.gift_wrap_checkbox');
+
+  // // Loop through each checkbox and add an event listener
+
+  // // Get all gift wrap checkboxes
+  // const giftWrapCheckboxes = document.querySelectorAll('.gift_wrap_checkbox');
+
+  // // Loop through each checkbox and add an event listener
+  // giftWrapCheckboxes.forEach(checkbox => {
+  //   checkbox.addEventListener('change', function() {
+  //     // Get the product price element and the gift wrap cost data attribute
+  //     const productPriceContainer = checkbox.closest('.cart__item-details');
+  //     const productPriceElement = productPriceContainer.querySelector('.hello');
+  //     const giftWrapCost = parseInt(this.dataset.giftPrice);
+
+  //     let currentPrice = 0;
+  //     let priceText = '';
+
+  //     // Check if the product price element exists
+  //     if (productPriceElement) {
+  //       priceText = productPriceElement.textContent.trim();
+
+  //       // Try to parse the product price
+  //       currentPrice = parseFloat(priceText.replace(/[^0-9.-]+/g, ""));
+
+  //       // If the price cannot be parsed, try to remove the currency symbol
+  //       if (isNaN(currentPrice)) {
+  //         currentPrice = parseFloat(priceText.replace(/[^0-9.-]+/g, "").replace(/^[^\d.-]+/, ""));
+  //       }
+  //     }
+
+  //     // If the checkbox is checked, add the gift wrap cost to the product price
+  //     if (this.checked) {
+  //       const newPrice = currentPrice + giftWrapCost;
+  //       const formattedPrice = newPrice.toFixed(2);
+  //       productPriceElement.querySelector('.gift-wrap-cost').textContent = ` + ${formattedPrice}`;
+  //       console.log(`Total price for ========================> ${productPriceContainer.querySelector('.cart__item-name').textContent} (including gift wrap): ${formattedPrice}`);
+  //     } else {
+  //       // If the checkbox is unchecked, remove the gift wrap cost from the product price
+  //       productPriceElement.querySelector('.gift-wrap-cost').textContent = '';
+  //       console.log(`Total price for ============================> ${productPriceContainer.querySelector('.cart__item-name').textContent} (without gift wrap): ${currentPrice}`);
+  //     }
+  //   });
+  // });
+
+
+// console.log("==================================>", typeof(data-gift-price))
+
+
+
+
+
+
 // cart-items only 100 product variants only able to select
 function checkMaxQuantity(input) {
   let errorMessage = document.getElementById(

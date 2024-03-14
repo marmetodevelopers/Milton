@@ -288,10 +288,10 @@ function submitForm() {
 }
 
 // Listen for input events on required fields
-document.getElementById("qtyInput").addEventListener("input", checkForm);
-document.getElementById("nameInput").addEventListener("input", checkForm);
-document.getElementById("emailInput").addEventListener("input", checkForm);
-document.getElementById("phoneInput").addEventListener("input", checkForm);
+document.getElementById("qtyInput")?.addEventListener("input", checkForm);
+document.getElementById("nameInput")?.addEventListener("input", checkForm);
+document.getElementById("emailInput")?.addEventListener("input", checkForm);
+document.getElementById("phoneInput")?.addEventListener("input", checkForm);
 
 
 
@@ -299,7 +299,7 @@ document.getElementById("phoneInput").addEventListener("input", checkForm);
 // mobile number validation
 
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("phone").addEventListener("input", function () {
+  document.getElementById("phone")?.addEventListener("input", function () {
     var phoneNumber = this.value;
     var isValidPhoneNumber = /^\d{10}$/.test(phoneNumber);
     if (!isValidPhoneNumber) {
@@ -316,7 +316,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // in the Quantity field it will take only numbers
 function allowOnlyNumbers(inputElement) {
-    inputElement.addEventListener('input', function() {
+    inputElement?.addEventListener('input', function() {
         // Remove any non-numeric characters
         this.value = this.value.replace(/\D/g, '');
     });
@@ -327,7 +327,7 @@ allowOnlyNumbers(document.getElementById('qtyInput'));
 
 // Limit the input value to a maximum length of 10 characters
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("phoneInput").addEventListener("input", function () {
+    document.getElementById("phoneInput")?.addEventListener("input", function () {
         // Get the input value
         var inputValue = this.value;
         // Remove any non-numeric characters using a regular expression

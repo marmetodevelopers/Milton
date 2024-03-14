@@ -828,3 +828,46 @@ var VideoSection = class extends HTMLElement {
 };
 customElements.define("video-section", VideoSection);
 //# sourceMappingURL=next.js.map
+
+
+
+
+
+/* cart draewer items gift wrapper */
+
+document.addEventListener("DOMContentLoaded", function() {
+  const giftWrapCheckboxes = document.querySelectorAll('.gift_wrap_checkbox');
+  console.log("=================================================================>"); 
+  console.log("Number of gift wrap checkboxes found:", giftWrapCheckboxes.length);
+
+  if (giftWrapCheckboxes.length > 0) {
+    console.log("===============================");
+    giftWrapCheckboxes.forEach(function(checkbox) {
+      var checkboxId = checkbox.id;
+
+      // Load the checkbox state from local storage on page load
+      checkbox.checked = localStorage.getItem(checkboxId) === 'true';
+
+      console.log("Checkbox found. Adding event listener.");
+      checkbox.addEventListener('change', function() {
+        console.log("Inside change event listener");
+        if (this.checked) {
+          console.log("Checkbox is checked.");
+          const giftPrice = this.getAttribute('data-gift-price');
+          console.log("Gift wrap price:", giftPrice);
+
+          // Store the checkbox state in local storage when it changes
+          localStorage.setItem(this.id, this.checked);
+        } else {
+          console.log("Checkbox is unchecked.");
+
+          // Store the checkbox state in local storage when it changes
+          localStorage.setItem(this.id, this.checked);
+        }
+      });
+    });
+  } else {
+    console.log("No gift wrap checkboxes found. ==========================>"); 
+  }
+});
+
