@@ -6,8 +6,8 @@
         "block_pW6Tig": {
           "type": "block",
           "settings": {
-            "video_picker": "shopify:\/\/files\/videos\/White Happy Republic Day Video Message (1920 x 600 px)(1).mp4",
-            "video_picker_mobile": "shopify:\/\/files\/videos\/White Happy Republic Day Video Message (390 x 238 px)(2).mp4",
+            "video_picker": "shopify:\/\/files\/videos\/Milton Holi Sale Banner 2024.mp4",
+            "video_picker_mobile": "shopify:\/\/files\/videos\/Home Page Banner Mobile (390 x 238 px)(5).mp4",
             "subheading_text": "",
             "subheading_color": ""
           }
@@ -16,7 +16,6 @@
       "block_order": [
         "block_pW6Tig"
       ],
-      "disabled": true,
       "settings": {
         "padding_top": 0,
         "padding_bottom": 0,
@@ -72,6 +71,7 @@
         "slide-2",
         "slide-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "desktop_size": 0,
