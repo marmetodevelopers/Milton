@@ -398,8 +398,8 @@
                                 <label class="product_form_email_id">Email*</label>
                                 <input id="emailInput" name="Email" type="email" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"> 
                                 <div id="emailErrorMessage" style="color: red; display: none;">Please enter a valid email address.</div> 
-    <label>Mobile Number*</label>
-<input id="phoneInput" name="Phone" type="text" pattern="[0-9]{10}" maxlength="10" placeholder="Mobile Number" required>
+                                <label>Mobile Number*</label>
+                                <input id="phoneInput" name="Phone" type="text" pattern="[0-9]{10}" maxlength="10" placeholder="Mobile Number" required>
                                 <div id="phoneErrorMessage" style="color: red; display: none;">Please enter a valid 10-digit mobile number.</div>
                                 <lable class="product_form_email_id comments">Comments<span class="optional_field">(optional)</span></lable>
                                 <textarea name="Message" type="text" placeholder="Enter Message"></textarea>
@@ -410,22 +410,25 @@
                                   <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"></circle><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"></path></svg>
                                 </div>
                                 <h3>{{ block.settings.success_message }}</h3> 
-                                </div>
-                                
+                                </div>              
                               </div>
                             </div>
-                        
-
-                          </div>
-                           
+                          </div>                
                       </div>
                          <div id="loadingMessage" style="display: none;">
                         {%  render 'animationload' %} 
                         {%  render 'animationload2' %}
-                               </div>
+                      </div>
                         </div>  
                         {%- endunless -%}
                       </div> 
+                  {%-  when 'Gst' -%}
+                      <div class="gst_container">
+                        <div class="gst_wrapper">
+                          <span>{{ block.settings.gst_heading_svg }}</span>
+                          <p>{{ block.settings.gst_heading }} </p>
+                        </div>
+                      </div>
                   {%- when 'sales_point' -%}
                     {%- unless block.settings.text == blank -%}
                       <div class="product-block product-block--sales-point" {{ block.shopify_attributes }}>
