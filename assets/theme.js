@@ -9995,106 +9995,106 @@ if (console && console.log) {
 // Function to handle checkbox change
 // Function to handle checkbox change
 // Function to remove addon product when main product is deleted
+function handleCheckboxChange(checkbox) {
+  if (checkbox.checked) {
+    addToCart('43108942381156'); // Add the additional product to the cart 43108942381156
+  }
+}
+function addToCart(variantId) {
+  fetch('/cart/add.js', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      'id': variantId,
+      'quantity': 1
+    }),
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log(data); // Handle success response
+    // Optionally, you can redirect to the cart page or show a message to the user
+  })
+  .catch((error) => {
+    console.error('Error:', error); // Handle error
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // function handleCheckboxChange(checkbox) {
 //   if (checkbox.checked) {
-//     addToCart('43108942381156'); // Add the additional product to the cart 43108942381156
+//     // If checkbox is checked, add both main product and addon product to the cart
+//     var mainProductId = '{{ product.id }}'; // ID of the main product
+//     var addonVariantId = '43108942381156'; // ID of the addon product variant
+//     var quantity = 1; // Quantity of the addon product
+
+//     // Make AJAX request to add both products to the cart
+//     addToCart(mainProductId, 1);
+//     addToCart(addonVariantId, quantity);
+//   } else {
+//     // If checkbox is unchecked, remove both main product and addon product from the cart
+//     var mainProductId = '{{ product.id }}'; // ID of the main product
+//     var addonVariantId = '43108942381156'; // ID of the addon product variant
+
+//     // Make AJAX request to remove both products from the cart
+//     removeFromCart(mainProductId);
+//     removeFromCart(addonVariantId);
 //   }
 // }
-// function addToCart(variantId) {
-//   fetch('/cart/add.js', {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json',
+
+// // Function to add a product to the cart
+// function addToCart(productId, quantity) {
+//   jQuery.ajax({
+//     type: 'POST',
+//     url: '/cart/add.js',
+//     data: {
+//       quantity: quantity,
+//       id: productId
 //     },
-//     body: JSON.stringify({
-//       'id': variantId,
-//       'quantity': 1
-//     }),
-//   })
-//   .then(response => response.json())
-//   .then(data => {
-//     console.log(data); // Handle success response
-//     // Optionally, you can redirect to the cart page or show a message to the user
-//   })
-//   .catch((error) => {
-//     console.error('Error:', error); // Handle error
+//     dataType: 'json',
+//     success: function() {
+//       // On success, update the cart and display success message (if needed)
+//       // You can customize this based on your requirements
+//       console.log('Product added to cart');
+//     },
+//     error: function(xhr, status, error) {
+//       console.error('Error adding product to cart:', error);
+//     }
 //   });
 // }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function handleCheckboxChange(checkbox) {
-  if (checkbox.checked) {
-    // If checkbox is checked, add both main product and addon product to the cart
-    var mainProductId = '{{ product.id }}'; // ID of the main product
-    var addonVariantId = '43108942381156'; // ID of the addon product variant
-    var quantity = 1; // Quantity of the addon product
-
-    // Make AJAX request to add both products to the cart
-    addToCart(mainProductId, 1);
-    addToCart(addonVariantId, quantity);
-  } else {
-    // If checkbox is unchecked, remove both main product and addon product from the cart
-    var mainProductId = '{{ product.id }}'; // ID of the main product
-    var addonVariantId = '43108942381156'; // ID of the addon product variant
-
-    // Make AJAX request to remove both products from the cart
-    removeFromCart(mainProductId);
-    removeFromCart(addonVariantId);
-  }
-}
-
-// Function to add a product to the cart
-function addToCart(productId, quantity) {
-  jQuery.ajax({
-    type: 'POST',
-    url: '/cart/add.js',
-    data: {
-      quantity: quantity,
-      id: productId
-    },
-    dataType: 'json',
-    success: function() {
-      // On success, update the cart and display success message (if needed)
-      // You can customize this based on your requirements
-      console.log('Product added to cart');
-    },
-    error: function(xhr, status, error) {
-      console.error('Error adding product to cart:', error);
-    }
-  });
-}
-
-// Function to remove a product from the cart
-function removeFromCart(productId) {
-  jQuery.ajax({
-    type: 'POST',
-    url: '/cart/change.js',
-    data: {
-      quantity: 0, // Set quantity to 0 to remove the product
-      id: productId
-    },
-    dataType: 'json',
-    success: function() {
-      // On success, update the cart and display success message (if needed)
-      // You can customize this based on your requirements
-      console.log('Product removed from cart');
-    },
-    error: function(xhr, status, error) {
-      console.error('Error removing product from cart:', error);
-    }
-  });
-}
+// // Function to remove a product from the cart
+// function removeFromCart(productId) {
+//   jQuery.ajax({
+//     type: 'POST',
+//     url: '/cart/change.js',
+//     data: {
+//       quantity: 0, // Set quantity to 0 to remove the product
+//       id: productId
+//     },
+//     dataType: 'json',
+//     success: function() {
+//       // On success, update the cart and display success message (if needed)
+//       // You can customize this based on your requirements
+//       console.log('Product removed from cart');
+//     },
+//     error: function(xhr, status, error) {
+//       console.error('Error removing product from cart:', error);
+//     }
+//   });
+// }
