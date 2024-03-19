@@ -132,10 +132,33 @@
    <div class="gift_wrapper_container">
     {% assign gift_wrap_cost = 50 %}
     {% assign total_gift_wrap_cost = product.quantity | times: gift_wrap_cost %}
-    <p>
-      <input type="checkbox" class="gift_wrap_checkbox" id="gift_wrap_{{ product.key }}" data-gift-price={{total_gift_wrap_cost}}>
+    {% comment %} <p>
+      <input type="checkbox" class="gift_wrap_checkbox" id="gift_wrap_id" data-gift-price={{total_gift_wrap_cost}}>
       <label for="gift_wrap_{{ product.key }}">Add gift wrap to your order (₹{{ total_gift_wrap_cost }})</label>
-    </p> 
+    </p>  {% endcomment %}
+    {% comment %} <input type="checkbox" id="myCheckbox"> My Checkbox  {% endcomment %}
+ <script> 
+
+    // if (localStorage.getItem('checkboxState') === 'true') { 
+    //   document.getElementById('myCheckbox').checked = true; 
+    // } 
+     
+    // // Add an event listener to the checkbox to save its state in local storage 
+    // document.getElementById('myCheckbox').addEventListener('change', function() { 
+    //   localStorage.setItem('checkboxState', this.checked); 
+    // }); 
+  </script>
   </div>
+  <script> 
+
+  // if (localStorage.getItem('checkboxState') === 'true') { 
+  //   document.getElementById('gift_wrap_id').checked = true; 
+  // } 
+   
+  // // Add an event listener to the checkbox to save its state in local storage 
+  // document.getElementById('gift_wrap_id').addEventListener('change', function() { 
+  //   localStorage.setItem('checkboxState', this.checked); 
+  // }); 
+</script>
 </div>
 

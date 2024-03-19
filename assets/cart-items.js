@@ -14,7 +14,3 @@
 //   });
 // });
 
-// function parseGiftWrapCost(value) {
-//   const parsedValue = isNaN(value) ? value : parseFloat(value);
-//   return parsedValue;
-// }

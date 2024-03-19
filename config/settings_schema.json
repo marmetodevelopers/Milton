@@ -607,6 +607,20 @@
     ]
   },
   {
+    "name": "Gift Wrapper",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Below Give the Gift Product Id"
+      },
+    {
+      "type":"text",
+      "id":"gift_wrapper_product_id",
+      "label": "Enter the Gift Wrapper Product Id"
+    }
+    ]
+  },
+  {
     "name": "t:settings_schema.design.name",
     "settings": [
       {

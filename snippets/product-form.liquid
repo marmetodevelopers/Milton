@@ -1,27 +1,19 @@
-{%- form 'product', product, id: form_id, class: 'product-single__form' -%}
+{%- assign main_product_custom_property = 'main_product' -%}
+{%- assign addon_product_custom_property = 'addon_product' -%}
 
-  {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
-    <div class="product__policies rte">
-      {%- if shop.taxes_included -%}
-        {{ 'products.product.include_taxes' | t }}
-      {%- endif -%}
-      {%- if shop.shipping_policy.body != blank -%}
-        {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-      {%- endif -%}
-    </div>
-  {%- endif -%}
-
+{%- form 'product', product, id: form_id, class: 'product-single__form', data-main-product-custom-property: main_product_custom_property, data-addon-product-custom-property: addon_product_custom_property -%}
+  <input type="checkbox" id="ProductPageCheck"  onclick="handleCheckboxChange(this)"> Addon product checkbox <p class="addon_product_price"></p>
+  <span aria-hidden="true" class="hello">{{ formatted_price }}</span>
   {%- liquid
-    assign gift_card_recipient_feature_active = false
-    if block.settings.show_gift_card_recipient and product.gift_card?
-      assign gift_card_recipient_feature_active = true
-    endif
-
-    assign enable_dynamic_buttons = false
-    if show_dynamic_checkout and template != 'product.preorder' and gift_card_recipient_feature_active == false
-      assign enable_dynamic_buttons = true
-    endif
-  -%}
+  assign gift_card_recipient_feature_active = false
+  if block.settings.show_gift_card_recipient and product.gift_card?
+    assign gift_card_recipient_feature_active = true
+  endif
+  assign enable_dynamic_buttons = false
+  if show_dynamic_checkout and template != 'product.preorder' and gift_card_recipient_feature_active == false
+    assign enable_dynamic_buttons = true
+  endif
+-%}
 
   {%- if gift_card_recipient_feature_active -%}
     {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
@@ -53,8 +45,7 @@
         {{ button_text }}
       </span>
     </button>
-    
-   
+
     {%- if enable_dynamic_buttons -%}
       {% if current_variant.available %} 
         <div style='margin-top: 10px; box-sizing: border-box'>
@@ -103,6 +94,14 @@
       {%- endif -%}
     {%- endfor -%}
   </select>
+  {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+    <div class="product__policies rte">
+      {%- if shop.taxes_included -%}
+        {{ 'products.product.include_taxes' | t }}
+      {%- endif -%}
+      {%- if shop.shipping_policy.body != blank -%}
+        {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+      {%- endif -%}
+    </div>
+  {%- endif -%}
 {%- endform -%}
-
-
