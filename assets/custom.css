@@ -8,6 +8,9 @@ header.section-header.section-header--with-link button.section-header__link.addr
 .breadcrumb_heading_container{
  display: flex; 
 }
+nav.breadcrumb.collection_breadcrumb{
+  display: flex;
+}
 .product-tab__content p {
   line-height: 3rem;
 }
