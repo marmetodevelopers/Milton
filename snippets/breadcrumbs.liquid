@@ -26,7 +26,7 @@
       {% if settings.show_breadcrumbs_collection_link %}
         {%  comment  %} Collection Page Breadcrumbs {% endcomment %}
         <span class="breadcrumb__divider" aria-hidden="true">{% render 'right-arrow'%}</span>
-       <h1><a href="{{ routes.collections_url }}" class="collection_name_breadcrums">{{ collection.title }}</a></h1> 
+       <h1 class="breadcrumb_heading"><a href="{{ routes.collections_url }}" class="collection_name_breadcrums">{{ collection.title }}</a></h1> 
       {% endif %}
       {% if current_tags %}
         {% capture url %}{{ routes.collections_url }}/{{ collection.handle }}{% endcapture %}
