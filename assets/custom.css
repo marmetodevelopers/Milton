@@ -1083,3 +1083,22 @@ span.collapsible-trigger__layout {
 .collection-metafield__sections.meta_collection_faq.flickity-enabled.is-draggable button.flickity-button.flickity-prev-next-button.flickity-previous {
   left: -2rem;
 }
+
+.gst_wrapper{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.gst_wrapper svg{
+  height: 25px;
+  width: 25px;
+}
+.gst_wrapper span{
+display: contents;
+}
+.product-block--sales-point+.product-block--sales-point {
+  margin-bottom: 10px;
+}
+.gst_container {
+margin-bottom: 10px;
+}
