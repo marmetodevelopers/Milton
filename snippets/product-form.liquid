@@ -2,7 +2,15 @@
 {%- assign addon_product_custom_property = 'addon_product' -%}
 
 {%- form 'product', product, id: form_id, class: 'product-single__form', data-main-product-custom-property: main_product_custom_property, data-addon-product-custom-property: addon_product_custom_property -%}
-  <input type="checkbox" id="ProductPageCheck"  onclick="handleCheckboxChange(this)"> Addon product checkbox <p class="addon_product_price"></p>
+  <input type="checkbox" id="ProductPageCheck"> <span class="main_hide_text">Gift Wrapper: An additional $50 will be added.</span> <span id="line-item-container"></span>
+
+   <!--
+  <p class="line-item-property__field">
+    <label for="your-name">Your name</label>
+    <input id="your-name" type="text" name="properties[Your name]">
+  </p>
+  -->
+  <div id="line-item-container" data-main-product-id="{{ product.selected_or_first_available_variant.id }}"></div>
   <span aria-hidden="true" class="hello">{{ formatted_price }}</span>
   {%- liquid
   assign gift_card_recipient_feature_active = false
@@ -36,15 +44,18 @@
     -%}
 
     <button
-      {% if product.empty? %}type="button"{% else %}type="submit"{% endif %}
-      name="add"
-      data-add-to-cart
-      class="btn btn--full add-to-cart{% if enable_dynamic_buttons and product.selling_plan_groups == empty %} btn--secondary{% endif %}"
-      {% unless current_variant.available %} disabled="disabled"{% endunless %}>
-      <span data-add-to-cart-text data-default-text="{{ default_text }}">
-        {{ button_text }}
-      </span>
-    </button>
+  {% if product.empty? %}type="button"{% else %}type="submit"{% endif %}
+  name="add"
+  data-add-to-cart
+  class="btn btn--full add-to-cart{% if enable_dynamic_buttons and product.selling_plan_groups == empty %} btn--secondary{% endif %}"
+  {% unless current_variant.available %} disabled="disabled"{% endunless %}
+>
+  <span data-add-to-cart-text data-default-text="{{ default_text }}">
+    {{ button_text }}
+  </span>
+</button>
+
+
 
     {%- if enable_dynamic_buttons -%}
       {% if current_variant.available %} 

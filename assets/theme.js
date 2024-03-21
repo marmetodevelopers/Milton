@@ -1884,6 +1884,9 @@ if (console && console.log) {
     },
 
     changeItem: function (key, qty) {
+    
+    
+      // Proceed with updating the cart for the main product
       return this._updateCart({
         url: "".concat(theme.routes.cartChange, "?t=").concat(Date.now()),
         data: JSON.stringify({
@@ -1891,7 +1894,12 @@ if (console && console.log) {
           quantity: qty,
         }),
       });
-    },
+    },    
+    
+
+
+        /* change Item Functionality */
+
 
     _updateCart: function (params) {
       return fetch(params.url, {
@@ -2145,10 +2153,10 @@ if (console && console.log) {
       },
 
       quantityChanged: function (evt) {
+        console.log(evt.detail[0]);
         var key = evt.detail[0];
         var qty = evt.detail[1];
         var el = evt.detail[2];
-
         if (!key || !qty) {
           return;
         }
@@ -2157,13 +2165,13 @@ if (console && console.log) {
         if (el) {
           el.classList.add("is-loading");
         }
-
+        console.log(qty,'qty');
+    
         theme.cart
           .changeItem(key, qty)
           .then(
             function (cart) {
               const parsedCart = JSON.parse(cart);
-
               if (parsedCart.status === 422) {
                 alert(parsedCart.message);
               } else {
@@ -2196,6 +2204,65 @@ if (console && console.log) {
                 } else {
                   this.wrapper.classList.add("is-empty");
                 }
+                console.log(parsedCart,'parsedCart');
+
+                parsedCart.items.forEach((ele)=>{
+                  console.log(ele,'kk');
+                  if (ele.properties['Product-id'] == key.split(':')[0]) {
+                    theme.cart
+                    .changeItem(ele.key, qty)
+                    .then(
+                      function (cart) {
+                        const parsedCart = JSON.parse(cart);
+                        if (parsedCart.status === 422) {
+                          alert(parsedCart.message);
+                        } else {
+                          const updatedItem = parsedCart.items.find(
+                            (item) => item.key === key
+                          );
+          
+                          // Update cartItemsUpdated property on object so we can reference later
+                          if (
+                            updatedItem &&
+                            (evt.type === "cart:quantity.cart-cart-drawer" ||
+                              evt.type === "cart:quantity.cart-header")
+                          ) {
+                            this.cartItemsUpdated = true;
+                          }
+          
+                          if (
+                            (updatedItem &&
+                              evt.type === "cart:quantity.cart-cart-drawer") ||
+                            (updatedItem && evt.type === "cart:quantity.cart-header")
+                          ) {
+                            if (updatedItem.quantity !== qty) {
+                            }
+                            // Reset property on object so that checkout button will work as usual
+                            this.cartItemsUpdated = false;
+                          }
+          
+                          if (parsedCart.item_count > 0) {
+                            this.wrapper.classList.remove("is-empty");
+                          } else {
+                            this.wrapper.classList.add("is-empty");
+                          }
+                        }
+          
+                        this.buildCart();
+          
+                        document.dispatchEvent(
+                          new CustomEvent("cart:updated", {
+                            detail: {
+                              cart: parsedCart,
+                            },
+                          })
+                        );
+                      }.bind(this)
+                    )
+                    .catch(function (XMLHttpRequest) {});
+
+                  }
+                })
               }
 
               this.buildCart();
@@ -3026,42 +3093,100 @@ if (console && console.log) {
           return;
         }
 
+        // function handleCheckboxChange(checkbox) {
+          var lineItemContainer = document.getElementById('line-item-container');
+          var currentDate = new Date().toString(); // Get current date in string format
+          var mainProductVariantId = document.querySelector('[data-main-product-id]').getAttribute('data-main-product-id');
+        
+          var lineItemHTML = `
+            <span class="line-item-property__field">
+              <input id="Gift" type="text" name="properties[Gift-Wrapper]" value="${currentDate}">
+            </span>
+          `;
+        
+          if (this.form.querySelector('#ProductPageCheck').checked) {
+            console.log('sj');
+            lineItemContainer.innerHTML = lineItemHTML;
+            var data = {
+              'id': 43108942381156,
+              'quantity': 1,
+              'properties': {
+                'Gift-Wrapper': currentDate,
+                'Product-id': mainProductVariantId
+              }
+            };
+          
+            fetch('/cart/add.js', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(data),
+            })
+            .then(response => response.json())
+            .then(data => {
+              console.log(data); // Handle success response
+              // Optionally, you can redirect to the cart page or show a message to the user
+            })
+            .catch((error) => {
+              console.error('Error:', error); // Handle error
+            });
+            // addToCart('43108942381156', currentDate, mainProductVariantId, checkbox.checked); // Pass checkbox.checked to addToCart
+          } else {
+            lineItemContainer.innerHTML = '';
+          }
+        // }
+        
+        console.log(this.form.querySelector('#ProductPageCheck'),'thisskk');
+        
+        // function addToCart(variantId, privateProperty, mainProductVariantId, checkboxChecked) {
+        //   // Check if the checkbox is checked
+        //   if (!checkboxChecked) {
+        //     console.log('Checkbox is not checked. Add to cart aborted.');
+        //     return; // If checkbox is not checked, do not proceed with adding to cart
+        //   }
+        
+          
+        // }
         // Loading indicator on add to cart button
         this.addToCart.classList.add("btn--loading");
 
         status.loading = true;
-
+  
         var data = theme.utils.serialize(this.form);
+        var currentTime =  new Date();
+        data = `${data}&properties._gift=${currentTime}`
+ console.log(data,'data');
+ setTimeout(()=>{ fetch(theme.routes.cartAdd, {
+  method: "POST",
+  body: data,
+  credentials: "same-origin",
+  headers: {
+    "Content-Type": "application/x-www-form-urlencoded",
+    "X-Requested-With": "XMLHttpRequest",
+  },
+})
+  .then((response) => response.json())
+  .then(
+    function (data) {
+      if (data.status === 422) {
+        this.error(data);
+      } else {
+        var product = data;
+        this.success(product);
+      }
 
-        fetch(theme.routes.cartAdd, {
-          method: "POST",
-          body: data,
-          credentials: "same-origin",
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-            "X-Requested-With": "XMLHttpRequest",
-          },
-        })
-          .then((response) => response.json())
-          .then(
-            function (data) {
-              if (data.status === 422) {
-                this.error(data);
-              } else {
-                var product = data;
-                this.success(product);
-              }
+      status.loading = false;
+      this.addToCart.classList.remove("btn--loading");
 
-              status.loading = false;
-              this.addToCart.classList.remove("btn--loading");
-
-              // Reload page if adding product from a section on the cart page
-              if (document.body.classList.contains("template-cart")) {
-                window.scrollTo(0, 0);
-                location.reload();
-              }
-            }.bind(this)
-          );
+      // Reload page if adding product from a section on the cart page
+      if (document.body.classList.contains("template-cart")) {
+        window.scrollTo(0, 0);
+        location.reload();
+      }
+    }.bind(this)
+  );},1000)
+       
       },
 
       success: function (product) {
@@ -5707,6 +5832,8 @@ if (console && console.log) {
         }
       },
 
+    /* add to cart functinality */  
+
       addToCart: function (evt) {
         var btn = evt.currentTarget;
         var visibleBtn = btn.querySelector(".btn");
@@ -5753,6 +5880,9 @@ if (console && console.log) {
             }.bind(this)
           );
       },
+
+
+  /* add to cart functinality */  
 
       loadQuickAddForm: function (evt) {
         this.quickAddHolder.innerHTML = "";
@@ -9995,67 +10125,49 @@ if (console && console.log) {
 // Function to handle checkbox change
 // Function to handle checkbox change
 // Function to remove addon product when main product is deleted
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // function handleCheckboxChange(checkbox) {
 //   if (checkbox.checked) {
-//     addToCart('43108942381156'); // Add the additional product to the cart 43108942381156
+//     // If checkbox is checked, add both main product and addon product to the cart
+//     var mainProductId = '{{ product.id }}'; // ID of the main product
+//     var addonVariantId = '43108942381156'; // ID of the addon product variant
+//     var quantity = 1; // Quantity of the addon product
+
+//     // Make AJAX request to add both products to the cart
+//     addToCart(mainProductId, 1);
+//     addToCart(addonVariantId, quantity);
+//   } else {
+//     // If checkbox is unchecked, remove both main product and addon product from the cart
+//     var mainProductId = '{{ product.id }}'; // ID of the main product
+//     var addonVariantId = '43108942381156'; // ID of the addon product variant
+
+//     // Make AJAX request to remove both products from the cart
+//     removeFromCart(mainProductId);
+//     removeFromCart(addonVariantId);
 //   }
 // }
-// function addToCart(variantId) {
-//   fetch('/cart/add.js', {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json',
-//     },
-//     body: JSON.stringify({
-//       'id': variantId,
-//       'quantity': 1
-//     }),
-//   })
-//   .then(response => response.json())
-//   .then(data => {
-//     console.log(data); // Handle success response
-//     // Optionally, you can redirect to the cart page or show a message to the user
-//   })
-//   .catch((error) => {
-//     console.error('Error:', error); // Handle error
-//   });
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function handleCheckboxChange(checkbox) {
-  if (checkbox.checked) {
-    // If checkbox is checked, add both main product and addon product to the cart
-    var mainProductId = '{{ product.id }}'; // ID of the main product
-    var addonVariantId = '43108942381156'; // ID of the addon product variant
-    var quantity = 1; // Quantity of the addon product
-
-    // Make AJAX request to add both products to the cart
-    addToCart(mainProductId, 1);
-    addToCart(addonVariantId, quantity);
-  } else {
-    // If checkbox is unchecked, remove both main product and addon product from the cart
-    var mainProductId = '{{ product.id }}'; // ID of the main product
-    var addonVariantId = '43108942381156'; // ID of the addon product variant
-
-    // Make AJAX request to remove both products from the cart
-    removeFromCart(mainProductId);
-    removeFromCart(addonVariantId);
-  }
-}
 
 // Function to add a product to the cart
 function addToCart(productId, quantity) {
@@ -10098,3 +10210,4 @@ function removeFromCart(productId) {
     }
   });
 }
+

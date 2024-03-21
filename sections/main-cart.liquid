@@ -32,7 +32,7 @@
         </div>
         <div class="cart__page-col">
           {% if settings.cart_notes_enable %}
-            <div class="cart__item-row">
+            <div class="cart__item-row" item-ids="{{product.id}}-{{ forloop.index }}">
               <label for="CartNote" class="add-note">
                 {{ 'cart.general.note' | t }}
                 <span class="note-icon note-icon--open" aria-hidden="true">

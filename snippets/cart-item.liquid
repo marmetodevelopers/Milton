@@ -1,5 +1,9 @@
-<div class="cart__item" data-key="{{ product.key }}">
-  <div class="cart__image">
+  {% if product.title == "Gift wrapper" %}
+
+    {%  else %}
+    <div class="cart__item" data-key="{{ product.key }}" item-ids="{{product.id}}-{{ loop.index }}">
+
+    <div class="cart__image">
     {% if product.image != blank %}
       <a href="{{ product.url }}" class="image-wrap">
         {%- render 'image-element',
@@ -15,7 +19,8 @@
   </div>
   <div class="cart__item-details">
     <div class="cart__item-title">
-      <a href="{{ product.url }}" class="cart__item-name">
+     
+      <a href="{{ product.url }}" class="cart__item-name {{ product.title }}">
         {{ product.product.title }}
       </a>
       {%- unless product.product.has_only_default_variant -%}
@@ -35,7 +40,10 @@
         {% for p in product.properties %}
           {%- assign first_character_in_key = p.first | truncate: 1, '' -%}
           {% unless p.last == blank or first_character_in_key == '_' %}
-            <div class="cart__item--properties">
+            {% if product.selected_or_first_available_variant %}
+              {%- assign variant = product.selected_or_first_available_variant -%}
+            {% endif %}
+            <div class="cart__item--properties" data-product-random="{{ product.id }}-{{ variant.id }}" data-main-product-selected-value="{{  }}">
               <span>{{ p.first }}:</span>
               {% if p.last contains '/uploads/' %}
                 <a href="{{ p.last }}">{{ p.last | split: '/' | last }}</a>
@@ -45,45 +53,52 @@
             </div>
           {% endunless %}
         {% endfor %}
+        
+        
       {% endif %}
 
     </div>
     <div class="cart__item-sub">
-      <div>
-        <div class="js-qty__wrapper">
-          <label for="cart_updates_{{ product.key }}" class="hidden-label">{{ 'cart.label.quantity' | t }}</label>
-          <input type="text"
-          id="cart_updates_{{ product.key }}"
-          name="updates[]"
-    class="{% if product.quantity >= 100%} not_allow {% endif %} js-qty__num"
-          value="{{ product.quantity }}"
-          min="0"
-          max="100"
-          pattern="[0-9]*"
-          data-id="{{ product.key }}"
-          oninput="checkMaxQuantity(this)">
+    
+        
+          <div>
+            <div class="js-qty__wrapper">
+          
+            <label for="cart_updates_{{ product.key }} {{ product.title }}" class="hidden-label">{{ 'cart.label.quantity' | t }}</label>
+            <input type="text"
+            id="cart_updates_{{ product.key }}"
+            name="updates[]"
+            class="{% if product.quantity >= 100%} not_allow {% endif %} js-qty__num"
+            value="{{ product.quantity }}"
+            min="0"
+            max="100"
+            pattern="[0-9]*"
+            data-id="{{ product.key }}"
+            oninput="checkMaxQuantity(this)">
+         
+            <button type="button"
+              class="js-qty__adjust js-qty__adjust--minus"
+              aria-label="{{ 'cart.general.reduce_quantity' | t }}">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" viewBox="0 0 64 64"><path class="cls-1" d="M55 32H9"/></svg>
+                <span class="icon__fallback-text" aria-hidden="true">&minus;</span>
+            </button>
+            <button type="button"
+              class="js-qty__adjust js-qty__adjust--plus"
+            {% if product.quantity >= 100%} disabled {% endif %} 
+              aria-label="{{ 'cart.general.increase_quantity' | t }}">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 64 64"><path class="cls-1" d="M32 9v46m23-23H9"/></svg>
+                <span class="icon__fallback-text" aria-hidden="true">+</span>
+            </button>
+          </div>
+  
+          <div class="cart__remove">
+            <a href="{{ routes.cart_change_url }}?id={{ product.key }}&amp;quantity=0" class="text-link">
+              {{ 'cart.general.remove' | t }}
+            </a>
+          </div>
+        </div>
        
-          <button type="button"
-            class="js-qty__adjust js-qty__adjust--minus"
-            aria-label="{{ 'cart.general.reduce_quantity' | t }}">
-              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" viewBox="0 0 64 64"><path class="cls-1" d="M55 32H9"/></svg>
-              <span class="icon__fallback-text" aria-hidden="true">&minus;</span>
-          </button>
-          <button type="button"
-            class="js-qty__adjust js-qty__adjust--plus"
-          {% if product.quantity >= 100%} disabled {% endif %} 
-            aria-label="{{ 'cart.general.increase_quantity' | t }}">
-              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 64 64"><path class="cls-1" d="M32 9v46m23-23H9"/></svg>
-              <span class="icon__fallback-text" aria-hidden="true">+</span>
-          </button>
-        </div>
-
-        <div class="cart__remove">
-          <a href="{{ routes.cart_change_url }}?id={{ product.key }}&amp;quantity=0" class="text-link">
-            {{ 'cart.general.remove' | t }}
-          </a>
-        </div>
-      </div>
+       
 
       <div class="cart__item-price-col text-right">
         {% if product.original_price != product.final_price %}
@@ -129,36 +144,25 @@
       <span id="error_message_{{ product.key }}">Only, 100 products can be selected</span>
     </div>
    {% endif %}
+
    <div class="gift_wrapper_container">
     {% assign gift_wrap_cost = 50 %}
     {% assign total_gift_wrap_cost = product.quantity | times: gift_wrap_cost %}
-    {% comment %} <p>
-      <input type="checkbox" class="gift_wrap_checkbox" id="gift_wrap_id" data-gift-price={{total_gift_wrap_cost}}>
-      <label for="gift_wrap_{{ product.key }}">Add gift wrap to your order (₹{{ total_gift_wrap_cost }})</label>
-    </p>  {% endcomment %}
+ <p>
+  {% for p in product.properties %}
+    {%- assign first_character_in_key = p.first | truncate: 1, '' -%}
+  {% if p.first == 'Gift-Wrapper' %}
+    <label for="gift_wrap_{{ product.key }}">Added gift wrap to your order (₹{{ total_gift_wrap_cost }})</label>
+  {% endif %}
+{% endfor %}
+      {% comment %} <input type="checkbox" class="gift_wrap_checkbox" id="gift_wrap_id" data-gift-price={{total_gift_wrap_cost}}> {% endcomment %}
+    </p>  
     {% comment %} <input type="checkbox" id="myCheckbox"> My Checkbox  {% endcomment %}
- <script> 
 
-    // if (localStorage.getItem('checkboxState') === 'true') { 
-    //   document.getElementById('myCheckbox').checked = true; 
-    // } 
-     
-    // // Add an event listener to the checkbox to save its state in local storage 
-    // document.getElementById('myCheckbox').addEventListener('change', function() { 
-    //   localStorage.setItem('checkboxState', this.checked); 
-    // }); 
-  </script>
   </div>
-  <script> 
 
-  // if (localStorage.getItem('checkboxState') === 'true') { 
-  //   document.getElementById('gift_wrap_id').checked = true; 
-  // } 
-   
-  // // Add an event listener to the checkbox to save its state in local storage 
-  // document.getElementById('gift_wrap_id').addEventListener('change', function() { 
-  //   localStorage.setItem('checkboxState', this.checked); 
-  // }); 
-</script>
 </div>
+  {% endif %}
+
+
 

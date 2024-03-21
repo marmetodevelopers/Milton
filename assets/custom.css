@@ -1026,3 +1026,11 @@ span.collapsible-trigger__layout {
 .cart__item{
   padding-bottom: 4rem;
 }
+.line-item-container,
+span#line-item-container{
+opacity: 0;
+position: absolute;
+}
+#ProductPageCheck{
+margin-bottom: 1rem;
+}
