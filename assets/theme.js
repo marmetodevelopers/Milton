@@ -10133,6 +10133,33 @@ if (console && console.log) {
 
 
 
+// function handleCheckboxChange(checkbox) {
+//   if (checkbox.checked) {
+//     addToCart('43108942381156'); // Add the additional product to the cart 43108942381156
+//   }
+// }
+// function addToCart(variantId) {
+//   fetch('/cart/add.js', {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json',
+//     },
+//     body: JSON.stringify({
+//       'id': variantId,
+//       'quantity': 1
+//     }),
+//   })
+//   .then(response => response.json())
+//   .then(data => {
+//     console.log(data); // Handle success response
+//     // Optionally, you can redirect to the cart page or show a message to the user
+//   })
+//   .catch((error) => {
+//     console.error('Error:', error); // Handle error
+//   });
+// }
+
+
 
 
 
@@ -10169,45 +10196,46 @@ if (console && console.log) {
 //   }
 // }
 
-// Function to add a product to the cart
-function addToCart(productId, quantity) {
-  jQuery.ajax({
-    type: 'POST',
-    url: '/cart/add.js',
-    data: {
-      quantity: quantity,
-      id: productId
-    },
-    dataType: 'json',
-    success: function() {
-      // On success, update the cart and display success message (if needed)
-      // You can customize this based on your requirements
-      console.log('Product added to cart');
-    },
-    error: function(xhr, status, error) {
-      console.error('Error adding product to cart:', error);
-    }
-  });
-}
 
-// Function to remove a product from the cart
-function removeFromCart(productId) {
-  jQuery.ajax({
-    type: 'POST',
-    url: '/cart/change.js',
-    data: {
-      quantity: 0, // Set quantity to 0 to remove the product
-      id: productId
-    },
-    dataType: 'json',
-    success: function() {
-      // On success, update the cart and display success message (if needed)
-      // You can customize this based on your requirements
-      console.log('Product removed from cart');
-    },
-    error: function(xhr, status, error) {
-      console.error('Error removing product from cart:', error);
-    }
-  });
-}
+// // Function to add a product to the cart
+// function addToCart(productId, quantity) {
+//   jQuery.ajax({
+//     type: 'POST',
+//     url: '/cart/add.js',
+//     data: {
+//       quantity: quantity,
+//       id: productId
+//     },
+//     dataType: 'json',
+//     success: function() {
+//       // On success, update the cart and display success message (if needed)
+//       // You can customize this based on your requirements
+//       console.log('Product added to cart');
+//     },
+//     error: function(xhr, status, error) {
+//       console.error('Error adding product to cart:', error);
+//     }
+//   });
+// }
+
+// // Function to remove a product from the cart
+// function removeFromCart(productId) {
+//   jQuery.ajax({
+//     type: 'POST',
+//     url: '/cart/change.js',
+//     data: {
+//       quantity: 0, // Set quantity to 0 to remove the product
+//       id: productId
+//     },
+//     dataType: 'json',
+//     success: function() {
+//       // On success, update the cart and display success message (if needed)
+//       // You can customize this based on your requirements
+//       console.log('Product removed from cart');
+//     },
+//     error: function(xhr, status, error) {
+//       console.error('Error removing product from cart:', error);
+//     }
+//   });
+// }
 
