@@ -9,9 +9,7 @@ header.section-header.section-header--with-link button.section-header__link.addr
  display: flex; 
  font-size: 13px;
 }
-nav.breadcrumb.collection_breadcrumb{
-  display: flex;
-}
+
 .product-tab__content p {
   line-height: 3rem;
 }
