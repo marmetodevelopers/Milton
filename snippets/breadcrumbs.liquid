@@ -19,9 +19,7 @@
           {{ collection.title | link_to: url }}
         {% endif %}
       {% endif %}
-
       <span class="breadcrumb__divider" aria-hidden="true">/</span>
-
     {% elsif template.name == 'collection' and collection.handle %}
       {% if settings.show_breadcrumbs_collection_link %}
         {%  comment  %} Collection Page Breadcrumbs {% endcomment %}

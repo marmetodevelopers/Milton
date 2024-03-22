@@ -2153,10 +2153,14 @@ if (console && console.log) {
       },
 
       quantityChanged: function (evt) {
-        console.log(evt.detail[0]);
+        console.log(evt,'evt');
         var key = evt.detail[0];
         var qty = evt.detail[1];
         var el = evt.detail[2];
+        let arr = []
+        document.querySelectorAll(`.cart__item[data-key="${key.split(':')[0]}"] [data-product-random]`).forEach((ele)=>{
+          arr.push(ele.getAttribute('data-product-random'));
+          })
         if (!key || !qty) {
           return;
         }
@@ -2204,65 +2208,72 @@ if (console && console.log) {
                 } else {
                   this.wrapper.classList.add("is-empty");
                 }
+                
                 console.log(parsedCart,'parsedCart');
+console.log(parsedCart.items,'   parsedCart.items');
+              if( document.querySelector(`.cart__item[data-key="${key}"] [data-product-random]`)){
+                parsedCart.items.forEach((ele,i)=>{
+                 let filter= arr.filter((fil)=> fil == ele.properties['gift-id'])
+                 console.log(ele.properties,'=======================>')
 
-                parsedCart.items.forEach((ele)=>{
-                  console.log(ele,'kk');
-                  if (ele.properties['Product-id'] == key.split(':')[0]) {
-                    theme.cart
-                    .changeItem(ele.key, qty)
-                    .then(
-                      function (cart) {
-                        const parsedCart = JSON.parse(cart);
-                        if (parsedCart.status === 422) {
-                          alert(parsedCart.message);
-                        } else {
-                          const updatedItem = parsedCart.items.find(
-                            (item) => item.key === key
-                          );
-          
-                          // Update cartItemsUpdated property on object so we can reference later
-                          if (
-                            updatedItem &&
-                            (evt.type === "cart:quantity.cart-cart-drawer" ||
-                              evt.type === "cart:quantity.cart-header")
-                          ) {
-                            this.cartItemsUpdated = true;
-                          }
-          
-                          if (
-                            (updatedItem &&
-                              evt.type === "cart:quantity.cart-cart-drawer") ||
-                            (updatedItem && evt.type === "cart:quantity.cart-header")
-                          ) {
-                            if (updatedItem.quantity !== qty) {
-                            }
-                            // Reset property on object so that checkout button will work as usual
-                            this.cartItemsUpdated = false;
-                          }
-          
-                          if (parsedCart.item_count > 0) {
-                            this.wrapper.classList.remove("is-empty");
-                          } else {
-                            this.wrapper.classList.add("is-empty");
-                          }
-                        }
-          
-                        this.buildCart();
-          
-                        document.dispatchEvent(
-                          new CustomEvent("cart:updated", {
-                            detail: {
-                              cart: parsedCart,
-                            },
-                          })
+                 if (filter && ele.title =='Gift wrapper' && Object.keys(ele.properties).length) {
+                  
+                   console.log(filter,'kk');
+                  console.log(Object.keys(ele.properties).length,'obj');
+                  theme.cart
+                  .changeItem(ele.key, qty)
+                  .then(
+                    function (cart) {
+                      
+                      const parsedCart = JSON.parse(cart);
+                      console.log(parsedCart.items,'   parsedCart.items 2');
+                      if (parsedCart.status === 422) {
+                        alert(parsedCart.message);
+                      } else {
+                        const updatedItem = parsedCart.items.find(
+                          (item) => item.key === key
                         );
-                      }.bind(this)
-                    )
-                    .catch(function (XMLHttpRequest) {});
+                        // Update cartItemsUpdated property on object so we can reference later
+                        if (
+                          updatedItem &&
+                          (evt.type === "cart:quantity.cart-cart-drawer" ||
+                            evt.type === "cart:quantity.cart-header")
+                        ) {
+                          this.cartItemsUpdated = true;
+                        }
+                        if (
+                          (updatedItem &&
+                            evt.type === "cart:quantity.cart-cart-drawer") ||
+                          (updatedItem && evt.type === "cart:quantity.cart-header")
+                        ) {
+                          if (updatedItem.quantity !== qty) {
+                          }
+                          // Reset property on object so that checkout button will work as usual
+                          this.cartItemsUpdated = false;
+                        }
+                        if (parsedCart.item_count > 0) {
+                          this.wrapper.classList.remove("is-empty");
+                        } else {
+                          this.wrapper.classList.add("is-empty");
+                        }
+                      }
+        
+                      this.buildCart();
+        
+                      document.dispatchEvent(
+                        new CustomEvent("cart:updated", {
+                          detail: {
+                            cart: parsedCart,
+                          },
+                        })
+                      );
+                    }.bind(this)
+                  )
+                  .catch(function (XMLHttpRequest) {});
 
-                  }
+                }
                 })
+              }
               }
 
               this.buildCart();
@@ -3098,20 +3109,24 @@ if (console && console.log) {
           var currentDate = new Date().toString(); // Get current date in string format
           var mainProductVariantId = document.querySelector('[data-main-product-id]').getAttribute('data-main-product-id');
         
+          let   randomValue =  Math.floor(Math.random() * 90) + 10;;
           var lineItemHTML = `
             <span class="line-item-property__field">
               <input id="Gift" type="text" name="properties[Gift-Wrapper]" value="${currentDate}">
+              <input id="Gift" type="text" name="properties[gift-id]" value="${randomValue+mainProductVariantId}">
             </span>
           `;
-        
           if (this.form.querySelector('#ProductPageCheck').checked) {
             console.log('sj');
+          
+
             lineItemContainer.innerHTML = lineItemHTML;
             var data = {
               'id': 43108942381156,
               'quantity': 1,
               'properties': {
                 'Gift-Wrapper': currentDate,
+                'gift-id':randomValue+mainProductVariantId,
                 'Product-id': mainProductVariantId
               }
             };
@@ -3125,7 +3140,7 @@ if (console && console.log) {
             })
             .then(response => response.json())
             .then(data => {
-              console.log(data); // Handle success response
+              console.log(data,'gifff'); // Handle success response
               // Optionally, you can redirect to the cart page or show a message to the user
             })
             .catch((error) => {
@@ -3155,7 +3170,11 @@ if (console && console.log) {
   
         var data = theme.utils.serialize(this.form);
         var currentTime =  new Date();
-        data = `${data}&properties._gift=${currentTime}`
+        // data = `${data}&properties._gift=${currentTime}`
+        if (this.form.querySelector('#ProductPageCheck').checked){
+          console.log('dgsf');
+          // data = `${data}&properties._gift=${randomValue+mainProductVariantId}}`
+        }
  console.log(data,'data');
  setTimeout(()=>{ fetch(theme.routes.cartAdd, {
   method: "POST",
