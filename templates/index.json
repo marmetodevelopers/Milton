@@ -16,6 +16,7 @@
       "block_order": [
         "block_pW6Tig"
       ],
+      "disabled": true,
       "settings": {
         "padding_top": 0,
         "padding_bottom": 0,
@@ -71,7 +72,6 @@
         "slide-2",
         "slide-1"
       ],
-      "disabled": true,
       "settings": {
         "full_width": true,
         "desktop_size": 0,
