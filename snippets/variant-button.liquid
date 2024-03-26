@@ -77,17 +77,21 @@
           -%}
           <label
             for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"
-            class="variant__button-label color-swatch color-swatch--{{ value | handle }}{% unless product_available %} disabled{% endunless %}"
+            class="bbbbb variant__button-label color-swatch color-swatch--{{ value | handle }}{% unless product_available %} disabled{% endunless %}"
             style="background-color: {{ color_swatch_fallback }};{% if images[color_file_name] != blank %}  background-image: url({{ color_image }});{% endif %}"
           >
-            {{ value | escape }} aa
           </label>
         {%- else -%}
           <label
             for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"
-            class="variant__button-label{% unless product_available %} disabled{% endunless %}">{{ value | escape }}</label>
+          {% if option.name == "Color" %} style="background: url({{ value.src |  image_url: "50*50" }})" {% endif %} 
+            class="variant__button-label {% unless product_available %} disabled{% endunless %}">
+            {% if option.name == "Color" %}
+             {% endif %}
+              {{ value | escape }}
+              </label>
         {%- endif -%}
-      </div>
+      </div>  
     {%- endfor -%}
   </fieldset>
 </div>

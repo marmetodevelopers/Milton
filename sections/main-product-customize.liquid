@@ -37,6 +37,16 @@
   "name": "t:sections.main-product.name",
   "settings": [
     {
+  "type": "header",
+  "content": "Name Personalization"
+},
+{
+  "type": "checkbox",
+  "id": "show_Personalization",
+  "label": "Show Personalization",
+  "default": true
+},
+    {
       "type": "checkbox",
       "id": "sku_enable",
       "label": "t:sections.main-product.settings.sku_enable.label"
@@ -202,9 +212,32 @@
       "info": "t:sections.main-product.settings.product_video_style.info"
     }
   ],
+  
   "blocks": [{
   "type": "@app"
 },
+{
+    "type": "fontfamily",
+    "name": "Font Family",
+    "settings": [
+      {
+        "type": "text",
+        "id": "font-family-block",
+        "label": "Font Family"
+      }
+    ]
+  },
+  {
+    "type": "emoji",
+    "name": "Emoji",
+    "settings": [
+      {
+        "type": "html",
+        "id": "emoji-block",
+        "label": "Emoji"
+      }
+    ]
+  }  ,
 {
   "type": "price",
   "name": "t:product_block.price.name",

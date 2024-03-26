@@ -132,6 +132,7 @@
                 </p>     
               {%- else -%}
               {% comment %} Product page details Desktop {% endcomment %}
+              <h3>hfghfdhgdhgdghdhgdhgdgdfgh</h3>
              <span><h2 class="h2 product-single__title desktop-title">
                   {%- unless product.empty? -%}
                     {{ product.title }}
@@ -347,6 +348,22 @@
                             current_variant: current_variant,
                             block: block,
                           -%}
+                           <!-- for adding personalisation -->
+    {% if section.settings.show_Personalization %}
+        {% if product.tags contains 'personalise' %}
+                  {% if product.first_available_variant.available %}
+              <div class="button-container">                          
+                <button id="customizer-button" class="customize-button" type="button"> ADD PERSONALISATION  </button>
+              </div>
+          {% else %}
+                  <div class="button-container">
+                          <button class="customize-soldout-button" type="button"> ADD PERSONALISATION </button>
+                      </div>
+                  {% endif %}
+          {% render 'text-customize-on-product' %}
+        {% endif %}
+      {% endif %}
+  <!-- end -->
                         </div>
                       {%- endunless -%}
                       {%- if block.settings.surface_pickup_enable -%}

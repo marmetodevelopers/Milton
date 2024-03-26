@@ -1103,3 +1103,364 @@ display: contents;
 .gst_container {
 margin-bottom: 10px;
 }
+
+
+
+/* customize modal in product page */
+button.customize-button, button.modal-customize-button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  background: #B4D241;
+  border: none;
+  width: 100%;
+  padding: 13px;
+  cursor: pointer;
+}
+button.modal-customize-button{
+  margin-top: 24px;
+  width: 70%;
+  padding:13px;
+}
+.customizer_modal {
+  display: none;
+  position: fixed;
+  z-index: 9999999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.1);
+}
+.customizer_modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 15%);
+}
+.modal---head {
+  text-align: center;
+  background: #003564;
+  color: white;
+  position: relative;
+}
+.modal-head_text {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-top: 21px;
+  padding-bottom: 17px;
+}  
+.customizer_close {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 8px;
+}
+.modal---body {
+  padding: 0px 87px;
+  padding-bottom:87px;
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+.customize-image-container {
+  width: 50%;
+}
+.customize-image-container img {
+  width:80%;
+}
+.image-text {
+  padding-top: 32px;
+  padding-bottom: 5px;
+  color: #003564;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.input-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+}
+input#customized_Text {
+  padding: 12px;
+  width: 70%;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+input#customized_Text:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+.modal-customize-body {
+  width: 50%;
+  padding-top: 55px;
+}
+.customizer_close:hover, .customizer_close:focus {
+  cursor: pointer;
+}
+.info-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+  margin-top:5px;
+  max-width: 70%;
+}
+.info--text {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.text-placement{
+  margin-top:24px;
+}
+.placement-buttos {
+  width: 70%;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  padding: 4px;
+  display:flex;
+}
+input[type=radio]:checked + label{
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin-top: 0;
+  margin-left: 4px; 
+}
+input#vertical, input#horizontal {
+  display: none;
+}
+label {
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+  margin-top:5px;
+}
+.rotate {
+  transform: rotate(-90deg);
+  width: 0;
+  margin-top: 7px;
+  font-size: 12px;
+  line-height: 15px;
+  padding-right: 25px;
+}
+input[type=radio]:checked + label .rotate {
+  margin-top: 0;
+}
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 0;
+  margin: -5px -20px -5px -5px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  max-height: 46px;
+  padding-top: 14px;
+  padding-left: 8px;
+  width: 99%;
+}
+select:focus-visible{
+  outline: none;
+  box-shadow: none;
+}
+select::-webkit-scrollbar {
+  display: none;
+}
+#font-family select option {
+  display:inline-block;
+  margin-right: 10px;
+}
+#font-family select option:checked{
+  background : white;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  margin-top: -5px;
+}
+#font-family {
+  display: inline-block;
+  vertical-align: top;
+  overflow: scroll;
+  max-width: 70%;
+  max-height: 50px;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+#font-family::-webkit-scrollbar {
+  display: none;
+}
+[type="radio"] {
+ display: none;
+}
+.emoji-container {
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  padding: 0px 19px 22px 0px;
+  max-width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.emoji-container input[type=radio]:checked + label{
+  border:none;
+  fill: green;
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 0;
+}
+.emoji-container svg{
+  margin-left:30px;
+}
+.personalized-message {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #B4D241;
+  width: 70%;
+}
+.customize-change-button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FCFCFC;
+  background: #003564;
+  margin-top: 14px;
+  width: 70%;
+  padding: 13px;
+  border: none;
+  cursor: pointer;
+}
+.customize-atc {
+  background: #B4D241;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FCFCFC;
+  border: none;
+  width: 70%;
+  margin-top: 10rem;
+  padding: 13px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: none;
+}
+.modal-atc-body {
+  display:none;
+  margin-top: 20rem;
+  width:50%;
+}
+label.emoji {
+  margin-top:20px;
+}
+.emoji-container::-webkit-scrollbar {
+  display: none;
+}
+canvas#customizer{
+  max-width: 100%;
+}
+.customize-soldout-button{
+	font-size:16px;
+	line-height:24px;
+	color: rgb(147,147,147);
+	background: rgb(212,212,212);
+	border: none;
+	width: 100%;
+	padding: 13px;
+	curson: no-drop;
+}
+@media(min-width: 767px) and (max-width: 1360px){
+  .modal---body {
+    padding: 0px 48px;
+    padding-bottom:48px;
+  }
+  .modal-atc-body{
+    margin-top: 6rem;
+  }
+}
+@media(max-width:767px){
+  .customize-button-container {
+    position: fixed;
+    bottom: 0;
+    z-index: 999999;
+    width: 100%;
+    background-color: #fff;
+    left: 0;
+    padding: 10px 14px;
+  }
+  .customizer_modal {
+    padding-top:0;
+    padding: 14px;
+  }
+  .customize-image-container {
+    margin-top: 10px;
+  }
+  .image-text{
+    display:none;
+  }
+  .customizer_modal-content {
+    width: 100%;
+  }
+  .modal---head {
+    text-align: left;
+  }
+  .modal-head_text {
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 8px;
+  }
+  .modal---body {
+    padding: 0px 7px;
+    padding-bottom: 0;
+    display: block;
+    width: 100%;
+  }
+  .customize-image-container, input#customized_Text, .placement-buttos, #font-family, .customize-image-container img, .emoji-container, button.modal-customize-button{
+    width: 100%;max-width: 100%;
+  }
+  .modal-customize-body {
+    width: 100%;
+    padding-bottom: 32px;
+    padding-top:12px;
+  }
+  .input-text{
+    font-weight: 500;
+  }
+  .info-text{
+    display:none;
+  }
+  .modal-atc-body {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .personalized-message {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  }
+  .customize-atc {
+    margin-top: 46px;
+    width: 100%;
+  }
+  .customize-change-button {
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 7px;
+  }
+}
+
+.metafield_values{
+  display: flex;
+  gap: 1rem;
+}
+.grid__items.product__ingredients-main{
+  border: 1px solid gray;
+}

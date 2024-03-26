@@ -1,0 +1,314 @@
+<div id="customizer-Modal" class="customizer_modal">
+         <!-- Modal content -->
+   <div class="customizer_modal-content">
+     
+      <div class="modal---head">
+         <p class="modal-head_text">Give your stainless steel bottle a personal touch</p>
+         <span class="customizer_close">&times;</span>
+      </div>
+     
+      {% assign images = product.media  %}
+      <div class="modal---body">
+        
+         <div class="customize-image-container">
+            <div class="image-text">Preview</div>
+            <canvas id="customizer" width="468" height="468"></canvas>
+         </div>
+        
+         <div class="modal-customize-body">
+           
+            <div class="input-text">ENTER YOUR TEXT</div>
+            <div class="field">        
+               <input type="text" name="customized_Text" id="customized_Text" maxlength="15" >
+            </div>
+            <div class="info-text">
+               Type in a word that you would like to be engraved onto your mobile
+            </div>
+            <div class="info--text">
+               (Only 15 characters)
+            </div>
+
+            <div class="input-text text-placement">Select The Badge Images</div>
+            <div class="product_color_badge_text_images">
+              {% assign icons = product.metafields.custom.custom_product_badge_images.value %}
+              <div class="metafield_values">
+                {% for metaimage in icons %}
+                  <div class="grid__items product__ingredients-main">
+                    <div class="product__ingredients-contents flex">
+
+                      <div class="product_meta_image forloop-{{ forloop.index }}">
+                        {% if metaimage  != blank %}
+                          <img src="{{ metaimage | image_url }}" alt="img">
+                        {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+
+            </div>
+           
+            <div class="input-text text-placement">Placement</div>
+            <div class="placement-buttos">
+               <input type="radio" class="placement-child" id="horizontal" name="placement" value="horizontal" checked="checked">
+               <label class="checkLabel checked" for="horizontal">ABC</label>
+               <input type="radio" class="placement-child" id="vertical" name="placement" value="vertical">
+               <label class="checkLabel" for="vertical">
+                  <div class="rotate">ABC</div>
+               </label>
+            </div>
+           
+            <div class="input-text text-placement">SELECT FONT STYLE</div>
+           
+            <div id="font-family">
+               <select size="25" id="selecth1FontFamily" name="selectFontFamily" onchange="runCustomization();" >
+               {% assign select = true %}
+                 {% for block in section.blocks %}
+                    {% if block.type == 'fontfamily' %}
+                      <option {% if select %}selected{% assign select = false %}{% endif %}>{{ block.settings.font-family-block }}</option>
+                    {% endif %}
+                {% endfor %}
+               </select>
+            </div> 
+            <div class="info-text">To add a quicky look to your personalisation, choose from these cute emojis and characters</div>
+            <div class="info--text">(Select only one)</div> 
+   
+            <button id="modal-customizer-button" class="modal-customize-button" type="button"> ADD PERSONALISATION  </button>
+         </div>
+         <div class="modal-atc-body">
+            <div class="personalized-message">
+               Your Peronalised Borosil product will be shipped as soon as it is ready.
+            </div>
+           
+            {%- form 'product',
+              product,
+              id: product_form_id,
+              class: 'form',
+              novalidate: 'novalidate',
+              data-type: 'add-to-cart-form-custom'
+            -%}
+              <input type="hidden" name="id">
+              <button
+                type="submit"
+                name="add"
+                class="product-form__submit button button--full-width customize-atc"
+              >
+                Add to cart
+              </button>
+            <div class="custom-atc-loader__outer">
+              <span class="product-atc_loader custom-atc-loader"> </span>
+            </div>
+            {%- endform -%}
+           
+           <button id="customizer-change-button" class="customize-change-button" type="button"> CHANGE PERSONALISATION  </button>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+<script>
+// customize button in modal
+$('#modal-customizer-button').click(function() {
+  $('.modal-customize-body').hide();
+  $('.modal-atc-body').show();
+});
+
+// change button
+$('#customizer-change-button').click(function() {
+  $('.modal-customize-body').show();
+  $('.modal-atc-body').hide();
+});
+
+//function for radio buttons
+$(document).on("click", 'input.placement-child', function () {
+  if ($(this).is(":checked")) {
+    $('label.checked').removeClass('checked');
+    $(this).next("label.checkLabel").addClass("checked");
+  }
+});
+$(document).on("click", 'input.emoji-child', function () {
+  if ($(this).is(":checked")) {
+    $('label.checked').removeClass('checked');
+    $(this).next("label.emoji").addClass("checked");
+  }
+});
+</script>
+
+<script>
+{% for value in product.metafields.custom.axis_values.value.horizontal %}   
+  {% assign HheightAxis =  value.height %}{% assign HwidthAxis = value.width %}  
+{% endfor %}
+
+{% for value in product.metafields.custom.axis_values.value.vertical %}   
+  {% assign VheightAxis =  value.width %}{% assign VwidthAxis = value.height %}  
+{% endfor %}
+
+{% assign color = "white" %}
+  {% if product.metafields.custom.color != blank %}
+    {% assign color = product.metafields.custom.color %}
+  {% endif %}
+  
+  document.addEventListener("DOMContentLoaded", runCustomization);
+
+let selectedImageSrc = "";
+
+function runCustomization(event) {
+    make_base();
+    
+    let message = document.getElementById("customized_Text").value || 'customize';
+    
+    // Event listener for metafield images
+    let metaImages = document.querySelectorAll('.product_meta_image');
+    metaImages.forEach(image => {
+        image.addEventListener('click', function() {
+            let imgSrc = this.querySelector('img').getAttribute('src');
+            selectedImageSrc = imgSrc;
+            make_base();
+        });
+    });
+
+    //for FontFamily
+    function getFont(fontSize = 14) {
+        let mainCanvas = document.getElementById("customizer");
+        let fontBase = 400; // selected default width for canvas
+        
+        var selector = document.getElementById('selecth1FontFamily');
+        var family = selector.options[selector.selectedIndex].value;
+        let ratio = fontSize / fontBase; // calc ratio
+        let size = mainCanvas.width * ratio; // get font size based on current width
+  
+        return (size|0) + 'px '+family; // set font
+    }
+    
+    function make_base() {
+        window.base_image = new Image();
+        base_image.crossOrigin = 'Anonymous';
+        
+        // Set the image source to the selected metafield image if available, else use the default
+        if (selectedImageSrc) {
+            base_image.src = selectedImageSrc;
+        } else {
+            base_image.src = "{{ images[0] | img_url: 'master' }}";
+        }
+
+        base_image.onload = function() {
+            renderCanvas(base_image, message);
+            
+            var formElement = document.getElementById("customized_Text");
+            formElement.addEventListener('keyup', textBoxChanged, false);
+
+            var vertical = document.getElementById("vertical");
+            vertical.addEventListener('click', Alignment);
+
+            var horizontal = document.getElementById("horizontal");
+            horizontal.addEventListener('click', Alignment);
+        };
+    }
+
+    function textBoxChanged(e) {
+        let target = e.target;
+        message = target.value;
+        
+        renderCanvas(window.base_image, message);
+    }
+
+    function Alignment(e) {
+        renderCanvas(window.base_image, message);
+    }
+
+    function renderCanvas(base_image, message = "Customize") {
+        let mainCanvas = document.getElementById("customizer");
+        let textRotation = document.querySelector('[name="placement"]:checked').value;
+        let canheight = base_image.naturalHeight;
+        let canwidth = base_image.naturalWidth;
+        let imageHeightToRender = 468;
+        let imageWidthToRender = 468;
+        let rotation = 0;
+        let height = 0;
+        let width = 0;
+
+        let context = mainCanvas.getContext("2d");
+        context.fillStyle = "blue";
+        context.font = "bold 16px Arial";
+        context.fillText("Customizer", 240, 380);
+        
+        context.drawImage(base_image, 0, 0, canwidth, canheight, 0, 0, imageWidthToRender, imageHeightToRender);
+        context.save();
+
+        if (textRotation == 'horizontal') {
+            rotation = 0;
+            height = imageHeightToRender * ({{ HheightAxis }} / 100);
+            width = imageWidthToRender * ({{ HwidthAxis }} / 100);
+        } else {
+            rotation = -90;
+            height = imageHeightToRender * ({{ VheightAxis }} / 100);
+            width = -imageWidthToRender * ({{ VwidthAxis }} / 100);
+        }
+        
+        context.fillStyle = "{{ color }}";
+        context.rotate(rotation * Math.PI / 180);
+        context.font = getFont(12);
+        context.textAlign = 'center';
+        context.fillText(message, width, height);
+        
+        context.beginPath();
+        var path = new Path2D();
+        context.strokeStyle = "#fff";
+        
+        if (textRotation == 'horizontal') {
+            context.setTransform(1, 0, 0, 1, width - 10, height - 48);
+        } else {
+            context.setTransform(0, 1, 1, 0, height - 16, -width + 64);
+        }
+        
+        context.fill(path);
+        context.restore();
+    }
+}
+
+
+</script>
+<script>
+  // document.querySelector("[data-type='add-to-cart-form-custom']").addEventListener("submit", function(e){
+	// 	var name = document.getElementById("customized-Text").value || 'Customize' ;
+	// 	var familyBox = document.getElementById('selecth1FontFamily');
+	// 	var fontFamily = familyBox.options[familyBox.selectedIndex].value;
+  //     e.preventDefault();
+      
+  //     let mainCanvas = document.getElementById("customizer");
+
+  //     let dataURL = mainCanvas.toDataURL('image/jpeg', 0.5);
+  //     let blob = dataURItoBlob(dataURL);
+  //     var selectedVariant = $('.variant-options-listItem.is-selected');
+  //     var variantId = selectedVariant.attr('data-variant');
+  //     var formData = new FormData(document.querySelector('[data-type="add-to-cart-form-custom"]'));
+  //     formData.append("id",variantId);
+
+  //     formData.append("items[1][id]",43169800945764);
+  //     formData.append("items[1][properties][Image]", blob, 'custom_image2.jpeg');
+	// 		formData.append("items[1][properties][Name]",name);
+	// 		formData.append("items[1][properties][Font]",fontFamily);
+  //     const config = fetchConfig('javascript');
+  //     config.headers['X-Requested-With'] = 'XMLHttpRequest';
+  //     delete config.headers['Content-Type'];
+
+  //     fetch(window.Shopify.routes.root + 'cart/add.js', {
+  //       method: 'POST',
+  //       body: formData
+  //     })
+  //     .then(response => {
+  //       return response.json();
+  //     })
+  //     .then(response => {
+  //       mmajaxcart.CartCountHandler();        
+  //       mmajaxcart.AjaxcartRender();
+  //       setTimeout(function(){
+  //         mmajaxcart.AjaxcartOpen(); 
+  //       },1500);
+  //     })
+  //     .catch((error) => {
+  //       console.error('Error:', error);
+  //     });         
+  //   });
+</script>
