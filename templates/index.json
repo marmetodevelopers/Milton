@@ -6,8 +6,8 @@
         "block_pW6Tig": {
           "type": "block",
           "settings": {
-            "video_picker": "shopify:\/\/files\/videos\/White Happy Republic Day Video Message (1920 x 600 px)(1).mp4",
-            "video_picker_mobile": "shopify:\/\/files\/videos\/White Happy Republic Day Video Message (390 x 238 px)(2).mp4",
+            "video_picker": "shopify:\/\/files\/videos\/Milton Holi Sale Banner 2024.mp4",
+            "video_picker_mobile": "shopify:\/\/files\/videos\/Home Page Banner Mobile (390 x 238 px)(5).mp4",
             "subheading_text": "",
             "subheading_color": ""
           }
@@ -30,21 +30,20 @@
       "blocks": {
         "slide-2": {
           "type": "hero",
-          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "",
             "title_size": 70,
             "subheading": "",
             "breadcrum": "",
-            "link": "shopify:\/\/collections\/all-products",
+            "link": "shopify:\/\/products\/artesia-thermosteel-bottle",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/Home_Page_Banner_Desktop_9.png",
-            "image_mobile": "shopify:\/\/shop_images\/Home_Page_Banner_Desktop_390_x_238_px_3.png",
+            "image": "shopify:\/\/shop_images\/Artisea_bottle_Banner_desktop.png",
+            "image_mobile": "shopify:\/\/shop_images\/Artisea_bottle_Banner_mobile.png",
             "overlay_opacity": 0
           }
         },

@@ -38,11 +38,10 @@
           {%- endif -%}
         </button>
       </div>
-
+      <h1 class="collection--title">{{ collection.title }}</h1>
       <div class="collection-filter__item collection-filter__item--count small--hide">
         {{ count_label | t: count: count }}
       </div>
-
       <div class="collection-filter__item collection-filter__item--right">
         {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
         <div class="collection-filter__sort small--hide">
