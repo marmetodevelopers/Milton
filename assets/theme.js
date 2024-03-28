@@ -2909,7 +2909,7 @@ if (console && console.log) {
     return PriceRange;
   })();
 
-  theme.AjaxProduct = (function () {
+theme.AjaxProduct = (function () {
     var status = {
       loading: false,
     };
@@ -2929,48 +2929,75 @@ if (console && console.log) {
     ProductForm.prototype = Object.assign({}, ProductForm.prototype, {
       addItemFromForm: function (evt, callback) {
         evt.preventDefault();
-
+    
         if (status.loading) {
-          return;
+            return;
         }
-
+    
         // Loading indicator on add to cart button
         this.addToCart.classList.add("btn--loading");
-
+    
         status.loading = true;
-
+    
         var data = theme.utils.serialize(this.form);
-
+    
+        var customizedTextElement = document.getElementById("customized_Text");
+        var customizedText = customizedTextElement ? customizedTextElement.value : "";
+    
+        var selectedVariantElement = document.querySelector("[data-product-select]");
+        var selectedVariant = selectedVariantElement ? selectedVariantElement.value : "";
+    
+        var formData = {
+            'id': selectedVariant,
+            'quantity': 1,
+            'properties': {
+                'Custom Text': customizedText
+            }
+        };
+    
+        // Generate dataURL if mainCanvas is available
+        let mainCanvas = document.getElementById("customizer");
+        if (mainCanvas) {
+            let dataURL = mainCanvas.toDataURL('image/jpeg', 0.5);
+            formData.properties['Image_URL'] = dataURL; // Add the dataURL to formData
+        }
+    
         fetch(theme.routes.cartAdd, {
-          method: "POST",
-          body: data,
-          credentials: "same-origin",
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-            "X-Requested-With": "XMLHttpRequest",
-          },
+            method: "POST",
+            body: JSON.stringify(formData),
+            credentials: "same-origin",
+            headers: {
+                "Content-Type": "application/json",
+                "X-Requested-With": "XMLHttpRequest",
+            },
         })
-          .then((response) => response.json())
-          .then(
+        .then((response) => response.json())
+        .then(
             function (data) {
-              if (data.status === 422) {
-                this.error(data);
-              } else {
-                var product = data;
-                this.success(product);
-              }
-
-              status.loading = false;
-              this.addToCart.classList.remove("btn--loading");
-
-              // Reload page if adding product from a section on the cart page
-              if (document.body.classList.contains("template-cart")) {
-                window.scrollTo(0, 0);
-                location.reload();
-              }
+                if (data.status === 422) {
+                    this.error(data);
+                } else {
+                    var product = data;
+                    this.success(product);
+                }
+    
+                status.loading = false;
+                this.addToCart.classList.remove("btn--loading");
+    
+                // Reload page if adding product from a section on the cart page
+                if (document.body.classList.contains("template-cart")) {
+                    window.scrollTo(0, 0);
+                    location.reload();
+                }
             }.bind(this)
-          );
-      },
+        )
+        .catch((error) => {
+            console.error('Error:', error);
+            alert('Error adding item to cart');
+        });
+    },
+    
+    
 
       success: function (product) {
         var errors = this.form.querySelector(".errors");
@@ -3045,6 +3072,7 @@ if (console && console.log) {
 
     return ProductForm;
   })();
+
 
   theme.ProductMedia = (function () {
     var modelJsonSections = {};
@@ -9876,7 +9904,6 @@ if (console && console.log) {
         }
       }
     }
-
     document.addEventListener("recommendations:loaded", function (evt) {
       if (evt && evt.detail && evt.detail.section) {
         new theme.QuickAdd(evt.detail.section);
@@ -9893,13 +9920,7 @@ if (console && console.log) {
 
 
 
-
-
-
-
-
-
-
+/* enqury form */
 
 
 // Get the modal
@@ -9931,3 +9952,8 @@ window.onclick = function(event) {
     document.querySelector("body").style.overflow = "scroll";
   }
 }
+
+
+
+
+

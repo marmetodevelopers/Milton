@@ -361,7 +361,7 @@
                                 <button class="customize-soldout-button" type="button"> ADD PERSONALISATION </button>
                               </div>
                             {% endif %}
-                            {% render 'text-customize-on-product' %}
+                           
                           {% endif %}
                         {% endif %}
                       </div>
@@ -373,7 +373,10 @@
                           ></div>
                       {%- endif -%}
                     </div>
-
+                   {%  when  'custom_buy_now' %}
+                    <div class="custom_product-buynow_container">
+                    {% render 'text-customize-on-product' %}
+                    </div>
                     {% when  'Inqure_Now_form'%}
                       <div class="Inqure_Now_form">
                         {%- unless product.available -%}

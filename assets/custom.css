@@ -1347,16 +1347,16 @@ select::-webkit-scrollbar {
   color: #FCFCFC;
   border: none;
   width: 70%;
-  margin-top: 10rem;
   padding: 13px;
   text-transform: uppercase;
   cursor: pointer;
   box-shadow: none;
 }
 .modal-atc-body {
-  display:none;
-  margin-top: 20rem;
-  width:50%;
+  width:100%;
+}
+.modal-atc-body button{
+  width: 100%;
 }
 label.emoji {
   margin-top:20px;
@@ -1374,8 +1374,10 @@ canvas#customizer{
 	background: rgb(212,212,212);
 	border: none;
 	width: 100%;
-	padding: 13px;
-	curson: no-drop;
+	padding: 13px;  
+}
+.modal-atc-body{
+  margin-top: 2rem;
 }
 @media(min-width: 767px) and (max-width: 1360px){
   .modal---body {
@@ -1383,7 +1385,7 @@ canvas#customizer{
     padding-bottom:48px;
   }
   .modal-atc-body{
-    margin-top: 6rem;
+    margin-top: 2rem;
   }
 }
 @media(max-width:767px){
@@ -1438,7 +1440,6 @@ canvas#customizer{
     display:none;
   }
   .modal-atc-body {
-    margin-top: 30px;
     width: 100%;
   }
   .personalized-message {

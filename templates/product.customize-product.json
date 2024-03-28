@@ -97,10 +97,17 @@
         },
         "buy_buttons": {
           "type": "buy_buttons",
+          "disabled": true,
           "settings": {
             "show_dynamic_checkout": true,
             "surface_pickup_enable": true,
             "show_gift_card_recipient": false
+          }
+        },
+        "custom_buy_now_fHHENK": {
+          "type": "custom_buy_now",
+          "settings": {
+            "enable_custom_product": true
           }
         },
         "inqure_now_form_AYqEqN": {
@@ -163,6 +170,7 @@
         "gst_KqdatQ",
         "inventory_status",
         "buy_buttons",
+        "custom_buy_now_fHHENK",
         "inqure_now_form_AYqEqN",
         "zip_code_app_G4XzmE",
         "emoji_XwMHdw",

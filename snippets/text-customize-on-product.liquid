@@ -3,6 +3,7 @@
    <div class="customizer_modal-content">
      
       <div class="modal---head">
+         {% comment %} once the functinality works fine then i will give the customize option {% endcomment %}
          <p class="modal-head_text">Give your stainless steel bottle a personal touch</p>
          <span class="customizer_close">&times;</span>
       </div>
@@ -18,16 +19,16 @@
          <div class="modal-customize-body">
            
             <div class="input-text">ENTER YOUR TEXT</div>
-            <div class="field">        
-               <input type="text" name="customized_Text" id="customized_Text" maxlength="15" >
-            </div>
+            <div class="field" data-ver-size="" data-hor-size="" data-ver-limit="" data-hor-limit="">
+          <input type="text"  name="customized_Text" id="customized_Text" maxlength="9">
+        </div>
+            {% comment %} once the functinality works fine then i will give the customize option {% endcomment %}
             <div class="info-text">
                Type in a word that you would like to be engraved onto your mobile
             </div>
             <div class="info--text">
                (Only 15 characters)
             </div>
-
             <div class="input-text text-placement">Select The Badge Images</div>
             <div class="product_color_badge_text_images">
               {% assign icons = product.metafields.custom.custom_product_badge_images.value %}
@@ -52,7 +53,7 @@
             <div class="placement-buttos">
                <input type="radio" class="placement-child" id="horizontal" name="placement" value="horizontal" checked="checked">
                <label class="checkLabel checked" for="horizontal">ABC</label>
-               <input type="radio" class="placement-child" id="vertical" name="placement" value="vertical">
+               <input type="radio" class="placement-child"  id="vertical" name="placement" value="vertical">
                <label class="checkLabel" for="vertical">
                   <div class="rotate">ABC</div>
                </label>
@@ -70,55 +71,62 @@
                 {% endfor %}
                </select>
             </div> 
-            <div class="info-text">To add a quicky look to your personalisation, choose from these cute emojis and characters</div>
-            <div class="info--text">(Select only one)</div> 
-   
-            <button id="modal-customizer-button" class="modal-customize-button" type="button"> ADD PERSONALISATION  </button>
-         </div>
-         <div class="modal-atc-body">
-            <div class="personalized-message">
-               Your Peronalised Borosil product will be shipped as soon as it is ready.
-            </div>
-           
-            {%- form 'product',
-              product,
-              id: product_form_id,
-              class: 'form',
-              novalidate: 'novalidate',
-              data-type: 'add-to-cart-form-custom'
-            -%}
-              <input type="hidden" name="id">
-              <button
-                type="submit"
-                name="add"
-                class="product-form__submit button button--full-width customize-atc"
-              >
-                Add to cart
-              </button>
-            <div class="custom-atc-loader__outer">
-              <span class="product-atc_loader custom-atc-loader"> </span>
-            </div>
-            {%- endform -%}
-           
-           <button id="customizer-change-button" class="customize-change-button" type="button"> CHANGE PERSONALISATION  </button>
+            <input type="hidden" id="canvasDataUrl" name="properties[CanvasDataUrl]" value="">
+            <div class="modal-atc-body">
+            {%- form 'product', product, id: product_form_id, class: 'product-single__form', data-type: 'add-to-cart-form-custom' -%}
+              {%- if enable_dynamic_buttons -%}
+                <div class="payment-buttons">
+              {%- endif -%}
+            
+                {%- liquid
+                  assign default_text = 'products.product.add_to_cart' | t
+                  assign button_text = 'products.product.add_to_cart' | t
+                  if template contains 'preorder'
+                    assign default_text = 'products.product.preorder' | t
+                    assign button_text = 'products.product.preorder' | t
+                  endif
+                  unless current_variant.available
+                    assign button_text = 'products.product.sold_out' | t
+                  endunless
+                -%}
+            
+                <button
+                  {% if product.empty? %}type="button"{% else %}type="submit"{% endif %}
+                  name="add"
+                  data-add-to-cart
+                   {% unless current_variant.available %} disabled="disabled"{% endunless %}
+                  class="btn btn--full add-to-cart{% if enable_dynamic_buttons and product.selling_plan_groups == empty %} btn--secondary{% endif %} customize-atc"
+                >
+                  <span data-add-to-cart-text data-default-text="{{ default_text }}">
+                    {{ button_text }}
+                  </span>
+                </button>          
+              {%- if enable_dynamic_buttons -%}
+                </div>
+              {%- endif -%}     
+              <select name="id" data-product-select class="product-single__variants no-js">
+                {%- for variant in product.variants -%}
+                  {%- if variant.available -%}
+                    <option {% if variant == product.selected_or_first_available_variant %}
+                      selected="selected"{% endif %}
+                      value="{{ variant.id }}">
+                      {{ variant.title }} - {{ variant.price | money_with_currency }}
+                    </option>
+                  {%- else -%}
+                    <option disabled="disabled">
+                      {{ variant.title }} - {{ 'products.product.sold_out' | t }}
+                    </option>
+                  {%- endif -%}
+                {%- endfor -%}
+              </select>
+              {%- endform -%}
+           </div>
          </div>
       </div>
    </div>
 </div>
 
-
 <script>
-// customize button in modal
-$('#modal-customizer-button').click(function() {
-  $('.modal-customize-body').hide();
-  $('.modal-atc-body').show();
-});
-
-// change button
-$('#customizer-change-button').click(function() {
-  $('.modal-customize-body').show();
-  $('.modal-atc-body').hide();
-});
 
 //function for radio buttons
 $(document).on("click", 'input.placement-child', function () {
@@ -270,45 +278,112 @@ function runCustomization(event) {
 
 </script>
 <script>
-  // document.querySelector("[data-type='add-to-cart-form-custom']").addEventListener("submit", function(e){
-	// 	var name = document.getElementById("customized-Text").value || 'Customize' ;
-	// 	var familyBox = document.getElementById('selecth1FontFamily');
-	// 	var fontFamily = familyBox.options[familyBox.selectedIndex].value;
-  //     e.preventDefault();
-      
-  //     let mainCanvas = document.getElementById("customizer");
+document.querySelector("[data-type='add-to-cart-form-custom']").addEventListener("submit", function(e){
+    var name = document.getElementById("customized_Text").value || 'Borosil';
+    var familyBox = document.getElementById('selecth1FontFamily');
+    var fontFamily = familyBox.options[familyBox.selectedIndex].value;
+    var selectedVariant = $('.variant-options-listItem.is-selected');
+    let textRotation = document.querySelector('[name="placement"]:checked').value;
+    var varianttitle = selectedVariant.attr('data-variant-title');
+    var variantId = 0;
+    var eleTitle = [];
 
-  //     let dataURL = mainCanvas.toDataURL('image/jpeg', 0.5);
-  //     let blob = dataURItoBlob(dataURL);
-  //     var selectedVariant = $('.variant-options-listItem.is-selected');
-  //     var variantId = selectedVariant.attr('data-variant');
-  //     var formData = new FormData(document.querySelector('[data-type="add-to-cart-form-custom"]'));
-  //     formData.append("id",variantId);
+    e.preventDefault();
+    let mainCanvas = document.getElementById("customizer");
+    let dataURL = mainCanvas.toDataURL('image/jpeg', 0.5);
+    document.getElementById("canvasDataUrl").value = dataURL; 
+    console.log(dataURL,"=============================>");         
 
-  //     formData.append("items[1][id]",43169800945764);
-  //     formData.append("items[1][properties][Image]", blob, 'custom_image2.jpeg');
-	// 		formData.append("items[1][properties][Name]",name);
-	// 		formData.append("items[1][properties][Font]",fontFamily);
-  //     const config = fetchConfig('javascript');
-  //     config.headers['X-Requested-With'] = 'XMLHttpRequest';
-  //     delete config.headers['Content-Type'];
+    {% assign customProductHandle = product.handle %}
+    let myproduct = {{ product.variants | json }}
+    
+    if(myproduct.length == 0 ){
+        $(".not-available").show();
+        $(".customize-atc").css("background","rgb(212, 212, 212)");
+        setTimeout(function(){
+            $(".not-available").hide();
+            $(".customize-atc").css("background","#B4D241");
+        },2000);
+    } else {
+        myproduct.forEach(element => {
+            eleTitle.push(element.title);
+            if(element.title == varianttitle){
+                if(element.available){
+                    let mainCanvas = document.getElementById("customizer");
+                    let dataURL = mainCanvas.toDataURL('image/jpeg', 0.5);
+                    variantId = element.id;
+                    let blob = dataURItoBlob(dataURL);
 
-  //     fetch(window.Shopify.routes.root + 'cart/add.js', {
-  //       method: 'POST',
-  //       body: formData
-  //     })
-  //     .then(response => {
-  //       return response.json();
-  //     })
-  //     .then(response => {
-  //       mmajaxcart.CartCountHandler();        
-  //       mmajaxcart.AjaxcartRender();
-  //       setTimeout(function(){
-  //         mmajaxcart.AjaxcartOpen(); 
-  //       },1500);
-  //     })
-  //     .catch((error) => {
-  //       console.error('Error:', error);
-  //     });         
-  //   });
+                    var formData = new FormData(document.querySelector('[data-type="add-to-cart-form-custom"]'));
+                    formData.append("id",variantId);
+                    formData.append("properties[Name]",name);
+                    formData.append("properties[Font]",fontFamily);
+                    formData.append("properties[Placement]",textRotation);
+                    formData.append("properties[Customise-charge]","{{ product.metafields.custom.personalize_price }}");
+                    formData.append("properties[Image]", blob, 'custom_image2.jpeg');
+                    
+                    // Adding image URL as a line item property
+                    formData.append("properties[Image_URL]", dataURL);
+
+                    const config = fetchConfig('javascript');
+                    config.headers['X-Requested-With'] = 'XMLHttpRequest';
+                    delete config.headers['Content-Type'];
+                    config['body'] = formData;
+                    $('.customize-atc').hide();
+                    $('.custom-atc-loader').show();
+
+                    fetch2(window.Shopify.routes.root + 'cart/add.js', config)
+                    .then(response => {
+                        return response.json();
+                    })
+                    .then(response => {
+                        mmajaxcart.CartCountHandler();
+                        mmajaxcart.AjaxcartRender();
+                        setTimeout(function(){
+                            mmajaxcart.AjaxcartOpen();
+                        },1500);
+                        $('.customize-atc').show();
+                        $('.custom-atc-loader').hide();
+                    })
+                    .catch((error) => {
+                        console.error('Error:', error);
+                        $('.customize-atc').show();
+                        $('.custom-atc-loader').hide();
+                    })
+                } else {
+                    $(".not-available").show();
+                    $(".customize-atc").css("background","rgb(212, 212, 212)");
+                    setTimeout(function(){
+                        $(".not-available").hide();
+                        $(".customize-atc").css("background","#B4D241");
+                    },2000);
+                }
+            }
+        });
+    }
+
+    if(!eleTitle.includes(varianttitle)){
+        $(".not-available").show();
+        $(".customize-atc").css("background","rgb(212, 212, 212)");
+        setTimeout(function(){
+            $(".not-available").hide();
+            $(".customize-atc").css("background","#B4D241");
+        },2000);
+    }
+});
+
+// Function to convert dataURL to blob
+function dataURItoBlob(dataURI) {
+    var byteString = atob(dataURI.split(',')[1]);
+    var mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
+    var ab = new ArrayBuffer(byteString.length);
+    var ia = new Uint8Array(ab);
+    for (var i = 0; i < byteString.length; i++) {
+        ia[i] = byteString.charCodeAt(i);
+    }
+    var blob = new Blob([ab], { type: mimeString });
+    return blob;
+}
+
+
 </script>
