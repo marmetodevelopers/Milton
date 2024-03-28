@@ -38,9 +38,6 @@
           <div class="page-width">
             <header class="section-header section-header--flush">
               {%- render 'breadcrumbs' -%}
-              <h1 class="section-header__title">
-                {{ collection.title }}
-              </h1>
             </header>
           </div>
         </div>
@@ -56,9 +53,6 @@
     <div class="page-width page-content page-content--top">
       <header class="section-header section-header--flush">
         {%- render 'breadcrumbs' -%}
-        <h1 class="section-header__title">
-          {{ collection.title }}
-        </h1>
         <p class="medium-up--hide" data-collection-count>{{ 'collections.general.items_with_count' | t: count: collection.products_count }}</p>
       </header>
     </div>
